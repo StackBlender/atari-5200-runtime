@@ -16,10 +16,16 @@ unknown fields/dump attempts and reset/readout order covered. Synthetic inputs
 only. No CPU, complete cartridge, original firmware or service executed. Probe
 stack/result ownership and metadata/operator/role review remain open.
 
-Continue the same batch: inspect permissive public compiler ABI declarations as
-consumer-interface evidence only, keeping them distinct from Atari primary facts
-and measured compatibility. Then draft an original allocation budget and request
-Mars review of the new evidence/protocol/scope. No runtime policy is selected or
+First slice pushed as b699dff. Second slice adds consumer-interface.md/json and
+allocation-plan.md/json. cc65 revision 77b6484615427746e55fda2755c9cbc320a1fb51
+public headers/docs/license only: candidate exact vector/shadow addresses,
+consumer-owned conio fields and the cc65 021C versus PAM 0220 free-RAM discrepancy.
+No startup/kernel/driver/assembler implementation read. Facts remain
+consumer-interface-unmeasured, not approved Atari runtime policy. Primary startup
+unknowns and final/retail VBI selection remain explicit. The full 2 KiB proposal
+reserves 1024 font, 768 service code, 250 margin and 6 CPU vectors; no additional
+persistent RAM or proven stack depth. Continue: send the completed evidence,
+protocol and allocation proposal to Mars for specific scope/provenance review. No runtime policy is selected or
 provider enabled. Acquire the runtime lease for edits; push each passing slice.
 
 ## Current slice

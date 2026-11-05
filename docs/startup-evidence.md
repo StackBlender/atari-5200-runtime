@@ -118,3 +118,7 @@ The original capture fragment and bounded record format are now specified in
 [ENTRY-01 protocol](entry-observation-protocol.md). This advances protocol tooling
 only; result-area/operator/role/metadata/interrupt-window review still precedes
 a complete cartridge and any reference execution.
+
+[Public consumer-interface declarations](consumer-interface.md) now supply
+candidate per-symbol offsets from cc65. They are labeled separately from Atari
+primary evidence; no normative runtime adoption follows without scope review.

@@ -25,7 +25,10 @@ Record each slice and push passing work before proceeding.
    metadata encoding and entry/reset postconditions. Integration review accepts
    dated documentary facts; reconcile October/January VBI rules before selecting
    final/retail behavior. March's back-reference does not settle that policy.
-   Source NMOS CPU semantics separately from Atari software. No blanket service-implementation approval follows.
+   Selected NMOS capture semantics are now sourced independently. Public cc65
+   declarations supply candidate vector/shadow offsets with a separate
+   consumer-interface-unmeasured label. Obtain scope/provenance review; these
+   do not establish Atari reset defaults or resolve final/retail VBI policy.
 2. **RUNTIME-003: approve and pilot the original probe protocol.** The 26-byte
    capture fragment, scalar record contract and offline validator are implemented
    with 35 passing tests. Next review result ownership, metadata/mapper layout,
@@ -34,7 +37,9 @@ Record each slice and push passing work before proceeding.
    RAM or stack dumps, instruction traces or captured boot artwork.
 3. **RUNTIME-004: real allocation and first supported startup.** Review original
    asset encoding/placement, code/vector/free margin and every RAM/stack use
-   against the approved ABI. Implement a bounded startup scope, report actual
+   against the approved ABI. docs/allocation-plan.md/json now proposes a full
+   2 KiB budget: 1024 asset + 768 code + 250 margin + 6 vectors; zero additional
+   persistent RAM, a separately unproven stack allowance. Obtain review first. Implement a bounded startup scope, report actual
    image fit and remaining allowances, then execute original diagnostics through
    an integration owner. Stop on overflow for scope/architecture review.
 4. Add the supported runtime service classes: NMI/VBI/DLI, IRQ/BRK dispatch,
@@ -49,6 +54,15 @@ Record each slice and push passing work before proceeding.
    Resolve discrepancies through completion; publish only supported claims.
 
 ## Landed
+
+- RUNTIME-002 consumer-interface packet: pinned permissive cc65 declarations and
+  documentation, exact vector/shadow candidates and exposure/hash ledger. Keeps
+  consumer expectations separate from original Atari or measured facts; identifies
+  cc65 conio storage and the 021C–021F reservation discrepancy. Metadata digit
+  conventions are documentary candidates, not an approved bypass or full encoder.
+- RUNTIME-004 allocation proposal: complete ROM ranges and future-service
+  allowances, RAM ownership, original asset plan, margin/overflow stop rule and
+  first implementation gates. No measured fit or stack-depth claim.
 
 - RUNTIME-003 tooling: original 26-byte A/X/Y/status/SP capture fragment,
   deterministic source/encoder/fragment descriptor, draft role/operator protocol

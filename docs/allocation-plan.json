@@ -1,0 +1,81 @@
+{
+  "actual_fit_proven": false,
+  "implementation_approved": false,
+  "profile_selected": false,
+  "purpose": "proposed-allocation-budget",
+  "ram": {
+    "additional_persistent_bytes": 0,
+    "initial_sp": null,
+    "os_zero_page": {
+      "end": 25,
+      "start": 0
+    },
+    "software_vectors": {
+      "end": 544,
+      "start": 512
+    },
+    "stack_depth_proven": false,
+    "stack_page": {
+      "end": 512,
+      "start": 256
+    },
+    "stack_transient_estimate_bytes": 32
+  },
+  "regions": [
+    {
+      "end": 64512,
+      "kind": "asset",
+      "name": "font",
+      "start": 63488
+    },
+    {
+      "end": 64640,
+      "kind": "code",
+      "name": "startup",
+      "start": 64512
+    },
+    {
+      "end": 64832,
+      "kind": "code",
+      "name": "interrupts",
+      "start": 64640
+    },
+    {
+      "end": 65008,
+      "kind": "code",
+      "name": "input",
+      "start": 64832
+    },
+    {
+      "end": 65104,
+      "kind": "code",
+      "name": "clocks",
+      "start": 65008
+    },
+    {
+      "end": 65200,
+      "kind": "code",
+      "name": "display",
+      "start": 65104
+    },
+    {
+      "end": 65280,
+      "kind": "code",
+      "name": "shared",
+      "start": 65200
+    },
+    {
+      "end": 65530,
+      "kind": "reserved",
+      "name": "margin",
+      "start": 65280
+    },
+    {
+      "end": 65536,
+      "kind": "vectors",
+      "name": "vectors",
+      "start": 65530
+    }
+  ],
+  "schema": 1
+}

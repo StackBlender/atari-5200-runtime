@@ -1,0 +1,141 @@
+{
+  "cc65_application_ram_start": 540,
+  "cc65_owned_conio": {
+    "end_inclusive": 28,
+    "start": 25
+  },
+  "clock_byte_order": null,
+  "fields": [
+    {
+      "address": 0,
+      "name": "pokmsk",
+      "size": 1
+    },
+    {
+      "address": 1,
+      "name": "rtclok",
+      "size": 2
+    },
+    {
+      "address": 3,
+      "name": "critic",
+      "size": 1
+    },
+    {
+      "address": 4,
+      "name": "atract",
+      "size": 1
+    },
+    {
+      "address": 5,
+      "name": "sdlst",
+      "size": 2
+    },
+    {
+      "address": 7,
+      "name": "sdmctl",
+      "size": 1
+    },
+    {
+      "address": 8,
+      "name": "pcolr",
+      "size": 4
+    },
+    {
+      "address": 12,
+      "name": "color",
+      "size": 5
+    },
+    {
+      "address": 17,
+      "name": "paddl",
+      "size": 8
+    }
+  ],
+  "final_retail_vbi_policy": null,
+  "hardware_aliases": {
+    "antic": 54272,
+    "gtia": 49152,
+    "pokey": 59392
+  },
+  "pam_reserved_end_inclusive": 543,
+  "reset_defaults": null,
+  "retail_validation": false,
+  "runtime_implementation_approved": false,
+  "schema": 1,
+  "source_project": "cc65",
+  "source_revision": "77b6484615427746e55fda2755c9cbc320a1fb51",
+  "status": "consumer-interface-unmeasured",
+  "vectors": [
+    {
+      "address": 512,
+      "name": "vinter",
+      "size": 2
+    },
+    {
+      "address": 514,
+      "name": "vvblki",
+      "size": 2
+    },
+    {
+      "address": 516,
+      "name": "vvblkd",
+      "size": 2
+    },
+    {
+      "address": 518,
+      "name": "vdslst",
+      "size": 2
+    },
+    {
+      "address": 520,
+      "name": "vkeybd",
+      "size": 2
+    },
+    {
+      "address": 522,
+      "name": "vkeypd",
+      "size": 2
+    },
+    {
+      "address": 524,
+      "name": "vbrkky",
+      "size": 2
+    },
+    {
+      "address": 526,
+      "name": "vbreak",
+      "size": 2
+    },
+    {
+      "address": 528,
+      "name": "vserin",
+      "size": 2
+    },
+    {
+      "address": 530,
+      "name": "vseror",
+      "size": 2
+    },
+    {
+      "address": 532,
+      "name": "vseroc",
+      "size": 2
+    },
+    {
+      "address": 534,
+      "name": "vtimr1",
+      "size": 2
+    },
+    {
+      "address": 536,
+      "name": "vtimr2",
+      "size": 2
+    },
+    {
+      "address": 538,
+      "name": "vtimr4",
+      "size": 2
+    }
+  ]
+}
