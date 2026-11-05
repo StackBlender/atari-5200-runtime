@@ -1,5 +1,18 @@
 # Runtime handoff
 
+## Committed DLI export receipt
+
+Source/export258bc0cc764a0614ec8443a89d242a8f1fe8cb5e pushed; CLI and real
+temporary parent CMake target pass four properties, absolute artifacts/dependency
+ordering, source/image/map identity/false flags and exact CLI-byte equality.
+All three previous pinned candidates reproduce unchanged image hashes; temporary
+consumer removed. Ignored artifacts in existing build/dli-candidate. Full packet
+sent Mars req_6f74 for independent scope/tuple/CPU/raster/state acceptance; no
+local CPU run. Pending display9d7071f acceptance remains distinct. Requested
+prose-only POT/ALLPOT/POTGO/SKCTL/power/select clarification for next original
+four-controller analog service; no historical scan or extra RAM invented.
+No consumer pin/provider flag/release/default change. Lease released after push.
+
 ## Current DLI dispatch continuation
 
 Original dli-dispatch-v1 atop pending display-shadow-v1, separate source/export/

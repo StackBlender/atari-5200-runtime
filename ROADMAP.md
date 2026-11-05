@@ -12,7 +12,8 @@ DLI-dispatch candidate atop the pending display candidate, without claiming its
 acceptance. docs/dli-dispatch-brief.md defines current-latch exact40/80 routing,
 cartridge-owned RTI callback0206, unchanged VBI service and no extra RAM. Preserve
 all earlier source exports and false labels. New1318-byte usage leaves730 free;
-80 offline tests/CTest pass. Mars req_6f74/msg_d7c0 receives
+80 offline tests/CTest pass. Full export source258bc0cc764a0614ec8443a89d242a8f1fe8cb5e
+passes real CLI/parent consumer and all3older pinned exports reproduce. Mars req_6f74/msg_d7c0 receives
 scope for independent review; both display and DLI need separate real execution
 acceptance before app enablement. Next specify four-controller input scan.
 
