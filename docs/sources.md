@@ -234,3 +234,14 @@ behavioral assessment reproduces contact-stabilization/held-event faults under
 03/06. It supplies no permitted primary hardware debounce timing or historical
 BIOS behavior; formal req_72f0 owns that evidence/correction review. No firmware,
 foreign kernel/emulator/test or instruction-trace exposure; analog03 unchanged.
+
+
+## Original IRQ/BRK dispatch evidence
+
+CPU-02 Synertek1976 manufacturer transcription chapter9, selected IRQ stack and
+section9.7 BRK prose, supplies stacked B-bit0/1 and BRK returnPC+2. Nearby example
+visible but not copied; our original wrap-index/save/dispatch design and scope
+message preceded retrieval. No new encodings or global opcode changes. Callback
+slots0200/020E come from CONSUMER-01 declarations; our ABI/policy is original, not
+Atari firmware behavior. No manufacturer example, Atari BIOS/disassembly/kernel,
+foreign emulator implementation/test or instruction trace imported/read here.

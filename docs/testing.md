@@ -152,3 +152,12 @@ image/map; tools/export_analog_candidate.py requires committed source. Separate
 opt-in sb5200-analog-shadow-image target documented in analog-shadow-proof.md.
 Offline prime/pending/copy/restart bytes/fit/provenance tests do not prove real
 POKEY acquisition, initial validity, callback/state execution or game support.
+
+
+## IRQ/BRK dispatch candidate
+
+Eight methods bring total95. tools/irq_brk_image.py emits ignored image/map;
+tools/export_irq_candidate.py requires committed source. Opt-in target
+sb5200-irq-brk-image and SB5200_IRQ_SOURCE_REVISION are documented in
+irq-brk-proof.md. Static stack arithmetic covers all256 positions, not CPU
+execution; actual IRQ/BRK/status/RTI/replay acceptance belongs to Mars.

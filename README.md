@@ -140,3 +140,9 @@ The eight-axis analog candidate now has independent Mars execution/state replay
 acceptance; see the receipt above. Keypad delivery under the selected03 scan
 mode remains unresolved and is not a supported service. No complete BIOS/game
 compatibility follows from the accepted analog subset.
+
+
+A separate original [IRQ/BRK candidate](docs/irq-brk-proof.md) routes CPU
+interrupts to cartridge callbacks with stack-wrap handling. Offline tests pass;
+independent execution remains pending. Device-source acknowledgment and all
+remaining keypad/fire/timer/reset services are separate unfinished work.

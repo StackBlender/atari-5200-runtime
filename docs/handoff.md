@@ -1,5 +1,22 @@
 # Runtime handoff
 
+
+## IRQ/BRK authored continuation
+
+RUNTIME-004 adds original irq-brk-dispatch-v1 atop accepted analog; scope sent
+Mars req_6f74/msg_5559. New tools/irq_brk_image.py/export_irq_candidate.py,
+cmake/irq-brk-candidate.cmake, tests/test_irq_brk_image.py and docs/irq-brk-
+{brief,proof}.md. Image SHA256
+2b257c582044af2308699c6a0f327dca674ed79bd95eed2da7cea2537ead0675,
+1410/2048 used,638 free incl250margin. FD00 classifier26bytes, IRQ/BRK hardware
+vectorFD00, slots0200/020E defaultFC86 until cart installs. All earlier bytes/
+labels/startup127/128 unchanged. Wrapping TSX+INX3 reads real stackedP, restores
+AX, Yuntouched, JMPcallback hardwareframeonly;39/40 basecycles14instructions,
+no device-source ack or persistentRAM.95 offline methods/CTest pass; new actual
+CPU/RTI/state acceptance pending. Real committed CLI/parent export checks follow.
+Next deliver full pinned tuple toMars, obtain independent IRQ/BRK/stack/replay
+acceptance; keypadreq72f0 evidence/correction separate. No pin/default/flagchange.
+
 ## Next keypad service: hardware-interface dependency
 
 Mars msg_7fe6 /19b9eb69a4b8e6efaafe4a3eff2faeea5805e1a8 supplies prose-only
