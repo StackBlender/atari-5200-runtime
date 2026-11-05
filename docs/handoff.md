@@ -1,6 +1,20 @@
 # Runtime handoff
 
 
+## Committed timer export receipt
+
+Source/exportac9b47e50c213b08022e78bdef64662569cd3d29 pushed; real CLI and
+temporary parent CMake consumer pass all4properties/absolute artifacts/dependency
+ordering/source-image-map hashes/false flags/exact CLI equality. All six earlier
+pinned exports reproduce their unchanged hashes. Temporary source/build removed;
+ignored output remains build/timer-candidate. Full contract/tuple/shifted startup
+and source handling packet sent Mars req_6f74 for independent scope/execution.
+No local CPU run, state-schema/provider acceptance or new flags/default/pin/release
+change. Next actual IRQ/timer/ack/retrigger/callback/RTI/process validation, then
+remaining keypad/fire/reset/software timers/contracts. Keypad req_72f0 primary
+wiring review remains separate. Lease released after push.
+
+
 ## Current timer dispatch authored slice
 
 Separate original timer-dispatch-v1 atop pending IRQ42762a7, scope Mars
