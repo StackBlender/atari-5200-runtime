@@ -77,7 +77,7 @@ continue to reproduce. The new tools/vbi_clock_image.py has a local six-opcode
 extension without mutating the original emitter table. New export is separate:
 
 ```sh
-python3 tools/export_vbi_candidate.py --source-revision FULL_NEW_COMMIT --output-dir build/vbi-candidate
+python3 tools/export_vbi_candidate.py --source-revision ba90c8550c1be1c85b5aa7d6810e1ee6c6031656 --output-dir build/vbi-candidate
 ```
 
 A parent may add the baseline module, set SB5200_VBI_SOURCE_REVISION to that full
@@ -106,3 +106,15 @@ synchronized safe points, not arbitrary mid-instruction states. Old/new image
 state refusal must hold both directions; schema-version changes follow actual
 persistent observer changes, not guessed necessity. No product/release pin or
 commercial-cartridge compatibility approval follows from this packet.
+
+
+## Committed export verification receipt
+
+Source pin ba90c8550c1be1c85b5aa7d6810e1ee6c6031656 was emitted through the
+real pinned CLI and a temporary parent CMake consumer. All four properties,
+absolute existing artifacts, image/map hashes, full source revision, false labels
+and dependent-target ordering passed. CLI and CMake artifacts were byte-identical.
+The original711a2e9 export reproduced its unchanged b2d8ebb8... image at the same
+time. Existing build/ CTest passed all66 methods. Temporary parent source/build
+were removed; ignored build/vbi-candidate retains the new integration artifacts.
+No CPU/chip execution or new-provider acceptance occurred locally.

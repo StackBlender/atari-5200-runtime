@@ -14,8 +14,11 @@ Nine new test methods (66 total) pass; docs/vbi-clock-proof.md owns byte/stack/
 base-cycle/fit/static expectations. Startup1115 worst base cycles/414 instructions;
 default VBI81..86 base cycles/25..26 instructions, max stack6 including hardware.
 These are static results, not CPU/ANTIC execution or a new accepted provider.
-Original711a2e9 generation inputs/hash unchanged. After committed artifact-target
-validation, send full new pin/build/hash/symbol packet to Mars on req_6f74.
+Original711a2e9 generation inputs/hash unchanged. Committed source/export pin is ba90c8550c1be1c85b5aa7d6810e1ee6c6031656.
+Real CLI/parent CMake consumer properties/artifacts/hash/false labels/ordering and
+byte equality pass; original711a2e9 CLI reproduces unchanged image. Existing
+build/ CTest passes66 methods; temporary consumer source/build removed.
+Delivery packet on req_6f74 uses that source pin, unchanged by this docs receipt.
 Mars must extend Starting interrupt/pending-NMI observation and tuple allowlist,
 then independently exercise real VBI/callback/clock/RMW writes/stack/state/replay.
 Mixed/Reset sources synthetic; state captures actual synchronization safe points.
