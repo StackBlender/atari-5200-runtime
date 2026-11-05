@@ -1,6 +1,20 @@
 # Runtime handoff
 
 
+## Committed IRQ/BRK export receipt
+
+Source/export42762a73a0caa72b7753bd5aa4380cf9a63c573f is pushed. Real CLI
+and temporary parent CMake consumer pass all4properties, absolute artifacts,
+dependency ordering, full image/map/source identity/false flags and CLI equality.
+All five earlier pinned candidate exports reproduce unchanged image hashes.
+Temporary parent source/build removed; ignored output in build/irq-candidate.
+Exact tuple/stack/IRQBRK/callback/source-ack/timing packet sent Mars req_6f74;
+independent scope/CPU/RTI/state acceptance pending. No local CPU run, provider
+flag/pin/release/app/default change. Next independent acceptance and remaining
+source-specific IRQ/timer/reset/fire service contracts; keypadreq72f0 separate.
+Runtime lease released after push.
+
+
 ## IRQ/BRK authored continuation
 
 RUNTIME-004 adds original irq-brk-dispatch-v1 atop accepted analog; scope sent
