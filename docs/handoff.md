@@ -1,5 +1,14 @@
 # Runtime handoff
 
+
+Keypad source review publication repaired (Mars msg_6570): pushed
+9349e920d2f3af1302fe68acc4c7533e00f234da, docs/a52-keyboard-source-review.md.
+This supersedes earlier push-pending notes. Existing evidence-path decision
+msg_69bb was sent before this crossed receipt and reiterated; no outstanding
+user/scope choice. Proceed primary5200 wiring review, retain documented06,
+withdraw unsupported one-event-per-hold06 chip acceptance. Runtime event policy
+remains separate; no chip/schema/image/default/pin/release changes.
+
 ## Keypad evidence correction and selected next action
 
 Mars msg_8edd/R70 source screening supersedes the earlier defect attribution,
