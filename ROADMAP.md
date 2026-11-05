@@ -15,6 +15,14 @@ marked; no reference execution or service claims. Draft a RUNTIME-004 allocation
 and documentary startup scope for integration review if the evidence supports it.
 Record each slice and push passing work before proceeding.
 
+Concrete next action: RUNTIME-004 bounded startup brief for the accepted limited
+public interface `sb52-dev-cc65-v1`. Specify original reset/MMIO values and order,
+entry/SP/interrupt/vector/RAM policy, asset glyph/mode/color mapping, negative and
+unsupported cases, and independent original diagnostic expectations. Mars review
+1f411e5 accepts interface declarations/digit convention and the planning budget;
+unknown retail values need not be guessed or resolved before proposing explicit
+original policy. No runtime policy or provider is selected by that review.
+
 1. **RUNTIME-002: approved startup and service evidence.** Build a per-service
    numeric ABI/evidence matrix from screened primary behavioral documentation
    and lawful original-system observations. Start with cartridge metadata/entry,
@@ -27,7 +35,7 @@ Record each slice and push passing work before proceeding.
    final/retail behavior. March's back-reference does not settle that policy.
    Selected NMOS capture semantics are now sourced independently. Public cc65
    declarations supply candidate vector/shadow offsets with a separate
-   consumer-interface-unmeasured label. Obtain scope/provenance review; these
+   consumer-interface-unmeasured label, accepted for limited development scope; these
    do not establish Atari reset defaults or resolve final/retail VBI policy.
 2. **RUNTIME-003: approve and pilot the original probe protocol.** The 26-byte
    capture fragment, scalar record contract and offline validator are implemented
@@ -41,7 +49,8 @@ Record each slice and push passing work before proceeding.
    asset encoding/placement, code/vector/free margin and every RAM/stack use
    against the approved ABI. docs/allocation-plan.md/json now proposes a full
    2 KiB budget: 1024 asset + 768 code + 250 margin + 6 vectors; zero additional
-   persistent RAM, a separately unproven stack allowance. Obtain review first. Implement a bounded startup scope, report actual
+   persistent RAM, a separately unproven stack allowance. Planning review accepted;
+   supply the concrete startup brief next. Implement a bounded startup scope, report actual
    image fit and remaining allowances, then execute original diagnostics through
    an integration owner. Stop on overflow for scope/architecture review.
 4. Add the supported runtime service classes: NMI/VBI/DLI, IRQ/BRK dispatch,
@@ -56,6 +65,11 @@ Record each slice and push passing work before proceeding.
    Resolve discrepancies through completion; publish only supported claims.
 
 ## Landed
+
+- Mars 1f411e5 accepts the public-interface boundary and digit-only convention
+  for proposed sb52-dev-cc65-v1, plus the complete estimated allocation. No extra
+  historical provenance needed merely to target the declarations. Services,
+  defaults, actual fit/stack, complete cart and execution remain separate gates.
 
 - RUNTIME-002 consumer-interface packet: pinned permissive cc65 declarations and
   documentation, exact vector/shadow candidates and exposure/hash ledger. Keeps

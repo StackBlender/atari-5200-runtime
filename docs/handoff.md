@@ -57,19 +57,24 @@ review739cc719 and correction acceptance a9a5fec4. Dated primary PAM rows are
 accepted; October/January/March evidence profiles stay separate. January VBI-01
 must not silently become final/retail policy; final_retail_vbi_policy remains null.
 
-New actionable review sent as msg_d4a2 linked req_6f74: asks Mars whether public
-consumer declarations/digit-only metadata can define an explicit development
-scope, and reviews the full allocation proposal/protocol prerequisites. Asked
-for documentary prose/tables only, excluding GPL tool/test implementation and
-the protocol assembly block. Await a poke; no policy/provider/pin selected.
+Review msg_d4a2 answered by Mars msg_001a / 1f411e5: accepts public declarations
+for an explicit development interface, proposed sb52-dev-cc65-v1, with the same
+consumer-interface-unmeasured label. No additional historical provenance needed
+merely to target them. Accepts digits0–9 =>50–59 as OUR original convention,
+20 title digits +two normal year digits, noFF bypass; metadata and little-endian
+entry must be CPU mapped. Requires original glyph/mode/color mapping. Planning
+budget accepted with no routing/alignment conflict; actual fit and32 stack bound
+unproved. Protocol prose gaps addressed; no assembly/GPL implementation reviewed.
 
-On response, resolve specific provenance/scope/allocation concerns. If approved,
-define the exact development profile, numeric startup MMIO/default policy and
-metadata encoder; build the first complete original diagnostic, then a bounded
-supported runtime with actual fit. Until then continue primary evidence or
-protocol review, not guessed service code. Exact reset/register defaults,
-interrupt/shadow semantics, asset encoding, stack analysis and original operator/
-role/access/readout/result-area approvals remain open. No hardware/oracle exists.
+Concrete resume: author the bounded RUNTIME-004 startup brief, choosing explicit
+original development policies where retail defaults are unknown. Enumerate
+reset/MMIO values/order, entry/SP, interrupt/vector/RAM policy, assets, independent
+fixtures and unsupported/negative cases. No service policy/provider/pin is
+selected yet. Then request per-scope review, implement the supported image and
+complete original diagnostic, prove fit, and integrate through Mars. Original
+reference execution still needs operator/apparatus/result ownership and role
+receipts; none are established. Do not wait for historical provenance already
+accepted for this limited consumer-interface target or relabel it measured retail.
 
 Source PDFs/renders were isolated in /tmp, not committed or project dependencies:
 PAM package, MOS selected CPU manual, cc65 declarations and Atari service manual.

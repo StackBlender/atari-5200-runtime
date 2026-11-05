@@ -2,7 +2,9 @@
 
 RUNTIME-004 planning input, 2026-11-05. This is an estimated budget for review,
 not an emitted runtime, approved service policy or proof that complete services
-fit. The machine target is NTSC four-port. A documentary development profile and
+fit. Mars review 1f411e5 accepts it as an estimated planning budget, with no
+CPU/ANTIC routing or alignment conflict identified; actual asset fetches, per-service
+fit and stack depth remain unproved. The machine target is NTSC four-port. A documentary development profile and
 its original policies must be named separately from any final/retail firmware
 revision; no such policy is selected by this proposal.
 

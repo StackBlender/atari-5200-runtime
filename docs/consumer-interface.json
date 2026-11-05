@@ -5,6 +5,12 @@
     "start": 25
   },
   "clock_byte_order": null,
+  "development_interface_review": {
+    "accepted": true,
+    "name": "sb52-dev-cc65-v1",
+    "runtime_policy_selected": false,
+    "scope": "declared-layout-and-original-digit-convention-only"
+  },
   "fields": [
     {
       "address": 0,

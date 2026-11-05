@@ -87,12 +87,26 @@ and profile before assembling the complete cartridge; alphabetic encoding and
 full runtime font placement still need separate evidence. No runnable diagnostic
 cartridge or runtime service is added by this packet.
 
-## Remaining review
+## Review decision and next contract
 
-The integration owner must assess whether these public declarations can define
-an explicit development compatibility profile, distinct from measured retail
-behavior. Accepting a header layout would not accept its unknown historical
-provenance as independent black-box observation. Preserve both source labels.
-Reset defaults, metadata details, handler postconditions, VBI revision selection,
-asset encoding and lawful reference access remain open. Code can then target
-only an explicitly supported scope; unsupported behavior must remain explicit.
+Mars review `1f411e5` (msg_001a / req_6f74) accepts the pinned declarations as an
+explicit development interface, proposed name `sb52-dev-cc65-v1`, with authority
+consumer-interface-unmeasured. Further historical provenance is not required
+merely to target those declarations. This accepts field/vector slot layout for
+that limited scope, not handlers, defaults, retail compatibility or a completed
+clean-room claim. No runtime policy, shipping profile or provider is selected.
+
+The digits-only convention is accepted as our explicit original policy:
+`encode(d) = ASCII(d) + 32`, digits 0–9 map to 50–59 hex. Use exactly 20 authored
+title digits and two normal year digits; no FF diagnostic bypass. The complete
+cartridge brief must specify CPU-mapped metadata and little-endian entry encoding,
+original glyph/mode/color mapping and result ownership. No alphabetic or historic
+font-address inference follows. The conservative vector reservation and conio
+exclusion remain; stock cc65 binaries are not promised unrestricted compatibility.
+
+Next supply a bounded startup brief with exact named reset/MMIO writes and order,
+entry/SP/interrupt/vector/RAM policy, original assets, and negative/unsupported
+cases. Unspecified retail defaults can be replaced by explicitly approved original
+policy for this development scope. Each future service still needs its own
+supported contract and independent fixtures; original-system access/role/protocol
+requirements remain for measured reference work.
