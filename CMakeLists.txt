@@ -16,6 +16,17 @@ add_custom_command(
 add_custom_target(layout_fixture ALL DEPENDS
   "${CMAKE_CURRENT_BINARY_DIR}/generated/layout-test.bin"
   "${CMAKE_CURRENT_BINARY_DIR}/generated/layout-test.json")
+# Authored approved-scope module; independent execution/provider acceptance pending.
+add_custom_command(
+  OUTPUT "${CMAKE_CURRENT_BINARY_DIR}/generated/startup.bin"
+         "${CMAKE_CURRENT_BINARY_DIR}/generated/startup-map.json"
+  COMMAND "${Python3_EXECUTABLE}" "${CMAKE_CURRENT_SOURCE_DIR}/tools/startup_image.py"
+          --output-dir "${CMAKE_CURRENT_BINARY_DIR}/generated"
+  DEPENDS tools/startup_image.py tools/emitter.py docs/allocation-plan.json
+  VERBATIM)
+add_custom_target(authored_startup ALL DEPENDS
+  "${CMAKE_CURRENT_BINARY_DIR}/generated/startup.bin"
+  "${CMAKE_CURRENT_BINARY_DIR}/generated/startup-map.json")
 include(CTest)
 if(BUILD_TESTING)
   add_test(NAME emitter_contract COMMAND "${Python3_EXECUTABLE}"

@@ -1,97 +1,79 @@
 # Runtime handoff
 
-## Resume the authorized batch
+## Current slice and authorization
 
-Owner authorized a large RUNTIME-002/003/004 batch on 2026-11-05. Runtime owner is
-apollo_retro_owner; development/commits/pushes and public GPL-3.0-or-later are
-explicitly authorized. No community contribution dependency. Acquire the Odin
-repo:atari-5200-runtime lease before writes and release after push.
+Apollo Retro maintains this public GPL-3.0-or-later project under explicit owner
+authorization to complete it, commit and push; no community contribution dependency.
+Acquire repo:atari-5200-runtime lease before writes and release after push.
+Mars req_6f74 remains incomplete: do not ack/reopen or poll. Authoring approval
+msg_aa05 /7c290c4 accepts cold-start-digits-v1, with chip/reset/observer corrections
+now in docs/startup-brief.md revision2. It does not approve provider/execution,
+reference runs, pins, release or retail compatibility.
 
-## Pushed work
+## First authored module
 
-- b699dff: tools/entry_probe.py generates an original 26-byte capture fragment and
-  deterministic descriptor, not a runnable cartridge. Four fixed encodings added
-  to tools/emitter.py (29 entries total); its ten-byte layout fixture is unchanged.
-  tools/observations.py implements the strict bounded ENTRY-01 scalar record
-  validator. docs/entry-observation-protocol.md defines roles, capture corrections,
-  completion-write observation, reset/input sequences and inconclusive handling.
-- ca643f9: docs/consumer-interface.md/json records permissive cc65 public ABI
-  declarations at 77b6484615427746e55fda2755c9cbc320a1fb51, exact source hashes,
-  shadow/vector candidates, digit metadata convention and exposure. Only headers,
-  platform document and license reviewed; no startup/kernel/driver implementation.
-  Facts remain consumer-interface-unmeasured, not Atari provenance or approval.
-  cc65 conio0019–1C is consumer-owned; keep PAM reservation through021F despite
-  cc65 app RAM from021C. Clock order/defaults remain unknown.
-- Same slice: docs/allocation-plan.md/json proposes 1024 original font + 768 service
-  code + 250 margin + 6 vectors =2048. No extra persistent RAM; stack32 is an
-  estimate requiring analysis, not a reserved cartridge quota or proven depth.
-- This handoff's slice: docs/hardware-profile.md records primary Atari board IDs:
-  CA018087 original four-port, CA020108 universal four-port, CA021374 two-port.
-  Exact board and firmware identities are separate, currently unmeasured.
+- tools/startup_image.py: approved bounded original startup atFC00, ordered14
+  MMIO stores, zero0000..0018, fourteenFC86 vectors0200..021B, digit/entry checking
+  helperFEB0, explicit A=X=Y=0,P&CF=06,SPFF and CPU JMP(BFFE). Three failure loops
+  FC80/FC83/FC86; no ongoing VBI/DLI/IRQ/input/timer/shadow service.
+- Original1024-byte font: independently composed digits50..59 atFA80..FACF,
+  other glyphs blank. No bitmap reference used.
+- tools/emitter.py: eight new factual common-NMOS encodings,37 entries total;
+  strict zpx/absx/ind numeric operand widths. No CPU engine or HLE.
+- CMake authored_startup target emits ignored generated/startup.bin and map;
+  existing ten-byte layout fixture remains separate. No sb5200-runtime-image.
+- Actual image SHA b2d8ebb8d0070f2aee1bd79d7adfee85b88797702cb96035ab3a18e9bd37f68d;
+ 2048 bytes,1177 written:1024font+94startup+9faults+44helper+6vectors.871 unused,
+ including all250margin. Future service allowances untouched. Full future fit unknown.
+- tests/test_startup_image.py adds seven independent encoding/pixel/fit/reserve/
+  opcode-boundary/reproducibility tests. Total50 direct unittest and CMake/CTest
+  pass. docs/startup-proof.md records exact expected bytes/boundaries/fixtures,
+  static stack and CPU-cycle analysis, not measured CPU behavior.
 
-All generated artifacts stay ignored. No firmware, copied fonts/art, commercial
-games, foreign implementation, original execution or service-capable provider.
-The source ledger preserves the earlier quarantined disassembly-derived article
-exposure; do not backfill its constants.
+## Static argument and remaining execution gate
 
-## Validation
+Valid normal paths:1084 base cycles/403 instructions for4000..BEFF entries;
+1091/406 forBF00..BFE7. All branches remain within a page; digit reads no page
+cross. Ordinary one helper uses two balanced stack bytes. One interrupt after
+TXS can add three before first fault; repeatedNMI/pre-TXS unbounded/not supported.
+Full4096 deadline INCLUDING refresh/RDY remains unproved. Frame-return-only
+observation is insufficient; request Mars instruction-boundary observer and
+independent execution, no traps/direct-PC/service shortcuts.
 
-Current direct unittest discovery and CMake/Ninja/CTest pass: 43 methods (17 image-emitter,
-four original capture-fragment, 14 scalar-record, eight cartridge-candidate). Exact commands in docs/testing.md.
-Independent expected bytes, relocation/bounds, fresh-process reproducibility,
-strict JSON size/depth/UTF-8/duplicates/types, identity, masking and inconclusive
-handling covered. An initial depth rejection failure was fixed and retested.
-Only synthetic records; no CPU/firmware or game execution. No reference result
-exists. CMake still generates only the original ten-byte tool fixture, not a ROM.
+Use explicit Linear32K,32768-byte board/profile load success before power. Future
+structured operation maps Node power(false) to cold; true refuses before mutation
+with visible runtime status. System::power(true) is not CPU-only reset. Physical
+controller-key input is separate from semantic reset. External-BIOS unchanged.
+NMIRES does not clear CPU-pending NMI; DMACTL0 still has refresh steals; SKCTL0
+resets key/serial/error/clock state; AUDC0 does not reset all timers; PRIOR/CHBASE
+pipeline remains normal. These are Mars integration facts, not retail defaults.
 
-Documentation checks: JSON parse, all 2048 allocation bytes covered once using the
-existing Image/Region validator, code768/assets1024 totals, candidate vector and
-ZP bounds, explicit null/unapproved policies, local Markdown links and whitespace.
-The final hardware-identity slice changes documentation only.
+## Diagnostic/tooling and evidence already pushed
 
-## Coordination and concrete next action
+8cb2c6d: strict20-title+2-year ASCII digit metadata, LE entry, full unapproved32KiB
+original diagnostic around26-byte ENTRY-01 capture; eight tests. Candidate uses
+entry8000/results3000..3005, title01234567890123456789/year26; image SHA remains
+c7ae62b374ccecde52448d39596421924e749cac9175838198f4b427d0fe83f7.
+Regenerate descriptors after emitter change: encoder hash changed, cart bytes did
+not. The result area is accepted for DMA-off Mars diagnostic only, not original
+hardware. Require freshA5 store, expectedA/X/Y00,P&CF06,SPFF. Baseline caller RAM
+AFTER core cold randomization; see startup-proof.md negative cases.
 
-Mars req_6f74 remains incomplete; do not ack/reopen or poll. Original integration
-proposal is 3cde45c; budget sequencing b94c119, ownership/GPL e1dd041, primary
-review739cc719 and correction acceptance a9a5fec4. Dated primary PAM rows are
-accepted; October/January/March evidence profiles stay separate. January VBI-01
-must not silently become final/retail policy; final_retail_vbi_policy remains null.
+Earlier b699dff/ca643f9/62f45c6/7209d6a: original capture/strict scalar validator and
+protocol, public cc65 declaration layout/digit convention, full budget and primary
+board identities. Source hashes/exposure in docs/sources.md. CONSUMER-02 chip
+headers are public declarative source only. No startup/kernel/driver/emulator code
+read. Historical final/retail VBI stays null; dated PAM profiles separate. The
+Buchholz disassembly-derived article remains quarantined. No original-system
+operator/apparatus/role split/reference result; never relabel development policy
+measured retail. Generated binaries/reports remain ignored in existing build/.
 
-Review msg_d4a2 answered by Mars msg_001a / 1f411e5: accepts public declarations
-for an explicit development interface, proposed sb52-dev-cc65-v1, with the same
-consumer-interface-unmeasured label. No additional historical provenance needed
-merely to target them. Accepts digits0–9 =>50–59 as OUR original convention,
-20 title digits +two normal year digits, noFF bypass; metadata and little-endian
-entry must be CPU mapped. Requires original glyph/mode/color mapping. Planning
-budget accepted with no routing/alignment conflict; actual fit and32 stack bound
-unproved. Protocol prose gaps addressed; no assembly/GPL implementation reviewed.
+## Resume
 
-Concrete startup proposal1 is now docs/startup-brief.md: original limited
-cold-start-digits-v1, explicit reset/MMIO write list and order, A/X/Y/flags/SP,
-ZP/vector writes, no hidden RAM, fail-stop interrupts/invalid metadata, cold-only
-reset, original digit assets and per-scope independent diagnostic expectations.
-It leaves historical final/retail VBI unknown; ongoing services remain later work.
-New public chip-header exposure/hashes are recorded as CONSUMER-02 in sources.md.
-Scope/chip/reset/mapper review must precede runtime implementation/execution.
-
-New tools/cartridge_candidate.py implements strict 20+2 ASCII-digit metadata and
-little-endian entry encoding, plus complete unapproved 32 KiB original diagnostic
-layout around the existing26-byte capture. tests/test_cartridge_candidate.py adds
-eight independent tests; total43 methods pass directly and through CTest. No CPU
-execution, runtime service code, image provider, reference approval or pin change.
-Generate ignored build/entry-candidate artifacts per docs/testing.md; no default
-build target selects them. Nested capture descriptor keeps its fragment-only
-scope; enclosing candidate carries its own whole-image/layout-source identity.
-
-Concrete resume: obtain Mars review/corrections on req_6f74 for startup-brief.md
-proposal1 (prose only if implementation exposure is unwanted), then implement the
-approved bounded image, prove actual allocation/cycles/stack and request original
-diagnostic execution/integration through Mars. No reference-system execution:
-operator/apparatus/result ownership and role receipts remain absent. Do not poll,
-ack or reopen the incomplete main request. No need for more generic historical
-research merely to target the already accepted development declarations.
-
-Source PDFs/renders were isolated in /tmp, not committed or project dependencies:
-PAM package, MOS selected CPU manual, cc65 declarations and Atari service manual.
-The temporary pypdfium2/Pillow renderer is not needed by the offline build. CPU
-facts/provenance and precise source sections/hashes are in docs/sources.md.
+Deliver image/map/fit and prose execution packet to Mars on req_6f74. Independent
+chip/CPU execution, stall-inclusive timing, read/peek/DMA/pixel behavior and
+provider/reset/status/state acceptance are outstanding owner work. Ask for precise
+observer/provider sequencing; no extra historical-default research is needed for
+this approved authored scope. Do not expand ongoing services until their numeric
+behavior/allocation/independent fixtures are separately reviewed. Keep both repos'
+roadmaps/handoffs current, push coherent passing work and release lease.

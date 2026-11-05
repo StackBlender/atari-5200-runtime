@@ -7,21 +7,18 @@ for cartridge startup.
 
 ## Next
 
-Current slice: RUNTIME-004 bounded startup brief and complete original diagnostic
-candidate. [docs/startup-brief.md](docs/startup-brief.md) proposal1 specifies
-`cold-start-digits-v1` under the accepted `sb52-dev-cc65-v1` development interface:
-explicit original MMIO/order, RAM/vector/SP/flags, failure loops, digit assets,
-reset limits, cycle/stack targets and independent acceptance. It is pending Mars
-scope/chip/reset/mapper review on req_6f74; no runtime service code is authorized
-by the proposal itself. Historical final/retail VBI remains unknown/unselected.
+Mars msg_aa05 /7c290c4 approves bounded `cold-start-digits-v1` authoring with
+corrections, incorporated in startup-brief.md revision2. First authored module,
+original glyphs and actual allocation are now implemented;50 offline tests pass.
+Image2048, written1177 (147code+1024assets+6vectors),871 unwritten, margin250
+untouched. This proves bounded fit only, not future-service fit or execution.
 
-Original digit metadata encoder and complete unapproved 32 KiB diagnostic layout
-are implemented with eight independent tests (43 total). They do not execute a
-CPU, select a mapper, provide a runtime or approve reference/owner execution.
-Concrete next action: obtain Mars corrections/approval of this exact brief,
-then implement the bounded image, report actual fit/stack/cycles, and request
-Mars execution of the original diagnostic and provider integration. Continue
-independent tooling only while scope review is pending; do not poll Odin.
+Concrete next action: request Mars instruction-boundary observation/provider
+acceptance using docs/startup-proof.md. Static normal paths are1084/1091 NMOS
+base cycles,403/406 instructions; full4096-cycle gate INCLUDING refresh/RDY remains
+unproved and needs the owner's observer. Module contains no CPU emulator/traps.
+Provider/reset/status/state and independent read/peek/DMA/pixel execution remain
+Mars work. No release, reference execution, app pin or retail compatibility.
 
 1. **RUNTIME-002: approved startup and service evidence.** Build a per-service
    numeric ABI/evidence matrix from screened primary behavioral documentation
@@ -50,10 +47,11 @@ independent tooling only while scope review is pending; do not poll Odin.
    against the approved ABI. docs/allocation-plan.md/json now proposes a full
    2 KiB budget: 1024 asset + 768 code + 250 margin + 6 vectors; zero additional
    persistent RAM, a separately unproven stack allowance. Planning review accepted;
-   proposal1 is now in docs/startup-brief.md for scope review. Implement the
-   reviewed bounded startup scope, report actual
-   image fit and remaining allowances, then execute original diagnostics through
-   an integration owner. Stop on overflow for scope/architecture review.
+   corrected authoring scope is accepted and the first bounded image fits.
+   docs/startup-proof.md reports actual usage, static control flow/stack/base
+   cycles and independent fixture expectations. Next owner execution must include
+   refresh/RDY cycles and provider/reset/status/state acceptance. Stop on overflow
+   for scope/architecture review before any later service expansion.
 4. Add the supported runtime service classes: NMI/VBI/DLI, IRQ/BRK dispatch,
    clocks/timers, display shadows, analog/keypad/fire scanning and character data.
    Each needs evidence, independently expected fixtures and explicit unsupported
@@ -67,10 +65,19 @@ independent tooling only while scope review is pending; do not poll Odin.
 
 ## Landed
 
+- Mars authoring approval7c290c4 and corrections: Linear32K explicit load,
+  structured cold-only outcomes, physical input versus semantic reset, refresh
+  steals, CPU-pending NMI and normal chip pipelines retained. No provider approval.
+- RUNTIME-004 first authored image:94 startup +9 fault +44 helper bytes,1024
+  original glyph bytes and6 vectors. All budget ranges enforced, future-service
+  allowances/margin untouched. Seven new independent exact-byte/pixel/fit/opcode/
+  reproducibility tests bring total to50. Static reasoning is not CPU execution.
+
 - RUNTIME-004 proposal1 defines concrete original startup policy and diagnostic
   acceptance without relabeling unknown retail behavior. No startup implementation
-  or scope approval yet. Public cc65 chip-register declarations are separately
-  recorded as consumer-interface-unmeasured; hardware effects await Mars review.
+  at that stage. Authoring approval7c290c4 and the first emitted image above
+  supersede that pending scope review. Public declarations retain their
+  consumer-interface-unmeasured label.
 - Original digit metadata encoder and full unapproved diagnostic cartridge
   candidate: twenty title digits +two year digits, little-endian mapped entry,
   32 KiB layout with the original capture fragment and zero-fill holes. Eight

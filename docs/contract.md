@@ -1,13 +1,13 @@
 # Build tools and runtime boundary
 
-## Current deliverable
+## Original foundation deliverable
 
 RUNTIME-001 is an original Python emitter and an image-layout fixture. It has no
 CPU execution engine, Atari software ABI, runtime services or emulator dependency.
 Its output is tagged `purpose=emitter-layout-test-only`, `runtime_abi=null` and
 `capabilities=[]`. It is not the proposed sb5200-runtime-image provider.
 
-The explicit 29-entry instruction/address-mode subset is in tools/emitter.py.
+The explicit 37-entry instruction/address-mode subset is in tools/emitter.py.
 It emits only the requested mode: no inference, relaxation, undocumented opcode
 or CMOS extension. Implied, immediate, zero-page, absolute and relative modes
 have explicit operand rules. Relative displacement is measured from the byte
@@ -44,7 +44,7 @@ schema is a tool report, not a stable runtime descriptor ABI or release manifest
 
 ## Required runtime contract
 
-A supported runtime still needs an approved numeric software ABI/evidence matrix
+A broadly supported runtime still needs an approved numeric software ABI/evidence matrix
 for startup/cart entry, reset variants, RAM/shadows/vectors, NMI/VBI/DLI, IRQ/BRK,
 clocks, input scanning, POKEY interactions and original font encoding. For every
 claimed row: permitted source or probe ID, exact postcondition, independent
@@ -78,10 +78,23 @@ normalization, format rejection and inconclusive handling, not CPU execution.
 
 ## Proposed first development startup
 
-[Startup brief proposal1](startup-brief.md) makes original choices explicit for
+[Startup brief revision2](startup-brief.md) makes original choices explicit for
 `cold-start-digits-v1` under the accepted limited `sb52-dev-cc65-v1` layout. The
-proposal is pending Mars review; it is not a selected runtime ABI or usable image.
+authoring scope is approved by Mars7c290c4; provider/execution approval remains
+open. It is not a usable integrated replacement.
 The digit metadata encoder and enclosing 32 KiB original diagnostic candidate are
 tooling only. Their source is independent; generation does not approve a mapper,
 MMIO policy, runtime execution, original-system probe or firmware equivalence.
 No sb5200-runtime-image target exists. Final/retail VBI policy remains null.
+
+## First bounded module authoring approval
+
+Mars msg_aa05 /7c290c4 approves cold-start-digits-v1 with the corrections now in
+startup-brief.md revision2. tools/startup_image.py emits an actual2048-byte authored
+module and map, with independent expected-byte/pixel/fit tests. It is a separate
+artifact from layout-test.bin; no sb5200-runtime-image provider target yet.
+startup-proof.md records1177 written/871 remaining, static control-flow/stack and
+base-cycle reasoning. Full-cycle refresh/RDY timing and all independent execution/
+provider/reset/status/state gates remain open. The earlier fixture/evidence
+sections describe their respective deliverables; they do not override this scoped
+authoring approval or promote it to executed compatibility.

@@ -14,6 +14,10 @@ class AssemblyError(ValueError):
 # undocumented opcodes, timing model, text parser or branch relaxation.
 OPCODES = {
     ("SEI", "impl"): 0x78, ("CLD", "impl"): 0xD8,
+    ("CLC", "impl"): 0x18, ("CLV", "impl"): 0xB8,
+    ("CMP", "imm"): 0xC9, ("CPX", "imm"): 0xE0,
+    ("STA", "zpx"): 0x95, ("STA", "absx"): 0x9D,
+    ("LDA", "absx"): 0xBD, ("JMP", "ind"): 0x6C,
     ("TXS", "impl"): 0x9A, ("NOP", "impl"): 0xEA,
     ("RTI", "impl"): 0x40, ("RTS", "impl"): 0x60,
     ("INX", "impl"): 0xE8, ("DEX", "impl"): 0xCA,
@@ -46,8 +50,9 @@ def fixed_instruction(mnemonic, mode="impl", operand=None):
         if operand is not None:
             raise AssemblyError("implied instruction takes no operand")
         return bytes([OPCODES[key]])
-    value = integer(operand, 0, 65535 if mode == "abs" else 255, "operand")
-    if mode == "abs":
+    wide = mode in {"abs", "absx", "ind"}
+    value = integer(operand, 0, 65535 if wide else 255, "operand")
+    if wide:
         return bytes([OPCODES[key], value & 255, value >> 8])
     return bytes([OPCODES[key], value])
 

@@ -17,8 +17,8 @@ Or run the emitter suite directly:
 PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -v
 ```
 
-The CTest entry runs 43 Python test methods (17 image-emitter, four capture
-fragment, 14 scalar-record and eight cartridge-candidate tests). Independent expected instruction
+The CTest entry runs 50 Python test methods (17 image-emitter, four capture
+fragment, 14 scalar-record, eight cartridge-candidate and seven startup-image tests). Independent expected instruction
 bytes cover symbolic forward/backward resolution, little-endian addresses,
 branch limits -128/127 and rejection at -129/128. Negative cases cover overlap,
 allocation bounds, writes to reserved space, operand overflow, duplicate/undefined/
@@ -28,8 +28,8 @@ Fresh subprocesses emit identical image/report files in separate temporary paths
 `build/generated/layout-test.bin` is exactly 2048 bytes with ten written bytes;
 `layout-test.json` reports its hash, symbols and budget. This is a build-tool
 fixture with no runtime capabilities, not a usable BIOS replacement. Test reports
-establish encoding/layout/reproducibility only. No CPU execution, startup, hardware
-service, original-BIOS compatibility or game result is covered.
+establish encoding/layout/reproducibility only. No CPU execution, hardware
+service acceptance, original-BIOS compatibility or game result is covered.
 
 All generated files stay in ignored build directories or temporary test directories.
 The tests use original source and independent constants; no manufacturer program
@@ -81,3 +81,23 @@ cart-owned result bounds, negative CLI no-output and fresh-process determinism.
 No metadata decoding or machine execution is tested; scope/MMIO/mapper review
 and CPU/ANTIC observations belong to later owner acceptance. See
 [startup-brief.md](startup-brief.md) for exact proposed expectations and limits.
+
+## Authored bounded startup image
+
+Default offline build now also emits `build/generated/startup.bin` and
+`startup-map.json` via authored_startup, independently of the layout fixture.
+For an explicit standalone generation in the same build tree:
+
+```sh
+python3 tools/startup_image.py --output-dir build/startup
+```
+
+Seven new tests compare all94 reset and44 helper bytes against independent NMOS
+constants, branch offsets/labels, three fault loops and CPU vectors, all80 original
+digit bytes and every blank glyph, exact allocation/FF future reserves/margin,
+eight new opcode encodings/bounds and fresh-process image/map reproducibility.
+The image's accepted capability list remains empty pending independent execution;
+authored_capabilities distinguishes implemented source scope. See
+[startup-proof.md](startup-proof.md) for static stack/base-cycle derivation and
+Mars instruction-boundary/full-cycle acceptance requirements. No own CPU engine
+or host service emulation was introduced to make the tests pass.

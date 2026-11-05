@@ -8,12 +8,12 @@ StackBlender is building this to completion and sharing it freely as a goodwill
 gesture to the emulation community. The runtime is intended to be useful beyond
 StackBlender's apps. No community contribution is needed to complete the work.
 
-**Development started:** the repository contains an original bounded 6502 emitter,
-an offline build, an original register-capture fragment, a digit-metadata encoder
-and a complete unapproved diagnostic layout, with 43 tool-contract tests.
-The generated layout fixture has
-zero runtime capabilities. Cartridge startup and runtime services are not yet
-implemented; no compatibility is claimed.
+**First bounded startup authored:** an original 2 KiB image now implements the
+approved development-only cold-start/digit-metadata scope and original digit
+assets. It fits with 871 bytes unwritten, including the untouched 250-byte margin.
+Fifty offline tool/image tests pass. Independent CPU/chip execution, full-cycle
+timing, provider integration and cartridge compatibility are still unverified.
+Ongoing interrupts, inputs, clocks and display-shadow services remain future work.
 
 ## Intended design
 
@@ -84,7 +84,10 @@ The build generates an original 2 KiB **tool fixture**, `build/generated/layout-
 and its JSON allocation/hash report. Four instruction bytes and six vector bytes
 are written; 2038 bytes remain unused. This demonstrates emitter layout only,
 with no claim that the eventual runtime and font fit or work. It must not be
-selected as a BIOS replacement.
+selected as a BIOS replacement. The build also emits the separately named
+`build/generated/startup.bin` and `startup-map.json` for the authored bounded
+scope. See [fit/execution packet](docs/startup-proof.md); that artifact is awaiting
+independent acceptance and has no provider target/release.
 
 [Diagnostic protocol](docs/entry-observation-protocol.md),
 [testing](docs/testing.md), [contract](docs/contract.md) and

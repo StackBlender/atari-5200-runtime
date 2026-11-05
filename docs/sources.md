@@ -128,3 +128,23 @@ year26, entry8000/result3000, register/default/stop policy and seven-segment pix
 coordinates are our design, not measurements. No font bitmap was consulted.
 The per-service evidence table above remains historical-gap tracking; accepted
 scoped declarations and proposed startup policy do not fill retail/measured cells.
+
+## First bounded module source receipt
+
+Mars approval msg_aa05 /7c290c4 supplies integration-specific qualifications in
+startup-brief.md revision2, not retail observations. The original startup program,
+seven-segment glyph coordinate composition and independent expected bytes are
+authored here. No new foreign implementation or firmware was read.
+
+CPU-02 extension: selected Synertek1976 manufacturer-manual transcription,
+chapter3.6.1 CLV, chapter6.1/6.2 indexed addressing, chapter8.8 TXS, appendixB
+CLC/CLV/CMP/CPX/JMP/JSR/LDA/RTS/STA entries and appendixC timing table were
+consulted for the eight added encodings and static CPU-cycle argument. Other
+nearby manufacturer examples were visible, not copied. Preserve known transcription
+defects (TXS encoding/flags row, CLV operation summary, shifted CPX summary row);
+use the explicit instruction section/encoding table and prior primary CPU scan,
+not a mistaken summary. This is NMOS CPU evidence, not chip-stall timing.
+The added CLC18/CLVB8/CMPimmC9/CPXimmE0/STAzpX95/STAabsX9D/LDAabsXBD/JMPind6C
+are factual encodings, independently asserted in tests. No new opcode timing
+engine or third-party test corpus was imported. Refresh/RDY acceptance is owned
+by Mars; the1091-cycle worst valid base path excludes stalls explicitly.
