@@ -245,3 +245,14 @@ message preceded retrieval. No new encodings or global opcode changes. Callback
 slots0200/020E come from CONSUMER-01 declarations; our ABI/policy is original, not
 Atari firmware behavior. No manufacturer example, Atari BIOS/disassembly/kernel,
 foreign emulator implementation/test or instruction trace imported/read here.
+
+
+## R70 keypad interpretation correction
+
+Mars msg_8edd source-screen prose (local docs/a52-keyboard-source-review.md,
+push repair pending) reports Atari POKEY CHIP Rev3 sheet10 scan/compare and
+forced-compare behavior. It supersedes our earlier06 defect interpretation;
+diagnostic observations remain. Runtime author read only that prose, not the
+primary PDF, chip code/tests, foreign emulator sources or quarantined article.
+Primary5200 wiring remains unverified; selected evidence path recorded in roadmap.
+No chip correction/functional policy/firmware event service approved by this note.

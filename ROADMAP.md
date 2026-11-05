@@ -7,6 +7,36 @@ for cartridge startup.
 
 ## Next
 
+## Keypad evidence correction and selected next action
+
+Mars msg_8edd/R70 source screening supersedes the earlier defect attribution,
+not the120-case diagnostic observations. Reviewed ONLY local prose
+Mars docs/a52-keyboard-source-review.md; its GitHub push repair is pending, so
+no pushed source-review commit is claimed. No runtime image/schema changed.
+
+Owner's screened Atari POKEY CHIP Rev3 sheet10 keyboard prose describes compare
+qualification, with compare forced true when debounce is disabled. Therefore06
+repeated captures/down pulses alone do NOT establish a hardware defect; our prior
+one-event-per-held-key CHIP acceptance for06 is withdrawn.03 still needs primary
+5200 external scan wiring/timing evidence to decide chip vs mapping behavior.
+Neither mode currently supplies an accepted runtime press/hold/release service.
+
+Decision sent on req_72f0: pursue the preferred primary5200 wiring evidence path,
+retain documented06 behavior, reassess03 against documented qualification. A
+reliable original runtime event policy remains module-owned and must be explicit;
+no named opt-in chip functional deviation is selected. If evidence unavailable,
+record the precise remaining fact before choosing a different reviewed policy.
+No silent06 workaround or claim of measured hardware correctness. User's speed/
+battery priority remains, without treating raw scanner pulses as application events.
+
+An incidental disassembly-derived historical magazine lead and foreign emulator
+materials were excluded by the owner. Runtime author read no implementation,
+firmware, derived constants or source scan; this is attributed prose-only evidence.
+Accepted analog03 source/defaults/flags and IRQ/POT/KR2 semantics unchanged.
+Full R62 and req_72f0 remain open; next primary wiring/03 review, then original
+keypad/fire service contract. Existing IRQ/BRK candidate execution is independent.
+
+
 
 ## Committed IRQ/BRK export receipt
 
