@@ -224,3 +224,13 @@ Trak-Ball cached startup behavior, pending/CRITIC ordering and fit/state tests.
 Only prose review read; no implementation/test exposure. Existing factual opcode
 subset reused without additions. New original runtime bytes/fixtures/manifest
 are authored here; no firmware/reference or historical scan behavior claimed.
+
+
+## Keypad contract diagnostic boundary
+
+Read only Mars docs/a52-keyboard-contract-review.md at assessment19b9eb69,
+not its chip implementation or tests. This independently authored CPU/Node
+behavioral assessment reproduces contact-stabilization/held-event faults under
+03/06. It supplies no permitted primary hardware debounce timing or historical
+BIOS behavior; formal req_72f0 owns that evidence/correction review. No firmware,
+foreign kernel/emulator/test or instruction-trace exposure; analog03 unchanged.

@@ -7,6 +7,39 @@ for cartridge startup.
 
 ## Next
 
+## Next keypad service: hardware-interface dependency
+
+Mars msg_7fe6 /19b9eb69a4b8e6efaafe4a3eff2faeea5805e1a8 supplies prose-only
+assessment. Independent original CPU/Node probes reproduce120 cases (15 keys x4
+ports x03/06), plus reset/selector/IRQ/KR2/hold/release behavior, in Release and
+nonunity ASan. Passing diagnostics means the limitations reproduce, not that
+keypad delivery is accepted. No chip implementation/tests read here.
+
+03 fails stable-contact capture after correct reset/selection and16-frame hold;
+not an IRQ acknowledgment/read/extra-wait prerequisite.06 captures but held
+input alternates down/released and rescans request IRQ/overrun without a new
+physical press.06 is NOT an approved workaround. Leave accepted analog image03
+and all source pins/defaults/false flags unchanged.
+
+KBCODE retains old code/modifiers after release/port changes; neither FF nor
+nonFF alone proves fresh validity. Reads of KBCODE/SKSTAT/IRQST do not ack.
+Clearing keyboard bit40 in IRQEN acknowledges/disables; repeating enabled40 does
+not. SKREST clears errors separately, not pending IRQ/code. KR2 selected Top Fire
+and Bottom Fire remain distinct. CPU I masks entry, not acquisition. Probe settle
+29184 machine cycles per transition and06 observed3590-cycle capture maximum
+are diagnostic budgets/measurements, not hardware timing specifications.03 has
+no demonstrated finite remedy. Retain this distinction for future service ABI.
+
+Formal Mars req_72f0 owns one concrete dependency: permitted primary debounce/
+phase/timing evidence and contact stabilization+held/release qualification across
+03/06, with replay/compatibility and all previous runtime/controller regressions.
+Evidence gaps must remain explicit; no firmware-derived constants, silent fast
+mode workaround or guessed hardware-accuracy claim. Full R62 req_6f74 remains
+open for runtime keypad/fire/IRQ/timers/reset and product/reference completion.
+Next receive the reviewed behavioral correction contract before keypad authoring;
+no new runtime code or emission changes in this receipt.
+
+
 ## Independent analog acceptance and keypad limitation
 
 Mars msg_1cd6 /33967abf09dfef07d163f3a14d43502f699ec9cc accepts exact source/
