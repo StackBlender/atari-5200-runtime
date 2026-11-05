@@ -15,6 +15,21 @@ Documentation validation: JSON parsed, field layout/ranges checked, local links
 and staged diff whitespace checked. Existing emitter acceptance remains 17 tests.
 No firmware, copied manual text/scans, assets, manufacturer source or games in Git.
 
+## Integration review receipt
+
+Mars accepted the dated primary rows in msg_7eb0 / req_6f74, review commit
+739cc71932e6bda4987ee14b08eeba49223a5975. No integration conflict found;
+this is not provider approval. Separate documentary revision profiles now appear
+in startup-evidence.md/json; final_retail_vbi_policy remains null because March's
+back-reference does not reconcile October and January. VBI-01 is January-only.
+Metadata must use CPU cart mapping; software dispatch saves do not replace the
+hardware frame; boot prose requires writable-register/order/alias/default review.
+ENTRY-01 execution remains gated on operator, safe result area, correction rules
+and role protocol. No runtime code, generated artifact or consumer pin changed.
+Validation for this receipt: JSON structure/profile-selection assertions, local
+Markdown links and diff whitespace. Existing 17-test emitter result is unchanged;
+no CPU/firmware execution or new measurements claimed.
+
 ## Research receipt
 
 Primary archive URL:
@@ -36,8 +51,10 @@ These facts are documentary and retail-unmeasured; no firmware equivalence claim
 
 Continue RUNTIME-002: obtain screened primary software-interface declarations
 for exact per-symbol vector/shadow addresses and metadata encoding, and define
-cold/warm/key reset separately. Get Mars review of the documentary scope before
-corresponding runtime services. ENTRY-01 needs lawful operator/access and reviewed
+cold/warm/key reset separately. Reconcile VBI revision applicability with further
+primary/approved observational evidence before selecting a final/retail policy;
+Mars has accepted the dated facts only, not a complete implementation scope.
+ENTRY-01 needs lawful operator/access and reviewed
 cart-owned result area, instrumentation semantics, and observer/implementer
 handoff. No hardware/oracle is established; do not manufacture expected results.
 

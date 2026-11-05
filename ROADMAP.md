@@ -14,9 +14,10 @@ for cartridge startup.
    Preserve unknowns; do not implement a guessed jump-to-cart or software defaults.
    Primary PAM documentation now supplies cartridge-area/entry and RAM reservation
    rows with revision history. Next obtain exact software vector/shadow declarations,
-   metadata encoding and entry/reset postconditions; request integration review
-   of the documentary profile. Source NMOS CPU semantics separately from Atari
-   software. No blanket service-implementation approval follows.
+   metadata encoding and entry/reset postconditions. Integration review accepts
+   dated documentary facts; reconcile October/January VBI rules before selecting
+   final/retail behavior. March's back-reference does not settle that policy.
+   Source NMOS CPU semantics separately from Atari software. No blanket service-implementation approval follows.
 2. **RUNTIME-003: original probe/observation protocol.** Define a small scalar
    trace schema and independently authored diagnostic source. Record reset/input
    sequence, console revision, source hash, measurement units and uncertainty.
@@ -39,6 +40,12 @@ for cartridge startup.
    Resolve discrepancies through completion; publish only supported claims.
 
 ## Landed
+
+- RUNTIME-002 integration review: dated documentary rows accepted; separate
+  October partial, January VBI revision and March final-memo evidence profiles.
+  Final/retail VBI policy remains null. Metadata uses CPU mapping, software saves
+  retain the hardware interrupt frame, and boot prose does not authorize an MMIO
+  sweep. ENTRY-01 still requires protocol review before execution.
 
 - RUNTIME-002 documentary research: located and screened original Atari PAM
   memoranda. startup-evidence.md/json records factual rows, provenance/hash,

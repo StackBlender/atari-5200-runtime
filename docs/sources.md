@@ -65,7 +65,9 @@ Buchholz article; do not backfill missing constants from that article.
 
 The March final memo changes zero-page reservation from the October interim
 range. The January revision changes the VBI critical-section rule. Preserve both
-source dates; the final memo is documentary evidence, not proof of every shipped
+source dates; March's back-reference does not reconcile the competing VBI rules.
+Keep final/retail policy unresolved pending primary or approved observational
+evidence. The final memo is documentary evidence, not proof of every shipped
 board/firmware revision. The trackball memo's printed year is 1981 amid 1982
 material; it is not used for startup constants. No original-system observation
 or actor-role separation is claimed. Reference PDFs/screenshots stay outside Git.

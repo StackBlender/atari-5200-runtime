@@ -26,9 +26,39 @@ not a BIOS source listing. Store factual requirements, not scanned pages, here.
 | BOOT-01 | Monitor clears zero-page and hardware; SDMCTL, PRIOR, CHBASE, SKCTL, NMIEN receive unspecified nonzero values. | 4, October 30 |
 
 The October description identifies itself as interim. January revises VBI policy;
-March's final memo confirms the description with the smaller zero-page range.
-Treat that history explicitly rather than applying October unchanged. No RAM,
+March's final memo refers back to the partial description and narrows the
+zero-page range. That back-reference does not resolve whether October or January
+VBI policy applies to a final/retail revision. Keep the dated evidence separate;
+no combined final/retail interrupt policy is selected. No RAM,
 register, vector or timing row here has original-system measurements.
+
+## Dated documentary profiles and integration review
+
+These are evidence groupings, not selectable runtime providers:
+
+| Evidence profile | VBI policy scope | Final/retail selection |
+| --- | --- | --- |
+| pam-1981-10-30-partial | October interim I-bit participation only | Unselected |
+| pam-1982-01-18-vbi-revision | VBI-01 applies to this dated revision only | Unselected |
+| pam-1982-03-18-final-memo | Smaller ZP reservation documented; VBI reconciliation unresolved | Unselected |
+
+The machine target remains NTSC four-port; that target does not identify a shipped
+firmware revision. Further primary evidence or approved original observations
+must reconcile the VBI policies before choosing a final/retail behavior.
+
+Integration review on 2026-11-05 accepts the dated documentary rows, with these
+qualifications:
+
+- CART-01 addresses are CPU-mapped cartridge addresses. Read metadata through
+  the emulated bus; do not infer arbitrary physical-file tail offsets or jump
+  the host CPU directly to cartridge entry.
+- NMI-01/IRQ-01 describe software saves. The CPU's automatic interrupt frame
+  remains required; absence of A/X/Y saves does not remove that frame.
+- BOOT-01 is broad prose, not a numeric MMIO initialization sequence. Writable
+  effects, order, aliases and unresolved shadow/default values need review.
+- ENTRY-01 is suitable for further protocol review, not execution approval.
+  Operator, result-area ownership, measurement corrections and role separation
+  remain prerequisites. Full asset/allocation/provider evidence remains open.
 
 ## Unresolved startup contract
 

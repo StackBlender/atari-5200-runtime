@@ -1,4 +1,25 @@
 {
+  "documentary_revision_profiles": [
+    {
+      "id": "pam-1981-10-30-partial",
+      "runtime_selected": false,
+      "source": "PAM-01",
+      "vbi_policy_scope": "October interim I-bit participation only"
+    },
+    {
+      "id": "pam-1982-01-18-vbi-revision",
+      "runtime_selected": false,
+      "source": "PAM-02",
+      "vbi_policy_scope": "VBI-01: clock first, then CRITIC; no processor I-bit participation"
+    },
+    {
+      "id": "pam-1982-03-18-final-memo",
+      "runtime_selected": false,
+      "source": "PAM-03",
+      "vbi_policy_scope": null
+    }
+  ],
+  "final_retail_vbi_policy": null,
   "profile": "ntsc-four-port-documentary-review",
   "reference_operator": null,
   "review_date": "2026-11-05",
