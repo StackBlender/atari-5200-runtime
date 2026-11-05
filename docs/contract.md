@@ -7,7 +7,7 @@ CPU execution engine, Atari software ABI, runtime services or emulator dependenc
 Its output is tagged `purpose=emitter-layout-test-only`, `runtime_abi=null` and
 `capabilities=[]`. It is not the proposed sb5200-runtime-image provider.
 
-The explicit 25-entry instruction/address-mode subset is in tools/emitter.py.
+The explicit 29-entry instruction/address-mode subset is in tools/emitter.py.
 It emits only the requested mode: no inference, relaxation, undocumented opcode
 or CMOS extension. Implied, immediate, zero-page, absolute and relative modes
 have explicit operand rules. Relative displacement is measured from the byte
@@ -64,3 +64,14 @@ fabricates a BIOS pak or falls back silently. CPU reads, debugger peeks and ANTI
 DMA must agree. Replacement states bind immutable profile/version/image identity
 and refuse mismatches before mutation; raw replacement stacks are unsupported.
 These interfaces and save layouts are proposals for future integration review.
+
+## Diagnostic tooling
+
+[ENTRY-01 protocol](entry-observation-protocol.md) specifies an original 26-byte
+capture fragment and bounded scalar-record validator. `fixed_instruction` shares
+the emitter's fixed numerical-operand encodings; symbols remain the image
+emitter's responsibility. Four entries added: absolute STX/STY, implied PHP/TSX.
+The fragment is not a complete cartridge, runtime image or execution approval.
+Its configurable result area and stack use require review; no metadata encoder
+or MMIO defaults are invented. Synthetic tests establish byte layout, identity,
+normalization, format rejection and inconclusive handling, not CPU execution.

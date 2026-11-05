@@ -10,6 +10,7 @@ GPL licensing this project does not turn copied implementation into original wor
 | ID | Source / revision | Exact role | Confidence / limits |
 | --- | --- | --- | --- |
 | CPU-01 | Western Design Center W65C02S datasheet, April 8 2022, section 4, table 3-1 (page 12) and table 5-2 (page 22), [official PDF](https://www.westerndesigncenter.com/wdc/documentation/w65c02s.pdf), reviewed 2026-11-05 | Published common instruction/address encoding and CPU-vector locations for the tool fixture; no CMOS additions emitted | Documentary CPU encoding, not NMOS timing or Atari software behavior. Validate expanded NMOS semantics with a dedicated processor source before runtime execution claims. |
+| CPU-02 | MOS Technology MCS6500 Programming Manual, January 1976 second edition (6500-50A), sections 7.2/7.3 (printed 97, PDF 111), 8.5/8.6 (117/118, PDF 132/133), 8.9/8.11 (122, PDF 137); [primary scan mirror](https://ftpmirror.your.org/pub/misc/bitsavers/pdf/mosTechnology/6500-50A_MCS6500pgmManJan76.pdf), SHA-256 `a7b2ffce0ed8c876f36b78a9cabae951dc6183224d2d44d82de510ed313b6a1a` | Selected NMOS store, stack and transfer semantics for original ENTRY-01 capture plan; original instruction composition, not manual examples | Visually reviewed primary pages; no Atari reset constants or measured execution. Synertek August 1976 [transcription](https://syncopate.us/books/Synertek6502ProgrammingManual.html), sections 7.2/7.3, 8.9/8.11 and appendix B-20/21/26/29, also consulted for the four added encodings; do not rely on its unrelated TXS table typo. |
 | INT-01 | StackBlender Mars owner integration proposal, reviewed 2026-11-04 | Original program in F800–FFFF, 2 KiB limit, explicit provider and strict identity-bound saves | Integration proposal, not firmware behavior or an original-system measurement. No Mars source copied into this repo. |
 | PAM-01/02/03 | Atari / Rob Zdybel, PAM Package: October 30 1981 partial description (PDF 3–5), January 18 1982 revision (17), March 18 1982 final (24); [primary scans](https://atarimuseum.ctrl-alt-rees.com/ahs_archives/archives/pdf/videogames/5200/pam_package.pdf), reviewed 2026-11-05 | Documentary cartridge-area, reservation and interrupt/VBI contracts; chronology matters | Documentary and retail-unmeasured, not a firmware listing; exact rows/gaps in [startup-evidence.md](startup-evidence.md), numeric records in [startup-evidence.json](startup-evidence.json). |
 | OWN-01 | StackBlender's author-selected fixture | Tool layout, loop/return fixture, FF padding, JSON format | Proposed tool-test policy, not Atari software behavior. |
@@ -71,3 +72,19 @@ evidence. The final memo is documentary evidence, not proof of every shipped
 board/firmware revision. The trackball memo's printed year is 1981 amid 1982
 material; it is not used for startup constants. No original-system observation
 or actor-role separation is claimed. Reference PDFs/screenshots stay outside Git.
+
+## RUNTIME-003 research receipt
+
+The separate Atari 5200 memo packet,
+https://atarimuseum.ctrl-alt-rees.com/ahs_archives/archives/pdf/videogames/5200/5200_memos.pdf,
+was screened as a low-resolution 15-page layout index. It appears to concern
+product/market planning, not the missing software-interface declarations. No
+constants were adopted or implementation pages read from it. Broad search also
+returned a mirror of the quarantined porting article; search snippets were seen
+but not used for ABI values. Primary ABI gaps remain explicit.
+
+The CPU manual scan was temporarily rendered at selected pages only; adjacent
+manufacturer CPU examples visible there were not copied into the probe. The
+probe sequence, six-slot layout, A5 marker and CF status mask are original
+diagnostic policy. No original-system execution, hardware ownership approval,
+Atari firmware or external implementation was used for its tests.

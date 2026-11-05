@@ -113,3 +113,8 @@ Send the CART/RAM/interrupt documentary rows and their gaps to the integration
 owner for review. A future service-capable provider needs the supported ABI,
 reset contract, original asset/allocation map and noncircular execution fixtures.
 This research document alone does not enable the 5200 or change the core pin.
+
+The original capture fragment and bounded record format are now specified in
+[ENTRY-01 protocol](entry-observation-protocol.md). This advances protocol tooling
+only; result-area/operator/role/metadata/interrupt-window review still precedes
+a complete cartridge and any reference execution.

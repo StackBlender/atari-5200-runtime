@@ -7,6 +7,14 @@ for cartridge startup.
 
 ## Next
 
+Owner-authorized batch (2026-11-05): RUNTIME-002 primary-source screening and
+NMOS capture semantics, then RUNTIME-003 a versioned scalar observation protocol,
+offline fail-closed validator and original capture-plan source. Acceptance:
+independent malformed/identity/bounds/correction tests; synthetic fixtures clearly
+marked; no reference execution or service claims. Draft a RUNTIME-004 allocation
+and documentary startup scope for integration review if the evidence supports it.
+Record each slice and push passing work before proceeding.
+
 1. **RUNTIME-002: approved startup and service evidence.** Build a per-service
    numeric ABI/evidence matrix from screened primary behavioral documentation
    and lawful original-system observations. Start with cartridge metadata/entry,
@@ -18,9 +26,10 @@ for cartridge startup.
    dated documentary facts; reconcile October/January VBI rules before selecting
    final/retail behavior. March's back-reference does not settle that policy.
    Source NMOS CPU semantics separately from Atari software. No blanket service-implementation approval follows.
-2. **RUNTIME-003: original probe/observation protocol.** Define a small scalar
-   trace schema and independently authored diagnostic source. Record reset/input
-   sequence, console revision, source hash, measurement units and uncertainty.
+2. **RUNTIME-003: approve and pilot the original probe protocol.** The 26-byte
+   capture fragment, scalar record contract and offline validator are implemented
+   with 35 passing tests. Next review result ownership, metadata/mapper layout,
+   interrupt window, readout, correction rules and named observer/reviewer roles.
    Identify actual reference access; none is available yet. No ROM/font/whole
    RAM or stack dumps, instruction traces or captured boot artwork.
 3. **RUNTIME-004: real allocation and first supported startup.** Review original
@@ -40,6 +49,14 @@ for cartridge startup.
    Resolve discrepancies through completion; publish only supported claims.
 
 ## Landed
+
+- RUNTIME-003 tooling: original 26-byte A/X/Y/status/SP capture fragment,
+  deterministic source/encoder/fragment descriptor, draft role/operator protocol
+  and strict bounded scalar-record validator. Rejects malformed/dump-shaped data
+  and stale probe identities; preserves synthetic labels and inconclusive results.
+  Thirty-five offline tests and CMake/CTest pass. Four factual opcode entries
+  added after selected manufacturer CPU semantics review. No complete cartridge,
+  metadata encoder, original execution or service implementation is implied.
 
 - RUNTIME-002 integration review: dated documentary rows accepted; separate
   October partial, January VBI revision and March final-memo evidence profiles.

@@ -9,7 +9,8 @@ gesture to the emulation community. The runtime is intended to be useful beyond
 StackBlender's apps. No community contribution is needed to complete the work.
 
 **Development started:** the repository contains an original bounded 6502 emitter,
-an offline build and 17 tool-contract tests. The generated layout fixture has
+an offline build, an original register-capture fragment and 35 tool-contract
+tests. The generated layout fixture has
 zero runtime capabilities. Cartridge startup and runtime services are not yet
 implemented; no compatibility is claimed.
 
@@ -82,7 +83,8 @@ are written; 2038 bytes remain unused. This demonstrates emitter layout only,
 with no claim that the eventual runtime and font fit or work. It must not be
 selected as a BIOS replacement.
 
-[Testing](docs/testing.md), [contract](docs/contract.md) and
+[Diagnostic protocol](docs/entry-observation-protocol.md),
+[testing](docs/testing.md), [contract](docs/contract.md) and
 [source/evidence ledger](docs/sources.md) describe the checks and remaining work.
 
 ## License

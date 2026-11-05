@@ -18,6 +18,8 @@ OPCODES = {
     ("RTI", "impl"): 0x40, ("RTS", "impl"): 0x60,
     ("INX", "impl"): 0xE8, ("DEX", "impl"): 0xCA,
     ("PHA", "impl"): 0x48, ("PLA", "impl"): 0x68,
+    ("PHP", "impl"): 0x08, ("TSX", "impl"): 0xBA,
+    ("STX", "abs"): 0x8E, ("STY", "abs"): 0x8C,
     ("LDA", "imm"): 0xA9, ("LDX", "imm"): 0xA2,
     ("LDY", "imm"): 0xA0,
     ("LDA", "zp"): 0xA5, ("STA", "zp"): 0x85,
@@ -33,6 +35,21 @@ def integer(value, low, high, description):
     if type(value) is not int or not low <= value <= high:
         raise AssemblyError(f"{description} must be an integer in {low}..{high}")
     return value
+
+
+def fixed_instruction(mnemonic, mode="impl", operand=None):
+    """Encode one fixed-address instruction; no symbols or relative guesses."""
+    key = (mnemonic, mode)
+    if key not in OPCODES or mode == "rel":
+        raise AssemblyError("unsupported fixed instruction/address mode")
+    if mode == "impl":
+        if operand is not None:
+            raise AssemblyError("implied instruction takes no operand")
+        return bytes([OPCODES[key]])
+    value = integer(operand, 0, 65535 if mode == "abs" else 255, "operand")
+    if mode == "abs":
+        return bytes([OPCODES[key], value & 255, value >> 8])
+    return bytes([OPCODES[key], value])
 
 
 @dataclass(frozen=True)
@@ -111,22 +128,14 @@ class Image:
         key = (mnemonic, mode)
         if key not in OPCODES:
             raise AssemblyError("unsupported instruction/address mode")
-        if mode == "impl":
-            if operand is not None:
-                raise AssemblyError("implied instruction takes no operand")
-            encoded = [OPCODES[key]]
-        elif mode in {"imm", "zp"}:
-            encoded = [OPCODES[key], integer(operand, 0, 255, "operand")]
-        elif mode == "abs":
-            if isinstance(operand, str) and operand:
-                encoded = [OPCODES[key], 0, 0]
-            else:
-                value = integer(operand, 0, 65535, "operand")
-                encoded = [OPCODES[key], value & 255, value >> 8]
-        else:
+        if mode == "rel":
             if not isinstance(operand, str) or not operand:
                 raise AssemblyError("relative branch requires a label")
-            encoded = [OPCODES[key], 0]
+            encoded = bytes([OPCODES[key], 0])
+        elif mode == "abs" and isinstance(operand, str) and operand:
+            encoded = fixed_instruction(mnemonic, mode, 0)
+        else:
+            encoded = fixed_instruction(mnemonic, mode, operand)
         start = self.pc
         self._write(encoded, {"code"})
         self.instructions.add(start)

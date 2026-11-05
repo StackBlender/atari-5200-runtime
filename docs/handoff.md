@@ -1,5 +1,27 @@
 # Runtime handoff
 
+## Active batch / resume
+
+Owner authorized a large RUNTIME-002/003/004 batch on 2026-11-05. First slice:
+original ENTRY-01 tooling, protocol and selected primary NMOS semantics. New
+files: tools/entry_probe.py, tools/observations.py, tests/test_entry_probe.py,
+tests/test_observations.py, docs/entry-observation-protocol.md. emitter.py adds
+fixed_instruction and four encodings (29 total); its original layout output is
+unchanged. README, contract, sources, startup evidence, testing and roadmap updated.
+
+Validation: direct unittest discovery passes all 35 methods; CMake configure,
+build and CTest pass. A first run exposed missing JSON depth enforcement, now
+bounded explicitly; invalid UTF-8, duplicate/non-finite keys, stale identities,
+unknown fields/dump attempts and reset/readout order covered. Synthetic inputs
+only. No CPU, complete cartridge, original firmware or service executed. Probe
+stack/result ownership and metadata/operator/role review remain open.
+
+Continue the same batch: inspect permissive public compiler ABI declarations as
+consumer-interface evidence only, keeping them distinct from Atari primary facts
+and measured compatibility. Then draft an original allocation budget and request
+Mars review of the new evidence/protocol/scope. No runtime policy is selected or
+provider enabled. Acquire the runtime lease for edits; push each passing slice.
+
 ## Current slice
 
 RUNTIME-002 documentary startup research is committed/pushed with this handoff.

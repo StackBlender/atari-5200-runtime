@@ -17,7 +17,8 @@ Or run the emitter suite directly:
 PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -v
 ```
 
-The one CTest entry runs 17 Python test methods. Independent expected instruction
+The CTest entry runs 35 Python test methods (17 image-emitter, four capture
+fragment and 14 scalar-record tests). Independent expected instruction
 bytes cover symbolic forward/backward resolution, little-endian addresses,
 branch limits -128/127 and rejection at -129/128. Negative cases cover overlap,
 allocation bounds, writes to reserved space, operand overflow, duplicate/undefined/
@@ -34,3 +35,27 @@ All generated files stay in ignored build directories or temporary test director
 The tests use original source and independent constants; no manufacturer program
 is downloaded or used as an expected binary. New service claims require separate
 permitted documentary or original-system evidence and independently expected probes.
+
+## ENTRY-01 tooling
+
+Generate a **non-runnable fragment** in the existing build tree using synthetic
+example addresses (neither address is an approved result-area allocation):
+
+```sh
+python3 tools/entry_probe.py --entry-address 0x8000 --result-start 0x3000 --output-dir build/entry-probe
+python3 tools/observations.py tests/local/entry-record.json
+```
+
+The second command needs an explicitly authored record following
+[the protocol](entry-observation-protocol.md); there is no collected reference
+record shipped in this repo. It prints a format report, not firmware approval.
+Do not run the fragment as a cartridge. No CMake target installs/selects it.
+
+Tests independently assert all 26 fragment bytes, result offsets, relocation and
+address boundaries, stable fresh-process descriptor/image output and the one-byte
+stack allowance. Record tests exercise bytes/types, missing/extra fields, dump
+attempts, duplicate JSON keys, size/depth/non-finite rejection, artifact identities,
+synthetic/reference separation, receipt requirements, unique trials, reset/input
+semantics, observation order, status-bit masking and inconclusive results. CLI
+rejection is exit 2 with no partial success report; local diagnostic size/hash
+checking is tested with synthetic data. No test runs a CPU or original firmware.
