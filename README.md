@@ -146,3 +146,9 @@ A separate original [IRQ/BRK candidate](docs/irq-brk-proof.md) routes CPU
 interrupts to cartridge callbacks with stack-wrap handling. Offline tests pass;
 independent execution remains pending. Device-source acknowledgment and all
 remaining keypad/fire/timer/reset services are separate unfinished work.
+
+
+The original [timer-dispatch candidate](docs/timer-dispatch-proof.md) adds three
+POKEY timer callbacks and moves vector initialization into a shared helper to
+leave room in startup. Offline checks pass; real timer/source/RTI/state acceptance
+is pending. No timer rates or interrupts are automatically enabled.

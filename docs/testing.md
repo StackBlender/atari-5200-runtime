@@ -161,3 +161,12 @@ tools/export_irq_candidate.py requires committed source. Opt-in target
 sb5200-irq-brk-image and SB5200_IRQ_SOURCE_REVISION are documented in
 irq-brk-proof.md. Static stack arithmetic covers all256 positions, not CPU
 execution; actual IRQ/BRK/status/RTI/replay acceptance belongs to Mars.
+
+
+## Timer dispatch candidate
+
+Nine methods bring total104. tools/timer_dispatch_image.py emits ignored
+image/map; pinned export tools/export_timer_candidate.py and opt-in target
+sb5200-timer-dispatch-image documented in timer-dispatch-proof.md. Exact byte/
+branch/mask-write/fit/helper/static checks do not run CPU timers or prove IRQ
+source handling, callback RTI, priority or synchronized process replay.

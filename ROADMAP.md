@@ -8,6 +8,32 @@ for cartridge startup.
 ## Next
 
 
+## Current timer dispatch authored slice
+
+Separate original timer-dispatch-v1 atop pending IRQ42762a7, scope Mars
+req_6f74/msg_0296. tools/timer_dispatch_image.py/export_timer_candidate.py,
+cmake/timer-dispatch-candidate.cmake, tests/test_timer_dispatch_image.py,
+docs/timer-dispatch-{brief,proof}.md. Image SHA
+eae07d3610237c96d3cdf11959680eb25ed59dd6083c0de59d4c999188057550,
+1504/2048used,544free incl250margin. system_timerFE00..FE4F80bytes, single
+IRQST snapshot+POKMSK, priority1/2/4, two maskwrites thenvectorcallbackJMPexit.
+Startup helperFEDC31bytes sets0200FE00 plusoldVBIdefaults; startup110/128
+(18free), JSRhelperFC50/returnFC52 andmetadataFC60/returnFC62, handoffFC6B.
+No extra RAM or autointerruptenable; nominal startup1148/1155 andtimerbody
+56/62/67cycles, no hardware timing acceptance.104 offline methods/CTestpass.
+Pinned export/realparent check follows commit; independent Mars scope/CPU/
+sourceack/RTI/replaypending. Keep keypadreq72f0 separate and acceptedanalog03
+source/defaults/pins/flags unchanged. Next independent packet then source-specific
+keypad/fire/reset and remaining software timer/runtime compatibility contracts.
+
+Current authorized RUNTIME-004 continuation: original timer-dispatch-v1 plus
+startup vector-helper refactor, docs/timer-dispatch-brief.md. Keep keypad
+req_72f0 separate, accepted analog03 unchanged. Source masks/ack/callback policy
+sent Mars req_6f74/msg_0296 for review. Author separate candidate, independent
+exact-byte/budget/negative fixtures and pinned export, then real CPU timer/state
+acceptance. No release/default/pin or false-label change.
+
+
 Keypad source review publication repaired (Mars msg_6570): pushed
 9349e920d2f3af1302fe68acc4c7533e00f234da, docs/a52-keyboard-source-review.md.
 This supersedes earlier push-pending notes. Existing evidence-path decision

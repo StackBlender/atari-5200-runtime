@@ -256,3 +256,15 @@ diagnostic observations remain. Runtime author read only that prose, not the
 primary PDF, chip code/tests, foreign emulator sources or quarantined article.
 Primary5200 wiring remains unverified; selected evidence path recorded in roadmap.
 No chip correction/functional policy/firmware event service approved by this note.
+
+
+## Timer dispatch and startup helper
+
+Pinned CONSUMER-02 _pokey.h reread for access-specific aliases and timer IRQ
+bits01/02/04; SHA0184ffb009fa3619b68a39495c03605d671e5e40e10c5d7c8470b5337e29eb93
+reverified unchanged. CPU-02 selected appendixB EOR immediate49/2cycles and AND
+zero-page25/3cycles factual entries reviewed. No example code copied. New local
+opcodes preserve old emitters/global table. Priority/ack/callback/mask coherence,
+source fault policy and compact startup helper are original authored choices
+awaiting Mars hardware-interface/execution review; no Atari firmware/historical
+implementation, extracted assets, foreign emulator/kernel/test or trace read.
