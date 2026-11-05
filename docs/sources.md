@@ -11,6 +11,7 @@ GPL licensing this project does not turn copied implementation into original wor
 | --- | --- | --- | --- |
 | CPU-01 | Western Design Center W65C02S datasheet, April 8 2022, section 4, table 3-1 (page 12) and table 5-2 (page 22), [official PDF](https://www.westerndesigncenter.com/wdc/documentation/w65c02s.pdf), reviewed 2026-11-05 | Published common instruction/address encoding and CPU-vector locations for the tool fixture; no CMOS additions emitted | Documentary CPU encoding, not NMOS timing or Atari software behavior. Validate expanded NMOS semantics with a dedicated processor source before runtime execution claims. |
 | INT-01 | StackBlender Mars owner integration proposal, reviewed 2026-11-04 | Original program in F800–FFFF, 2 KiB limit, explicit provider and strict identity-bound saves | Integration proposal, not firmware behavior or an original-system measurement. No Mars source copied into this repo. |
+| PAM-01/02/03 | Atari / Rob Zdybel, PAM Package: October 30 1981 partial description (PDF 3–5), January 18 1982 revision (17), March 18 1982 final (24); [primary scans](https://atarimuseum.ctrl-alt-rees.com/ahs_archives/archives/pdf/videogames/5200/pam_package.pdf), reviewed 2026-11-05 | Documentary cartridge-area, reservation and interrupt/VBI contracts; chronology matters | Documentary and retail-unmeasured, not a firmware listing; exact rows/gaps in [startup-evidence.md](startup-evidence.md), numeric records in [startup-evidence.json](startup-evidence.json). |
 | OWN-01 | StackBlender's author-selected fixture | Tool layout, loop/return fixture, FF padding, JSON format | Proposed tool-test policy, not Atari software behavior. |
 | METH-01 | StackBlender SNES DSP1 README and docs/checking.md | Prior independently authored project's black-box questions/answers and replay methodology | Method descriptions only; no implementation, tests or generated images copied. |
 
@@ -37,9 +38,9 @@ not a source-code or behavioral oracle.
 
 | Area | Numeric software ABI approved? | Independent original-system observations? | Next evidence |
 | --- | --- | --- | --- |
-| Cartridge metadata/entry/init | No | None | Screen primary developer documentation; original cart-owned boundary probe |
-| Cold/warm/key reset and RAM/stack | No | None | Document separate reset semantics and reserved ranges; scalar probe |
-| NMI/VBI/DLI and software vectors | No | None | Calling/return/acknowledgment and override/critical-section contract |
+| Cartridge metadata/entry/init | Documentary area and entry pointer only | None | Encoding/flags and entry CPU postconditions still require evidence |
+| Cold/warm/key reset and RAM/stack | Documentary reservations only | None | Initial SP/register defaults and reset distinctions need evidence |
+| NMI/VBI/DLI and software vectors | Documentary conventions; numeric symbols missing | None | Exact per-symbol vector/shadow addresses and return-stack observations |
 | IRQ/BRK and clocks/timers | No | None | Source priority, register preservation, pending events and wrap cases |
 | Display shadows | No | None | Address/direction/cadence and exclusion rules |
 | Analog/keypad/fire/ports | No | None | Scan cadence, code semantics, endpoints, repeat and port isolation |
@@ -51,3 +52,20 @@ measured. No operator or lawful execution oracle is established. Original probes
 may log whitelisted scalar cart-owned results, not BIOS/font/whole RAM/stack
 contents or instruction traces. Gate video capture on original probe artwork.
 Another replacement's output is a cross-check, not original-system ground truth.
+
+## RUNTIME-002 screening receipt
+
+Read the PAM package cover and prose on PDF pages 2–8 and 17–25. A low-resolution
+page index was used to screen remaining pages. Pages 9–16 (flowchart/controller
+examples, including program snippets) were not read at implementation resolution
+or transcribed. No manufacturer implementation/font/source file was retrieved.
+The memo's references to source listings were not followed. This packet is
+primary developer documentation, independently sourced from the quarantined
+Buchholz article; do not backfill missing constants from that article.
+
+The March final memo changes zero-page reservation from the October interim
+range. The January revision changes the VBI critical-section rule. Preserve both
+source dates; the final memo is documentary evidence, not proof of every shipped
+board/firmware revision. The trackball memo's printed year is 1981 amid 1982
+material; it is not used for startup constants. No original-system observation
+or actor-role separation is claimed. Reference PDFs/screenshots stay outside Git.

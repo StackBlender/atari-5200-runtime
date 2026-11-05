@@ -48,7 +48,9 @@ A supported runtime still needs an approved numeric software ABI/evidence matrix
 for startup/cart entry, reset variants, RAM/shadows/vectors, NMI/VBI/DLI, IRQ/BRK,
 clocks, input scanning, POKEY interactions and original font encoding. For every
 claimed row: permitted source or probe ID, exact postcondition, independent
-fixture, confidence and unsupported cases. No values are approved by this document.
+fixture, confidence and unsupported cases. [Startup evidence](startup-evidence.md)
+now records primary documentary cartridge-area/reservation facts, revision history
+and remaining gaps. These are not measured retail ABI or implementation approval.
 
 The actual code/font/vector/free-space budget must follow those requirements,
 with all RAM/stack ownership declared. Generic CPU stack addressing is not a

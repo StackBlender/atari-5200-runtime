@@ -1,0 +1,105 @@
+{
+  "profile": "ntsc-four-port-documentary-review",
+  "reference_operator": null,
+  "review_date": "2026-11-05",
+  "rows": [
+    {
+      "address_end_inclusive": 49151,
+      "address_start": 49128,
+      "encoding": null,
+      "entry_registers": null,
+      "fields": [
+        {
+          "name": "name",
+          "offset": 0,
+          "size": 20
+        },
+        {
+          "name": "decade",
+          "offset": 20,
+          "size": 1
+        },
+        {
+          "name": "year",
+          "offset": 21,
+          "size": 1
+        },
+        {
+          "name": "entry_pointer",
+          "offset": 22,
+          "size": 2
+        }
+      ],
+      "id": "CART-01",
+      "kind": "cartridge-layout",
+      "page": 5,
+      "retail_validation": false,
+      "source": "PAM-01",
+      "status": "documented-unmeasured"
+    },
+    {
+      "address_end_inclusive": 24,
+      "address_start": 0,
+      "id": "RAM-01",
+      "kind": "os-reservation",
+      "page": 24,
+      "retail_validation": false,
+      "source": "PAM-03",
+      "status": "documented-unmeasured"
+    },
+    {
+      "address_end_inclusive": 511,
+      "address_start": 256,
+      "id": "RAM-02-stack",
+      "initial_sp": null,
+      "kind": "cpu-stack-page",
+      "page": 4,
+      "retail_validation": false,
+      "source": "PAM-01",
+      "status": "documented-unmeasured"
+    },
+    {
+      "address_end_inclusive": 543,
+      "address_start": 512,
+      "id": "RAM-02-vectors",
+      "kind": "software-vector-reservation",
+      "page": 4,
+      "retail_validation": false,
+      "source": "PAM-01",
+      "status": "documented-unmeasured",
+      "symbol_addresses": null
+    }
+  ],
+  "runtime_implementation_approved": false,
+  "schema": 1,
+  "source_sha256": "8a29822a622a7657fc027d247633abe8f46af8ae116098493f4306a11ec1b0cb",
+  "source_url": "https://atarimuseum.ctrl-alt-rees.com/ahs_archives/archives/pdf/videogames/5200/pam_package.pdf",
+  "sources": [
+    {
+      "author": "Rob Zdybel / Atari",
+      "date": "1981-10-30",
+      "id": "PAM-01",
+      "pages": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "author": "Rob Zdybel / Atari",
+      "date": "1982-01-18",
+      "id": "PAM-02",
+      "pages": [
+        17
+      ]
+    },
+    {
+      "author": "Rob Zdybel / Atari",
+      "date": "1982-03-18",
+      "id": "PAM-03",
+      "pages": [
+        24
+      ]
+    }
+  ]
+}

@@ -12,7 +12,11 @@ for cartridge startup.
    and lawful original-system observations. Start with cartridge metadata/entry,
    cold reset, RAM/stack ownership and required initial vectors/registers.
    Preserve unknowns; do not implement a guessed jump-to-cart or software defaults.
-   Source the NMOS CPU instruction/vector contract separately from Atari software.
+   Primary PAM documentation now supplies cartridge-area/entry and RAM reservation
+   rows with revision history. Next obtain exact software vector/shadow declarations,
+   metadata encoding and entry/reset postconditions; request integration review
+   of the documentary profile. Source NMOS CPU semantics separately from Atari
+   software. No blanket service-implementation approval follows.
 2. **RUNTIME-003: original probe/observation protocol.** Define a small scalar
    trace schema and independently authored diagnostic source. Record reset/input
    sequence, console revision, source hash, measurement units and uncertainty.
@@ -36,6 +40,13 @@ for cartridge startup.
 
 ## Landed
 
+- RUNTIME-002 documentary research: located and screened original Atari PAM
+  memoranda. startup-evidence.md/json records factual rows, provenance/hash,
+  October/January/March revisions, unresolved cells and an original ENTRY-01
+  measurement plan. No BIOS source/assets, firmware execution or numeric guesses.
+  Per-symbol vectors/shadows, metadata encoding and entry/reset defaults remain
+  open; the research slice is not a completed runtime ABI.
+
 - RUNTIME-001: original bounded emitter, explicit instruction/address-mode
   subset, symbolic absolute/relative fixups, mandatory CPU vectors, allocation
   and executable-label validation. Offline CMake/CTest and fresh-process
@@ -53,7 +64,7 @@ for cartridge startup.
   a development profile, not measured board compatibility.
 - Current maintainer acts from Apollo Retro with an Odin repo lease. No separate
   runtime owner/queue is registered. Mars owns its emulator integration.
-- No Atari software ABI constants, original-system measurements, runtime services,
-  font, cart boot, usable image provider or game compatibility established yet.
+- Primary documentary ABI facts now exist; no original-system measurements,
+  runtime services, font, cart boot, usable provider or game compatibility yet.
 - Default external-BIOS behavior in consumers remains untouched. There is no
   replacement state/release or cross-version compatibility claim.

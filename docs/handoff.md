@@ -2,37 +2,49 @@
 
 ## Current slice
 
-RUNTIME-001 original emitter/build foundation follows the owner's instruction to
-start work and carry the public GPL project through completion. Current acting
-maintainer is apollo_retro_owner, using the runtime repo's Odin lease. A dedicated
-owner/queue is unassigned; do not invent registration or wait for contributors.
+RUNTIME-002 documentary startup research is committed/pushed with this handoff.
+Retro owns/maintains the repo under its Odin lease. No separate runtime owner
+needs assignment. No observer/implementer role split or original execution is
+claimed by a documentary review.
 
-Paths: AGENTS.md, ROADMAP.md, CMakeLists.txt, .gitignore, tools/emitter.py,
-tools/layout_fixture.py, tests/test_emitter.py, docs/contract.md, docs/sources.md,
-docs/testing.md and README.md. LICENSE remains the bootstrap's verbatim GPLv3.
-No dependencies, submodules, firmware, font, cartridges or external source added.
+New docs/startup-evidence.md/json: original Atari PAM Package behavioral memo
+facts, source SHA-256, page/revision provenance, unknown numeric fields, and
+ENTRY-01 scalar observation plan. Updated sources, contract, README, AGENTS and
+roadmap. No source code, dependency, artifact generator or consumer pin changed.
+Documentation validation: JSON parsed, field layout/ranges checked, local links
+and staged diff whitespace checked. Existing emitter acceptance remains 17 tests.
+No firmware, copied manual text/scans, assets, manufacturer source or games in Git.
 
-Validation: offline configure/build, one CTest running 17 original Python tests,
-and fresh-process deterministic image/map generation. The fixture writes ten
-bytes in a 2048-byte window; 2038 bytes remain. It has no runtime capabilities,
-ABI or provider target and cannot boot a cartridge. Only tool fit is established.
-Exact commands and evidence limits are docs/testing.md. Python 3.12.3 /
-CMake 3.28.3 / Ninja configured and passed the suite in build/. Fresh-process
-reproducibility is a test case, not a claim that a completed runtime was emitted.
-This slice is committed/pushed with this handoff; inspect git status on resume.
+## Research receipt
+
+Primary archive URL:
+https://atarimuseum.ctrl-alt-rees.com/ahs_archives/archives/pdf/videogames/5200/pam_package.pdf
+25 scanned pages. Read prose pages 2–8 and 17–25; low-resolution layout index
+only for 9–16, whose examples/flowchart were not read/transcribed as implementation.
+Selected October 30 1981 partial description, January 18 1982 VBI revision and
+March 18 1982 final memo support documentary rows; exact source provenance and
+limitations are docs/sources.md. No source-listing references were followed.
+
+Facts: cartridge communication BFE8–BFFF, entry pointer BFFE–BFFF; final
+zero-page reservation 0000–0018; stack page 0100–01FF and documentary vector
+reservation 0200–021F. January drops I-bit participation in the VBI critical
+check. No numeric vector-symbol/shadow offsets, cartridge flag/metadata encoding,
+initial A/X/Y/P/SP or exact boot register values established. Do not guess.
+These facts are documentary and retail-unmeasured; no firmware equivalence claim.
 
 ## Resume
 
-RUNTIME-002: screen primary behavioral sources and fill the numeric startup/cart/
-reset and RAM/stack evidence matrix in docs/sources.md. No numeric Atari software
-ABI is approved yet, and no original-system oracle is established. Do not reuse
-quarantined disassembly-derived constants or write convenient reset defaults.
-CPU-01 supports the common opcode encoding subset, not all NMOS CPU differences.
-A dedicated NMOS processor reference and permitted Atari developer documentation
-are next source needs. Keep source/exposure records current.
+Continue RUNTIME-002: obtain screened primary software-interface declarations
+for exact per-symbol vector/shadow addresses and metadata encoding, and define
+cold/warm/key reset separately. Get Mars review of the documentary scope before
+corresponding runtime services. ENTRY-01 needs lawful operator/access and reviewed
+cart-owned result area, instrumentation semantics, and observer/implementer
+handoff. No hardware/oracle is established; do not manufacture expected results.
 
-The tool-test allocation is not a runtime code/font layout. Real placement must
-follow the approved software contract and reviewed full budget. Then implement a
-bounded supported startup and get execution coverage from the integration owner;
-this project contains no emulator. Mars integration remains coordinated by Retro
-through req_6f74; no consumer pin/provider/API/state implementation has changed.
+Temporary renderer pypdfium2/Pillow was installed in /tmp/retro-pdf-tools only for
+scanned-source screening, not as a project dependency or configure fetch. Source
+PDF and render outputs were temporary research material, not repo artifacts.
+The build remains offline Python/CMake with no compiler/emulator/firmware needed.
+RUNTIME-001 tool fixture still has zero capabilities, 10 written/2038 unused bytes;
+no real service/font fit, provider target or boot implemented. Mars integration
+remains req_6f74; report only reviewed facts, no private source transfer.

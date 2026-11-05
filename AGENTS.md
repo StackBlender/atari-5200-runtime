@@ -2,8 +2,9 @@
 
 StackBlender owns this public GPL-3.0-or-later project and intends to complete it
 as a goodwill gesture. The human authorized development, commits and pushes.
-Current acting maintainer: apollo_retro_owner; coordinate repository writes through
-Odin's repo:atari-5200-runtime lease. A dedicated owner has not been registered.
+Current repository owner/maintainer: apollo_retro_owner; coordinate writes through
+Odin's repo:atari-5200-runtime lease. Separate observer/implementer roles must be
+recorded before measured reconstruction; ownership does not establish a role split.
 Do not wait for community contributions to do the work.
 
 Read README.md, ROADMAP.md, docs/contract.md, docs/sources.md, docs/testing.md and

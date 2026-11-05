@@ -22,8 +22,10 @@ audio and controller hardware. The initial reference profile is NTSC four-port;
 other console variants require separate investigation.
 
 The planned services include cartridge startup, reset, interrupt dispatch,
-display shadows and controller/keypad processing. Their software addresses,
-calling conventions and defaults must be established before implementation.
+display shadows and controller/keypad processing. Primary Atari developer memoranda now document the cartridge communication
+area, RAM reservations and some calling conventions; see the
+[startup evidence](docs/startup-evidence.md). Missing addresses, defaults and
+retail validation remain explicit before implementation.
 Speed and efficient execution matter, with dependable play and repeatable saves;
 cycle-for-cycle equivalence is not the initial goal.
 
