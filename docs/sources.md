@@ -90,3 +90,41 @@ manufacturer CPU examples visible there were not copied into the probe. The
 probe sequence, six-slot layout, A5 marker and CF status mask are original
 diagnostic policy. No original-system execution, hardware ownership approval,
 Atari firmware or external implementation was used for its tests.
+
+## RUNTIME-004 proposal1 source and exposure receipt
+
+CONSUMER-02 extends CONSUMER-01 only to public chip register declarations at the
+same cc65 revision `77b6484615427746e55fda2755c9cbc320a1fb51`. Each carries the
+same permissive notice; no third-party source is vendored or transplanted:
+
+- [include/_antic.h](https://github.com/cc65/cc65/blob/77b6484615427746e55fda2755c9cbc320a1fb51/include/_antic.h),
+  SHA256 `318208d0edfe3c65471170067e1ff7360db738cddeac2be9cf6f53febb95fd95`.
+- [include/_pokey.h](https://github.com/cc65/cc65/blob/77b6484615427746e55fda2755c9cbc320a1fb51/include/_pokey.h),
+  SHA256 `0184ffb009fa3619b68a39495c03605d671e5e40e10c5d7c8470b5337e29eb93`.
+- [include/_gtia.h](https://github.com/cc65/cc65/blob/77b6484615427746e55fda2755c9cbc320a1fb51/include/_gtia.h),
+  SHA256 `6c44bbfa9180260209b04fe459a7869103785468612b968e2bfb5338531b62cd`.
+
+Complete header text was retrieved, including explanatory comments and small
+register/display-list/color/key macros. Exposure includes the ANTIC header's
+attributed Wikipedia introduction. Only factual public register offsets, read/
+write aliases and bit declarations inform the proposal; comments naming generic
+initial defaults do not establish Atari 5200 firmware defaults. Our choices and
+their intended chip effects are proposed-policy / consumer-interface-unmeasured,
+subject to Mars review. No startup/kernel/driver/emulator implementation or
+foreign tests were read. The atari5200.h top-level header was reread; its hash
+still matches CONSUMER-01. Metadata digit convention remains the previously
+accepted original subset, not a copied encoder or alphabetic ABI.
+
+A fresh broad hardware-document search again surfaced quarantined porting-article
+snippets/mirrors and secondary technical descriptions. These were not opened or
+used as software facts. Search also located an Atari home-computer technical
+reference scan, not read or used for this proposal. Failed web raw-header fetches
+were followed by direct read-only retrieval of the pinned declarations above.
+No new original-system observation exists; observer/implementer role gates remain.
+
+OWN-02: startup-brief.md proposal1, byte-layout/metadata code and independent
+expected cartridge constants are authored here. Zero-fill candidate, title digits,
+year26, entry8000/result3000, register/default/stop policy and seven-segment pixel
+coordinates are our design, not measurements. No font bitmap was consulted.
+The per-service evidence table above remains historical-gap tracking; accepted
+scoped declarations and proposed startup policy do not fill retail/measured cells.

@@ -36,8 +36,8 @@ exposure; do not backfill its constants.
 
 ## Validation
 
-Direct unittest discovery and CMake/Ninja/CTest pass: 35 methods (17 image-emitter,
-four original capture-fragment, 14 scalar-record). Exact commands in docs/testing.md.
+Current direct unittest discovery and CMake/Ninja/CTest pass: 43 methods (17 image-emitter,
+four original capture-fragment, 14 scalar-record, eight cartridge-candidate). Exact commands in docs/testing.md.
 Independent expected bytes, relocation/bounds, fresh-process reproducibility,
 strict JSON size/depth/UTF-8/duplicates/types, identity, masking and inconclusive
 handling covered. An initial depth rejection failure was fixed and retested.
@@ -66,15 +66,30 @@ entry must be CPU mapped. Requires original glyph/mode/color mapping. Planning
 budget accepted with no routing/alignment conflict; actual fit and32 stack bound
 unproved. Protocol prose gaps addressed; no assembly/GPL implementation reviewed.
 
-Concrete resume: author the bounded RUNTIME-004 startup brief, choosing explicit
-original development policies where retail defaults are unknown. Enumerate
-reset/MMIO values/order, entry/SP, interrupt/vector/RAM policy, assets, independent
-fixtures and unsupported/negative cases. No service policy/provider/pin is
-selected yet. Then request per-scope review, implement the supported image and
-complete original diagnostic, prove fit, and integrate through Mars. Original
-reference execution still needs operator/apparatus/result ownership and role
-receipts; none are established. Do not wait for historical provenance already
-accepted for this limited consumer-interface target or relabel it measured retail.
+Concrete startup proposal1 is now docs/startup-brief.md: original limited
+cold-start-digits-v1, explicit reset/MMIO write list and order, A/X/Y/flags/SP,
+ZP/vector writes, no hidden RAM, fail-stop interrupts/invalid metadata, cold-only
+reset, original digit assets and per-scope independent diagnostic expectations.
+It leaves historical final/retail VBI unknown; ongoing services remain later work.
+New public chip-header exposure/hashes are recorded as CONSUMER-02 in sources.md.
+Scope/chip/reset/mapper review must precede runtime implementation/execution.
+
+New tools/cartridge_candidate.py implements strict 20+2 ASCII-digit metadata and
+little-endian entry encoding, plus complete unapproved 32 KiB original diagnostic
+layout around the existing26-byte capture. tests/test_cartridge_candidate.py adds
+eight independent tests; total43 methods pass directly and through CTest. No CPU
+execution, runtime service code, image provider, reference approval or pin change.
+Generate ignored build/entry-candidate artifacts per docs/testing.md; no default
+build target selects them. Nested capture descriptor keeps its fragment-only
+scope; enclosing candidate carries its own whole-image/layout-source identity.
+
+Concrete resume: obtain Mars review/corrections on req_6f74 for startup-brief.md
+proposal1 (prose only if implementation exposure is unwanted), then implement the
+approved bounded image, prove actual allocation/cycles/stack and request original
+diagnostic execution/integration through Mars. No reference-system execution:
+operator/apparatus/result ownership and role receipts remain absent. Do not poll,
+ack or reopen the incomplete main request. No need for more generic historical
+research merely to target the already accepted development declarations.
 
 Source PDFs/renders were isolated in /tmp, not committed or project dependencies:
 PAM package, MOS selected CPU manual, cc65 declarations and Atari service manual.

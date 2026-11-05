@@ -75,3 +75,13 @@ The fragment is not a complete cartridge, runtime image or execution approval.
 Its configurable result area and stack use require review; no metadata encoder
 or MMIO defaults are invented. Synthetic tests establish byte layout, identity,
 normalization, format rejection and inconclusive handling, not CPU execution.
+
+## Proposed first development startup
+
+[Startup brief proposal1](startup-brief.md) makes original choices explicit for
+`cold-start-digits-v1` under the accepted limited `sb52-dev-cc65-v1` layout. The
+proposal is pending Mars review; it is not a selected runtime ABI or usable image.
+The digit metadata encoder and enclosing 32 KiB original diagnostic candidate are
+tooling only. Their source is independent; generation does not approve a mapper,
+MMIO policy, runtime execution, original-system probe or firmware equivalence.
+No sb5200-runtime-image target exists. Final/retail VBI policy remains null.

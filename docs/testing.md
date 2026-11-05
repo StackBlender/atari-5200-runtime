@@ -17,8 +17,8 @@ Or run the emitter suite directly:
 PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -v
 ```
 
-The CTest entry runs 35 Python test methods (17 image-emitter, four capture
-fragment and 14 scalar-record tests). Independent expected instruction
+The CTest entry runs 43 Python test methods (17 image-emitter, four capture
+fragment, 14 scalar-record and eight cartridge-candidate tests). Independent expected instruction
 bytes cover symbolic forward/backward resolution, little-endian addresses,
 branch limits -128/127 and rejection at -129/128. Negative cases cover overlap,
 allocation bounds, writes to reserved space, operand overflow, duplicate/undefined/
@@ -59,3 +59,25 @@ synthetic/reference separation, receipt requirements, unique trials, reset/input
 semantics, observation order, status-bit masking and inconclusive results. CLI
 rejection is exit 2 with no partial success report; local diagnostic size/hash
 checking is tested with synthetic data. No test runs a CPU or original firmware.
+
+## Original metadata and diagnostic candidate
+
+```sh
+python3 tools/cartridge_candidate.py --title 01234567890123456789 --year-digits 26 --output-dir build/entry-candidate
+```
+
+This creates `entry-candidate.bin` (32768 bytes) and `entry-candidate.json` in
+that ignored directory. It is a complete proposed unbanked cartridge layout,
+**not execution approval**. No default CMake target installs or runs it. Do not
+supply it to a reference machine; the original-system protocol gates remain.
+Its embedded capture descriptor still describes the fragment, not full-cart
+approval. Source/encoder/fragment hashes remain the existing ENTRY-01 identity;
+additional full-image/layout-source hashes identify the enclosing candidate.
+
+Eight new tests independently check all 24 metadata bytes, every digit mapping,
+strict ASCII versus Unicode lookalikes, types/lengths, little-endian entry limits,
+all zero-fill holes, all capture bytes, the last nonoverlapping placement,
+cart-owned result bounds, negative CLI no-output and fresh-process determinism.
+No metadata decoding or machine execution is tested; scope/MMIO/mapper review
+and CPU/ANTIC observations belong to later owner acceptance. See
+[startup-brief.md](startup-brief.md) for exact proposed expectations and limits.

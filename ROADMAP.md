@@ -7,21 +7,21 @@ for cartridge startup.
 
 ## Next
 
-Owner-authorized batch (2026-11-05): RUNTIME-002 primary-source screening and
-NMOS capture semantics, then RUNTIME-003 a versioned scalar observation protocol,
-offline fail-closed validator and original capture-plan source. Acceptance:
-independent malformed/identity/bounds/correction tests; synthetic fixtures clearly
-marked; no reference execution or service claims. Draft a RUNTIME-004 allocation
-and documentary startup scope for integration review if the evidence supports it.
-Record each slice and push passing work before proceeding.
+Current slice: RUNTIME-004 bounded startup brief and complete original diagnostic
+candidate. [docs/startup-brief.md](docs/startup-brief.md) proposal1 specifies
+`cold-start-digits-v1` under the accepted `sb52-dev-cc65-v1` development interface:
+explicit original MMIO/order, RAM/vector/SP/flags, failure loops, digit assets,
+reset limits, cycle/stack targets and independent acceptance. It is pending Mars
+scope/chip/reset/mapper review on req_6f74; no runtime service code is authorized
+by the proposal itself. Historical final/retail VBI remains unknown/unselected.
 
-Concrete next action: RUNTIME-004 bounded startup brief for the accepted limited
-public interface `sb52-dev-cc65-v1`. Specify original reset/MMIO values and order,
-entry/SP/interrupt/vector/RAM policy, asset glyph/mode/color mapping, negative and
-unsupported cases, and independent original diagnostic expectations. Mars review
-1f411e5 accepts interface declarations/digit convention and the planning budget;
-unknown retail values need not be guessed or resolved before proposing explicit
-original policy. No runtime policy or provider is selected by that review.
+Original digit metadata encoder and complete unapproved 32 KiB diagnostic layout
+are implemented with eight independent tests (43 total). They do not execute a
+CPU, select a mapper, provide a runtime or approve reference/owner execution.
+Concrete next action: obtain Mars corrections/approval of this exact brief,
+then implement the bounded image, report actual fit/stack/cycles, and request
+Mars execution of the original diagnostic and provider integration. Continue
+independent tooling only while scope review is pending; do not poll Odin.
 
 1. **RUNTIME-002: approved startup and service evidence.** Build a per-service
    numeric ABI/evidence matrix from screened primary behavioral documentation
@@ -50,7 +50,8 @@ original policy. No runtime policy or provider is selected by that review.
    against the approved ABI. docs/allocation-plan.md/json now proposes a full
    2 KiB budget: 1024 asset + 768 code + 250 margin + 6 vectors; zero additional
    persistent RAM, a separately unproven stack allowance. Planning review accepted;
-   supply the concrete startup brief next. Implement a bounded startup scope, report actual
+   proposal1 is now in docs/startup-brief.md for scope review. Implement the
+   reviewed bounded startup scope, report actual
    image fit and remaining allowances, then execute original diagnostics through
    an integration owner. Stop on overflow for scope/architecture review.
 4. Add the supported runtime service classes: NMI/VBI/DLI, IRQ/BRK dispatch,
@@ -65,6 +66,16 @@ original policy. No runtime policy or provider is selected by that review.
    Resolve discrepancies through completion; publish only supported claims.
 
 ## Landed
+
+- RUNTIME-004 proposal1 defines concrete original startup policy and diagnostic
+  acceptance without relabeling unknown retail behavior. No startup implementation
+  or scope approval yet. Public cc65 chip-register declarations are separately
+  recorded as consumer-interface-unmeasured; hardware effects await Mars review.
+- Original digit metadata encoder and full unapproved diagnostic cartridge
+  candidate: twenty title digits +two year digits, little-endian mapped entry,
+  32 KiB layout with the original capture fragment and zero-fill holes. Eight
+  tests cover independent bytes/layout, strict ASCII/types, bounds/overlap,
+  fresh-process reproducibility and fail-before-output CLI. Total43 pass.
 
 - Mars 1f411e5 accepts the public-interface boundary and digit-only convention
   for proposed sb52-dev-cc65-v1, plus the complete estimated allocation. No extra

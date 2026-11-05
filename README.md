@@ -9,8 +9,9 @@ gesture to the emulation community. The runtime is intended to be useful beyond
 StackBlender's apps. No community contribution is needed to complete the work.
 
 **Development started:** the repository contains an original bounded 6502 emitter,
-an offline build, an original register-capture fragment and 35 tool-contract
-tests. The generated layout fixture has
+an offline build, an original register-capture fragment, a digit-metadata encoder
+and a complete unapproved diagnostic layout, with 43 tool-contract tests.
+The generated layout fixture has
 zero runtime capabilities. Cartridge startup and runtime services are not yet
 implemented; no compatibility is claimed.
 
@@ -25,8 +26,10 @@ other console variants require separate investigation.
 The planned services include cartridge startup, reset, interrupt dispatch,
 display shadows and controller/keypad processing. Primary Atari developer memoranda now document the cartridge communication
 area, RAM reservations and some calling conventions; see the
-[startup evidence](docs/startup-evidence.md). Missing addresses, defaults and
-retail validation remain explicit before implementation.
+[startup evidence](docs/startup-evidence.md). An explicit original development
+startup policy is proposed in the
+[startup brief](docs/startup-brief.md); service approval and retail validation
+remain separate requirements.
 Speed and efficient execution matter, with dependable play and repeatable saves;
 cycle-for-cycle equivalence is not the initial goal.
 
