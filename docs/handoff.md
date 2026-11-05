@@ -1,95 +1,77 @@
 # Runtime handoff
 
-## Active batch / resume
+## Resume the authorized batch
 
-Owner authorized a large RUNTIME-002/003/004 batch on 2026-11-05. First slice:
-original ENTRY-01 tooling, protocol and selected primary NMOS semantics. New
-files: tools/entry_probe.py, tools/observations.py, tests/test_entry_probe.py,
-tests/test_observations.py, docs/entry-observation-protocol.md. emitter.py adds
-fixed_instruction and four encodings (29 total); its original layout output is
-unchanged. README, contract, sources, startup evidence, testing and roadmap updated.
+Owner authorized a large RUNTIME-002/003/004 batch on 2026-11-05. Runtime owner is
+apollo_retro_owner; development/commits/pushes and public GPL-3.0-or-later are
+explicitly authorized. No community contribution dependency. Acquire the Odin
+repo:atari-5200-runtime lease before writes and release after push.
 
-Validation: direct unittest discovery passes all 35 methods; CMake configure,
-build and CTest pass. A first run exposed missing JSON depth enforcement, now
-bounded explicitly; invalid UTF-8, duplicate/non-finite keys, stale identities,
-unknown fields/dump attempts and reset/readout order covered. Synthetic inputs
-only. No CPU, complete cartridge, original firmware or service executed. Probe
-stack/result ownership and metadata/operator/role review remain open.
+## Pushed work
 
-First slice pushed as b699dff. Second slice adds consumer-interface.md/json and
-allocation-plan.md/json. cc65 revision 77b6484615427746e55fda2755c9cbc320a1fb51
-public headers/docs/license only: candidate exact vector/shadow addresses,
-consumer-owned conio fields and the cc65 021C versus PAM 0220 free-RAM discrepancy.
-No startup/kernel/driver/assembler implementation read. Facts remain
-consumer-interface-unmeasured, not approved Atari runtime policy. Primary startup
-unknowns and final/retail VBI selection remain explicit. The full 2 KiB proposal
-reserves 1024 font, 768 service code, 250 margin and 6 CPU vectors; no additional
-persistent RAM or proven stack depth. Continue: send the completed evidence,
-protocol and allocation proposal to Mars for specific scope/provenance review. No runtime policy is selected or
-provider enabled. Acquire the runtime lease for edits; push each passing slice.
+- b699dff: tools/entry_probe.py generates an original 26-byte capture fragment and
+  deterministic descriptor, not a runnable cartridge. Four fixed encodings added
+  to tools/emitter.py (29 entries total); its ten-byte layout fixture is unchanged.
+  tools/observations.py implements the strict bounded ENTRY-01 scalar record
+  validator. docs/entry-observation-protocol.md defines roles, capture corrections,
+  completion-write observation, reset/input sequences and inconclusive handling.
+- ca643f9: docs/consumer-interface.md/json records permissive cc65 public ABI
+  declarations at 77b6484615427746e55fda2755c9cbc320a1fb51, exact source hashes,
+  shadow/vector candidates, digit metadata convention and exposure. Only headers,
+  platform document and license reviewed; no startup/kernel/driver implementation.
+  Facts remain consumer-interface-unmeasured, not Atari provenance or approval.
+  cc65 conio0019–1C is consumer-owned; keep PAM reservation through021F despite
+  cc65 app RAM from021C. Clock order/defaults remain unknown.
+- Same slice: docs/allocation-plan.md/json proposes 1024 original font + 768 service
+  code + 250 margin + 6 vectors =2048. No extra persistent RAM; stack32 is an
+  estimate requiring analysis, not a reserved cartridge quota or proven depth.
+- This handoff's slice: docs/hardware-profile.md records primary Atari board IDs:
+  CA018087 original four-port, CA020108 universal four-port, CA021374 two-port.
+  Exact board and firmware identities are separate, currently unmeasured.
 
-## Current slice
+All generated artifacts stay ignored. No firmware, copied fonts/art, commercial
+games, foreign implementation, original execution or service-capable provider.
+The source ledger preserves the earlier quarantined disassembly-derived article
+exposure; do not backfill its constants.
 
-RUNTIME-002 documentary startup research is committed/pushed with this handoff.
-Retro owns/maintains the repo under its Odin lease. No separate runtime owner
-needs assignment. No observer/implementer role split or original execution is
-claimed by a documentary review.
+## Validation
 
-New docs/startup-evidence.md/json: original Atari PAM Package behavioral memo
-facts, source SHA-256, page/revision provenance, unknown numeric fields, and
-ENTRY-01 scalar observation plan. Updated sources, contract, README, AGENTS and
-roadmap. No source code, dependency, artifact generator or consumer pin changed.
-Documentation validation: JSON parsed, field layout/ranges checked, local links
-and staged diff whitespace checked. Existing emitter acceptance remains 17 tests.
-No firmware, copied manual text/scans, assets, manufacturer source or games in Git.
+Direct unittest discovery and CMake/Ninja/CTest pass: 35 methods (17 image-emitter,
+four original capture-fragment, 14 scalar-record). Exact commands in docs/testing.md.
+Independent expected bytes, relocation/bounds, fresh-process reproducibility,
+strict JSON size/depth/UTF-8/duplicates/types, identity, masking and inconclusive
+handling covered. An initial depth rejection failure was fixed and retested.
+Only synthetic records; no CPU/firmware or game execution. No reference result
+exists. CMake still generates only the original ten-byte tool fixture, not a ROM.
 
-## Integration review receipt
+Documentation checks: JSON parse, all 2048 allocation bytes covered once using the
+existing Image/Region validator, code768/assets1024 totals, candidate vector and
+ZP bounds, explicit null/unapproved policies, local Markdown links and whitespace.
+The final hardware-identity slice changes documentation only.
 
-Mars accepted the dated primary rows in msg_7eb0 / req_6f74, review commit
-739cc71932e6bda4987ee14b08eeba49223a5975. No integration conflict found;
-this is not provider approval. Separate documentary revision profiles now appear
-in startup-evidence.md/json; final_retail_vbi_policy remains null because March's
-back-reference does not reconcile October and January. VBI-01 is January-only.
-Metadata must use CPU cart mapping; software dispatch saves do not replace the
-hardware frame; boot prose requires writable-register/order/alias/default review.
-ENTRY-01 execution remains gated on operator, safe result area, correction rules
-and role protocol. No runtime code, generated artifact or consumer pin changed.
-Validation for this receipt: JSON structure/profile-selection assertions, local
-Markdown links and diff whitespace. Existing 17-test emitter result is unchanged;
-no CPU/firmware execution or new measurements claimed.
+## Coordination and concrete next action
 
-## Research receipt
+Mars req_6f74 remains incomplete; do not ack/reopen or poll. Original integration
+proposal is 3cde45c; budget sequencing b94c119, ownership/GPL e1dd041, primary
+review739cc719 and correction acceptance a9a5fec4. Dated primary PAM rows are
+accepted; October/January/March evidence profiles stay separate. January VBI-01
+must not silently become final/retail policy; final_retail_vbi_policy remains null.
 
-Primary archive URL:
-https://atarimuseum.ctrl-alt-rees.com/ahs_archives/archives/pdf/videogames/5200/pam_package.pdf
-25 scanned pages. Read prose pages 2–8 and 17–25; low-resolution layout index
-only for 9–16, whose examples/flowchart were not read/transcribed as implementation.
-Selected October 30 1981 partial description, January 18 1982 VBI revision and
-March 18 1982 final memo support documentary rows; exact source provenance and
-limitations are docs/sources.md. No source-listing references were followed.
+New actionable review sent as msg_d4a2 linked req_6f74: asks Mars whether public
+consumer declarations/digit-only metadata can define an explicit development
+scope, and reviews the full allocation proposal/protocol prerequisites. Asked
+for documentary prose/tables only, excluding GPL tool/test implementation and
+the protocol assembly block. Await a poke; no policy/provider/pin selected.
 
-Facts: cartridge communication BFE8–BFFF, entry pointer BFFE–BFFF; final
-zero-page reservation 0000–0018; stack page 0100–01FF and documentary vector
-reservation 0200–021F. January drops I-bit participation in the VBI critical
-check. No numeric vector-symbol/shadow offsets, cartridge flag/metadata encoding,
-initial A/X/Y/P/SP or exact boot register values established. Do not guess.
-These facts are documentary and retail-unmeasured; no firmware equivalence claim.
+On response, resolve specific provenance/scope/allocation concerns. If approved,
+define the exact development profile, numeric startup MMIO/default policy and
+metadata encoder; build the first complete original diagnostic, then a bounded
+supported runtime with actual fit. Until then continue primary evidence or
+protocol review, not guessed service code. Exact reset/register defaults,
+interrupt/shadow semantics, asset encoding, stack analysis and original operator/
+role/access/readout/result-area approvals remain open. No hardware/oracle exists.
 
-## Resume
-
-Continue RUNTIME-002: obtain screened primary software-interface declarations
-for exact per-symbol vector/shadow addresses and metadata encoding, and define
-cold/warm/key reset separately. Reconcile VBI revision applicability with further
-primary/approved observational evidence before selecting a final/retail policy;
-Mars has accepted the dated facts only, not a complete implementation scope.
-ENTRY-01 needs lawful operator/access and reviewed
-cart-owned result area, instrumentation semantics, and observer/implementer
-handoff. No hardware/oracle is established; do not manufacture expected results.
-
-Temporary renderer pypdfium2/Pillow was installed in /tmp/retro-pdf-tools only for
-scanned-source screening, not as a project dependency or configure fetch. Source
-PDF and render outputs were temporary research material, not repo artifacts.
-The build remains offline Python/CMake with no compiler/emulator/firmware needed.
-RUNTIME-001 tool fixture still has zero capabilities, 10 written/2038 unused bytes;
-no real service/font fit, provider target or boot implemented. Mars integration
-remains req_6f74; report only reviewed facts, no private source transfer.
+Source PDFs/renders were isolated in /tmp, not committed or project dependencies:
+PAM package, MOS selected CPU manual, cc65 declarations and Atari service manual.
+The temporary pypdfium2/Pillow renderer is not needed by the offline build. CPU
+facts/provenance and precise source sections/hashes are in docs/sources.md.

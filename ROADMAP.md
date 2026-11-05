@@ -33,7 +33,9 @@ Record each slice and push passing work before proceeding.
    capture fragment, scalar record contract and offline validator are implemented
    with 35 passing tests. Next review result ownership, metadata/mapper layout,
    interrupt window, readout, correction rules and named observer/reviewer roles.
-   Identify actual reference access; none is available yet. No ROM/font/whole
+   Identify actual reference access; none is available yet. The primary service
+   manual distinguishes original/universal four-port boards; record exact board
+   and firmware identities separately. No ROM/font/whole
    RAM or stack dumps, instruction traces or captured boot artwork.
 3. **RUNTIME-004: real allocation and first supported startup.** Review original
    asset encoding/placement, code/vector/free margin and every RAM/stack use

@@ -20,7 +20,9 @@ reviewed handoff. A token in JSON refers to that handoff; it is not an approval.
 Do not fill missing roles with the current author and call it independent review.
 The operator must establish lawful access and the actual console/firmware revision
 without copying firmware content into this project. An unknown revision can be
-logged but cannot select a retail policy.
+logged but cannot select a retail policy. The [primary hardware identification
+note](hardware-profile.md) distinguishes the original and universal four-port
+boards; the family name alone is insufficient.
 
 Review these items before issuing a runnable diagnostic: metadata encoding and
 mapper layout, result-area ownership and DMA exclusions, permitted stack use,
