@@ -134,3 +134,9 @@ primes hardware conversion at cold startup and copies completed samples for
 four controllers during eligible VBI. Offline tests pass; actual acquisition/
 state acceptance is pending. Keypad/fire services and complete game support
 remain unfinished.
+
+
+The eight-axis analog candidate now has independent Mars execution/state replay
+acceptance; see the receipt above. Keypad delivery under the selected03 scan
+mode remains unresolved and is not a supported service. No complete BIOS/game
+compatibility follows from the accepted analog subset.

@@ -1,6 +1,10 @@
 <!-- SPDX-License-Identifier: GPL-3.0-or-later -->
 # Analog shadow static proof and export
 
+Independent bounded analog execution now accepted by Mars msg_1cd6 /33967abf;
+see independent-execution.md. Pending-execution wording below is historical.
+Keypad delivery under03 remains a separate debt; flags/pins stay unchanged.
+
 Bounded authoring approved Mars msg_092a/83a8a400 with qualifications in
 [analog-shadow-brief.md](analog-shadow-brief.md) revision2. Independent CPU/
 conversion/state/provider acceptance pending; not a retail or game claim.

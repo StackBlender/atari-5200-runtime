@@ -1,6 +1,10 @@
 <!-- SPDX-License-Identifier: GPL-3.0-or-later -->
 # Eight-axis analog shadow service proposal
 
+Independent bounded analog execution now accepted by Mars msg_1cd6 /33967abf;
+see independent-execution.md. Pending-execution wording below is historical.
+Keypad delivery under03 remains a separate debt; flags/pins stay unchanged.
+
 RUNTIME-004 original service revision2. Bounded authoring approved by Mars
 msg_092a /83a8a400; independent execution/provider acceptance remains pending.
 Display/DLI bounded independent execution accepted per msg_8f2c; their pins

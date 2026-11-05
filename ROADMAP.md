@@ -7,6 +7,40 @@ for cartridge startup.
 
 ## Next
 
+## Independent analog acceptance and keypad limitation
+
+Mars msg_1cd6 /33967abf09dfef07d163f3a14d43502f699ec9cc accepts exact source/
+exporta6c406e4cee090b8044eea3b9b6c7a5b6391b3ab as a separate bounded development
+tuple. Release unity/nonunity Debug ASan(-g -O1) independently pass startup1212
+full cycles/416 instructions, boundary1219; prime order, FC73 helper return,
+final state, metadata and early/pending/hijack/reset failures. Existing288 VBI
+cases+120 services,404 display and128 DLI suites and safe/process replay pass.
+No local CPU rerun or original hardware/BIOS evidence.
+
+Analog59 cases cover eight axes/endpoints,16 connectivity masks, eight one-pending
+masks (no partial copy/restart), POTGO-frozen host vectors, cold mixed Trak-Ball,
+immediate/long CRITIC and early/mid/late completion. Ten pending/complete safe
+points replay same/fresh; pending and mid-copy separate-process final bytes
+match.20 converter negatives and mutual DLI/analog identity refusal pass. Existing
+R65 sb52rt-dev2 schema/observer unchanged; no CPU/chip algorithm/host service added.
+
+Default VBI max268 full cycles, marker282/broader marker293; entry7 separately.
+DLI dispatch37/callbackRTI86. Custom VCOUNT-delayed active-list service4901
+(transfer body140) is explicitly OUTSIDE default512 target; no general DMA/RDY/
+nesting/callback bound. Old-provider/default-OFF/a26 and Release/ASan standard/
+mixed four-controller/wire/process/lifetime regressions pass per owner.43-image
+firmware tree/history/three-build checks clean. All source pins/export false
+flags/default gates unchanged; pooled unreleased, no app/retail enablement.
+
+IMPORTANT next keypad scope: under current SKCTL03 a held standard key1 leaves
+KBCODE FF in the owner's fixture. RANDOM evolves256 values, KR2 SKSTAT F7 with
+IRQ masked. This is a separate delivery/debounce debt, not hardware evidence or
+an accepted keypad service. R65 direct hardware keypad tests use06 and do not
+qualify03 runtime delivery. Investigate through permitted behavioral review
+before keypad/fire/IRQ claims; do not silently change the accepted analog image.
+Full R62 keypad/fire/timer/reset/reference/product scope remains open.
+
+
 
 ## Committed analog export receipt
 
