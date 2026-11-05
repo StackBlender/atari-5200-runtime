@@ -49,7 +49,7 @@ reference enablement. FullR62 remains open for reliable runtime keypad/fire,
 reset/remaining services/reference/product acceptance. R70 evidence conclusion
 unchanged: no chip correction; next separately reviewed original acquisition/
 contact-event/analog policy. Runtime author read only integration prose; no
-Mars/private/public runtime implementation/tests or firmware reference exposure.
+foreign emulator/kernel implementation/tests or firmware reference exposure.
 
 
 ## Reviewed keypad evidence complete; IRQ/timer execution next
