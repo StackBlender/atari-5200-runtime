@@ -10,6 +10,16 @@ msg_aa05 /7c290c4 accepts cold-start-digits-v1, with chip/reset/observer correct
 now in docs/startup-brief.md revision2. It does not approve provider/execution,
 reference runs, pins, release or retail compatibility.
 
+## Independent bounded execution receipt
+
+Integration-owner report now supersedes earlier pending bounded CPU/provider/
+state notes below; see docs/independent-execution.md. Normal1166 full cycles/403
+instructions, worst valid1175/406 including stalls, write/entry/RAM/negative/glyph
+DMA/render/state/replay/lifecycle acceptance pass per owner. No local rerun,
+reference measurement or emulator implementation/test exposure. Source pin711a2e9
+and all generation flags/capabilities remain unchanged; candidate-label validation
+is intentional. Full ongoing services and product/module acceptance remain open.
+
 ## Candidate export slice
 
 Mars msg_1678 /c50e58a independently checked generated image/diagnostic hashes,
@@ -89,11 +99,9 @@ measured retail. Generated binaries/reports remain ignored in existing build/.
 
 ## Resume
 
-Deliver candidate export commit/build invocation after parent harness validation
-to Mars on req_6f74; they already accepted unchanged image/map/fit receipt. Independent
-chip/CPU execution, stall-inclusive timing, read/peek/DMA/pixel behavior and
-provider/reset/status/state acceptance are outstanding owner work. Ask for precise
-observer/provider sequencing; no extra historical-default research is needed for
-this approved authored scope. Do not expand ongoing services until their numeric
-behavior/allocation/independent fixtures are separately reviewed. Keep both repos'
-roadmaps/handoffs current, push coherent passing work and release lease.
+Candidate export delivery and independent bounded development execution are now
+reported complete for the pinned scope. Next specify an ongoing-service contract,
+RAM/stack/ROM allocation and independent fixture expectations for owner review.
+Do not expand services on assumed retail defaults. Preserve the current candidate
+export labels and pin; no supported release or app adoption follows. Keep roadmap/
+handoff current, push coherent passing work and release the repo lease.

@@ -19,12 +19,19 @@ sb5200-runtime-image with absolute image/manifest/map properties and full source
 revision, all artifacts produced before dependent Mars conversion. No generated
 GPL implementation header; execution/provider false flags retained.
 
-Concrete next action: deliver the export commit/build invocation so Mars can
-stage instruction-boundary observation/provider acceptance using startup-proof.md. Static normal paths are1084/1091 NMOS
-base cycles,403/406 instructions; full4096-cycle gate INCLUDING refresh/RDY remains
-unproved and needs the owner's observer. Module contains no CPU emulator/traps.
-Provider/reset/status/state and independent read/peek/DMA/pixel execution remain
-Mars work. No release, reference execution, app pin or retail compatibility.
+Independent bounded execution is now reported by the integration owner:
+[receipt](docs/independent-execution.md). Normal1166 full CPU cycles/403
+instructions, worst valid1175/406 including refresh/RDY; startup writes/entry/RAM,
+negative cases, actual glyph DMA/render, strict synchronized states and process
+replay/lifecycle pass per owner. No local rerun or original-system observation.
+Candidate export pin711a2e986f7906f45aebd310e6330fd7ffc338bf and false flags remain
+unchanged; the adapter requires those labels.
+
+Concrete next action: specify the next ongoing-service contract and allocation
+with independently expected fixtures before authoring it. Resolve VBI policy for
+an explicitly named development scope without inventing retail equivalence.
+Full ongoing services/module and consumer acceptance remain; no release, app pin
+or retail compatibility approval. Module contains no CPU emulator/traps.
 
 1. **RUNTIME-002: approved startup and service evidence.** Build a per-service
    numeric ABI/evidence matrix from screened primary behavioral documentation
@@ -55,8 +62,8 @@ Mars work. No release, reference execution, app pin or retail compatibility.
    persistent RAM, a separately unproven stack allowance. Planning review accepted;
    corrected authoring scope is accepted and the first bounded image fits.
    docs/startup-proof.md reports actual usage, static control flow/stack/base
-   cycles and independent fixture expectations. Next owner execution must include
-   refresh/RDY cycles and provider/reset/status/state acceptance. Stop on overflow
+   cycles and independent fixture expectations. Owner now reports bounded refresh/RDY and provider/reset/status/state
+   acceptance in docs/independent-execution.md; future services need new checks. Stop on overflow
    for scope/architecture review before any later service expansion.
 4. Add the supported runtime service classes: NMI/VBI/DLI, IRQ/BRK dispatch,
    clocks/timers, display shadows, analog/keypad/fire scanning and character data.

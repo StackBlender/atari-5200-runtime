@@ -11,8 +11,10 @@ StackBlender's apps. No community contribution is needed to complete the work.
 **First bounded startup authored:** an original 2 KiB image now implements the
 approved development-only cold-start/digit-metadata scope and original digit
 assets. It fits with 871 bytes unwritten, including the untouched 250-byte margin.
-Fifty-seven offline tool/image/export tests pass. Independent CPU/chip execution, full-cycle
-timing, provider integration and cartridge compatibility are still unverified.
+Fifty-seven offline tool/image/export tests pass. The integration owner now reports bounded CPU/chip execution, stall-inclusive
+timing, development-provider and state/replay checks passing; see the
+[independent receipt](docs/independent-execution.md). Cartridge compatibility
+and supported product integration remain unverified.
 Ongoing interrupts, inputs, clocks and display-shadow services remain future work.
 
 ## Intended design
@@ -35,8 +37,8 @@ cycle-for-cycle equivalence is not the initial goal.
 
 The module should remain independent of any emulator or app UI. Planned integration
 with StackBlender's Mars core uses explicit provider selection, ordinary reset-vector
-execution and save states bound to the replacement's immutable identity. These are
-proposed interfaces, not currently available features.
+execution and save states bound to the replacement's immutable identity. A bounded development integration is independently reported; broader supported
+integration remains future work.
 
 ## Evidence and original work
 
@@ -86,8 +88,8 @@ are written; 2038 bytes remain unused. This demonstrates emitter layout only,
 with no claim that the eventual runtime and font fit or work. It must not be
 selected as a BIOS replacement. The build also emits the separately named
 `build/generated/startup.bin` and `startup-map.json` for the authored bounded
-scope. See [fit/execution packet](docs/startup-proof.md); that artifact is awaiting
-independent acceptance. The separate [candidate export target](docs/candidate-export.md)
+scope. See [fit/execution packet](docs/startup-proof.md); bounded execution evidence is recorded separately in the
+[independent receipt](docs/independent-execution.md). The separate [candidate export target](docs/candidate-export.md)
 provides image/map/manifest for integration, with no provider/release approval.
 
 [Diagnostic protocol](docs/entry-observation-protocol.md),

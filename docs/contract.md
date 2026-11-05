@@ -1,5 +1,10 @@
 # Build tools and runtime boundary
 
+Current integration evidence: [independent bounded execution receipt](independent-execution.md)
+records the owner-reported development subset passing. Historical pending
+execution notes below describe earlier stages; export flags remain false and
+no supported product release or ongoing-service acceptance follows.
+
 ## Original foundation deliverable
 
 RUNTIME-001 is an original Python emitter and an image-layout fixture. It has no
