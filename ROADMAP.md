@@ -8,6 +8,20 @@ for cartridge startup.
 ## Next
 
 
+## Committed analog export receipt
+
+Source/exporta6c406e4cee090b8044eea3b9b6c7a5b6391b3ab is pushed. Real CLI
+and temporary parent CMake consumer pass four properties/absolute artifacts/
+dependency ordering/full source/image/map identities/false flags and exact CLI
+byte equality. All four earlier pinned exports reproduce unchanged image hashes.
+Temporary parent source/build removed; ignored artifacts in build/analog-candidate.
+Exact artifact/fit/shifted handoff/priming packet sent Mars req_6f74. Independent
+execution still pending; do not ack fullR62 or claim acquired first sample from
+Ready. Consumer pins/defaults/buildgates/exportflags unchanged. Next independent
+POKEY/8axis/pending/midcopy/CRITIC/state-process/lifecycle acceptance, then
+specify keypad/fire/IRQ/timers/reset services. Lease released after push.
+
+
 ## Analog shadow authored slice
 
 Approved Mars msg_092a/83a8a400 qualifications incorporated in brief revision2.
