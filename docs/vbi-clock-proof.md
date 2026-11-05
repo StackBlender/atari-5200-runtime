@@ -118,3 +118,12 @@ The original711a2e9 export reproduced its unchanged b2d8ebb8... image at the sam
 time. Existing build/ CTest passed all66 methods. Temporary parent source/build
 were removed; ignored build/vbi-candidate retains the new integration artifacts.
 No CPU/chip execution or new-provider acceptance occurred locally.
+
+
+## Subsequent independent acceptance
+
+Integration-owner msg_9ae4 now reports the bounded execution/timing/state matrix
+passing; see [independent receipt](independent-execution.md). This supersedes
+pending owner-execution steps above, without converting static analysis into a
+local execution result or changing the generated flags/pin. Further service,
+release and product acceptance remain separate.

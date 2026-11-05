@@ -16,8 +16,10 @@ timing, development-provider and state/replay checks passing; see the
 [independent receipt](docs/independent-execution.md). Cartridge compatibility
 and supported product integration remain unverified.
 A separate approved-scope VBI/clock extension is now authored and fits with804
-bytes unwritten;66 offline checks pass. Its independent interrupt/clock/state
-execution remains pending; see the [static packet](docs/vbi-clock-proof.md).
+bytes unwritten;66 offline checks pass. The integration owner reports independent interrupt/clock/state checks passing,
+with startup at most1204 full cycles and default VBI handler at most95 for the
+DMA-off diagnostics; see the [execution receipt](docs/independent-execution.md).
+The development adapter change awaits a separately authorized release.
 Input scanning, display shadows and further interrupt services remain future work.
 
 ## Intended design

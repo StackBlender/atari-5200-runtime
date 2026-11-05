@@ -43,3 +43,41 @@ input scanning, clocks/timers, display shadows, broader assets/reset/layouts and
 full service fit still require reviewed contracts and independent fixtures.
 No game compatibility, original-system equivalence, supported module release,
 consumer acceptance, app enablement, device result or production approval follows.
+
+
+## VBI clock independent execution receipt
+
+Integration-owner report received2026-11-05 for source pin
+ba90c8550c1be1c85b5aa7d6810e1ee6c6031656, image
+62df6162ac3accdfa19769c8f2dcd450c510e385fa71f98ec7912f61d449fa54.
+The exact new image/manifest/map/full-pin/version/symbol tuple is independently
+allowlisted in the development adapter. This is owner-reported execution,
+not a local rerun or original-system measurement. The integration is committed,
+pending a separately authorized release; the previous released baseline remains.
+
+Actual NMI selection while Starting, including interrupt-vector hijack, and
+pending-NMI handoff refusal prevent false Ready without host service execution,
+PC replacement or pending-state clearing. No persistent observer/schema change:
+image-bound sb52rt-dev1 rejects old/new states in both directions before mutation.
+
+Independent fixtures report288 clock-seed/I-D/CRITIC/callback combinations with
+two real ANTIC VBIs each, plus120 default VBIs; real DLI refusal and explicitly
+synthetic status/pending/vector-hijack/early/helper/near-handoff/ANTIC-phase cases.
+Exact old/new RMW writes, marker order, RTI/register/stack/caller RAM pass. Twelve
+actual instruction safe points replay in same/fresh instances; separate-process
+mid-service checkpoint byte replay passes. These are synchronized safe points,
+not arbitrary mid-instruction or half-written-RMW snapshots.
+
+Startup1197 full cycles/411 instructions, valid boundary maximum1204/414.
+DMA-off/ordinary-refresh default handler maximum95 full cycles including RTI;
+custom-marker path119; hardware-entry latency7 separately. The4096 startup and
+512 default-handler targets pass for those diagnostics. No arbitrary callback,
+active-DMA/WSYNC/held-RDY/nesting bound, original hardware or mobile result follows.
+
+Full Release unity and nonunity Debug ASan suites (leaks disabled),20 converter
+negatives, all prior startup/metadata/RAM/DMA/pixels/reset/fault/replay/lifecycle
+checks, old-provider/default-OFF/a26 regressions and firmware scans pass per owner.
+No foreign implementation/test code was read/copied here. Export pin, false labels
+and accepted capabilities remain unchanged. This is bounded development service
+acceptance only; product enablement, further ongoing services, supported runtime
+release, consumer validation and full integration request completion remain open.

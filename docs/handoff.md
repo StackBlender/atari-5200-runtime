@@ -1,5 +1,22 @@
 # Runtime handoff
 
+## Latest independent VBI acceptance
+
+Owner msg_9ae4 accepts the exact ba90c8550c1be1c85b5aa7d6810e1ee6c6031656
+candidate in committed development integration, pending separate release.
+See docs/independent-execution.md for owner-reported288 combinations/120VBIs,
+actual interrupt-selection/pending-NMI failure, RMW/stack/callback/RAM and twelve
+safe-point/fresh/process state replay results. Startup1197/1204 full cycles,
+default handler95 inclRTI, custom119, hardware entry7 separately. Release unity/
+nonunity Debug ASan and baseline/default-OFF/a26/converter/firmware checks pass.
+No local CPU run or foreign implementation/test exposure. No observer schema
+change; sb52rt-dev1 old/new state refusal passes. False labels and both source
+pins unchanged. This supersedes pending-independent-execution notes below.
+Next specify display-shadow transfer with reviewed MMIO/cadence/CRITIC/order,
+allocation and independent acceptance before authoring. No full service/game/
+product or new release authorization; main integration request remains open.
+
+
 ## Current VBI clock authoring slice
 
 Mars msg_1e39 /3c6a4ce approves bounded vbi-clock-v1 with qualifications now
@@ -123,9 +140,9 @@ measured retail. Generated binaries/reports remain ignored in existing build/.
 
 ## Resume
 
-Baseline independent bounded execution remains accepted as development evidence.
-Next deliver the separate committed VBI image/descriptor/map/full-pin and exact
-static proof packet after target/CLI validation. Mars owns observer/allowlist and
-independent execution before any new provider acceptance. Do not modify baseline
-711a2e9 inputs/flags or adopt new state identity silently. Keep roadmap/handoff
-current, push passing slices and release lease after delivery.
+Both baseline and VBI-clock independent execution are accepted as bounded
+development evidence. Next specify display-shadow transfer under the existing
+allocation and vector/CRITIC conventions, with exact MMIO order and independent
+fixtures, then request scope review. Wait for separately authorized integration
+release and consumer checks before any app adoption. Preserve false labels,
+source pins and state boundaries. Keep roadmap/handoff current and release lease.

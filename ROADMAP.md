@@ -31,14 +31,22 @@ Mars msg_1e39 /3c6a4ce approves vbi-clock-v1 bounded authoring with corrections
 incorporated in docs/vbi-clock-brief.md revision2. Separate authored module now
 fits1244/2048 bytes with804 remaining, margin250 untouched.66 offline tests pass;
 see docs/vbi-clock-proof.md. Startup handoff movesFC6F; new exact tuple/observer
-and independent execution still require Mars acceptance. Original711a2e9 inputs
+and independent execution are now accepted as development evidence below. Original711a2e9 inputs
 and false flags remain unchanged; separate opt-in export avoids silent adoption.
 
-Concrete next action: deliver committed VBI candidate target/full-pin/artifact/
-fit/static proof packet for Mars' independent startup-NMI, real VBI/clock/callback/
-stack/state/replay/lifecycle acceptance. No retail VBI policy selected, CPU engine,
-new provider approval or product enablement. Ongoing input/display/IRQ services
-remain later bounded contracts.
+Integration-owner receipt msg_9ae4 independently accepts the exact VBI candidate:
+startup1197 normal/1204 boundary full cycles; default VBI max95 including RTI,
+hardware entry7 separately.288 two-VBI combinations plus120 default VBIs,
+interrupt/state-safe-point/process-replay/lifecycle and Release/nonunity ASan
+checks pass per owner. See docs/independent-execution.md. No local rerun;
+provider change is committed but pending separately authorized release.
+
+Concrete next action: specify bounded display-shadow transfer, its VBI/CRITIC
+ordering, exact MMIO/write whitelist, allocation and independently expected
+fixtures before adding another service. Do not assume that clock/vector acceptance
+already supplies display/input/DLI/IRQ. Preserve both accepted candidate pins,
+false export flags and image-bound state identities. No retail VBI policy or
+product enablement; release and full consumer acceptance remain separate.
 
 1. **RUNTIME-002: approved startup and service evidence.** Build a per-service
    numeric ABI/evidence matrix from screened primary behavioral documentation
