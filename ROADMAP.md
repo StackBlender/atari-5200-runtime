@@ -11,7 +11,9 @@ Current RUNTIME-004 batch: display-shadow-v1 implemented as a separate candidate
 See docs/display-shadow-brief.md and docs/display-shadow-proof.md: twelve ordered
 transfers after clock/CRITIC and before deferred callback;1307 written/741 free,
 zero extra RAM, margin250 intact.73 offline tests and CTest pass; no CPU execution.
-Next obtain Mars scope/tuple review and independent real bus/render/callback/
+Committed export pin9d7071f837ec513905b4a2f9718e269c7662b90c passes real
+CLI/parent target properties/dependency/hash/byte-equality checks; both previous
+pinned exports reproduce. Next obtain Mars scope/tuple review and independent real bus/render/callback/
 state-process acceptance. Existing711a2e9/ba90c85 exports stay unchanged. After
 this bounded acceptance, specify four-controller analog/keypad/fire scanning and
 DLI/IRQ services with separate contracts before authoring; no game claim yet.

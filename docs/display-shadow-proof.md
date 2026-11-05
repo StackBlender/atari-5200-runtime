@@ -76,3 +76,15 @@ These checks do not execute a CPU or implement a second emulator. Independent
 Mars fixtures are specified in the brief and must verify actual bus order,
 CRITIC/immediate/deferred semantics, real DMA/render, save/process replay,
 converter negatives, lifecycle, sanitizers and both earlier provider regressions.
+
+## Committed display export receipt
+
+Source/export pin9d7071f837ec513905b4a2f9718e269c7662b90c is pushed. Real
+CLI and temporary parent CMake consumer passed all four target properties,
+absolute artifacts, dependency-before-converter order, source/image/map hashes,
+false approvals and CLI-byte equality. Original711a2e9 and ba90c85 pinned
+exports reproduce their unchanged hashes. Temporary consumer source/build removed;
+final candidate artifacts remain ignored in build/display-candidate. No CPU run.
+Full delivery sent to Mars on req_6f74; independent scope/execution reply pending.
+Next review owner response, resolve any contract discrepancy, then obtain real
+bus/render/state acceptance before following controller/DLI/IRQ service work.
