@@ -115,3 +115,8 @@ extends the bounded VBI clock with display-list/color/DMA shadow transfer. It fi
 within the existing2 KiB allocation and passes offline encoding/export tests.
 Independent CPU/render/state acceptance is pending; this is still not a complete
 BIOS replacement or evidence of playable games.
+
+
+A separate [DLI dispatch candidate](docs/dli-dispatch-proof.md) adds the original
+cartridge callback route for display-list interrupts. Offline checks pass; actual
+DLI/raster and replay acceptance remain pending alongside display-shadow execution.

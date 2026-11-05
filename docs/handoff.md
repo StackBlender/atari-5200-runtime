@@ -1,5 +1,23 @@
 # Runtime handoff
 
+## Current DLI dispatch continuation
+
+Original dli-dispatch-v1 atop pending display-shadow-v1, separate source/export/
+target; scope sent Mars req_6f74/msg_d7c0. No display acceptance assumed. See
+docs/dli-dispatch-{brief,proof}.md. Image SHA256
+374465be3cfce3d15c10c7899f4fedbd8cf854b23ee1734b9302c7049e55e05c,
+1318/2048 used,730 free incl250 untouched margin. ClassifierFCC0 accepts40→0202
+and80→0206; old rangeFC89 becomesFF, startup/other labels unchanged. No extra
+RAM; DLI callback hardware frame only/own register saves/RTI, default0206 faults.
+80 offline methods/CTest pass; no actual CPU/raster/state run. Source export
+requires committed full pin; real CLI/parent verification follows next receipt.
+Exact changed paths: tools/dli_dispatch_image.py, tools/export_dli_candidate.py,
+cmake/dli-dispatch-candidate.cmake, tests/test_dli_dispatch_image.py,
+docs/dli-dispatch-brief.md and proof, README/ROADMAP/testing/sources/handoff.
+Next send full pinned packet, resolve Mars contract review and independent DLI+
+display acceptance; then specify four-controller input service. Current consumer
+pins/defaults/false labels unchanged. Runtime write lease held until final push.
+
 ## Committed display export receipt
 
 Source/export pin9d7071f837ec513905b4a2f9718e269c7662b90c is pushed. Real

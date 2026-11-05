@@ -134,3 +134,12 @@ build/display-shadow; export committed source with tools/export_display_candidat
 Separate opt-in CMake target sb5200-display-shadow-image preserves prior pins.
 Exact bytes/fit/reproducibility/export refusal are offline checks only; hardware
 write order, rendering and synchronized state replay require integration execution.
+
+
+## DLI dispatch candidate
+
+Seven additional methods bring total80. Generate unexported image/map using
+tools/dli_dispatch_image.py --output-dir build/dli-dispatch. Separate pinned
+export tools/export_dli_candidate.py and opt-in target sb5200-dli-dispatch-image
+are documented in dli-dispatch-proof.md. Byte/branch/vector/fit/provenance and
+fail-before-output checks do not execute NMI or establish raster/state acceptance.

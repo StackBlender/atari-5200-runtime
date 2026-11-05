@@ -194,3 +194,13 @@ header declarations/comments/macros only, no producer implementation or tests.
 Original transfer order, CRITIC policy, byte-preserving behavior and independent
 fixtures are authored here; not historical facts. No new opcode facts, Atari
 firmware, original-system observations, extracted artwork or reference traces.
+
+
+## Original DLI dispatch service exposure
+
+No new external source was consulted. Reuse CONSUMER-01 vector0206 and existing
+CONSUMER-02 NMIST/NMIRES masks/aliases, CPU-02 factual opcode/timing subset.
+Current-latch dispatch, callback-own-register RTI ABI, exact-source failure and
+budget/fixtures are original development policy. No Atari firmware/kernel/source/
+trace, foreign implementation/test or manufacturer program access. Display/DLI
+execution are pending independent integration; no original-system measurements.

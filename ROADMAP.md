@@ -7,6 +7,15 @@ for cartridge startup.
 
 ## Next
 
+Current RUNTIME-004 continuation: authored a separately labeled
+DLI-dispatch candidate atop the pending display candidate, without claiming its
+acceptance. docs/dli-dispatch-brief.md defines current-latch exact40/80 routing,
+cartridge-owned RTI callback0206, unchanged VBI service and no extra RAM. Preserve
+all earlier source exports and false labels. New1318-byte usage leaves730 free;
+80 offline tests/CTest pass. Mars req_6f74/msg_d7c0 receives
+scope for independent review; both display and DLI need separate real execution
+acceptance before app enablement. Next specify four-controller input scan.
+
 Current RUNTIME-004 batch: display-shadow-v1 implemented as a separate candidate.
 See docs/display-shadow-brief.md and docs/display-shadow-proof.md: twelve ordered
 transfers after clock/CRITIC and before deferred callback;1307 written/741 free,
@@ -53,7 +62,8 @@ checks pass per owner. See docs/independent-execution.md. No local rerun;
 provider change is committed but pending separately authorized release.
 
 Display-shadow contract and authored candidate now supplied above; next obtain
-independent integration acceptance before building the following service. Do not assume that clock/vector acceptance
+independent integration acceptance; separate DLI candidate authoring above does
+not promote the pending display candidate to accepted. Do not assume that clock/vector acceptance
 already supplies display/input/DLI/IRQ. Preserve both accepted candidate pins,
 false export flags and image-bound state identities. No retail VBI policy or
 product enablement; release and full consumer acceptance remain separate.
