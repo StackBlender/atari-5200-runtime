@@ -1,0 +1,4 @@
+/build*/
+/tests/local/
+__pycache__/
+*.pyc

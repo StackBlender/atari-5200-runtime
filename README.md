@@ -8,8 +8,10 @@ StackBlender is building this to completion and sharing it freely as a goodwill
 gesture to the emulation community. The runtime is intended to be useful beyond
 StackBlender's apps. No community contribution is needed to complete the work.
 
-**Planning stage:** this repository currently contains documentation and a license.
-There is no runtime implementation, generated image, build or compatibility claim.
+**Development started:** the repository contains an original bounded 6502 emitter,
+an offline build and 17 tool-contract tests. The generated layout fixture has
+zero runtime capabilities. Cartridge startup and runtime services are not yet
+implemented; no compatibility is claimed.
 
 ## Intended design
 
@@ -45,7 +47,9 @@ and exposure ledger; do not label unmeasured behavior as verified compatibility.
 
 ## Work to completion
 
-- Assign the runtime maintainer and establish the supported service/evidence contract.
+- Establish the supported service/evidence contract. StackBlender is maintaining
+  the project; current work and recovery details are in [ROADMAP.md](ROADMAP.md)
+  and [docs/handoff.md](docs/handoff.md).
 - Define startup/reset semantics, original asset encoding and a reviewed allocation
   budget covering code, assets, vectors, free space and all RAM/stack ownership.
 - Establish reference access or an explicitly scoped documentary baseline.
@@ -59,8 +63,25 @@ and exposure ledger; do not label unmeasured behavior as verified compatibility.
   and compatibility failures through the full implementation and validation effort.
   The initial prototype and NTSC profile are milestones toward completion.
 
-There are no build or test commands yet. No Atari firmware is included. Implementation and integration acceptance remain
-separate from this repository bootstrap.
+## Build and test the foundation
+
+Requires Python 3.10+, CMake 3.20+ and Ninja. No firmware, game, external assembler
+or network download is needed.
+
+```sh
+cmake -S . -B build -G Ninja
+cmake --build build
+ctest --test-dir build --output-on-failure
+```
+
+The build generates an original 2 KiB **tool fixture**, `build/generated/layout-test.bin`,
+and its JSON allocation/hash report. Four instruction bytes and six vector bytes
+are written; 2038 bytes remain unused. This demonstrates emitter layout only,
+with no claim that the eventual runtime and font fit or work. It must not be
+selected as a BIOS replacement.
+
+[Testing](docs/testing.md), [contract](docs/contract.md) and
+[source/evidence ledger](docs/sources.md) describe the checks and remaining work.
 
 ## License
 
