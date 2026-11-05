@@ -21,7 +21,12 @@ ABI1 manifest with image/map/source identities, cold-only/Linear32K and fault ma
 all57 offline tests pass. Candidate flags remain false; source export must not
 require the execution approval it enables. Image bytes unchanged. docs/candidate-
 export.md is the exact interface/build/provenance packet. Pinned generation inputs
-must be committed before CLI/target emission. Parent harness check follows commit.
+must be committed before CLI/target emission. Export implementation commit
+711a2e986f7906f45aebd310e6330fd7ffc338bf passed the real CMake target and57-test
+CTest suite. A temporary parent add_subdirectory harness verified all4 properties,
+absolute existing artifacts, manifest/map/image hashes/full revision and consumer
+dependency ordering; fresh CLI exports were byte-identical and real prior-pin
+export refusal created no output. Temporary harness removed. No CPU acceptance.
 Mars owns read-only C++ conversion, not a GPL implementation header import.
 
 ## First authored module

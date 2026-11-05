@@ -70,9 +70,13 @@ Seven new tests check exact image identity, full revision formatting, complete
 manifest/map identity and independent fault addresses, false approval flags,
 revision-bound deterministic output, modified-input rejection, checking every
 export input and invalid CLI no-output behavior. Total57 offline tests pass.
-A parent CMake harness additionally must build the target, read all four
-properties and verify three existing absolute artifacts, hashes/full revision,
-unchanged image and dependency ordering. Record that build receipt in the handoff.
+The real CMake target and57-test CTest suite passed at export commit
+711a2e986f7906f45aebd310e6330fd7ffc338bf. A temporary parent add_subdirectory
+harness built a dependent consumer and verified all4 properties, absolute paths,
+three artifacts, hashes/full revision and dependency ordering. Fresh CLI artifacts
+were identical; an actual stale-generation-input pin was rejected before output.
+The temporary harness was removed. These are build/export receipts, not CPU
+execution or provider acceptance.
 
 Next Mars stages opt-in provider, structured reset/status and instruction-boundary
 observer, independently executes the original positive/negative/write/asset
