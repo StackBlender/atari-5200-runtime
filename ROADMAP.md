@@ -27,11 +27,13 @@ replay/lifecycle pass per owner. No local rerun or original-system observation.
 Candidate export pin711a2e986f7906f45aebd310e6330fd7ffc338bf and false flags remain
 unchanged; the adapter requires those labels.
 
-Concrete next action: specify the next ongoing-service contract and allocation
-with independently expected fixtures before authoring it. Resolve VBI policy for
-an explicitly named development scope without inventing retail equivalence.
-Full ongoing services/module and consumer acceptance remain; no release, app pin
-or retail compatibility approval. Module contains no CPU emulator/traps.
+Concrete next action: review docs/vbi-clock-brief.md revision1 with the
+integration owner, then author the bounded vbi-clock-v1 extension after scope
+acceptance. Packet specifies CPU NMI/vector callbacks,16-bit clock/CRITIC,
+stack/write ownership, ROM ceilings and independent full-cycle/replay fixtures.
+Implementation acceptance requires exact fit, updated startup timing and new
+candidate identity/adapter review; current711a2e9 inputs/flags remain untouched.
+No retail VBI policy is selected or measured; full services remain unfinished.
 
 1. **RUNTIME-002: approved startup and service evidence.** Build a per-service
    numeric ABI/evidence matrix from screened primary behavioral documentation

@@ -1,5 +1,17 @@
 # Runtime handoff
 
+## Next service scope
+
+User2026-11-05: continue5200. Prepared docs/vbi-clock-brief.md revision1 under
+RUNTIME-004: named original vbi-clock-v1, actual NMI classifier, immediate/deferred
+vector stack contracts, little-endian clock-before-CRITIC, exact persistent-write
+boundaries, unchanged ROM ceilings and independent acceptance matrix. No service
+implementation approved/emitted yet; current source711a2e9/generation flags stay
+unchanged. CONSUMER-02 pinned ANTIC declaration reread/hash verified for aliases/
+masks only; no emulator/kernel/tests viewed. Send pushed full source revision to
+Mars on req_6f74 for concrete authoring/observer/state boundary review, then
+implement after acceptance. Existing bounded MR-42 receipt is development-only.
+
 ## Current slice and authorization
 
 Apollo Retro maintains this public GPL-3.0-or-later project under explicit owner
@@ -99,9 +111,10 @@ measured retail. Generated binaries/reports remain ignored in existing build/.
 
 ## Resume
 
-Candidate export delivery and independent bounded development execution are now
-reported complete for the pinned scope. Next specify an ongoing-service contract,
-RAM/stack/ROM allocation and independent fixture expectations for owner review.
-Do not expand services on assumed retail defaults. Preserve the current candidate
-export labels and pin; no supported release or app adoption follows. Keep roadmap/
-handoff current, push coherent passing work and release the repo lease.
+Candidate export and independent bounded execution are reported complete.
+Next review docs/vbi-clock-brief.md with Mars on req_6f74, resolve its concrete
+open integration decisions, then author the accepted service and verify exact
+fit/encoding/stack/static cycles before requesting independent execution. Keep
+current711a2e9 export reproducible and unchanged until explicit adapter review.
+Do not expand services using assumed retail defaults or reuse old Ready states.
+Keep roadmap/handoff current, commit/push passing slices and release the lease.

@@ -157,3 +157,15 @@ artifact target/properties are an integration contract, not firmware evidence.
 Original tools/export_candidate.py packages our unchanged image/map with pinned
 source identity and false approval flags. No external code, C++ header, service,
 new firmware input or new reference result is introduced.
+
+
+## VBI clock proposal source receipt
+
+CONSUMER-02 public _antic.h at the same pinned revision was reread for NMIEN/
+NMIST/NMIRES declarations only; SHA256 remains318208d0edfe3c65471170067e1ff7360db738cddeac2be9cf6f53febb95fd95.
+Declarations provide DLI80/VBI40/Reset20 masks and shared read/write status/reset
+alias, including a comment that NMIRES clears all sources together. No producer
+implementation was read. docs/vbi-clock-brief.md uses these factual declarations
+and the existing PAM/consumer packet, with all new policy explicitly original.
+No new Atari firmware/reference result or retail VBI reconciliation. Network web
+fetch failed, then a direct pinned read/hash verification succeeded; no file cached.
