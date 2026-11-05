@@ -127,3 +127,10 @@ candidates: actual writes/rendering, callback/interrupt handling and synchronize
 process replay pass per the [receipt](docs/independent-execution.md). Input/timer/
 reset completion, games and product enablement remain open. All candidate export
 flags stay false; integration changes await a separately approved release.
+
+
+The original [eight-axis analog candidate](docs/analog-shadow-proof.md) now
+primes hardware conversion at cold startup and copies completed samples for
+four controllers during eligible VBI. Offline tests pass; actual acquisition/
+state acceptance is pending. Keypad/fire services and complete game support
+remain unfinished.

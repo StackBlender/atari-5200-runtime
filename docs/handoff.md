@@ -1,5 +1,22 @@
 # Runtime handoff
 
+
+## Analog shadow authored slice
+
+Approved Mars msg_092a/83a8a400 qualifications incorporated in brief revision2.
+Separate tools/analog_shadow_image.py/export_analog_candidate.py and
+cmake/analog-shadow-candidate.cmake, tests/test_analog_shadow_image.py,
+docs/analog-shadow-proof.md. Image SHA
+32343a567399b3b4f9c142bde446fe89397267267d51a89393553fdab9471290,
+1384 written/664 free, startup127/128, input53/176, margin250 untouched.
+Explicit SKCTL03/CONSOL04/POTGO prime; one ALLPOT read, pending skips copy and
+restart, complete copies8 raw bytes to0011..18 then restarts, before display.
+HandoffFC7C, metadata JSRFC71/returnFC73/resumeFC74; startup1124/1131 nominal
+cycles, default completed VBI240..245, pending179..184. No new RAM/stack.
+87 offline methods/CTest pass; real pinned export/parent check follows commit.
+No CPU/conversion/provider/product acceptance. Next Mars independently executes
+exact tuple; remaining keypad/fire/IRQ/timers/reset need separate contracts.
+
 ## Independent display and DLI acceptance
 
 Mars msg_8f2c /4daa27f5be981b0d1a1b5a923bf40e24e97f3f4a accepts separate

@@ -1,9 +1,10 @@
 <!-- SPDX-License-Identifier: GPL-3.0-or-later -->
 # Eight-axis analog shadow service proposal
 
-RUNTIME-004 next service, original proposal1. Not implemented or approved.
+RUNTIME-004 original service revision2. Bounded authoring approved by Mars
+msg_092a /83a8a400; independent execution/provider acceptance remains pending.
 Display/DLI bounded independent execution accepted per msg_8f2c; their pins
-and false export labels stay unchanged. This analog policy still needs review.
+and false export labels stay unchanged. The qualifications below are included in this approved original policy.
 Target all eight standard-controller axes across four ports under the existing
 NTSC development profile. No keypad/fire scan, reset-key handling or retail claim.
 
@@ -28,14 +29,19 @@ keypad/top fire. POTGO samples all four ports independently of that selector,
 and later power/select changes do not rewrite already sampled conversion targets.
 Real hardware timing/equivalence and keypad semantics remain separately unproved.
 
-## Proposed original policy for review
+## Approved original development policy
 
 After existing cold shadow/vector initialization, before metadata validation:
 write SKCTL03, CONSOL04, then POTGO04 (ignored data). This primes a real conversion
 once, without extra persistent RAM. Preserve IRQEN00/NMIEN00 and actual CPU/chip
 execution; no host-computed POT bytes. Startup's earlier SKCTL00 reset remains.
 New cold writes deliberately enable conversion/analog power; keyboard scanning
-can run with IRQEN disabled but no keypad/fire service is claimed.
+runs with IRQEN disabled but no keypad/fire service is claimed. SKCTL03 also
+starts shared prescaler/polynomials: RANDOM, audio clock phase, KBCODE and SKSTAT
+may evolve. IRQEN00 prevents a CPU IRQ line; enabling keyboard IRQ later does
+not guarantee delivery for an already-held key. No phase-equivalence claim to
+older candidates. Install the frozen host input vector BEFORE startup POTGO;
+cold Trak-Ball held velocity0 may center the initial sample until post-run poll.
 
 On eligible VBI after clock/CRITIC check and BEFORE display transfer:
 
@@ -49,7 +55,8 @@ On eligible VBI after clock/CRITIC check and BEFORE display transfer:
    no spin, waiting loop, extra IRQ, hidden first-sample flag or scratch RAM.
 
 Before the first completed conversion, cold shadows remain zero (existing ABI
-initialization), explicitly unavailable startup samples, not centered readings.
+initialization). Zero is also a valid endpoint: without a validity flag,
+neither shadow zero nor runtime Ready proves the first sample completed.
 If the first VBI arrives before conversion completes, leave shadows zero and
 allow the already primed conversion to continue. CRITIC may postpone consumption
 for multiple frames; resume copies the completed old sample then starts a fresh
@@ -65,7 +72,7 @@ No assumption that ALLPOT00 establishes validity after arbitrary reset/config
 changes. No warm reset, partial-channel restart or runtime-selected fast mode.
 DLI callback must not change acquisition controls in the supported fixture.
 
-## Estimated fit and fixtures
+## Fit and independent fixtures
 
 Potential startup sequence13 bytes (LDA03/STA E80F, LDA04/STA C01F/STA E80B)
 fits remaining14 startup bytes: startup127/128, handoff movesFC7C. This is near
@@ -83,5 +90,8 @@ skips/resume, exact RAM/MMIO write order, no audio-register writes, register/sta
 clock/display/DLI coexistence and safe-point/same/fresh/process replay including
 pending conversions. Strict new image/config identity and R65 host-vector-before-
 import order apply. Release/sanitizer/default-OFF/old-provider checks remain.
-No CPU loop or firmware input service is implemented by this proposal. Obtain
-integration review before authoring or claiming the chosen startup/cadence policy.
+Independent execution must verify the emitted artifact before claiming supported
+input service. Startup16 extra nominal cycles/5 instructions; new handoffFC7C,
+JSR metadata atFC71 pushes returnFC73 and resumesFC74. Existing final register/
+flag/SP/cart metadata postconditions must hold. Completion after a nonzero
+ALLPOT read waits another eligible VBI; no reread/restart during pending branch.

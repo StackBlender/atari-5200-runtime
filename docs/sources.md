@@ -214,3 +214,13 @@ implementation/test read. Cold ALLPOT00 requires explicit prime; selected origin
 policy remains proposed, not Atari hardware/reference behavior. Timing observations
 of this emulator are not promoted to measured original-board facts. No new
 external source exposure, firmware image or instruction trace.
+
+
+## Approved analog authoring qualification
+
+Mars msg_092a /83a8a400 reviews original proposal with explicit SKCTL keyboard/
+prescaler/polynomial side effects, no first-sample flag, frozen input before prime,
+Trak-Ball cached startup behavior, pending/CRITIC ordering and fit/state tests.
+Only prose review read; no implementation/test exposure. Existing factual opcode
+subset reused without additions. New original runtime bytes/fixtures/manifest
+are authored here; no firmware/reference or historical scan behavior claimed.

@@ -143,3 +143,12 @@ tools/dli_dispatch_image.py --output-dir build/dli-dispatch. Separate pinned
 export tools/export_dli_candidate.py and opt-in target sb5200-dli-dispatch-image
 are documented in dli-dispatch-proof.md. Byte/branch/vector/fit/provenance and
 fail-before-output checks do not execute NMI or establish raster/state acceptance.
+
+
+## Analog shadow candidate
+
+Seven new tests bring total87. tools/analog_shadow_image.py emits ignored
+image/map; tools/export_analog_candidate.py requires committed source. Separate
+opt-in sb5200-analog-shadow-image target documented in analog-shadow-proof.md.
+Offline prime/pending/copy/restart bytes/fit/provenance tests do not prove real
+POKEY acquisition, initial validity, callback/state execution or game support.
