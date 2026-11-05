@@ -27,13 +27,18 @@ replay/lifecycle pass per owner. No local rerun or original-system observation.
 Candidate export pin711a2e986f7906f45aebd310e6330fd7ffc338bf and false flags remain
 unchanged; the adapter requires those labels.
 
-Concrete next action: review docs/vbi-clock-brief.md revision1 with the
-integration owner, then author the bounded vbi-clock-v1 extension after scope
-acceptance. Packet specifies CPU NMI/vector callbacks,16-bit clock/CRITIC,
-stack/write ownership, ROM ceilings and independent full-cycle/replay fixtures.
-Implementation acceptance requires exact fit, updated startup timing and new
-candidate identity/adapter review; current711a2e9 inputs/flags remain untouched.
-No retail VBI policy is selected or measured; full services remain unfinished.
+Mars msg_1e39 /3c6a4ce approves vbi-clock-v1 bounded authoring with corrections
+incorporated in docs/vbi-clock-brief.md revision2. Separate authored module now
+fits1244/2048 bytes with804 remaining, margin250 untouched.66 offline tests pass;
+see docs/vbi-clock-proof.md. Startup handoff movesFC6F; new exact tuple/observer
+and independent execution still require Mars acceptance. Original711a2e9 inputs
+and false flags remain unchanged; separate opt-in export avoids silent adoption.
+
+Concrete next action: deliver committed VBI candidate target/full-pin/artifact/
+fit/static proof packet for Mars' independent startup-NMI, real VBI/clock/callback/
+stack/state/replay/lifecycle acceptance. No retail VBI policy selected, CPU engine,
+new provider approval or product enablement. Ongoing input/display/IRQ services
+remain later bounded contracts.
 
 1. **RUNTIME-002: approved startup and service evidence.** Build a per-service
    numeric ABI/evidence matrix from screened primary behavioral documentation

@@ -1,16 +1,25 @@
 # Runtime handoff
 
-## Next service scope
+## Current VBI clock authoring slice
 
-User2026-11-05: continue5200. Prepared docs/vbi-clock-brief.md revision1 under
-RUNTIME-004: named original vbi-clock-v1, actual NMI classifier, immediate/deferred
-vector stack contracts, little-endian clock-before-CRITIC, exact persistent-write
-boundaries, unchanged ROM ceilings and independent acceptance matrix. No service
-implementation approved/emitted yet; current source711a2e9/generation flags stay
-unchanged. CONSUMER-02 pinned ANTIC declaration reread/hash verified for aliases/
-masks only; no emulator/kernel/tests viewed. Send pushed full source revision to
-Mars on req_6f74 for concrete authoring/observer/state boundary review, then
-implement after acceptance. Existing bounded MR-42 receipt is development-only.
+Mars msg_1e39 /3c6a4ce approves bounded vbi-clock-v1 with qualifications now
+incorporated in docs/vbi-clock-brief.md revision2. tools/vbi_clock_image.py emits
+an original separate2048-byte image:1244 written/804 remaining, margin250 intact.
+SHA62df6162ac3accdfa19769c8f2dcd450c510e385fa71f98ec7912f61d449fa54.
+ClassifierFC89, system_vbiFCA0, exitFCB0, clockFDF0, changed handoffFC6F.
+No new CPU engine; six local NMOS encodings preserve baseline emitter/table.
+Separate export_vbi_candidate.py and opt-in cmake/vbi-clock-candidate.cmake
+verify all pinned inputs before producing image/map/manifest with false flags.
+Nine new test methods (66 total) pass; docs/vbi-clock-proof.md owns byte/stack/
+base-cycle/fit/static expectations. Startup1115 worst base cycles/414 instructions;
+default VBI81..86 base cycles/25..26 instructions, max stack6 including hardware.
+These are static results, not CPU/ANTIC execution or a new accepted provider.
+Original711a2e9 generation inputs/hash unchanged. After committed artifact-target
+validation, send full new pin/build/hash/symbol packet to Mars on req_6f74.
+Mars must extend Starting interrupt/pending-NMI observation and tuple allowlist,
+then independently exercise real VBI/callback/clock/RMW writes/stack/state/replay.
+Mixed/Reset sources synthetic; state captures actual synchronization safe points.
+No retail VBI reconciliation, module release or app enablement approval.
 
 ## Current slice and authorization
 
@@ -111,10 +120,9 @@ measured retail. Generated binaries/reports remain ignored in existing build/.
 
 ## Resume
 
-Candidate export and independent bounded execution are reported complete.
-Next review docs/vbi-clock-brief.md with Mars on req_6f74, resolve its concrete
-open integration decisions, then author the accepted service and verify exact
-fit/encoding/stack/static cycles before requesting independent execution. Keep
-current711a2e9 export reproducible and unchanged until explicit adapter review.
-Do not expand services using assumed retail defaults or reuse old Ready states.
-Keep roadmap/handoff current, commit/push passing slices and release the lease.
+Baseline independent bounded execution remains accepted as development evidence.
+Next deliver the separate committed VBI image/descriptor/map/full-pin and exact
+static proof packet after target/CLI validation. Mars owns observer/allowlist and
+independent execution before any new provider acceptance. Do not modify baseline
+711a2e9 inputs/flags or adopt new state identity silently. Keep roadmap/handoff
+current, push passing slices and release lease after delivery.

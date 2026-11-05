@@ -1,8 +1,9 @@
 <!-- SPDX-License-Identifier: GPL-3.0-or-later -->
 # VBI and clock development service proposal
 
-RUNTIME-004 next service, revision1, 2026-11-05. **Proposal for scope review,
-not authoring approval, emitted implementation or measured retail behavior.**
+RUNTIME-004 next service, revision2, 2026-11-05. **Bounded authoring approved
+by Mars msg_1e39 /3c6a4ce with the qualifications below. Independent execution,
+provider/release acceptance and measured retail behavior are not approved.**
 The existing source711a2e986f7906f45aebd310e6330fd7ffc338bf and its exported
 candidate labels remain unchanged. This proposal requires a distinct image,
 manifest version and explicitly reviewed integration allowlist before execution.
@@ -36,8 +37,8 @@ forcing a host PC or invoking callbacks in C++ is not service execution.
 
 The new CPU NMI vector points to an authored classifier in the interrupt region.
 It temporarily saves A (PHA), reads NMIST once, and accepts exactly the supported
-source bits: VBI set, DLI/Reset clear. Lower non-source bits are ignored. It writes
-NMIRES once to acknowledge the source latch, restores A (PLA), then CPU-indirect
+source bits: (NMIST & E0)==40. Lower non-source bits are ignored. It writes
+NMIRES once to acknowledge the current source latch, restores A (PLA), then CPU-indirect
 JMPs through vvblki0202. No hardware stack frame is removed by classification.
 X/Y are untouched. Live condition flags are unspecified; interrupted P/PC remain
 on the real CPU stack. I is set by hardware NMI; D may still be set. No decimal
@@ -45,7 +46,11 @@ arithmetic is used by runtime clock work.
 
 DLI-only, Reset-source, simultaneous VBI+DLI/Reset and a spurious NMI without VBI
 reach nmi_faultFC80 before clock/callback work. Do not acknowledge an unsupported
-source as a serviced VBI. This deliberately refuses mixed-source work rather
+source as a serviced VBI. Mixed/Reset register cases are synthetic fixtures,
+not naturally scheduled ANTIC behavior. NMIST is a current latch, not immutable
+NMI provenance: status updates at machine cycle7, NMI pulses8 and drops9; VBI/DLI
+replace status bits. NMIRES clears neither CPU pending nor a scheduled event.
+This deliberately refuses mixed-source work rather
 than dropping one event while reporting both serviced. DLI enable remains outside
 the contract. Repeated/nested NMI during classification or callbacks is unsupported;
 no unbounded-stack safety claim. Default handler duration must complete before
@@ -78,7 +83,7 @@ are implied by the term system VBI.
 
 vbi_exit pops Y, X, A in reverse order and executes RTI. Default complete path
 restores A/X/Y/SP, hardware-restored P (compare meaningful bits), and PC. It does
-not alter CRITIC, vectors, other shadows or the cartridge's pending IRQ cause.
+not alter CRITIC, vectors, other shadows or the cartridge's pending IRQ cause. An enabled pending IRQ can fault after RTI restores I=0.
 IRQ/BRK CPU vector continues to irq_faultFC83; arbitrary enabled IRQ is outside
 this capability. Callback vector symbols and entry/exit contracts must be exported
 in the future map, not hardcoded by consumers from this planning document.
@@ -103,7 +108,7 @@ initialize the same previously declared zero page/vector fields. No extra RAM,
 conio0019..001C, padding021C..021F, hidden host state or cartridge scratch.
 Classifier has one temporary A byte after the three-byte hardware frame.
 It pops that byte before dispatch. system_vbi has three saved register bytes,
-so the default maximum is six additional bytes from interrupted SP, with no
+so the default maximum is six additional bytes from interrupted SP (including the hardware frame), with no
 JSR. Callback extra depth is separate and must be bounded by each fixture.
 The32-byte planning estimate does not prove arbitrary callback/nesting safety.
 
@@ -129,7 +134,8 @@ Use scalar results/write observations, never manufacturer code/assets/traces.
    PC after RTI and no endless retrigger. Compare1,2 and120 completed VBIs.
 3. Seed clock pairs0000,00FE,00FF,01FF,FFFE,FFFF. Expected next values0001,00FF,
    0100,0200,FFFF,0000. Observe low-byte write every tick and high-byte write only
-   on low wrap. Verify default path with all four interrupted I/D combinations.
+   on low wrap. Each INC requires old-value and new-value RMW writes; low always
+   writes twice, high twice only on carry. Verify default path with all four interrupted I/D combinations.
 4. With CRITIC00/01/80/FF, require clock to advance in every case; only00 invokes
    the original deferred marker callback. Immediate marker precedes clock, and
    deferred marker follows it. Use independent markers outside runtime RAM.
@@ -141,11 +147,13 @@ Use scalar results/write observations, never manufacturer code/assets/traces.
    advance/deferred marker or successful service. Early/startup NMI, pending NMI,
    repeated/nested interrupts need explicit owner failure/status expectations;
    do not promote an interrupted startup to Ready. Never simulate service by
-   editing PC or clearing CPU pending state from the host.
+   editing PC or clearing CPU pending state from the host. Mars must observe real
+   interrupt acceptance while Starting and reject a pending NMI at handoff. Include
+   vector hijack/early/near-handoff cases; FC80-only detection is insufficient.
 7. Sentinels prove no writes outside clock/real stack/approved cart markers after
    entry. Verify no display/input/IRQ/timer writes and no conio/padding changes.
-8. Synchronized capture during NMI, before/after clock carry, at each callback
-   boundary and after RTI must replay byte-identically in same/fresh instances
+8. Synchronized capture during NMI, before/after clock carry, at actual synchronized safe points around callback
+   boundaries and after RTI must replay byte-identically in same/fresh instances
    and separate processes. Bind new full image/manifest/pin identity. Old and new
    candidate states reject each other before mutation; raw remains refused.
    Confirm whether the current ready-state serializer already captures all CPU/
@@ -161,6 +169,7 @@ startup/pending NMI visibility before Ready without hidden service logic; callba
 stack/return and vector-update preconditions; clock/CRITIC ordering;512-cycle target
 and independent fixture ownership. Confirm candidate version/allowlist extension
 and state rejection strategy for a new module alongside the existing bounded pin.
-Approval is needed for this concrete service scope before emitting its image.
+Bounded authoring is approved with these corrections. Mars owns the new observer/
+allowlist/independent execution work after receiving the emitted fit packet.
 No original-system access, retail behavior selection or product enablement is
 requested. The full runtime commitment remains unchanged.

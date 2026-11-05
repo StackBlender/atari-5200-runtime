@@ -15,7 +15,10 @@ Fifty-seven offline tool/image/export tests pass. The integration owner now repo
 timing, development-provider and state/replay checks passing; see the
 [independent receipt](docs/independent-execution.md). Cartridge compatibility
 and supported product integration remain unverified.
-Ongoing interrupts, inputs, clocks and display-shadow services remain future work.
+A separate approved-scope VBI/clock extension is now authored and fits with804
+bytes unwritten;66 offline checks pass. Its independent interrupt/clock/state
+execution remains pending; see the [static packet](docs/vbi-clock-proof.md).
+Input scanning, display shadows and further interrupt services remain future work.
 
 ## Intended design
 

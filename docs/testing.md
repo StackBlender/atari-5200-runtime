@@ -17,7 +17,7 @@ Or run the emitter suite directly:
 PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -v
 ```
 
-The CTest entry runs 57 Python test methods (17 image-emitter, four capture
+The baseline CTest entry originally ran57 Python test methods (17 image-emitter, four capture
 fragment, 14 scalar-record, eight cartridge-candidate, seven startup-image and
 seven candidate-export tests). Independent expected instruction
 bytes cover symbolic forward/backward resolution, little-endian addresses,
@@ -111,3 +111,15 @@ After committing generation inputs, configure the same build tree and run
 verification, manifest flags and parent dependency ordering. Seven new tests
 exercise manifest identity/false approvals/revision format/determinism and pinned-
 input rejection. Export is not CPU/provider execution acceptance.
+
+
+## VBI clock candidate
+
+Nine additional methods bring the suite to66, covering the separately authored
+VBI image, strict local encodings, exact reset/interrupt/clock/exit bytes, fit,
+unchanged baseline, versioned manifest, all pinned-input failures and fresh-process
+output. See [static packet](vbi-clock-proof.md) and [approved scope](vbi-clock-brief.md).
+Generate unexported image/map with tools/vbi_clock_image.py --output-dir build/vbi-clock.
+Pinned integration export is tools/export_vbi_candidate.py; it requires committed
+inputs. Separate opt-in CMake target is documented in the static packet. No
+offline test runs a CPU or establishes actual clock/interrupt service acceptance.

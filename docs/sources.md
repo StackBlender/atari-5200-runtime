@@ -169,3 +169,17 @@ implementation was read. docs/vbi-clock-brief.md uses these factual declarations
 and the existing PAM/consumer packet, with all new policy explicitly original.
 No new Atari firmware/reference result or retail VBI reconciliation. Network web
 fetch failed, then a direct pinned read/hash verification succeeded; no file cached.
+
+
+## Approved VBI authoring receipt
+
+Mars msg_1e39 /3c6a4ce approves original development scope with status-latch,
+startup-interrupt observer, real RMW bus writes and synchronized-safe-point
+qualifications. Integration prose only; no emulator implementation or foreign
+tests read. CPU-02 manufacturer transcription consulted for AND immediate,
+INC zero-page, TAX/TAY/TXA/TYA encodings/timing, sections7.11..7.14,10.6/10.7,
+appendixB entries and RTI timing. Nearby manufacturer examples were visible,
+not copied. Six factual encodings live only in the new service emitter subclass.
+Original runtime callbacks/clock/layout/tests are authored here. Old-value RMW
+write expectations are explicitly confirmed by the integration owner. No new
+original-system measurement or firmware access.
