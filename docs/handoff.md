@@ -1,5 +1,16 @@
 # Runtime handoff
 
+## Analog priming clarification
+
+Mars msg_2864 clarifies analog acquisition: ALLPOT00 at cold reset is NOT proof
+of any conversion; explicit prime after SKCTL/analog power setup is required.
+New docs/analog-shadow-brief.md proposes original cold priming + complete-eight-
+axis copy/restart after CRITIC and before display, preserving pending conversion
+and zero startup shadows, no extra RAM. Proposal only, not implementation or
+hardware/BIOS evidence. Startup estimate127/128 leaves1 byte: further growth
+requires explicit fit/refactoring review. Next obtain Mars policy review before
+authoring; existing display/DLI execution gates and candidate pins unchanged.
+
 ## Committed DLI export receipt
 
 Source/export258bc0cc764a0614ec8443a89d242a8f1fe8cb5e pushed; CLI and real

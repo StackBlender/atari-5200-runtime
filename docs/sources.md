@@ -204,3 +204,13 @@ Current-latch dispatch, callback-own-register RTI ABI, exact-source failure and
 budget/fixtures are original development policy. No Atari firmware/kernel/source/
 trace, foreign implementation/test or manufacturer program access. Display/DLI
 execution are pending independent integration; no original-system measurements.
+
+
+## Analog scan integration clarification
+
+Mars msg_2864 (prose only) supplies access-specific POT/ALLPOT/POTGO/SKCTL and
+CONSOL acquisition semantics for original analog-shadow-brief.md. No producer
+implementation/test read. Cold ALLPOT00 requires explicit prime; selected original
+policy remains proposed, not Atari hardware/reference behavior. Timing observations
+of this emulator are not promoted to measured original-board facts. No new
+external source exposure, firmware image or instruction trace.
