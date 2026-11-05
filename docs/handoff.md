@@ -10,6 +10,20 @@ msg_aa05 /7c290c4 accepts cold-start-digits-v1, with chip/reset/observer correct
 now in docs/startup-brief.md revision2. It does not approve provider/execution,
 reference runs, pins, release or retail compatibility.
 
+## Candidate export slice
+
+Mars msg_1678 /c50e58a independently checked generated image/diagnostic hashes,
+1177/871 allocation and refreshed encoder identity. No CPU run or GPL source read.
+Requested artifact target now implemented: sb5200-runtime-image, properties
+SB5200_IMAGE_FILE / SB5200_MANIFEST_FILE / SB5200_MAP_FILE absolute paths and
+SB5200_SOURCE_REVISION full commit. tools/export_candidate.py produces schema1/
+ABI1 manifest with image/map/source identities, cold-only/Linear32K and fault map;
+all57 offline tests pass. Candidate flags remain false; source export must not
+require the execution approval it enables. Image bytes unchanged. docs/candidate-
+export.md is the exact interface/build/provenance packet. Pinned generation inputs
+must be committed before CLI/target emission. Parent harness check follows commit.
+Mars owns read-only C++ conversion, not a GPL implementation header import.
+
 ## First authored module
 
 - tools/startup_image.py: approved bounded original startup atFC00, ordered14
@@ -21,7 +35,7 @@ reference runs, pins, release or retail compatibility.
 - tools/emitter.py: eight new factual common-NMOS encodings,37 entries total;
   strict zpx/absx/ind numeric operand widths. No CPU engine or HLE.
 - CMake authored_startup target emits ignored generated/startup.bin and map;
-  existing ten-byte layout fixture remains separate. No sb5200-runtime-image.
+  existing ten-byte layout fixture remains separate. Candidate export is separate.
 - Actual image SHA b2d8ebb8d0070f2aee1bd79d7adfee85b88797702cb96035ab3a18e9bd37f68d;
  2048 bytes,1177 written:1024font+94startup+9faults+44helper+6vectors.871 unused,
  including all250margin. Future service allowances untouched. Full future fit unknown.
@@ -70,7 +84,8 @@ measured retail. Generated binaries/reports remain ignored in existing build/.
 
 ## Resume
 
-Deliver image/map/fit and prose execution packet to Mars on req_6f74. Independent
+Deliver candidate export commit/build invocation after parent harness validation
+to Mars on req_6f74; they already accepted unchanged image/map/fit receipt. Independent
 chip/CPU execution, stall-inclusive timing, read/peek/DMA/pixel behavior and
 provider/reset/status/state acceptance are outstanding owner work. Ask for precise
 observer/provider sequencing; no extra historical-default research is needed for

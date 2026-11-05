@@ -26,7 +26,8 @@ exactly2048 bytes. The generated JSON includes source/encoder/allocation hashes.
 
 147 code bytes +1024 assets +6 vectors. All future allowances and margin retain
 FF fill, enforced by independent tests. Only this bounded scope fits; no proof
-that the complete future runtime fits. No sb5200-runtime-image provider target.
+that the complete future runtime fits. A candidate-only sb5200-runtime-image
+artifact target is now provided; it does not approve a provider.
 The map keeps accepted/executed capabilities empty; authored_capabilities names
 cold-start-digits-v1, execution_verified and provider_approved remain false.
 

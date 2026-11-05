@@ -85,16 +85,28 @@ open. It is not a usable integrated replacement.
 The digit metadata encoder and enclosing 32 KiB original diagnostic candidate are
 tooling only. Their source is independent; generation does not approve a mapper,
 MMIO policy, runtime execution, original-system probe or firmware equivalence.
-No sb5200-runtime-image target exists. Final/retail VBI policy remains null.
+A candidate-only sb5200-runtime-image artifact target is now available;
+provider/execution approval remains false. Final/retail VBI policy remains null.
 
 ## First bounded module authoring approval
 
 Mars msg_aa05 /7c290c4 approves cold-start-digits-v1 with the corrections now in
 startup-brief.md revision2. tools/startup_image.py emits an actual2048-byte authored
 module and map, with independent expected-byte/pixel/fit tests. It is a separate
-artifact from layout-test.bin; no sb5200-runtime-image provider target yet.
+artifact from layout-test.bin. The candidate-only sb5200-runtime-image target
+now exports artifacts for Mars-owned conversion, not an approved provider.
 startup-proof.md records1177 written/871 remaining, static control-flow/stack and
 base-cycle reasoning. Full-cycle refresh/RDY timing and all independent execution/
 provider/reset/status/state gates remain open. The earlier fixture/evidence
 sections describe their respective deliverables; they do not override this scoped
 authoring approval or promote it to executed compatibility.
+
+
+## Candidate-only export boundary
+
+Mars c50e58a requests and accepts the artifact-target direction. See
+[candidate-export.md](candidate-export.md): sb5200-runtime-image produces original
+image/map/manifest with absolute target properties and full pinned source revision,
+verifying source inputs before emission. No C++ implementation header is imported;
+Mars owns verification/conversion/provider. Export does not require the execution
+approval it enables; false approval flags and separate authored scope remain.

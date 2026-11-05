@@ -9,12 +9,18 @@ for cartridge startup.
 
 Mars msg_aa05 /7c290c4 approves bounded `cold-start-digits-v1` authoring with
 corrections, incorporated in startup-brief.md revision2. First authored module,
-original glyphs and actual allocation are now implemented;50 offline tests pass.
+original glyphs and actual allocation are now implemented;57 offline tests pass.
 Image2048, written1177 (147code+1024assets+6vectors),871 unwritten, margin250
 untouched. This proves bounded fit only, not future-service fit or execution.
 
-Concrete next action: request Mars instruction-boundary observation/provider
-acceptance using docs/startup-proof.md. Static normal paths are1084/1091 NMOS
+Mars c50e58a /msg_1678 accepts the first artifact/fit receipt and requests the
+candidate export boundary now implemented in docs/candidate-export.md:
+sb5200-runtime-image with absolute image/manifest/map properties and full source
+revision, all artifacts produced before dependent Mars conversion. No generated
+GPL implementation header; execution/provider false flags retained.
+
+Concrete next action: deliver the export commit/build invocation so Mars can
+stage instruction-boundary observation/provider acceptance using startup-proof.md. Static normal paths are1084/1091 NMOS
 base cycles,403/406 instructions; full4096-cycle gate INCLUDING refresh/RDY remains
 unproved and needs the owner's observer. Module contains no CPU emulator/traps.
 Provider/reset/status/state and independent read/peek/DMA/pixel execution remain
@@ -64,6 +70,10 @@ Mars work. No release, reference execution, app pin or retail compatibility.
    Resolve discrepancies through completion; publish only supported claims.
 
 ## Landed
+
+- Candidate artifact target sb5200-runtime-image and deterministic schema1/ABI1
+  manifest/map/full-pin identity, with byte-exact pinned-input verification and
+  seven new tests (57 total). No runtime image-byte change or execution gate loop.
 
 - Mars authoring approval7c290c4 and corrections: Linear32K explicit load,
   structured cold-only outcomes, physical input versus semantic reset, refresh

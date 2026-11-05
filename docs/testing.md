@@ -17,8 +17,9 @@ Or run the emitter suite directly:
 PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -v
 ```
 
-The CTest entry runs 50 Python test methods (17 image-emitter, four capture
-fragment, 14 scalar-record, eight cartridge-candidate and seven startup-image tests). Independent expected instruction
+The CTest entry runs 57 Python test methods (17 image-emitter, four capture
+fragment, 14 scalar-record, eight cartridge-candidate, seven startup-image and
+seven candidate-export tests). Independent expected instruction
 bytes cover symbolic forward/backward resolution, little-endian addresses,
 branch limits -128/127 and rejection at -129/128. Negative cases cover overlap,
 allocation bounds, writes to reserved space, operand overflow, duplicate/undefined/
@@ -101,3 +102,12 @@ authored_capabilities distinguishes implemented source scope. See
 [startup-proof.md](startup-proof.md) for static stack/base-cycle derivation and
 Mars instruction-boundary/full-cycle acceptance requirements. No own CPU engine
 or host service emulation was introduced to make the tests pass.
+
+## Pinned candidate export
+
+After committing generation inputs, configure the same build tree and run
+`cmake --build build --target sb5200-runtime-image`. See
+[candidate-export.md](candidate-export.md) for exact properties, pinned source
+verification, manifest flags and parent dependency ordering. Seven new tests
+exercise manifest identity/false approvals/revision format/determinism and pinned-
+input rejection. Export is not CPU/provider execution acceptance.

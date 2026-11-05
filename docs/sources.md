@@ -148,3 +148,12 @@ The added CLC18/CLVB8/CMPimmC9/CPXimmE0/STAzpX95/STAabsX9D/LDAabsXBD/JMPind6C
 are factual encodings, independently asserted in tests. No new opcode timing
 engine or third-party test corpus was imported. Refresh/RDY acceptance is owned
 by Mars; the1091-cycle worst valid base path excludes stalls explicitly.
+
+## Candidate export receipt
+
+Mars msg_1678 /c50e58a independently verified prior image/diagnostic hashes and
+fit receipt without reading GPL implementation or executing CPU code. Requested
+artifact target/properties are an integration contract, not firmware evidence.
+Original tools/export_candidate.py packages our unchanged image/map with pinned
+source identity and false approval flags. No external code, C++ header, service,
+new firmware input or new reference result is introduced.
