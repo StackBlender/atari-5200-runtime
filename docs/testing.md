@@ -123,3 +123,14 @@ Generate unexported image/map with tools/vbi_clock_image.py --output-dir build/v
 Pinned integration export is tools/export_vbi_candidate.py; it requires committed
 inputs. Separate opt-in CMake target is documented in the static packet. No
 offline test runs a CPU or establishes actual clock/interrupt service acceptance.
+
+
+## Display-shadow candidate
+
+Seven additional methods bring the offline suite to73. See
+[static proof/export](display-shadow-proof.md) and [service brief](display-shadow-brief.md).
+Generate unexported image/map with tools/display_shadow_image.py --output-dir
+build/display-shadow; export committed source with tools/export_display_candidate.py.
+Separate opt-in CMake target sb5200-display-shadow-image preserves prior pins.
+Exact bytes/fit/reproducibility/export refusal are offline checks only; hardware
+write order, rendering and synchronized state replay require integration execution.

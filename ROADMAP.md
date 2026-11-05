@@ -7,6 +7,15 @@ for cartridge startup.
 
 ## Next
 
+Current RUNTIME-004 batch: display-shadow-v1 implemented as a separate candidate.
+See docs/display-shadow-brief.md and docs/display-shadow-proof.md: twelve ordered
+transfers after clock/CRITIC and before deferred callback;1307 written/741 free,
+zero extra RAM, margin250 intact.73 offline tests and CTest pass; no CPU execution.
+Next obtain Mars scope/tuple review and independent real bus/render/callback/
+state-process acceptance. Existing711a2e9/ba90c85 exports stay unchanged. After
+this bounded acceptance, specify four-controller analog/keypad/fire scanning and
+DLI/IRQ services with separate contracts before authoring; no game claim yet.
+
 Mars msg_aa05 /7c290c4 approves bounded `cold-start-digits-v1` authoring with
 corrections, incorporated in startup-brief.md revision2. First authored module,
 original glyphs and actual allocation are now implemented;57 offline tests pass.
@@ -41,9 +50,8 @@ interrupt/state-safe-point/process-replay/lifecycle and Release/nonunity ASan
 checks pass per owner. See docs/independent-execution.md. No local rerun;
 provider change is committed but pending separately authorized release.
 
-Concrete next action: specify bounded display-shadow transfer, its VBI/CRITIC
-ordering, exact MMIO/write whitelist, allocation and independently expected
-fixtures before adding another service. Do not assume that clock/vector acceptance
+Display-shadow contract and authored candidate now supplied above; next obtain
+independent integration acceptance before building the following service. Do not assume that clock/vector acceptance
 already supplies display/input/DLI/IRQ. Preserve both accepted candidate pins,
 false export flags and image-bound state identities. No retail VBI policy or
 product enablement; release and full consumer acceptance remain separate.
@@ -168,7 +176,8 @@ product enablement; release and full consumer acceptance remain separate.
   a development profile, not measured board compatibility.
 - Current maintainer acts from Apollo Retro with an Odin repo lease. No separate
   runtime owner/queue is registered. Mars owns its emulator integration.
-- Primary documentary ABI facts now exist; no original-system measurements,
-  runtime services, font, cart boot, usable provider or game compatibility yet.
+- Primary documentary facts and bounded original startup/font/VBI services now
+  have integration-owner execution evidence. No original-system measurements,
+  full runtime, usable game provider or game compatibility yet.
 - Default external-BIOS behavior in consumers remains untouched. There is no
   replacement state/release or cross-version compatibility claim.

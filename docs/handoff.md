@@ -1,5 +1,21 @@
 # Runtime handoff
 
+## Display-shadow batch (current)
+
+RUNTIME-004 adds separate tools/display_shadow_image.py, export_display_candidate.py,
+cmake/display-shadow-candidate.cmake, tests/test_display_shadow_image.py and
+docs/display-shadow-{brief,proof}.md. Scope sent to Mars on req_6f74/msg_65cc;
+review/execution pending. Earlier candidate source inputs untouched. Image2048,
+SHA1992e64b05d096e479c9532b14a77839bad182428b459a3ca8862ede51acb364,
+1307 written/741 free,63 display bytes atFE50; no new RAM/stack/margin.
+Direct73 methods plus existing build/CTest pass. Static eligible VBI168..173
+cycles/50..51 instructions (includes extra3-cycle routing JMP), full512 target
+unmeasured; startup unchanged. Pinned export requires committed source, so
+real CLI/parent validation and exact pushed pin follow in a receipt.
+Next Mars independently tests the brief before any enablement; then define
+four-controller analog/keypad/fire and DLI/IRQ services. No retail/game result.
+
+
 ## Latest independent VBI acceptance
 
 Owner msg_9ae4 accepts the exact ba90c8550c1be1c85b5aa7d6810e1ee6c6031656

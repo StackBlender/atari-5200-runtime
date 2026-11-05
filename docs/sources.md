@@ -183,3 +183,14 @@ not copied. Six factual encodings live only in the new service emitter subclass.
 Original runtime callbacks/clock/layout/tests are authored here. Old-value RMW
 write expectations are explicitly confirmed by the integration owner. No new
 original-system measurement or firmware access.
+
+
+## Original display-shadow service exposure
+
+CONSUMER-01/02 addresses reused for display-shadow-v1. Reread the two pinned
+public ANTIC/GTIA declarative headers, verified SHA256 values above unchanged.
+Web raw retrieval failed; direct read-only retrieval succeeded. Exposure remains
+header declarations/comments/macros only, no producer implementation or tests.
+Original transfer order, CRITIC policy, byte-preserving behavior and independent
+fixtures are authored here; not historical facts. No new opcode facts, Atari
+firmware, original-system observations, extracted artwork or reference traces.

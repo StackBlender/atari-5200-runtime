@@ -108,3 +108,10 @@ Copyright (c) 2026 StackBlender LLC.
 GNU General Public License, version 3 or (at your option) any later version
 (`GPL-3.0-or-later`); see [LICENSE](LICENSE). For other terms, contact
 [StackBlender](https://stackblender.com).
+
+
+The separately authored [display-shadow candidate](docs/display-shadow-proof.md)
+extends the bounded VBI clock with display-list/color/DMA shadow transfer. It fits
+within the existing2 KiB allocation and passes offline encoding/export tests.
+Independent CPU/render/state acceptance is pending; this is still not a complete
+BIOS replacement or evidence of playable games.
