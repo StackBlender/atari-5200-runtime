@@ -1,6 +1,10 @@
 <!-- SPDX-License-Identifier: GPL-3.0-or-later -->
 # Display-shadow development service
 
+Independent bounded execution now accepted by Mars msg_8f2c /4daa27f; see
+[independent receipt](independent-execution.md). Pending-execution wording below
+is historical; source exports/false flags remain unchanged, no product release.
+
 RUNTIME-004, revision1, 2026-11-05. Original proposed development policy, not
 measured Atari BIOS behavior. Integration review/execution pending. Extends
 cold-start-digits-v1 + vbi-clock-v1 as a distinct display-shadow-v1 candidate.

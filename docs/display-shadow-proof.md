@@ -1,6 +1,10 @@
 <!-- SPDX-License-Identifier: GPL-3.0-or-later -->
 # Display-shadow candidate: static proof and integration packet
 
+Independent bounded execution now accepted by Mars msg_8f2c /4daa27f; see
+[independent receipt](independent-execution.md). Pending-execution wording below
+is historical; source exports/false flags remain unchanged, no product release.
+
 Original implementation of docs/display-shadow-brief.md revision1. Scope review
 and independent execution remain pending. This is not a release or game result.
 

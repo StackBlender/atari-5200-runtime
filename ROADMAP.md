@@ -7,6 +7,44 @@ for cartridge startup.
 
 ## Next
 
+## Independent display and DLI acceptance
+
+Mars msg_8f2c /4daa27f5be981b0d1a1b5a923bf40e24e97f3f4a accepts separate
+explicit development tuples for display source9d7071f837ec513905b4a2f9718e269c7662b90c
+and DLI source258bc0cc764a0614ec8443a89d242a8f1fe8cb5e. Prose contract/receipt
+and emitted artifacts reviewed independently, not our GPL implementation/tests.
+No local CPU rerun or original-system measurement. Earlier pending-review notes
+below are historical; this receipt supersedes their execution-pending status.
+
+Owner Release unity and nonunity Debug ASan(-g -O1) pass startup,288 VBI cases
+plus120 services/12 safe points,404 display pattern/CRITIC/callback cases with7
+safe points,128 DLI status/stack/register/CRITIC cases with9 safe points. Actual
+twelve raw source/MMIO writes, callback ordering, list/color/DMA off/on rendering,
+DLI hardware-frame/RTI/mode2 palette and isolated/combined twelve-event cadence
+pass. Same/fresh/process replay,20 converter negatives and mutual candidate
+state refusal pass; strict schema remains R65 sb52rt-dev2. DLI provider also
+passes standard/mixed four-controller hardware matrix and powered live exit.
+
+Startup1197/411, valid-boundary max1204. DMA-off ordinary-refresh default VBI
+max187 for display,190 for DLI, excluding hardware entry7; custom-marker max212.
+Active blank-list DLI dispatch38, complete callback/RTI86. Deliberately VCOUNT-
+delayed custom active-list transfer body144, complete service4785 cycles; this
+exceeds512 because of the cart callback and is OUTSIDE the default-handler
+contract. No general active-DMA/RDY/WSYNC/nesting/callback deadline claim.
+
+Prior startup/VBI/default-OFF/a26/process/lifetime and43-image firmware tree/
+history/three-build checks pass per owner. Startup711 remains default; all build
+gates OFF and module capability/approval/execution flags remain FALSE by design.
+No observer/chip execution/state-schema change. Pending pooled release with
+R65/R66; do not adopt Mars main or enable app before an approved MR announcement.
+Full R62 ongoing input/timer/reset/reference/product acceptance remains open.
+
+Next author analog service only after its original policy review: explicit
+priming and complete-eight-axis copy/restart, docs/analog-shadow-brief.md. Mars
+prose now confirms unpowered standard/disconnected target228, approximate Trak-
+Ball unpowered target114; these emulator semantics are not board measurements.
+
+
 Mars msg_2864 clarifies analog acquisition: ALLPOT00 at cold reset is NOT proof
 of any conversion; explicit prime after SKCTL/analog power setup is required.
 New docs/analog-shadow-brief.md proposes original cold priming + complete-eight-

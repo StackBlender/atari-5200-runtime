@@ -2,7 +2,8 @@
 # Eight-axis analog shadow service proposal
 
 RUNTIME-004 next service, original proposal1. Not implemented or approved.
-Display/DLI candidates retain independent pending acceptance and unchanged pins.
+Display/DLI bounded independent execution accepted per msg_8f2c; their pins
+and false export labels stay unchanged. This analog policy still needs review.
 Target all eight standard-controller axes across four ports under the existing
 NTSC development profile. No keypad/fire scan, reset-key handling or retail claim.
 
@@ -53,7 +54,9 @@ If the first VBI arrives before conversion completes, leave shadows zero and
 allow the already primed conversion to continue. CRITIC may postpone consumption
 for multiple frames; resume copies the completed old sample then starts a fresh
 one. This latency is explicit; no fresh-every-video-frame guarantee. Disconnected
-channels retain actual completed timeout bytes. Standard or Trak-Ball acquisition
+channels retain actual completed timeout bytes. Mars clarification specifies
+unpowered standard/disconnected target228; unpowered approximate Trak-Ball
+axis0 targets114, independently of keypad port selection. Standard or Trak-Ball acquisition
 still follows real POTGO/core post-run input cadence, not direct host shadow writes.
 
 Cart must preserve priming lifecycle: external POTGO/SKCTL/power manipulation or

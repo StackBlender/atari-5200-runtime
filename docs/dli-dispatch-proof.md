@@ -1,6 +1,10 @@
 <!-- SPDX-License-Identifier: GPL-3.0-or-later -->
 # DLI dispatch static proof and export
 
+Independent bounded execution now accepted by Mars msg_8f2c /4daa27f; see
+[independent receipt](independent-execution.md). Pending-execution wording below
+is historical; source exports/false flags remain unchanged, no product release.
+
 Original separate candidate, scope/execution review pending. Contract and
 independent fixtures: [dli-dispatch-brief.md](dli-dispatch-brief.md). Display
 candidate acceptance is also still pending; no cumulative execution claim.

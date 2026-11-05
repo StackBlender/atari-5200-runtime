@@ -1,6 +1,10 @@
 <!-- SPDX-License-Identifier: GPL-3.0-or-later -->
 # Bounded DLI dispatch development service
 
+Independent bounded execution now accepted by Mars msg_8f2c /4daa27f; see
+[independent receipt](independent-execution.md). Pending-execution wording below
+is historical; source exports/false flags remain unchanged, no product release.
+
 RUNTIME-004 original proposal1,2026-11-05. Separate candidate extends startup,
 VBI-clock and display-shadow-v1 with dli-dispatch-v1. Scope and actual execution
 review pending, not a retail firmware claim. Existing three export source inputs

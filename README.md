@@ -120,3 +120,10 @@ BIOS replacement or evidence of playable games.
 A separate [DLI dispatch candidate](docs/dli-dispatch-proof.md) adds the original
 cartridge callback route for display-list interrupts. Offline checks pass; actual
 DLI/raster and replay acceptance remain pending alongside display-shadow execution.
+
+
+Independent Mars execution now accepts the bounded display-shadow and DLI
+candidates: actual writes/rendering, callback/interrupt handling and synchronized
+process replay pass per the [receipt](docs/independent-execution.md). Input/timer/
+reset completion, games and product enablement remain open. All candidate export
+flags stay false; integration changes await a separately approved release.
