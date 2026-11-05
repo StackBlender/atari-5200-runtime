@@ -102,3 +102,16 @@ No local CPU run, state-schema/provider acceptance or new flags/default/pin/rele
 change. Next actual IRQ/timer/ack/retrigger/callback/RTI/process validation, then
 remaining keypad/fire/reset/software timers/contracts. Keypad req_72f0 primary
 wiring review remains separate. Lease released after push.
+
+
+## Incorporated authoring review
+
+Marsd7be9b4/msg_3385 accepts bounded authoring with brief revision2
+qualifications, not artifact/integration/execution. IRQEN writes also acknowledge
+other disabled latch sources, while preserving other enabled pending sources.
+Status/ack/re-enable races, timer enable/disabled-tail clocks and coalescing are
+not a lossless/immediate-quiet transaction. Priority1 can starve2/4. Test actual
+clock/bus behavior and256SP callbacks. Ordered helper stores0202=A0,0203=FC,
+0204=B0,0205=FC,0200=00,0201=FE; only0200 final value changes. Uninstalled
+other slots hitFC86 Metadata; timer unsupported/spurious trampolineFC83 IRQ.
+Artifact sourceac9b47e and all generation inputs/flags remain unchanged.

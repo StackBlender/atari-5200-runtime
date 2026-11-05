@@ -1,5 +1,36 @@
 # Runtime handoff
 
+## Reviewed keypad evidence complete; IRQ/timer execution next
+
+Mars f3b991a4637726b5b8122bcfb0357e9ced6f0fa6 /msg_dc77 completes revised
+keypad evidence req_72f0, accepted/acked after prose review. Owner visually
+verified manufacturer four-port FSM figs2-2A/C and errata: unused scan phases
+alias contacts, consistent with documented03 qualification cancellation. Existing
+chip/mapping and06 forced-compare behavior remain; no supported chip correction
+or opt-in functional mode.120 CPU cases plus7680 phase checks pass Release/
+nonunity ASan per owner; not a keypad service or physical reference measurement.
+Runtime author read only prose, no schematics/producer code/tests/firmware.
+Next original runtime acquisition/event/analog policy needs its own review.
+
+IRQ/BRK scope accepted f3b991a /msg_c9ef; all256SP arithmetic, saved flags,
+BRK+2 and static39/40 agree. Important existing error classification: uninstalled
+0200/020E callbacks hit FC86=Metadata, while old unconditional FC83=IRQ. New
+fixtures must distinguish these without changing earlier images. Actual tuple/
+CPU/IRQ/BRK/stack/state execution not yet accepted for42762a7.
+
+Timer bounded authoring accepted with qualifications d7be9b4ab9f732918ba8880faf4099324fb270ca
+/msg_3385; incorporated in brief revision2/proof. Each IRQEN write also clears
+OTHER disabled latch sources, preserves other enabled pending bits; serial bit3
+has distinct nonlatching semantics. Read/ack/re-enable races and enable/disabled
+tail timing mean no lossless/immediately-quiet guarantee. Priority1/2/4 may starve
+lower sources; callback AXY/flags scratch, full saved frame6 restored via exit.
+Six cold vector stores/shifted helper/handoff and all256SP need actual validation.
+Full emitted packet already exists at sourceac9b47e; this receipt changes docs,
+not generation inputs/image/flags. Next independent real timer/IRQ acceptance,
+then separately reviewed keypad/fire policy, remaining timer/reset/runtime work.
+No dependency pin/default/schema/release/app enablement; fullR62 remains open.
+
+
 
 ## Committed timer export receipt
 

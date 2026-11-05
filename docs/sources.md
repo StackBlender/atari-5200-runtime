@@ -268,3 +268,15 @@ opcodes preserve old emitters/global table. Priority/ack/callback/mask coherence
 source fault policy and compact startup helper are original authored choices
 awaiting Mars hardware-interface/execution review; no Atari firmware/historical
 implementation, extracted assets, foreign emulator/kernel/test or trace read.
+
+
+## Revised keypad evidence completed and dispatch authoring review
+
+Read only Mars prose a52-keyboard-source-review.md at f3b991a: owner's visual
+primary four-port FSM wiring review supports existing scan alias behavior, no
+chip correction.120CPU/7680phase checks are owner emulator evidence, no physical
+reference. req_72f0 accepted revised evidence scope; event policy module-owned.
+Read only a52-irq-brk-review.md and a52-timer-dispatch-review.md at f3b991a/
+d7be9b4; accepted bounded arithmetic/ABI/authoring qualifications, no execution.
+Primary POKEY sheet23 source semantics attributed to owner, not newly read here.
+No primary source scan, producer/test/firmware implementation exposure introduced.

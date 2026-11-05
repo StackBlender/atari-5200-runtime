@@ -87,3 +87,8 @@ independent scope/CPU/RTI/state acceptance pending. No local CPU run, provider
 flag/pin/release/app/default change. Next independent acceptance and remaining
 source-specific IRQ/timer/reset/fire service contracts; keypadreq72f0 separate.
 Runtime lease released after push.
+
+
+Scope review f3b991a/msg_c9ef accepts arithmetic/ABI/static costs, not actual
+execution. Uninstalled0200/020E reach FC86 Metadata; previous FC83 default
+reports IRQ. Exact provider fixtures must distinguish these preserved meanings.

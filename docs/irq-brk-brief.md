@@ -1,9 +1,9 @@
 <!-- SPDX-License-Identifier: GPL-3.0-or-later -->
 # Bounded IRQ and BRK dispatch
 
-RUNTIME-004 original proposal1. Author a separate candidate atop accepted analog
-sourcea6c406e4; scope and independent execution review pending. Keypad fix req_72f0
-is separate. This service dispatches actual CPU interrupts, not device scanning,
+RUNTIME-004 scope revision2. Bounded scope accepted Mars msg_c9ef /f3b991a;
+independent artifact/CPU execution pending. Separate candidate atop accepted
+analoga6c406e4. Keypad evidence req_72f0 completed without chip changes. This service dispatches actual CPU interrupts, not device scanning,
 IRQ source polling/acknowledgment, timers or historic firmware compatibility.
 
 ## Original development callback ABI
@@ -20,7 +20,9 @@ and callback finishes RTI, not RTS or JMP vbi_exit. RTI restores meaningful P bi
 and hardware PC. Ordinary IRQ resumes normal interrupted PC; BRK resumes opcode
 address+2, not+1. Runtime never edits saved P/PC or skips a BRK padding byte itself.
 
-The two software slots retain existing cold FC86 startup_fault defaults. Cart
+The two software slots retain existing cold FC86 startup_fault defaults.
+Mars reports that destination as Metadata, while FC83 irq_fault is IRQ;
+uninstalled-slot diagnostics must distinguish it from older unconditional faults. Cart
 must install valid handlers before CLI/BRK, with interrupt sources disabled and
 quiescent CPU-pending NMI/IRQ state as the fixture requires. No extra startup
 writes, IRQEN enable or POKMSK shadow propagation. Runtime IRQ dispatcher reads
