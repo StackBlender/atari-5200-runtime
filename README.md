@@ -152,3 +152,9 @@ The original [timer-dispatch candidate](docs/timer-dispatch-proof.md) adds three
 POKEY timer callbacks and moves vector initialization into a shared helper to
 leave room in startup. Offline checks pass; real timer/source/RTI/state acceptance
 is pending. No timer rates or interrupts are automatically enabled.
+
+
+The IRQ/BRK and timer candidates now have independent Mars CPU/stack/callback/
+state acceptance; see the receipt above. The complete firmware replacement still
+needs reliable keypad/fire and reset/remaining-service validation. Integration
+release/app adoption remains separate; all candidate export flags stay false.

@@ -1,5 +1,50 @@
 # Runtime handoff
 
+## Independent IRQ/BRK and timer execution acceptance
+
+Mars msg_30c1 /f32595cb7c67a20395006adf413b6ba310a45b30 independently accepts
+IRQ source42762a73a0caa72b7753bd5aa4380cf9a63c573f and timer source
+ac9b47e50c213b08022e78bdef64662569cd3d29 as explicit bounded development
+variants. Exact original artifacts/semantic manifests/maps/source profiles bind
+sb52rt-dev2; no serialized field/chip algorithm/raw behavior change. Source
+exports/false approval flags and two OFF-default gates remain unchanged. Prior
+five variants preserved. No local CPU rerun or original hardware/game proof.
+
+Release unity/nonunity Debug ASan(-g -O1) owner receipt:514 IRQ/BRK and1303
+cumulative timer cases per build, including two explicitly synthetic NMI-vector
+placements. All256SP/rotated registers/meaningful flags, actual CPU BRK+2 and
+hardware Timer1/2/4, all pending sets, coalescing, exact ack bus whitelist,
+selected reassertion and rapid Timer1 starvation pass. Unsupported/spurious
+fault before ack; cold timer callback slots acknowledge then FC86 Metadata fault,
+while FC83 IRQ meanings remain distinct. Nonnesting/source races remain bounded
+contract limits, no lossless/fair/always-quiet or arbitrary callback guarantee.
+
+Generated FC6B handoff, six-store helper order,76 direct cold stores+4 real JSR
+writes, returnFC52/FC62 and original final state independently verified. Timer
+startup1235 full cycles/422 instructions, worst1242; IRQ startup1212/416,
+worst1219. Tested callback+RTI operation max100 generic,159 timer, excluding
+hardware entry. These are fixture operation counts, not mobile performance or
+unbounded source-rate deadlines. Custom delayed active-display4901 still lies
+outside default512 VBI target.
+
+Five IRQ/twelve timer requested native reconstructible safe frontiers pass
+same/repeated/fresh-process full-state replay. Valid intermediate BRK capture
+must respect those real native safe boundaries; no arbitrary half-instruction
+state guarantee. New/old mutual provider refusal and20 converter negatives per
+variant pass, plus inherited288 VBI/404 display/128 DLI/59 analog matrices and
+process replay. Seven converter tuples, changed-range/budget and250 margin
+checks pass. R65 timerRelease/IRQ-ASan standard/mixed four-controller/wire/
+process/live-exit and defaultOFF a26 exact/fast/lifecycle/missingBIOS pass.
+43-image firmware self-test/tree/history/three build roots clean per owner.
+
+Integration is pooled/unreleased; no app pin/provider default/product/physical
+reference enablement. FullR62 remains open for reliable runtime keypad/fire,
+reset/remaining services/reference/product acceptance. R70 evidence conclusion
+unchanged: no chip correction; next separately reviewed original acquisition/
+contact-event/analog policy. Runtime author read only integration prose; no
+Mars/private/public runtime implementation/tests or firmware reference exposure.
+
+
 ## Reviewed keypad evidence complete; IRQ/timer execution next
 
 Mars f3b991a4637726b5b8122bcfb0357e9ced6f0fa6 /msg_dc77 completes revised

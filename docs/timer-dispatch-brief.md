@@ -1,6 +1,10 @@
 <!-- SPDX-License-Identifier: GPL-3.0-or-later -->
 # Bounded POKEY timer IRQ dispatch
 
+Independent bounded execution accepted Mars msg_30c1/f32595cb; see
+independent-execution.md. Earlier execution-pending text below is historical.
+Export pins/false flags/defaults stay unchanged; pooled release still pending.
+
 RUNTIME-004 original revision2, separate candidate atop IRQ42762a7. Bounded
 authoring accepted with qualifications Mars msg_3385/d7be9b4; artifact/execution
 acceptance pending. Keypad evidence req_72f0 completed without chip changes.

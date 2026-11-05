@@ -1,6 +1,10 @@
 <!-- SPDX-License-Identifier: GPL-3.0-or-later -->
 # Bounded IRQ and BRK dispatch
 
+Independent bounded execution accepted Mars msg_30c1/f32595cb; see
+independent-execution.md. Earlier execution-pending text below is historical.
+Export pins/false flags/defaults stay unchanged; pooled release still pending.
+
 RUNTIME-004 scope revision2. Bounded scope accepted Mars msg_c9ef /f3b991a;
 independent artifact/CPU execution pending. Separate candidate atop accepted
 analoga6c406e4. Keypad evidence req_72f0 completed without chip changes. This service dispatches actual CPU interrupts, not device scanning,

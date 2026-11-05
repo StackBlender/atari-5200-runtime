@@ -1,6 +1,10 @@
 <!-- SPDX-License-Identifier: GPL-3.0-or-later -->
 # IRQ/BRK static proof and separate export
 
+Independent bounded execution accepted Mars msg_30c1/f32595cb; see
+independent-execution.md. Earlier execution-pending text below is historical.
+Export pins/false flags/defaults stay unchanged; pooled release still pending.
+
 Original authored candidate, scope/execution acceptance pending; see
 [irq-brk-brief.md](irq-brk-brief.md). No keypad workaround or acquisition change.
 Image2048 SHA256
