@@ -5,6 +5,22 @@ runtime. NTSC four-port first; full software compatibility remains unfinished.
 
 ## Next
 
+B0/B1 technical review packet ready, no ordinary profile/image emitted:
+cart-owned-irq-consumer.md +cart-owned-irq-requirements.json describe an ACTUAL
+original software consumer owning generic0200dispatch/raw keyboard40/ACK/rearm/
+AXY+RTI/own3000..301F.60port/contact cases/16043guards/60same+60fresh+60process
+poisoned replays/480refusal continuations pass RetroRelease15/15+adapterASan15/15;
+nativeMarsRelease uninstrumented, same actor evidence only. No runtime600state or
+inferred BIOS0208/020A meaning. Review explicit021C..21Fcession/no600reservation
+for bounded B0 ordinary-layout target, preserving old13exports/identities.
+B1 separate review: authorized homebrew metadata requests diagnosticFF flag;
+image unchanged/unrun, individual results ignored. Consumer prose says bypass
+most init but exact state contract unknown. Proposed ORIGINAL fullColdinit+flag
+admission would need named identity/native/fit/state review, no historicbypass
+claim/hostPCpatch. No profile/boot code authoring before review. Broaderlegacy/
+cc65/game keyIRQ/reset/compatibility/fullR62 remain unresolved.
+
+
 Bounded native timer physical-store audit completed Mars350b508/msg_0ee8:
 Release/full-nativeASan seed15844bytes021C..3FFF,15636protectedcanaries,zero
 unexpected runtime/undeclared CPU stores; startup/fault/service/256SP/process

@@ -1,5 +1,22 @@
 # Runtime handoff
 
+## Current original consumer and B0/B1 review packet
+
+Read cart-owned-irq-consumer.md and declarativecart-owned-irq-requirements.json.
+Retro original generic0200IRQ consumer supplies real source/mask/read/ACK/rearm/
+AXY/RTI/RAM/state requirements with no runtime600reservation or BIOSkeycallback.
+60port/contact/16043guards/60same+60fresh+60process poisoned imports,480refusal
+continuations/16archive+1CLI refusals. RetroRelease15/15+adapterASan15/15 PASS,
+nativeMarsRelease uninstrumented/sameactor notreference-role proof. Existing
+197offline/13export evidence retained, not rerun for documentation-only packet.
+B0 proposed ordinary-layout target explicit021C..21Fcession, old profiles unchanged.
+B1 actual authorized corpus metadata FFdiagnostic request needs boot-policy review;
+individual game identity/hash/results ignored, no game run/patch/implementation
+read. New originalfullColdinit+flag policy is proposal, NOT historicbypass. No
+profile/image/descriptor/native tuple emitted or authoring permission inferred.
+Source-generation/timer native physical-store/Cfont gates already qualified;
+remaining broaderlegacy/game/reset/service/product/fullR62 open/noACK.
+
 ## Bounded native timer physical-store audit received — 2026-11-06
 
 Mars350b50866444266b57d89837f6e74ba1703b9b24/msg_0ee8 completes the bounded

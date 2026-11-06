@@ -523,3 +523,21 @@ in timer-memory-audit.md, no local rerun. Initialized/default or tested bounded
 ROM callbacks only; arbitrary routes/nesting/all arrivals and zero-page19..FF
 not covered by this native observer. Same image/old reservations; no ordinary
 profile/keyIRQ/historical ABI/reference-role approval follows.
+
+## Cart-owned generic IRQ consumer requirements / corpus admission, 2026-11-06
+
+Re-read official cc65 platform prose3/4.2/5.3/6.1/7.2; small public examples seen,
+not copied. It describes memory/joystick/hardware/display, not numeric BIOSkeyIRQ
+callback semantics. Reused own genericIRQ/VBI briefs and Mars keypad review prose
+for interface mapping/source/clock/ACK facts; no implementation/tests read. New
+original consumer implements its own0200dispatcher/capture/return/RAM policy and
+uses public Node contact names. Same maintainer, no original-system role split.
+
+For user-authorized author-published homebrew only, verified retained length/hash
+and checked packaged metadata eligibility (title/year/diagnosticflag/entryrange).
+No game code/disassembly/font/firmware inspected, game executed or modified.
+Individual source/hash/booleans stay ignored; tracked aggregate identifies one
+diagnosticFFrequest. Primary consumer prose says bypass most init, supplies no
+full state contract. B1 fullColdinit+flag proposal is original policy, subject to
+review before emission, not historical bypass evidence. B0/B1 scopes and false
+approval/compatibility labels recorded in cart-owned-irq-consumer.md +JSON.

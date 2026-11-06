@@ -1,0 +1,112 @@
+{
+  "consumer": "original-retro-cart-owned-keyboard-irq",
+  "consumer_native_coverage": {
+    "archive_refusals": 16,
+    "cases": 60,
+    "cli_refusals": 1,
+    "contacts_per_port": 15,
+    "critic_fully_crossed": false,
+    "critic_values": [
+      0,
+      1
+    ],
+    "fresh_root_poisoned_replays": 60,
+    "guard_bytes": 16043,
+    "native_and_reset_refusal_continuations": 480,
+    "native_core_sanitized_in_adapter_runs": false,
+    "physical_cpu_store_observer": false,
+    "ports": 4,
+    "same_root_poisoned_replays": 60,
+    "separate_process_poisoned_replays": 60
+  },
+  "copyright": "2026 StackBlender LLC",
+  "historical_abi": false,
+  "irq": {
+    "accepted_contacts": [
+      1,
+      15
+    ],
+    "ack": "clear-software-mask-then-write-coherent-IRQEN",
+    "arbitrary_nesting_or_arrival_proof": false,
+    "arm": "separate-CPU-mailbox-after-two-ordinary-settle-runs",
+    "consumer_entry": 33792,
+    "entry_frame": "hardware-only-after-generic-classifier-restores-AX",
+    "irqst_irqen": 59406,
+    "mask_shadow": 0,
+    "normalization": "(raw & 0x1e) >> 1",
+    "own_saved_registers": [
+      "A",
+      "X",
+      "Y"
+    ],
+    "raw_code_address": 59401,
+    "raw_ff_is_no_contact": false,
+    "release_events": false,
+    "repeat_or_fifo": false,
+    "required_runtime_key_callback": null,
+    "return": "RTI-after-own-restores",
+    "scanner_skctl": 6,
+    "selector": "CONSOL = 4 | port",
+    "software_vector": 512,
+    "source_mask": 64
+  },
+  "license": "GPL-3.0-or-later",
+  "ordinary_profile_review": {
+    "approval_required_before_authoring": true,
+    "identity_must_change": true,
+    "legacy_key_irq_requirements_remain_unresolved": true,
+    "mandatory_extra_ram_cart_assertion": false,
+    "old_profiles_and_exports_preserved": true
+  },
+  "parent": {
+    "image_sha256": "eae07d3610237c96d3cdf11959680eb25ed59dd6083c0de59d4c999188057550",
+    "mars_release": "MR-43",
+    "reserved_margin_bytes": 250,
+    "source_revision": "ac9b47e50c213b08022e78bdef64662569cd3d29",
+    "written_bytes": 1504
+  },
+  "profile_authoring_approved": false,
+  "profile_emitted": false,
+  "ram": {
+    "consumer_zero_page": [
+      25,
+      256
+    ],
+    "intervals": "half-open",
+    "private_cart_result_window": [
+      12288,
+      12320
+    ],
+    "proposed_application_range": [
+      540,
+      16384
+    ],
+    "proposed_explicit_cession": [
+      540,
+      544
+    ],
+    "runtime_input_reservation": null,
+    "runtime_shadows": [
+      0,
+      25
+    ],
+    "runtime_vectors": [
+      512,
+      540
+    ],
+    "shared_cpu_stack": [
+      256,
+      512
+    ]
+  },
+  "schema": 1,
+  "separate_boot_review": {
+    "authorized_corpus_has_diagnostic_flag_request": true,
+    "diagnostic_flag_policy_approved": false,
+    "game_executed_or_modified": false,
+    "historical_bypass_state_contract_known": false,
+    "proposed_original_full_cold_initialization": "review-before-emission"
+  },
+  "status": "implemented-original-consumer-profile-review-only",
+  "stock_cc65_or_game_compatibility": false
+}
