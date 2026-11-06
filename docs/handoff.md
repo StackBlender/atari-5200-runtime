@@ -1,5 +1,26 @@
 # Runtime handoff
 
+## Automatic keypad windows independently accepted
+
+Mars64f2485d67a4f8cff71c89719ee6796a29251249 /msg_b0cb independently
+accepts fce294b/image3c1b419b for bounded development. Releaseunity/nonunityASan
+4534cases(3840natural+694supplemental),18same/fresh/process windowfrontiers,
+57key+93combinedkey/timer syntheticNMI instructionfrontiers/all256ordinary+nested
+SP/128cycleRTScallback/pending-mask/busy/lifecycle and inheritedsuites PASS.
+CRITIC defers VBI commits but IRQcapture canpublish; no globalinputfreezeclaim.
+Final502focusedcases: postvector624 +hardwareentrypeak8 =>conservative632<2048
+for sampled diagnosticpaths. Changeaftercapture267156cycles(~149ms emulatedNTSC),
+selected->armminimum26848; no physical/mobile latency or fullinputdeadline.
+R65/defaultOFF/24converternegatives/mutualfoundationrefusal/9tuples/budget/
+firmwarehygiene pass; old8nativevariants notallrebuilt. Pooled/no newrelease,
+MR43 remainslatest. Old generationinputs/falseflags/OFFdefaults unchanged;
+fullR62 staysopen/noACK. Read only owner prose a52-keypad-window-development.md,
+not producerimplementation/tests. Next BOTH-FIRE explicitallocation/profile
+review (98a31b docs/fire-allocation-review.md+JSON, prior msg_d13f) before any
+cumulativeauthoring:1902projected needs398extra/160reserved-byte reallocation,
+90retainedmargin; old52ordinary/24ceilingheadroom cannotfit. No approval inferred.
+
+
 ## Original cartridge callback recorder prepared
 
 RUNTIME-004: tools/input_callback_probe.py supplies an80-byte NONRUNNABLE

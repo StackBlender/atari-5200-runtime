@@ -234,3 +234,36 @@ validation. FullR62 req_6f74 remains open; doNOTack full request. Integration is
 pooled/unreleased; old8exports/false flags/OFF defaults/app pins unchanged.
 Read only owner prose a52-keypad-irq-development.md, no producer implementation/
 tests/firmware or primary reference exposure.
+
+
+## Automatic keypad windows independently accepted
+
+Mars64f2485d67a4f8cff71c89719ee6796a29251249 /msg_b0cb independently
+accepts fce294b/image3c1b419b for bounded development. Releaseunity/nonunityASan
+4534cases(3840natural+694supplemental),18same/fresh/process windowfrontiers,
+57key+93combinedkey/timer syntheticNMI instructionfrontiers/all256ordinary+nested
+SP/128cycleRTScallback/pending-mask/busy/lifecycle and inheritedsuites PASS.
+CRITIC defers VBI commits but IRQcapture canpublish; no globalinputfreezeclaim.
+Final502focusedcases: postvector624 +hardwareentrypeak8 =>conservative632<2048
+for sampled diagnosticpaths. Changeaftercapture267156cycles(~149ms emulatedNTSC),
+selected->armminimum26848; no physical/mobile latency or fullinputdeadline.
+R65/defaultOFF/24converternegatives/mutualfoundationrefusal/9tuples/budget/
+firmwarehygiene pass; old8nativevariants notallrebuilt. Pooled/no newrelease,
+MR43 remainslatest. Old generationinputs/falseflags/OFFdefaults unchanged;
+fullR62 staysopen/noACK. Read only owner prose a52-keypad-window-development.md,
+not producerimplementation/tests. Next BOTH-FIRE explicitallocation/profile
+review (98a31b docs/fire-allocation-review.md+JSON, prior msg_d13f) before any
+cumulativeauthoring:1902projected needs398extra/160reserved-byte reallocation,
+90retainedmargin; old52ordinary/24ceilingheadroom cannotfit. No approval inferred.
+
+Exact window pin fce294b7448a7c5a1a35e6c5e5ed5611ee36473f; image SHA256
+3c1b419b9af94645ea537126d21e464f90f05013689ef7132656680d62d4207a.
+Actual startup1581/1588cycles and520/523instructions retain cold4096target.
+Natural contact-to-callback224827cycles; aftercapture267156 confirms conditional
+nineinterval qualification beforeadditionaldeferrals. Completeascending compact
+analogcopy/read/store/restart, frozenconversion/sharedKR2/caches and53fastanalog
+replay requalified. Existing input-v2 declaration remains BEFOREconnect and
+full sb52rt-dev2 identity; no nativepayloadfield or oldartifact changes.
+No localCPUrerun, mobile/physicaldeadline, bothfires/reset/fullruntime/game/app/
+multiplayer acceptance follows. Existing narrower Retroconsumer7d1ac30 uses
+MR43's IRQfoundation only; this pooled windowimplementation is not adopted.

@@ -359,3 +359,12 @@ bounded record format and host decoder are original diagnostic policy, not
 manufacturer firmware behavior. Cycle worksheet is static nominal arithmetic;
 synthetic format records are not observations or measured execution. No foreign
 implementation/tests, firmware/trace, assets or physical reference was read.
+
+
+## Independent automatic-window receipt
+
+Read only Mars docs/a52-keypad-window-development.md at64f2485/msg_b0cb.
+Owner-reported actual CPU/chip/state/converter checks are attributed independent
+emulator evidence, not physical timing, firmware observations or a local rerun.
+No producer implementation/test, firmware/trace, primary scan or foreign source
+exposure. All original generation inputs remain unchanged.
