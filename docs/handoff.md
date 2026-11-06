@@ -1,5 +1,21 @@
 # Runtime handoff
 
+## Reviewed bridge refactor authored; native qualification next
+
+Mars2ffaa687/msg_b2c1 approves boundedbridge deduplication alone andpreserves
+coldreset/refusal/input-vs-game distinctions; no numericreset evidence supplied.
+New fire_bridge_image.py/export_fire_bridge_candidate.py +optin CMake
+fire-bridge-candidate.cmake/sb5200-fire-bridge-image/SB5200_FIRE_BRIDGE_SOURCE_REVISION.
+Actual1895written/391extra/9under1904,146/160fire,63ordinaryfree/90reserve untouched.
+SHA c5fd8df1564c28e5ed4c5aad9f8eabdc64a62e32de28e8dcce6bfae7ea533d24.
+New topFF4A/bridgeFF88..91, JSRFF37/FF7A returnPCFF39/FF7C ->reloadFF3A/FF7D.
+OnlyFC96/keytail/newfireblock change; old10inputs andsamefire-v3allocation/profile
+immutable. No addedstack/RAM/field/service, allflagsfalse/OFFdefault unchanged.
+Sevennew exactbytes/budget/profile/identity/refusal/freshprocess methods bring167.
+See fire-bridge-proof.md. Next committedpin CLI/CMake+10olderexports, exactnative
+handoff/requalification inclordinary midVBI/frame/cache/movedsetup snapshots.
+
+
 ## Next reset/service contract and measured bridge refactor review
 
 Current accepted fire-v3 remainsunchanged. remaining-services-review.md now

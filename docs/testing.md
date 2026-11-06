@@ -256,3 +256,12 @@ remaining-services-review.md for the original146-byte alternate fragment,
 independently expected encodings/branches/cycle arithmetic, preserved accepted
 image/fragment, false approval flags and fresh-process checks. Not a cumulative
 image or native equivalence proof; no accepted generation/allocation changed.
+
+
+## Separate cumulative callback-bridge refactor
+
+Seven methods bring167 total. Existing unittest/CTest; fire-bridge-proof.md
+records exact relocated146bytes/callreturnPCs/bridgeargsetup/reload,1895fit/
+90reserve,oldparentpreservation,budgetstop/profile/identity/falseflags/pinned
+failures andfreshprocess. Newsource/export/CMake require explicitnewpin and
+native tuple admission; oldten generations unchanged. No nativeequivalence yet.
