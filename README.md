@@ -103,3 +103,8 @@ are authored under Mars81025cf, NOT admitted. See docs/timer-experiments-proof.m
 (or timer-experiments-proof.md from docs).205offline methods include eight new
 contract/encoding/timing/pin/failure checks. Old13exports/flags/defaults preserved;
 no combined profile or unchanged-game run.
+
+B2's separate [conditional-year experiment](docs/diagnostic-conditional-proof.md)
+permits any first year only with secondFF, retaining full cold initialization.
+It does not amend B1 or combine ordinary RAM, and requires independent admission.
+211offline checks before exact committed consumer receipt; no game trial.

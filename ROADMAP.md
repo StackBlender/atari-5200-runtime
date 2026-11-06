@@ -5,6 +5,17 @@ runtime. NTSC four-port first; full software compatibility remains unfinished.
 
 ## Next
 
+B2 bounded separate authoring APPROVED Marseb7115b/msg_cb39: SECONDFF permits
+ANY FIRSTbyte, otherwise BOTH50..59. Opaque20title/fullCold/normalentry/assets/
+registers/stack/watchdog4096/conservativeRAMthrough021F/250reserve retained.
+No B0composition, no B1 amendment. Author separate exact source/profile/version/
+map/manifest/variant +fit/diff/timing/pinnedartifacts, preserving B0/B1/old13.
+Native admission independently ALL65536yearpairs (356accept/65180refuse),5120title/
+all256first-underFF entries/fullinit/bus/RAM/timing/RDY/IRQ-NMI/allSP/process/
+R65/OFF/firmware/state+ordinarycontinuation. B0/B1still separately pending;
+no admitted catalog/pin/default/release/game trial/fullACK.
+
+
 Mars81025cf/msg_993d approves SEPARATE B0/B1 bounded authoring on exact timer
 ac9b47e/imageeae07d36. B0byte-identical ROM/new ordinary-layout profile+explicit
 021C..21Fcession/no600reservation/individual public initialization contract.

@@ -354,3 +354,12 @@ B0/B1 eighth method runs BOTH real exact-sourcebecb92e CLI/CMake consumers,
 absolute4properties/dependency-before-consumer/triple byte equality. Full suite
 205methods/build/CTest1/1 PASS. Thirteen qualified old exports still included;
 new candidates not yet catalogued/qualified. No native CPU execution by tools.
+
+## Separate B2 conditional-year experiment
+
+Six tests/test_diagnostic_conditional.py methods bring211offline total. Exact
+52bytecode/branches/read order, unchanged rest/fit/reserve/entry, declarative
+65536yearset356accept/65180refuse (NOT CPU run), timing/identity/falseflags/
+provenance/drift/everypin/oldpin/freshprocess. B0/B1 and13qualified older exports
+remain included. Independent native fullmatrix/title/fullinit/state/service
+requirements in diagnostic-conditional-proof.md; no admission from tooling.

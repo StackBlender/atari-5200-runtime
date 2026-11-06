@@ -558,3 +558,13 @@ classification against the stricter selected rule: FIRSTyear is nonnumeric too,
 so approved B1 does NOT admit it. No raw bytes/game identity/source hash copied
 to tracked records; no execution/patch or B1 relaxation. Separate conditional
 B2policy would require review/new identity before emission, never infer bypass.
+
+## B2 bounded conditional-year authoring, 2026-11-06
+
+Read Marseb7115b/msg_cb39 and appended owner review prose only. Policy explicitly
+SECONDFF permitsANYFIRST, otherwise both50..59, fullCold/conservative ownership
+retained. Used only OUR emitted B1/timer source/assembler/entry code and known
+CPU encodings; no new external code/firmware/game/reference reading. B1unqualified
+parent is original composition, not independent native acceptance. Complete
+identity/provenance/nominal worksheets/native65536matrix requirements recorded
+in diagnostic-conditional-proof.md. No B0composition or historicalbypass claim.

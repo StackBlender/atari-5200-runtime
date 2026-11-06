@@ -1,5 +1,18 @@
 # Runtime handoff
 
+## Current B2 authored candidate
+
+Marseb7115b/msg_cb39 approves separate B2. New composer/exporter/CMake on exact
+B1sourcebecb92e/image9da1ddef; B0/B1 sources/shared plumbing immutable. Only
+FD80..FD99prefix reorders year checks; secondFF admitsANYfirst, otherwise both
+50..59. B1unchanged firstnumeric. B2image5936e46d/1556fit/250reserve/conservative
+RAMthrough021F, no B0composition. Nominalnumeric757/764cycles/257/260instructions;
+FF738/745/248/251. Watchdog4096/fullCold/entry/assets/fields unchanged.211offline
+PASS before exact source pin. Need source commit then pinned CLI/CMake4props/
+order/triple equality/fullbuildCTest; deliver exact nativepacket65536yearpairs/
+5120titles/all256first-underFFentries/fullinit/inherited/process/R65/OFF/firmware.
+No admission/game trial/catalog/pin/default/fullACK. B0/B1native separately pending.
+
 ## Current separate B0/B1 authored candidates
 
 Mars81025cf/msg_993d approves bounded authoring separately. New B0ordinary-RAM
