@@ -154,3 +154,16 @@ map file SHA2561b942e04c5be03e742393b87075c694f86c26b5d6013b9ad688c068df01b3e04.
 fourprops/dependency-before-consumption/artifactbyteequality PASS. All9older
 real pinnedCLI exports reproduce unchanged. Temporaryparent removed; no new
 persistentbuildroot. These are offline/static/export checks, not native execution.
+
+
+## Independent native receipt supersedes pending execution
+
+Mars4e6a3a55412b9aaf7a1f5452344489aac8f43292/msg_0343 independently qualifies
+the exacta2a7455 tuple for bounded development. See independent-execution.md:
+892firecases/26replayfrontiers and inherited/converter/R65/defaultOFF checks pass
+Release/nonunityASan. Ordinary frame return can interrupt VBI/callback; retain
+ordinary post-run poll and exact serialized cache/stacks, never forcequiescence.
+Sampled fullentry1835<4096 is emulated diagnostic timing only. FullR62/reset/
+remainingservices/retail/app remain open. Pooled/no newtag orconsumeradoption;
+all source/export approval flags/capabilities remain unchangedfalse/empty.
+Nextreset/services require explicit new cumulativefit/refactor review.

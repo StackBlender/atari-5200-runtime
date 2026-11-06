@@ -267,3 +267,53 @@ full sb52rt-dev2 identity; no nativepayloadfield or oldartifact changes.
 No localCPUrerun, mobile/physicaldeadline, bothfires/reset/fullruntime/game/app/
 multiplayer acceptance follows. Existing narrower Retroconsumer7d1ac30 uses
 MR43's IRQfoundation only; this pooled windowimplementation is not adopted.
+
+
+## Both-fire native qualification received; next reset/service review
+
+Mars4e6a3a55412b9aaf7a1f5452344489aac8f43292/msg_0343 independently
+qualifies a2a7455/imagee937064b for bounded development. Releaseunity/nonunityASan
+892firecases/26same-freshroot-processfrontiers, all16controller topologies,
+256KR2phases, all256SP14/20byte nested programs, six128cycle callbacks andactive/
+pendinganalog pass. Inheritedwindow/keypad/IRQ/timer/analog/display/DLI/R65,
+32converternegatives/10tuples/defaultOFF/firmware pass; old9native variants not
+allrebuilt. See independent-execution.md for exact attribution/limits.
+CRITICAL: ordinary frame return can occur MID-VBI/callback. Preserve ordinary
+post-run controller poll; do not forcequiescence/EventStep. Serialize actualcache/
+stacks and restore hostinputs before native import; stalehost/cache andmidVBI
+frame-boundary replay pass in owner's probes. No frame=VBIcompletion assumption.
+Sampled fullentry1835<4096; bottom28827..58853/top<=239036machinecycles, notphysical/
+mobiledeadline.1902/1904written,153/160newblock,90reserveduntouched,56ordinaryfree.
+Old9allocations/falseflags/OFFdefaults unchanged. Pooled/no newrelease; MR43latest,
+consumeradoption separate. FullR62 open/noACK; reset/remainingservices/game/app/
+multiplayer incomplete. Next enumerate reset/remainingservice contracts andtheir
+actual cumulative fit/refactor proposal BEFORE emission;2ceilingheadroom isnot
+permission tospend remaininggaps/reserve orclaim completefit.
+
+Exact source a2a7455627a9ea3905464c295562debee2efec7d; image SHA256
+ e937064b0d1fe33d0f75cfe4dba89bcbec953adc215f83ed51ce4fee8705f815.
+Read only owner docs/a52-fire-development.md at4e6a3a5; no producerimplementation/
+tests/firmware trace or physical reference read, no localCPUrerun. Independent
+programs cover both exposed logical fire buttons; no further Node aliases exist.
+Physical bindings remain app-owned. Native contract uses frozen before-connect
+sb52-dev-input-fire-v3-ram600-61f-unlatched-v1 assertion; it is not automatic
+GRACTL detection. Unknown/aged/readiness baselines, busy protected-snapshot limits,
+invalid-window-after-bottom and CRITIC-independentIRQ rules remain unchanged.
+
+26frontiers include ordinary mid-VBI frame returns, callbacks andstale bottom
+cache with newerhostinput. Same/freshroot/process fullbyte replay preserves
+cache until the next ordinary post-run poll.14/20-byte nested program qualification
+is not proof of arbitrary callback stack or the old32-byte estimate. Fullentry
+1835=postvector1827+hardwarepeak8; cold1581/1588cycles/520/523instructions unchanged.
+Newcumulativewindow paths observed923postvector and267402aftercapture; oldwindow
+provider's2048qualification retained, newfireprofile4096separate.
+
+Both builds pass inherited4534windowcases/18frontiers,4465foundationcases +raw0/
+14frontiers,1302IRQtimer/14frontiers,288VBI+120repeats/404display/128DLI/53fastanalog
+andtheir safe/process replays. Active/pending POT copy/restart traces, mixed
+Standard/TrakBall axes/fires and shared polynomial/control/power preservation
+verified perowner. No nativepersistentfield or chipalgorithm change.
+R65fourcontroller/wire/process/lifetime includinglive/loadedexit, state17606,
+32converternegatives/mutualparentrefusal/all10tuples pass. FreshdefaultOFFRelease
+and43firmware/tree3903/history5138/3build hygiene pass perowner. No games, actual
+Retrofireconsumer, device/energy/performance/online or completefirmware claim.

@@ -191,3 +191,10 @@ combines bottom/top fire observation with automatic keypad windows. It fits the
 2KiB image under a variant-specific160-byte code/90-byte reserve tradeoff and
 passes offline encoding/export checks. Independent native fire/cache/latency/
 state acceptance remains pending; it is not a complete firmware or game runner.
+
+
+The both-fire development candidate now has independent Mars CPU/input/cache/
+state-replay qualification; see the [receipt](docs/independent-execution.md).
+This includes ordinary frame returns during VBI callbacks, which consumers must
+preserve. Reset/remaining services, real-game compatibility and product release
+remain unfinished; candidate approval flags and normal defaults are unchanged.

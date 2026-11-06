@@ -9,6 +9,28 @@ for cartridge startup.
 
 ## Next
 
+## Both-fire native qualification received; next reset/service review
+
+Mars4e6a3a55412b9aaf7a1f5452344489aac8f43292/msg_0343 independently
+qualifies a2a7455/imagee937064b for bounded development. Releaseunity/nonunityASan
+892firecases/26same-freshroot-processfrontiers, all16controller topologies,
+256KR2phases, all256SP14/20byte nested programs, six128cycle callbacks andactive/
+pendinganalog pass. Inheritedwindow/keypad/IRQ/timer/analog/display/DLI/R65,
+32converternegatives/10tuples/defaultOFF/firmware pass; old9native variants not
+allrebuilt. See independent-execution.md for exact attribution/limits.
+CRITICAL: ordinary frame return can occur MID-VBI/callback. Preserve ordinary
+post-run controller poll; do not forcequiescence/EventStep. Serialize actualcache/
+stacks and restore hostinputs before native import; stalehost/cache andmidVBI
+frame-boundary replay pass in owner's probes. No frame=VBIcompletion assumption.
+Sampled fullentry1835<4096; bottom28827..58853/top<=239036machinecycles, notphysical/
+mobiledeadline.1902/1904written,153/160newblock,90reserveduntouched,56ordinaryfree.
+Old9allocations/falseflags/OFFdefaults unchanged. Pooled/no newrelease; MR43latest,
+consumeradoption separate. FullR62 open/noACK; reset/remainingservices/game/app/
+multiplayer incomplete. Next enumerate reset/remainingservice contracts andtheir
+actual cumulative fit/refactor proposal BEFORE emission;2ceilingheadroom isnot
+permission tospend remaininggaps/reserve orclaim completefit.
+
+
 ## Both-fire cumulative candidate authored under explicit review
 
 Mars2784b289/msg_e667 authorizes boundedexperimental fire-v3 withmandatory
