@@ -311,3 +311,12 @@ A seventh glyph test puts the full suite at189methods. Independent binary parsin
 of95explicit8x8 JSON cells reproduces the frozen760byte asset. No glyph changes,
 Atari encoding/bank/ABI remain null. This supports separate native pixel oracles;
 character-bank-proposal.md is documentary policy only, not authoring/admission.
+
+## Twelve qualified exports
+
+Marsd5c709f/msg_d972 independently qualified opaque-title ed01354. The persistent
+verifier catalog adds its immutable source/image tuple and uses its CMake target
+for the latest parent dependency/fourproperty/triple equality check. All11older
+CLI exports remain checked; the dedicated opaque-title artifact method also stays.
+189methods total, no added CPU execution/provider approval or generation input edit.
+See independent-execution.md for native evidence and its product limitations.

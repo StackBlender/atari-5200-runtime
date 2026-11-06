@@ -24,13 +24,13 @@ and adapterASan12/12. Need actual keyIRQ consumer contract and explicit separate
 021C..21F cession/all-native-path qualification before ordinary profile emission.
 See timer-memory-audit.md; no profile/game/native-completion inference.
 
-Opaque-title authoring complete: sourceed013540ac2996d76fab149f6fb8dea9fcead584,
-image8d6ef38c1b487fa95742e62e9a5c0b1a928ddb446977264739a263fa0bc070c4;
-sole FEB1=14, static1091/1098, fit/ABI/90reserve unchanged. Exact qualification
-packetmsg_73ee/req_6f74 already delivered. Full dualnative5120title+inherited/
-state/process/R65 qualification pending; no admission/release/pin/default change.
-B ordinary profile and C numeric font binding remain unapproved. Do not repeat
-A authoring or ask for human permission; see opaque-title-proof.md.
+Opaque-title sourceed01354/image8d6ef38c is now independently qualified by
+Marsd5c709f/msg_d972 in Release/full-native ASan,5120title cases plus inherited/
+R65/state/refusal/OFF/firmware. Full cold1167/1177cycles,360/363instructions;
+measured savings414/411 versus static380. Pooled/unreleased; MR43 and app pins
+unchanged. Persistent verifier now covers12qualified exports and latest opaque
+CMake consumer;189methods retained. See independent-execution.md. B ordinary
+profile/keyIRQ contract and C bank authoring review remain pending, not A.
 
 Completed export-regression automation: tools/verify_accepted_exports.py
 reproduces all eleven real pinned CLI exports and optionally the real parent
@@ -43,7 +43,7 @@ provider selection, old input or approval change. No disposable harness needed.
    SHA8d6ef38c1b487fa95742e62e9a5c0b1a928ddb446977264739a263fa0bc070c4;
    unchanged1895written/ABI/90reserve.182offline methods +real pinned CLI/CMake PASS. Source/export
    ed013540ac2996d76fab149f6fb8dea9fcead584 pushed. Recomputed nominal
-   startup1091/1098; native full timing not measured. Exacttuple msg_73ee delivered; full5120title+year/entry/inherited/state/R65 matrix pending.
+   startup1091/1098; independently qualified Marsd5c709f/msg_d972 as recorded above.
    No native admission/release/default/false-flag change. See opaque-title-proof.
 2. Resolve an ordinary-software RAM profile: cc65 documents021C..3FFF; current
    cooperating input ABI reserves0600..061F. Do not relabel arbitrary homebrew
@@ -59,17 +59,15 @@ provider selection, old input or approval change. No disposable harness needed.
 
 ## Latest accepted development generation
 
-Exact source e25a466d15c574f3ec364bfc2f44bc7ef2f51117; image
-c5fd8df1564c28e5ed4c5aad9f8eabdc64a62e32de28e8dcce6bfae7ea533d24.
-Bridge deduplication independently qualified by Mars5b6c5be4/msg_fd40.
-1895written/2048,391above1504timer,9under1904ceiling,146/160fire,
-63ordinaryfree and90reserve untouched. No new service/RAM/stack/native field.
-Same fire-v3 ABI/frozen cooperating declaration. Release/ASan892fire cases,
-37safe/cache/frame/moved-setup/process frontiers each plus inherited services,
-R65/refusal/converter11tuples/default-OFF/firmware checks. Pooled; MR43 latest.
-See [proof/receipt](docs/fire-bridge-proof.md) and
-[independent execution](docs/independent-execution.md). Ordinary frame return may
-occur inside VBI/callback: keep real post-return polls and serialized stale caches.
+Opaque-title ed013540ac2996d76fab149f6fb8dea9fcead584, image
+8d6ef38c1b487fa95742e62e9a5c0b1a928ddb446977264739a263fa0bc070c4.
+Marsd5c709f/msg_d972 independent Release/full-native ASan qualification above;
+full attributed matrix/timing/limits in [execution receipt](docs/independent-execution.md).
+Same fire-v3/frozen declaration/32RAM,1895written/fire146/90reserve/nativefields/
+schema/false approval flags. Pooled UNRELEASED; MR43 remains latest and Retro
+pins stay unchanged. FullR62 req_6f74 remains open/noACK. Preserve real ordinary
+frame returns, post-return polls/stale caches and host-before-import ordering.
+B ordinary profile/keyIRQ and C numeric binding review remain open.
 
 ## Standalone asset batch
 

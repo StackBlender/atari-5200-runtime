@@ -467,3 +467,13 @@ not used for numeric authority.400/800OS/board/font semantics are not5200facts.
 Standalone original ASCII geometry was committed BEFORE this reading; its760
 bytes remain unchanged. New declarative JSON exposes those same own pixels only.
 Numeric first-bank policy is a proposal awaiting review, not an emitted binding.
+
+## Mars opaque-title qualification and B review, 2026-11-06
+
+Read owner messages msg_d972 (Marsd5c709f) and msg_4f09 (Mars98f3a6f),
+req_6f74. Prose-only independent native execution receipt/contract review; no
+emulator implementation/tests, firmware or reference traces inspected. Exact
+source/image, dual-native matrix and measured versus nominal timing recorded in
+independent-execution.md. Owner-reported emulator evidence, not original hardware
+or retail acceptance. B conditional audit/cession adds no ordinary profile;
+actual keyIRQ requirements/all native boundaries remain unresolved. C pending.

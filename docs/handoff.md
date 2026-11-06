@@ -1,5 +1,36 @@
 # Runtime handoff
 
+## Current opaque-title qualification — 2026-11-06
+
+Mars d5c709f / msg_d972 independently qualifies source
+`ed013540ac2996d76fab149f6fb8dea9fcead584`, image SHA256
+`8d6ef38c1b487fa95742e62e9a5c0b1a928ddb446977264739a263fa0bc070c4`.
+Owner-reported Release unity and full-native nonunity Debug ASan (-g -O1)
+each pass5120 title positives,3 whole-title patterns,19 year cases and real
+entry-boundary stubs/bus/RAM/register/stack/NMI/IRQ/BRK/RDY/watchdog/state checks.
+Observed full cold1167cycles/360instructions; boundary1177/363. Parent rerun
+1581/520 and1588/523: measured savings414/411cycles differ from the static380;
+nominal1091/1098 and descriptor/full-cycle false labels remain unchanged.
+
+Both native builds pass892fire cases/37 bridge-cache-frame-nested process
+frontiers, allSP14/20,3840+694window cases/18process frontiers,4465keypad cases/
+93nested/14process,1302IRQ-timer/14process,288VBI+120repeats,404display,128DLI,
+53analog. Analog sample391; window settle minimum27413 is a sampled bound.
+Mutual bridge/new state refusal checks pre-mutation preservation and next two
+ordinary-frame continuations. All12converter tuples reproduce retained triples;
+39converter negatives per build. R65 rebuilt both natives, all2600regions exact/
+fast and5200standard/mixed/wire/process/lifecycle/live/loaded exit; mixedstate17606,
+2600wire1104 unchanged. DefaultOFF rebuilt; firmware43/selftest43/tree3908/
+history5180precommit checks clean per owner. No local native rerun or hardware,
+mobile/battery, game or broad ordinary-software claim follows.
+
+Same fire-v3/frozen declaration/32RAM,1895written/fire146/90reserve/nativefields/
+schema/false approval flags. Pooled UNRELEASED; MR43 remains latest and Retro
+pins stay unchanged. FullR62 req_6f74 remains open/noACK. B ordinary profile and
+keyIRQ contract, C numeric glyph binding and remaining services are still gates.
+Mars98f3a6f/msg_4f09 confirms B cession proposal/audit receipt adds no admission.
+This receipt supersedes older pending opaque-title qualification notes below.
+
 ## Pinned opaque-title export receipt
 
 Exact source/export ed013540ac2996d76fab149f6fb8dea9fcead584 pushed.
@@ -22,8 +53,8 @@ qualification underreq_6f74. Parent e25 remains the latest native-qualified imag
 
 ## Resume work
 
-Opaque-title sourceed01354 is authored/export-verified and deliveredmsg_73ee;
-independent native qualification is pending, not another authoring permission.
+Opaque-title sourceed01354 is independently qualified by Marsd5c709f/msg_d972;
+no repeated authoring/qualification gate. Latest receipt above supersedes history.
 Continue B memory audit/actual consumer keyIRQ requirements and C screened
 primary numeric character binding. No ordinary profile or font bank is approved.
 Latest B static audit/startup-canary evidence is below and in timer-memory-audit.md.
@@ -31,7 +62,7 @@ No reset invention or macro/kernel/font implementation access.
 
 ## Current exact runtime
 
-Generation e25a466d15c574f3ec364bfc2f44bc7ef2f51117; image
+Previous qualified bridge generation e25a466d15c574f3ec364bfc2f44bc7ef2f51117; image
 c5fd8df1564c28e5ed4c5aad9f8eabdc64a62e32de28e8dcce6bfae7ea533d24.
 Mars5b6c5be4/msg_fd40 qualified bridge892cases/37frontiers per Release/ASan plus
 inherited/R65/11tuples/default-OFF/firmware. Pooled; no MR after43. Old eleven
@@ -130,3 +161,10 @@ Standalone printable JSON now exposes95ASCII8x8 declared cells, frozen760bytes
 unchanged/null Atari fields. Seventh glyph method gives189total. Need review of
 primary/OCR confidence, mapping/register/pixel oracles before authoring; suggested
 parentopaqueed01354 only after native qualification, not a silent parent change.
+
+Latest catalog checkpoint:189offline methods and build/CTest1/1 PASS after adding
+qualified opaque-title as the12th immutable CLI export and latest real CMake
+consumer. All generation inputs unchanged; old exports remain included. No native
+code/provider pin/approval changes. Temporary consumer trees removed automatically.
+Next independent implementation depends on B actual consumer keyIRQ requirements
+or C source/layout/register/oracle technical review; no human permission needed.

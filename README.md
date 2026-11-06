@@ -20,7 +20,8 @@ interrupt nesting, frame/cache/state/process replay and refusal checks; see the
 
 These are limited development contracts, not original-hardware measurements or
 broad game compatibility. Current input services reserve0600..061F and cannot be
-silently applied to ordinary software using that RAM. Metadata is still digit-only;
+silently applied to ordinary software using that RAM. The qualified opaque-title
+variant accepts arbitrary20title bytes with digit-only years;
 full text/ordinary-RAM/remaining reset and service compatibility are current work.
 Warm/CPU-only/host ControllerKey reset requests refuse; physical controller Reset
 is a separate input. Speed and battery efficiency take priority over fine timing
@@ -28,7 +29,7 @@ accuracy, with dependable behavior and repeatable saves.
 
 A separate [original printable glyph asset](docs/printable-glyphs.md) contains
 95new drawings. It has no Atari encoding, runtime-bank binding or provider target.
-Accepted runtime fonts and all eleven pinned generation inputs remain unchanged.
+Accepted runtime fonts and all twelve pinned generation inputs remain unchanged.
 
 ## Build and test
 
@@ -47,7 +48,7 @@ Or run all189offline methods directly:
 PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -v
 ```
 
-The ordinary suite includes real reproduction of all eleven pinned development
+The ordinary suite includes real reproduction of all twelve pinned development
 exports and the CMake artifact consumer, plus rejection of altered bindings and
 approval flags. Run it separately with `python3 tools/verify_accepted_exports.py
 --cmake`; see the [catalog](docs/accepted-generations.md). Local source history is
@@ -83,7 +84,8 @@ GNU General Public License, version3 or (at your option) any later version
 
 A separately [authored opaque-title generation](docs/opaque-title-proof.md) removes
 only the digit restriction on20title bytes. Numeric years and entry validation
-remain. It requires independent native qualification before provider admission;
+remain. Mars d5c709f independently qualified it in both native builds; it remains
+unreleased;
 old generations/ABI/allocation/defaults remain unchanged.
 
 A [conditional timer memory audit](docs/timer-memory-audit.md) inventories every

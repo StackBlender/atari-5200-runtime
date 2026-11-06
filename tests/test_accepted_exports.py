@@ -46,9 +46,9 @@ class AcceptedExportTests(unittest.TestCase):
             fixture();(directory/'startup-map.json').write_text('{}')
             with self.assertRaises(KeyError):validate(directory,pin,digest)
 
-    def test_all_eleven_real_pins_and_parent_consumer_in_fresh_process(self):
+    def test_all_twelve_real_pins_and_parent_consumer_in_fresh_process(self):
         result=subprocess.run([sys.executable,str(ROOT/'tools/verify_accepted_exports.py'),'--cmake'],
             capture_output=True,text=True,timeout=30)
         self.assertEqual(result.returncode,0,result.stdout+result.stderr)
-        self.assertIn('Eleven immutable development exports PASS',result.stdout)
+        self.assertIn('Twelve immutable development exports PASS',result.stdout)
         self.assertIn('CMake dependency/four properties/triple byte equality PASS',result.stdout)

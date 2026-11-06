@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 # Copyright (c) 2026 StackBlender LLC
-"""Reproduce eleven independently qualified DEVELOPMENT exports, no CPU run."""
+"""Reproduce twelve independently qualified DEVELOPMENT exports, no CPU run."""
 import argparse
 import hashlib
 import json
@@ -24,6 +24,7 @@ GENERATIONS=(
     ('keypad-window','export_keypad_window_candidate.py','fce294b7448a7c5a1a35e6c5e5ed5611ee36473f','3c1b419b9af94645ea537126d21e464f90f05013689ef7132656680d62d4207a'),
     ('fire','export_fire_candidate.py','a2a7455627a9ea3905464c295562debee2efec7d','e937064b0d1fe33d0f75cfe4dba89bcbec953adc215f83ed51ce4fee8705f815'),
     ('fire-bridge','export_fire_bridge_candidate.py','e25a466d15c574f3ec364bfc2f44bc7ef2f51117','c5fd8df1564c28e5ed4c5aad9f8eabdc64a62e32de28e8dcce6bfae7ea533d24'),
+    ('opaque-title','export_opaque_title_candidate.py','ed013540ac2996d76fab149f6fb8dea9fcead584','8d6ef38c1b487fa95742e62e9a5c0b1a928ddb446977264739a263fa0bc070c4'),
 )
 
 
@@ -71,7 +72,7 @@ assert json.loads(Path(values[1]).read_text())['source_revision']==values[3]
 Path(sys.argv[2]).write_text('verified')
 ''')
     fields=('SB5200_IMAGE_FILE','SB5200_MANIFEST_FILE','SB5200_MAP_FILE','SB5200_SOURCE_REVISION')
-    properties='\\n'.join('$<TARGET_PROPERTY:sb5200-fire-bridge-image,'+field+'>' for field in fields)+'\\n'
+    properties='\\n'.join('$<TARGET_PROPERTY:sb5200-opaque-title-image,'+field+'>' for field in fields)+'\\n'
     # These are our absolute repository/temp paths, passed as CMake quoted
     # literals. Reject delimiters rather than guessing an escaping convention.
     for path in (ROOT,source):
@@ -79,15 +80,15 @@ Path(sys.argv[2]).write_text('verified')
     (source/'CMakeLists.txt').write_text('''cmake_minimum_required(VERSION 3.20)
 project(accepted_export_consumer LANGUAGES NONE)
 find_package(Python3 REQUIRED COMPONENTS Interpreter)
-'''+f'add_subdirectory("{ROOT}" module)\ninclude("{ROOT}/cmake/fire-bridge-candidate.cmake")\n'
+'''+f'add_subdirectory("{ROOT}" module)\ninclude("{ROOT}/cmake/opaque-title-candidate.cmake")\n'
         +f'file(GENERATE OUTPUT "${{CMAKE_BINARY_DIR}}/properties" CONTENT "{properties}")\n'
         +'''add_custom_command(OUTPUT "${CMAKE_BINARY_DIR}/verified"
 COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/check.py" "${CMAKE_BINARY_DIR}/properties" "${CMAKE_BINARY_DIR}/verified"
-DEPENDS sb5200-fire-bridge-image VERBATIM)
+DEPENDS sb5200-opaque-title-image VERBATIM)
 add_custom_target(consume ALL DEPENDS "${CMAKE_BINARY_DIR}/verified")
 ''')
     build=source/'build'
-    run(['cmake','-S',str(source),'-B',str(build),'-G','Ninja','-DSB5200_FIRE_BRIDGE_SOURCE_REVISION='+pin])
+    run(['cmake','-S',str(source),'-B',str(build),'-G','Ninja','-DSB5200_OPAQUE_TITLE_SOURCE_REVISION='+pin])
     run(['cmake','--build',str(build),'--target','consume'])
     values=(build/'properties').read_text().splitlines()
     require(len(values)==4 and values[3]==pin,'CMake property tuple mismatch')
@@ -108,10 +109,10 @@ def main():
                 run([sys.executable,str(ROOT/'tools'/script),'--source-revision',pin,'--output-dir',str(directory)])
                 validate(directory,pin,expected)
             if args.cmake:
-                cmake_consumer(root,root/'fire-bridge')
+                cmake_consumer(root,root/'opaque-title')
     except (OSError,ValueError,KeyError,subprocess.SubprocessError) as error:
         parser.exit(1,str(error)+'\n')
-    print('Eleven immutable development exports PASS; candidate flags unchanged'
+    print('Twelve immutable development exports PASS; candidate flags unchanged'
           +('; CMake dependency/four properties/triple byte equality PASS' if args.cmake else ''))
 
 

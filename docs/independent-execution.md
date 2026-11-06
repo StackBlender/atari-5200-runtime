@@ -1,5 +1,36 @@
 # Independent bounded execution receipt
 
+## Current opaque-title qualification — 2026-11-06
+
+Mars d5c709f / msg_d972 independently qualifies source
+`ed013540ac2996d76fab149f6fb8dea9fcead584`, image SHA256
+`8d6ef38c1b487fa95742e62e9a5c0b1a928ddb446977264739a263fa0bc070c4`.
+Owner-reported Release unity and full-native nonunity Debug ASan (-g -O1)
+each pass5120 title positives,3 whole-title patterns,19 year cases and real
+entry-boundary stubs/bus/RAM/register/stack/NMI/IRQ/BRK/RDY/watchdog/state checks.
+Observed full cold1167cycles/360instructions; boundary1177/363. Parent rerun
+1581/520 and1588/523: measured savings414/411cycles differ from the static380;
+nominal1091/1098 and descriptor/full-cycle false labels remain unchanged.
+
+Both native builds pass892fire cases/37 bridge-cache-frame-nested process
+frontiers, allSP14/20,3840+694window cases/18process frontiers,4465keypad cases/
+93nested/14process,1302IRQ-timer/14process,288VBI+120repeats,404display,128DLI,
+53analog. Analog sample391; window settle minimum27413 is a sampled bound.
+Mutual bridge/new state refusal checks pre-mutation preservation and next two
+ordinary-frame continuations. All12converter tuples reproduce retained triples;
+39converter negatives per build. R65 rebuilt both natives, all2600regions exact/
+fast and5200standard/mixed/wire/process/lifecycle/live/loaded exit; mixedstate17606,
+2600wire1104 unchanged. DefaultOFF rebuilt; firmware43/selftest43/tree3908/
+history5180precommit checks clean per owner. No local native rerun or hardware,
+mobile/battery, game or broad ordinary-software claim follows.
+
+Same fire-v3/frozen declaration/32RAM,1895written/fire146/90reserve/nativefields/
+schema/false approval flags. Pooled UNRELEASED; MR43 remains latest and Retro
+pins stay unchanged. FullR62 req_6f74 remains open/noACK. B ordinary profile and
+keyIRQ contract, C numeric glyph binding and remaining services are still gates.
+Mars98f3a6f/msg_4f09 confirms B cession proposal/audit receipt adds no admission.
+This receipt supersedes older pending opaque-title qualification notes below.
+
 ## Bridge refactor independently qualified
 
 Mars5b6c5be4adef2a0b6ced5288f307207b4ac7c2ac /msg_fd40 accepts exact source
