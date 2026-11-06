@@ -7,6 +7,19 @@ for cartridge startup.
 
 ## Next
 
+## MR-43 released; runtime completion still open
+
+Mars msg_108d releases annotatedMR43 ed99d3fc4c8c453665fbfd144fed28e5626ded77,
+localtag verified. This supersedes pooled/unreleased notes for the eight bounded
+R62 variants and R65 snapshot/lifecycle work. Consumer adoption is separate;
+OFF-default/development-only/false candidate labels remain. Fullreq_6f74 staysopen,
+noACK. Keypad input-v2 requires frozen preconnect cooperating-cart declaration.
+Next automatic windows/four-port rotation/contact callbacks/bothfires and exact
+reset/disable/stack/fit; then remaining service/retail ABI/authorized-game evidence
+and complete-app/device/local-online qualification. MR43 release is not full BIOS
+or game support. Preserve archives/old executable when old synchronized states
+refuse on consumer adoption under already accepted policy.
+
 ## Independent keypad IRQ foundation acceptance
 
 Mars003e782458dfe82ca3baeb96e97a179844a1b917 /msg_4f5f independently accepts
