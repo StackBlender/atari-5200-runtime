@@ -107,3 +107,9 @@ adapterASan12/12 PASS, native Mars remains Release. See timer-memory-audit.md.
 Need explicit021C..21F ownership proposal and actual consumer keyIRQ contract,
 plus all native boundary canaries before any separate profile. Opaque-title
 ed01354 still awaits native qualification; no new candidate/profiles/flags.
+
+Ownership proposal made explicit in timer-memory-audit.md: future target would
+reserve only shadows0000..18/vector0200..21B, cede021C..21F to software and leave
+0600..061F consumer-owned. Shared CPU stack remains0100..1FF. This is proposed
+cession, not historical ABI reconciliation/admission or an emitted profile.
+Actual keyIRQ consumer requirements and all-native-path canaries remain required.

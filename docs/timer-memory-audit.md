@@ -73,6 +73,27 @@ call/pointer, exact image admission and fresh CLI reproducibility/refusal.
 188offline methods/CTest1/1 PASS, retaining all eleven old export/CMake and
 opaque-title candidate artifact checks. No CPU emulator or foreign test/code.
 
+### Proposed ownership reconciliation (not a selected profile)
+
+For the separate ordinary-consumer target, propose the following explicit policy:
+
+|Area|Proposed owner|
+|---|---|
+|0000..0018|Existing declared runtime shadows only|
+|0019..00FF|Consumer, including cc65 conio0019..001C|
+|0100..01FF|Shared hardware/call/interrupt stack under the eventual callback ABI|
+|0200..021B|Existing declared public vector table only|
+|021C..021F|Explicitly CEDED to the consumer in this separate proposal|
+|0220..3FFF|Consumer code/data/heap/display;0600..061F is NOT reserved|
+
+This deliberately reconciles the compiler layout by changing the reservation for
+that future target, rather than claiming the old conservative PAM profile already
+cedes the four bytes. The static own-code inventory supports the proposed cession;
+it does not establish historical ownership or approve its implementation. No new
+profile identifier/provider/manifest/selection or executable policy is created.
+Its actual keyIRQ consumer requirements remain unfilled; no hidden state or
+callback/repeat semantics may be invented to complete the table.
+
 A separate proposed consumer-interface profile still must EXPLICITLY cede
 021C..021F; older profiles' conservative reservation is unchanged. Audit/qualify
 all native startup/IRQ/VBI/fault paths and consumer-owned display/stack cases.
