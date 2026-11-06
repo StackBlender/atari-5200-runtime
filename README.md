@@ -41,7 +41,7 @@ cmake --build build
 ctest --test-dir build --output-on-failure
 ```
 
-Or run all188offline methods directly:
+Or run all189offline methods directly:
 
 ```sh
 PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -v

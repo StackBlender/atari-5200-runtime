@@ -67,3 +67,18 @@ class PrintableGlyphTests(unittest.TestCase):
             for directory in directories:
                 self.assertEqual((directory/'printable-glyphs.bin').read_bytes(),data)
                 self.assertEqual((directory/'printable-glyphs.json').read_text(),report)
+
+    def test_declarative_geometry_is_complete_unbound_and_matches_published_bytes(self):
+        data,encoded=asset();geometry=json.loads(encoded)['geometry']
+        self.assertEqual((geometry['paper'],geometry['ink'],geometry['row_order'],geometry['bit_order']),
+                         ('.','#','top-to-bottom','MSB-left'))
+        self.assertEqual(set(geometry['glyphs']),set(map(str,range(32,127))))
+        packed=bytearray()
+        for code in range(32,127):
+            rows=geometry['glyphs'][str(code)]
+            self.assertEqual(len(rows),8)
+            for row in rows:
+                self.assertEqual(len(row),8);self.assertFalse(set(row)-{'.','#'})
+                packed.append(int(row.replace('.','0').replace('#','1'),2))
+        self.assertEqual(bytes(packed),data)
+        self.assertEqual(hashlib.sha256(data).hexdigest(),'674bd8776ac83d517654b3d6ca2720e5b6d69f5e084c2bd35052c19c074f547a')

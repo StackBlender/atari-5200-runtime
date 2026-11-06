@@ -454,3 +454,16 @@ Finite startup index/default-vector patterns and independent expected footprints
 are original analysis of our program. Synthetic corruptions are tool-test data,
 not firmware traces. No new external source, manufacturer bytes, extracted asset
 or foreign kernel/emulator/test was read. B remains audit-only, no profile grant.
+
+## C manufacturer prose screening; geometry data remains unbound
+
+Read only title/frontmatter/contents and selected Atari1982manufacturer hardware
+prose II.13/15/17,III.4..6 via Manualzz transcription; scan URL/limitations and
+exact source scope in character-bank-proposal.md. PDF screenshot attempts exposed
+no usable images; no visual verification claimed. Adjacent documentation display-
+list examples/diagram labels seen, not copied. No font/pixel images, source IV
+program, firmware or emulator implementation/test read. Secondary search snippets
+not used for numeric authority.400/800OS/board/font semantics are not5200facts.
+Standalone original ASCII geometry was committed BEFORE this reading; its760
+bytes remain unchanged. New declarative JSON exposes those same own pixels only.
+Numeric first-bank policy is a proposal awaiting review, not an emitted binding.

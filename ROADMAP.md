@@ -5,6 +5,14 @@ runtime. NTSC four-port first; full software compatibility remains unfinished.
 
 ## Next
 
+C source/data packet ready: character-bank-proposal.md screens selected1982
+manufacturer ANTIC prose via OCR, with errors/visual limits explicit. Proposes
+64ASCII-labelled first-bank cells (54original ASCII drawings plus10retained
+seven-segment digits), preserves old high512bytes/legacy50digits/all code/reserve.
+No authoring approval or bank emission.95cannot fit64; no inferred ATASCII ABI.
+Standalone189method suite now exposes95declarative8x8 oracle cells,760glyphbytes
+unchanged and all bank/encoding/ABI null. Need owner review before binding.
+
 B audit advanced under Marsf20996c/msg_7827, no profile approval: standalone
 strict timer_memory_audit.py inventories220instructions/all474emitted code bytes,
 all default-handler/frontier control flow, guarded finite startup loops, explicit

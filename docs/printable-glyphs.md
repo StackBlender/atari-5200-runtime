@@ -35,3 +35,13 @@ macro names. Require a separately identified generation, unchanged2048-byte fit,
 full inherited native CPU/peek/DMA/pixel/state/refusal checks and old export
 reproduction. Original shape may differ aesthetically from manufacturer artwork;
 this does not waive functional character/graphics requirements.
+
+## Declarative oracle data
+
+The JSON now includes geometry.glyphs:95ASCII label keys, each with8explicit
+8-pixel '.'/'#' rows, top-to-bottom/MSB-left. This exposes original asset DESIGN
+DATA to independent native fixture authors without reading generator/test code.
+No glyph byte changes: SHA256674bd8776ac83d517654b3d6ca2720e5b6d69f5e084c2bd35052c19c074f547a.
+A seventh test independently packs the declared rows and confirms all760bytes.
+All Atari binding/ABI/bank fields remain null, no provider/image is emitted.
+See character-bank-proposal.md for the separately UNAPPROVED64cell bank plan.

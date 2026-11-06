@@ -131,6 +131,12 @@ def asset():
                   provider_approved=False, execution_verified=False,
                   capabilities=[], glyph_count=95, bytes_per_glyph=8,
                   ascii_first=32, ascii_last=126, size=len(data),
+                  geometry=dict(schema=1,paper='.',ink='#',row_order='top-to-bottom',
+                                bit_order='MSB-left',
+                                glyphs={str(code):['.'+row+'..' for row in
+                                    (DRAWINGS[chr(code)].split('/')+
+                                     ['.....']*(8-len(DRAWINGS[chr(code)].split('/'))))]
+                                        for code in range(32,127)}),
                   sha256=hashlib.sha256(data).hexdigest(),
                   source_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest())
     return data, json.dumps(report,sort_keys=True,indent=2)+'\n'

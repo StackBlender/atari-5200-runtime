@@ -118,3 +118,15 @@ Conditional audit clarification: initialized default software-vector routes are
 assumed. Early/hijacked/torn/uninitialized routes and the integration startup
 observer remain excluded, not proved by the220instruction static inventory.
 No profile admission follows; all dynamic boundary qualification still required.
+
+## C documentary/geometry oracle packet
+
+Selected manufacturer1982ANTIC prose screened via OCR only; source/section/errors/
+exposure and explicit first64-cell own software policy in character-bank-proposal.md.
+No font images/source IV program/firmware/foreign implementation read; no visual
+scan verification. Proposed first512font bytes bind54own ASCII drawings plus10old
+seven-segment digits, high512bytes/legacy50digits/code unchanged; no bank assembled.
+Standalone printable JSON now exposes95ASCII8x8 declared cells, frozen760bytes
+unchanged/null Atari fields. Seventh glyph method gives189total. Need review of
+primary/OCR confidence, mapping/register/pixel oracles before authoring; suggested
+parentopaqueed01354 only after native qualification, not a silent parent change.

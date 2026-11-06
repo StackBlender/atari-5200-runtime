@@ -304,3 +304,10 @@ operand/control-flow/identity failures. CLI tools/timer_memory_audit.py admits
 only our exact qualified timer image. No CPU simulation/native execution.
 See timer-memory-audit.md for assumptions, external boundaries and consumer
 startup/VBI canaries. All earlier export/candidate artifact checks remain included.
+
+## Declarative original geometry
+
+A seventh glyph test puts the full suite at189methods. Independent binary parsing
+of95explicit8x8 JSON cells reproduces the frozen760byte asset. No glyph changes,
+Atari encoding/bank/ABI remain null. This supports separate native pixel oracles;
+character-bank-proposal.md is documentary policy only, not authoring/admission.
