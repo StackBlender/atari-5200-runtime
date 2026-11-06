@@ -41,11 +41,17 @@ cmake --build build
 ctest --test-dir build --output-on-failure
 ```
 
-Or run all173offline methods directly:
+Or run all175offline methods directly:
 
 ```sh
 PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -v
 ```
+
+The ordinary suite includes real reproduction of all eleven pinned development
+exports and the CMake artifact consumer, plus rejection of altered bindings and
+approval flags. Run it separately with `python3 tools/verify_accepted_exports.py
+--cmake`; see the [catalog](docs/accepted-generations.md). Local source history is
+required; the tool does not fetch it.
 
 Generated images/maps/manifests/assets stay in ignored build directories.
 Candidate opt-in artifact targets bind full source revision and exact outputs;

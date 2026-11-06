@@ -424,3 +424,11 @@ visible, not copied. No macro/startup/driver/linker/kernel implementation read.
 Proposed opaque title/year-only validation and ordinary-RAM compatibility need
 integration review. No new numeric reset service, font binding or runtime policy
 is authorized by source screening. Mars review requestmsg_8f4c/req_6f74 pending.
+
+## Persistent accepted-export verifier
+
+No new source exposure. The catalog retains eleven previously qualified own
+source/image identities and invokes existing first-party exporters. The temporary
+CMake consumer is own integration code, not an emulator or CPU model. Synthetic
+negative bytes/descriptors are tooling fixtures only. No foreign implementation,
+firmware/history, extracted font or new original-reference measurement is used.

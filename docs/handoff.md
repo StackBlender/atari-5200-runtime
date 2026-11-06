@@ -45,3 +45,14 @@ parent removed. Standalone asset SHA256
 Original-only raster preview visually inspected under ignored
 build/printable-glyphs/preview.png. git diff --check PASS. No runtime generation
 or approval fields changed. Repo lease to be released after push.
+
+## Persistent export regression tool
+
+Added tools/verify_accepted_exports.py and tests/test_accepted_exports.py, with
+catalog docs/accepted-generations.md. Real eleven pinned exports plus temporary
+parentCMake/fourproperties/dependency/triple equality PASS. Invalid source/image/
+map/symbol/descriptor/capability/approval cases refuse. Normal suite now175methods,
+CTest1/1 PASS; no native qualification or previous generation inputs changed.
+Use python3 tools/verify_accepted_exports.py --cmake instead of the old temporary
+harness. Requires local own source history; no autofetch. Outputs temporary.
+Title/ordinary-RAM/font contract requestmsg_8f4c/req_6f74 still awaits Mars review.

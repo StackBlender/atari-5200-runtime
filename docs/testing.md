@@ -273,3 +273,12 @@ Use the existing unittest/CTest commands. tools/printable_glyphs.py outputs only
 760unbound asset bytes and JSON; no runtime image/target/approval. See
 printable-glyphs.md. Full pinned eleven-generation export reproduction remains
 required when changing generation inputs; this slice adds none to old exports.
+
+## Persistent all-generation regression
+
+Current suite175methods includes tests/test_accepted_exports.py: real eleven
+pinned CLI exporters and temporary parentCMake dependency/fourproperty/artifact
+byte equality, plus negative binding/descriptor/map/image/capability/approval
+fixtures. tools/verify_accepted_exports.py --cmake is the standalone command;
+see accepted-generations.md. Local own source history/CMake/Ninja required,
+no network/emulator/firmware. Older native qualifications are not rebuilt here.

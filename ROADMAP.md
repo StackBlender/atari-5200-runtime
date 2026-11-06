@@ -5,6 +5,13 @@ runtime. NTSC four-port first; full software compatibility remains unfinished.
 
 ## Next
 
+Completed export-regression automation: tools/verify_accepted_exports.py
+reproduces all eleven real pinned CLI exports and optionally the real parent
+CMake dependency/fourproperties/triple equality. Two added methods put the real
+CLI/CMake check and invalid artifact/binding/approval cases in the ordinary suite:
+175unittest/CTest1/1 PASS. See docs/accepted-generations.md; no native rerun,
+provider selection, old input or approval change. No disposable harness needed.
+
 1. Review opaque20-byte cartridge-title acceptance while retaining numeric year,
    entry checks and noFF diagnostic bypass. Proposed same-size validator index
    change; no emission before the concrete contract/fit review (msg_8f4c/req_6f74).
