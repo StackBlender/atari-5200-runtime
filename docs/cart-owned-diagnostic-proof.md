@@ -113,3 +113,42 @@ trial until exact combined admission, lawful source validation and explicit boar
 mapping/ownership decision. Metadata eligibility is not gameplay compatibility.
 FullR62open/noACK, MR43latest/app pins/defaults unchanged; product/reference-role/
 legacycc65/historical/game/release requirements remain open.
+
+## Pinned artifact and integration receipt
+
+Explicit combined candidate approved Marsb0e34bf/msg_e17f under req_6f74,
+authored and export-verified at NEW source e8f296d5a8fa693f13b5dd46259eafcb5567e88f.
+Profile ntsc-four-port-cart-owned-diagnostic-conditional-development; explicit
+variant cart-owned-diagnostic. Image SHA256
+5936e46d08c7991231a52dfb6c1a404a7a0d1ab505a51b2c5e09a569d7ad20e4
+is byte-identical to B2, 1556 written/492 unwritten/250 reserved. Executable
+parent89af2dcc1d889585d6c9dde2fa12a3db30ce3045 and ownership parent
+becb92e01e97e89568cac58ab051e23b803ae53a are immutable provenance, not delivery pins.
+Rebound docs/cart-owned-diagnostic-profile.json current raw SHA256
+f287bfc766c3e13973464b2219762cdc2249180ec9c54d5bd5555e1be0be5cb9;
+old250834f404aedde32eab4fe752f0ac0b1a5ef13fac89ba9303a177e7da787ff1
+is ownership-parent provenance ONLY. All25shadow/14vector cold values preserved.
+Application0019..FF/021C..3FFF, explicit021C..21Fcession, no0600reservation;
+public0..18/200..21B/sharedstack100..1FF; no mandatory cooperation tag/keycallback.
+
+Map raw SHA256 776bb4242250817e76395f8517978a8c81e77c5fe0946990489e733da7b1fee2,
+semantic7771488a5d3de8a949277450298284b2c6fe1d81318dc2796dd2564c16a520a5.
+Manifest raw SHA256 8c6fe1ab38494ab4f318be125f35d1f6f14e3102e402be7f325c1419be71c16c,
+semantic e7625057c84592df55590295a21a4d7f7fe5483c1c7d24ffeeae2147894ec537.
+Semantic hashes use sorted compact JSON without trailing newline.
+219 offline unittest methods PASS; build and CTest1/1 PASS. Includes real pinned
+CLI/CMake four absolute properties, downstream dependency order and exact output
+triple equality; verifies both immutable parents and every new generation input.
+All13older qualified and separate B0/B1/B2 exports preserved. No Retro native run
+or new CPU timing measurement: numeric nominal757/764, FF738/745, watchdog4096.
+
+NEXT: independent COMBINED Release/full-native ASan qualification:120fully-crossed
+contacts/ports xCRITIC, physical stores/prestartupcanaries/poisoned valid imports,
+65536yearpairs356accept/65180refuse,5120titles/all256first-underFF entries/fullinit,
+inherited/allSP/R65/OFF/firmware/converter/frame/in-handler/process continuations.
+SAME-IMAGE B2/combined reciprocal state refusal BEFORE mutation plus next TWO
+ordinary frames is mandatory, also reciprocal B0/B1/timer negatives. Reobserve
+native timing; parent receipts are not new execution. B0/B1/B2 native workloads
+remain separately pending; fullR62 open/noACK. No catalog/pin/default/release or
+game trial until exact native admission, lawful source and explicit board/mapping/
+ownership decision. Metadata eligibility alone is not game compatibility.

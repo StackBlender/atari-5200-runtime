@@ -370,9 +370,12 @@ B0/B1/prior13artifact checks retained. No independent native65536matrix claim.
 
 ## Explicit combined cart-owned diagnostic identity
 
-Six tests/test_cart_owned_diagnostic.py methods bring218offline before committed
+Seven tests/test_cart_owned_diagnostic.py methods bring219offline including committed
 consumer. ALL2048B2bytes/fit/metadata/timing unchanged; rebound contract/rawSHA/
 individualcoldvalues/typeguards, same-image+same-synthetic-source distinct profile/
 version/map/manifest, both immutable parent/new pins, invalid parent reuse and
 freshprocess. B0/B1/B2+13oldexports remain. See cart-owned-diagnostic-proof.md
 for independent120keyboard/65536year/fullCold/state/R65 requirements.
+
+Pinned combined CLI/CMake integration and all219offline checks, build/CTest1/1 PASS.
+Exact identity receipt: docs/cart-owned-diagnostic-proof.md. Native qualification pending.
