@@ -184,3 +184,10 @@ authors four-port scanning and contact-change callbacks for explicitly initializ
 cooperating cartridges.130 offline checks pass; actual CPU/window/latency/state
 acceptance is pending. Both-fire services and full runtime/game support remain
 unfinished, with the reserved ROM margin intact.
+
+
+A separately reviewed [both-fire development candidate](docs/fire-proof.md) now
+combines bottom/top fire observation with automatic keypad windows. It fits the
+2KiB image under a variant-specific160-byte code/90-byte reserve tradeoff and
+passes offline encoding/export checks. Independent native fire/cache/latency/
+state acceptance remains pending; it is not a complete firmware or game runner.

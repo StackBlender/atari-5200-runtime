@@ -368,3 +368,13 @@ Owner-reported actual CPU/chip/state/converter checks are attributed independent
 emulator evidence, not physical timing, firmware observations or a local rerun.
 No producer implementation/test, firmware/trace, primary scan or foreign source
 exposure. All original generation inputs remain unchanged.
+
+
+## Both-fire cumulative authoring approval
+
+Read only Mars docs/a52-fire-allocation-review.md at2784b289/msg_e667.
+Numeric allocation/profile/aged source/event/busy/cache/latch/stack/timing limits
+are permitted owner prose, not physical reference or native fit approval. No
+producer implementation/tests, firmware/trace, primaryscan or new external source.
+New original cumulative emitter uses already recorded NMOS encodings and own
+window/fragment policies; old9generations unchanged. Native acceptance separate.

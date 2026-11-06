@@ -237,3 +237,13 @@ only a nonrunnable80-byte fragment/descriptor. See input-callback-probe.md for
 independent encoding/cycle/bounds/freshprocess checks, synthetic snapshot decoder,
 required cart RAM/control invariants and remaining native cartridge execution.
 No runtime generation/allocation/provider changed; no real callback was executed.
+
+
+## Cumulative both-fire fire-v3 candidate
+
+Eight methods bring155 total; existing unittest/CTest. See fire-proof.md for
+new separate allocation/profile/export/CMake and exact ROM/routing/falseflag/
+provenance/failure/freshprocess checks. fire_image.py --output-dir build/fire
+emits only ignored unexported image/map. Committed source required for
+export_fire_candidate.py and sb5200-fire-image. Native both-source behavior,
+actual cache/latency/stack/full-VBI/state/converter qualification remains pending.

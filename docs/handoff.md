@@ -1,5 +1,21 @@
 # Runtime handoff
 
+## Both-fire cumulative candidate authored under explicit review
+
+Mars2784b289/msg_e667 authorizes boundedexperimental fire-v3 withmandatory
+aged/readiness/busy/cache/latch/CRITIC/latency/stack/timing corrections; see
+fire-proof.md and separate fire-profile/allocation JSON. Original cumulative
+fire_image.py now emits1902/2048written,398above timer,2under400ceiling,
+153/160newblock and90reserved untouched,56ordinaryfree. Exact hooksFC96/FCE2/
+FCF6/FD56 and153relocated bytes tested, cold/kernel/font/vectors preserved;
+all9oldgenerationinputs unchanged. NewABI sb52-dev-input-fire-v3/frozen unlatched
+contract/32RAM unchanged. Standalone export_fire_candidate.py +optin CMake
+fire-candidate.cmake fourprops; allapproval/fullcycle flagsfalse. Eightnewmethods
+bring155offline tests. Full nativefit/behavior/provider integration notaccepted.
+Next commit/pin CLI+CMake+9oldexportrepro, send exactnativepacket to Mars. Further
+remainingservice fitreview stillrequired; no extra margin or arbitrarygame claim.
+
+
 ## Automatic keypad windows independently accepted
 
 Mars64f2485d67a4f8cff71c89719ee6796a29251249 /msg_b0cb independently

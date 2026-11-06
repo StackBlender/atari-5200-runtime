@@ -1,0 +1,194 @@
+{
+  "activation": {
+    "capture_valid": 0,
+    "committed_keys_fill": 255,
+    "cpu_interrupts_masked": true,
+    "enabled_last": 1,
+    "fire_callback_installed": true,
+    "fire_state_fill": 0,
+    "gractl_latch_bit2_clear_owned_by_cart": true,
+    "initial_phase": 1,
+    "initial_port": 0,
+    "key_callback_installed": true,
+    "nmi_disabled": true,
+    "selector_settled_before_enable": true,
+    "software_and_hardware_keyboard_mask_off": true
+  },
+  "application_ram_min": 1568,
+  "automatic_port_rotation": true,
+  "callback_restrictions": [
+    "no-reserved-input-scratch-writes",
+    "no-input-mask-selector-gtia-nmi-writes",
+    "no-CLI-BRK-service-reentry",
+    "no-unbounded-waits",
+    "no-protected-snapshot-coherence-assumption-while-busy"
+  ],
+  "contact_values": {
+    "maximum": 15,
+    "minimum": 1,
+    "raw_code_sentinel": false
+  },
+  "disable": {
+    "cpu_interrupts_masked": true,
+    "emit_release": false,
+    "mask_ack_keyboard_before_invalidation": true,
+    "nmi_disabled": true
+  },
+  "event_callbacks": true,
+  "fields": [
+    {
+      "address": 1536,
+      "cold": 0,
+      "name": "enabled"
+    },
+    {
+      "address": 1537,
+      "cold": 0,
+      "name": "irq_busy"
+    },
+    {
+      "address": 1538,
+      "cold": 0,
+      "name": "selected_port"
+    },
+    {
+      "address": 1539,
+      "cold": 0,
+      "name": "phase"
+    },
+    {
+      "address": 1540,
+      "cold": 0,
+      "name": "captured_contact"
+    },
+    {
+      "address": 1541,
+      "cold": 0,
+      "name": "capture_valid"
+    },
+    {
+      "activation_fill": 255,
+      "address": 1542,
+      "cold": 0,
+      "name": "committed_keys",
+      "size": 4
+    },
+    {
+      "address": 1546,
+      "cold": 0,
+      "name": "vbi_old_key_scratch"
+    },
+    {
+      "activation_fill": 0,
+      "address": 1552,
+      "cold": 0,
+      "name": "committed_fire",
+      "size": 4
+    },
+    {
+      "activation_fill": 0,
+      "address": 1556,
+      "cold": 0,
+      "name": "bottom_ready",
+      "size": 1
+    },
+    {
+      "activation_fill": 0,
+      "address": 1557,
+      "cold": 0,
+      "name": "top_ready",
+      "size": 4
+    },
+    {
+      "activation_fill": 0,
+      "address": 1561,
+      "cold": 0,
+      "name": "vbi_fire_port",
+      "size": 1
+    },
+    {
+      "activation_fill": 0,
+      "address": 1562,
+      "cold": 0,
+      "name": "vbi_old_fire",
+      "size": 1
+    },
+    {
+      "activation_fill": 0,
+      "address": 1563,
+      "cold": 0,
+      "name": "vbi_new_fire",
+      "size": 1
+    }
+  ],
+  "fire_callback": {
+    "a": "port-0..3",
+    "maximum_nominal_cycles": 128,
+    "registers_flags_scratch": true,
+    "return": "RTS",
+    "vector": 520,
+    "x": "old-aged-bitmap-0..3",
+    "y": "new-aged-bitmap-0..3"
+  },
+  "fire_policy": {
+    "bitmap_sources_independently_aged": true,
+    "bottom_ready_after_all_four_samples": true,
+    "bottom_requires_ordinary_post_run_poll": true,
+    "bottom_runs_while_irq_busy": true,
+    "busy_callback_protected_snapshot_coherent": false,
+    "cart_declaration_asserts_cooperation_only": true,
+    "consult_per_source_readiness": true,
+    "critic_freezes_irq_capture": false,
+    "event_order": [
+      "bottom-port-0..3",
+      "key",
+      "selected-top"
+    ],
+    "gractl_violation_automatically_detected": false,
+    "initial_source_baselines_silent": true,
+    "maximum_callbacks_per_vbi": 6,
+    "selected_top_only_after_valid_key_close": true,
+    "step_exit_poll_cadence_equivalent": false,
+    "top_ready_per_port": true,
+    "unknown_is_release": false
+  },
+  "fire_service": true,
+  "key_callback": {
+    "a": "port-0..3",
+    "maximum_nominal_cycles": 128,
+    "registers_flags_scratch": true,
+    "return": "RTS",
+    "vector": 522,
+    "x": "old-contact-1..15-or-255",
+    "y": "new-contact-1..15-or-255"
+  },
+  "legacy_cc65_profile_compatible": false,
+  "phase_values": {
+    "collecting": 2,
+    "inactive": 0,
+    "settling": 1
+  },
+  "profile": "ntsc-four-port-cooperating-input-fire-development",
+  "ram": {
+    "cold_fill": 0,
+    "end_exclusive": 1568,
+    "start": 1536
+  },
+  "required_cart_declaration": "sb52-dev-input-fire-v3-ram600-61f-unlatched-v1",
+  "reserved": [
+    {
+      "cold_fill": 0,
+      "end_exclusive": 1552,
+      "start": 1547
+    },
+    {
+      "cold_fill": 0,
+      "end_exclusive": 1568,
+      "start": 1564
+    }
+  ],
+  "runtime_abi": "sb52-dev-input-fire-v3",
+  "schema": 1,
+  "skctl": 6,
+  "successful_preflight_before_power": true
+}
