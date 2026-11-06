@@ -363,3 +363,7 @@ Six tests/test_diagnostic_conditional.py methods bring211offline total. Exact
 provenance/drift/everypin/oldpin/freshprocess. B0/B1 and13qualified older exports
 remain included. Independent native fullmatrix/title/fullinit/state/service
 requirements in diagnostic-conditional-proof.md; no admission from tooling.
+
+B2pinnedCLI/CMake consumer adds seventh method/212total: source89af2dc actual
+fourproperties/dependency/triple equality PASS. Full build/CTest1/1 PASS, all
+B0/B1/prior13artifact checks retained. No independent native65536matrix claim.

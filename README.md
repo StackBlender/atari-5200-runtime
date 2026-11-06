@@ -42,7 +42,7 @@ cmake --build build
 ctest --test-dir build --output-on-failure
 ```
 
-Or run all205offline methods directly:
+Or run all212offline methods directly:
 
 ```sh
 PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -v
@@ -107,4 +107,4 @@ no combined profile or unchanged-game run.
 B2's separate [conditional-year experiment](docs/diagnostic-conditional-proof.md)
 permits any first year only with secondFF, retaining full cold initialization.
 It does not amend B1 or combine ordinary RAM, and requires independent admission.
-211offline checks before exact committed consumer receipt; no game trial.
+212offline checks including exact committed CLI/CMake consumer; no game trial.

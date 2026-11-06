@@ -7,9 +7,9 @@ B1sourcebecb92e/image9da1ddef; B0/B1 sources/shared plumbing immutable. Only
 FD80..FD99prefix reorders year checks; secondFF admitsANYfirst, otherwise both
 50..59. B1unchanged firstnumeric. B2image5936e46d/1556fit/250reserve/conservative
 RAMthrough021F, no B0composition. Nominalnumeric757/764cycles/257/260instructions;
-FF738/745/248/251. Watchdog4096/fullCold/entry/assets/fields unchanged.211offline
-PASS before exact source pin. Need source commit then pinned CLI/CMake4props/
-order/triple equality/fullbuildCTest; deliver exact nativepacket65536yearpairs/
+FF738/745/248/251. Watchdog4096/fullCold/entry/assets/fields unchanged.212offline/
+build/CTest1/1+pinnedCLI/CMake4props/order/triple equality PASS. Exact source
+89af2dcc1d889585d6c9dde2fa12a3db30ce3045; deliver nativepacket65536yearpairs/
 5120titles/all256first-underFFentries/fullinit/inherited/process/R65/OFF/firmware.
 No admission/game trial/catalog/pin/default/fullACK. B0/B1native separately pending.
 
@@ -400,3 +400,24 @@ Image unchanged/unrun; identifying data and boolean classification stay ignored.
 No relaxation to B1 was made. Any separate B2 proposal allowing opaque firstyear
 ONLY when secondFF requires explicit review/new identity/qualification; do not
 silently change the approved firstnumeric invariant or infer historical bypass.
+
+## Pinned B2 artifact receipt
+
+Exact source/export89af2dcc1d889585d6c9dde2fa12a3db30ce3045.
+Image5936e46d08c7991231a52dfb6c1a404a7a0d1ab505a51b2c5e09a569d7ad20e4.
+Map raw5367c49b8f8109ed7f89ba47c3f714270cff4b5d8ed37322d7bdd18d8feb9368;
+semantic37a27bd2e65b914c3409d3d83ef7d62b27eb1570103756e67d038c69d71c59be.
+Manifest raw5c4894abecbee73f28fe015d8be74bb76189e3e925fc48aaf49655ec3bc472f7;
+semantic66d14886a6581262063a07c23d3bbd7afd244cf372ffa79e46a5e134c767574c.
+Semantic sorted-key compactJSON comma/colon UTF8/no trailing newline.
+
+212offline methods/build/CTest1/1 PASS, including seventh B2method real exact
+CLI+temporary parent CMake4absoluteproperties/fullsource/dependency-before-consumer/
+triple byte equality. B0/B1 pinnedCLI/CMake +13qualified older exports retained
+without source/input edits. Temporary parents removed; ignored artifacts under
+existing build. No native execution/admission/catalog/flags/pins/defaults/release.
+
+Authorized unchanged corpus now passes the B2 DECLARED metadata predicate only;
+no game executed, patched or labelled cooperating. Native admission, board/
+mapping and ownership decision remain gates. Individual source/hash/booleans
+stay ignored/local, not in tracked results. Metadata eligibility is not compatibility.

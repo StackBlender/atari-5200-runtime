@@ -1,5 +1,26 @@
 # B2 separate conditional-year full-cold experiment
 
+## Pinned B2 artifact receipt
+
+Exact source/export89af2dcc1d889585d6c9dde2fa12a3db30ce3045.
+Image5936e46d08c7991231a52dfb6c1a404a7a0d1ab505a51b2c5e09a569d7ad20e4.
+Map raw5367c49b8f8109ed7f89ba47c3f714270cff4b5d8ed37322d7bdd18d8feb9368;
+semantic37a27bd2e65b914c3409d3d83ef7d62b27eb1570103756e67d038c69d71c59be.
+Manifest raw5c4894abecbee73f28fe015d8be74bb76189e3e925fc48aaf49655ec3bc472f7;
+semantic66d14886a6581262063a07c23d3bbd7afd244cf372ffa79e46a5e134c767574c.
+Semantic sorted-key compactJSON comma/colon UTF8/no trailing newline.
+
+212offline methods/build/CTest1/1 PASS, including seventh B2method real exact
+CLI+temporary parent CMake4absoluteproperties/fullsource/dependency-before-consumer/
+triple byte equality. B0/B1 pinnedCLI/CMake +13qualified older exports retained
+without source/input edits. Temporary parents removed; ignored artifacts under
+existing build. No native execution/admission/catalog/flags/pins/defaults/release.
+
+Authorized unchanged corpus now passes the B2 DECLARED metadata predicate only;
+no game executed, patched or labelled cooperating. Native admission, board/
+mapping and ownership decision remain gates. Individual source/hash/booleans
+stay ignored/local, not in tracked results. Metadata eligibility is not compatibility.
+
 Bounded authoring approved Marseb7115b/msg_cb39, req_6f74. Read only appended
 owner prose a52-cart-owned-profile-review.md; no native implementation/tests,
 firmware, foreign kernel, game code/assets or reference traces inspected.
@@ -96,3 +117,26 @@ lawful-source validation and explicit board/mapping/ownership still required.
 B2 is conservative through021F; a B0+B2 combination needs its own explicit
 identity/ownership/qualification. FullR62 remains open/noACK, MR43latest, app
 pins/defaults unchanged. Original-system/legacy/cc65/game compatibility unproved.
+
+## Explicit future combined ownership proposal (not authored)
+
+For review only, name future profile
+ntsc-four-port-cart-owned-diagnostic-conditional-development. Proposed exact ROM
+would remain B2source89af2dcc1d889585d6c9dde2fa12a3db30ce3045/image
+5936e46d08c7991231a52dfb6c1a404a7a0d1ab505a51b2c5e09a569d7ad20e4,
+1556written/250reserve. Ownership/public initialization derives from B0declarative
+contract atbecb92e01e97e89568cac58ab051e23b803ae53a, file
+ordinary-ram-profile.json SHA256250834f404aedde32eab4fe752f0ac0b1a5ef13fac89ba9303a177e7da787ff1:
+application0019..FF/021C..3FFF, cede021C..21F, no600reservation, public shadows
+0..18/vectors200..21B/sharedstack100..1FF. Rebind contract/profile/version/source/
+map/manifest to this NEW explicit combined identity, not reuse B0's profile string
+or infer selection from source/image alone. No image/data/RAM/code/stack changes
+are proposed; no font/fire/bridge/scanner/default change.
+
+Would require independent combined120fully-crossed keyboard/physical-store plus
+65536yearpair/5120title/fullCold/inherited/allSP/R65/OFF/firmware and real frame/
+IRQ-handler/process/poisoned replay. SAME-image B2/combined states MUST mutually
+refuse pre-mutation with ordinary continuation, also B0/B1/oldtimer refusals.
+No combined composer/manifest/target/image emitted or authoring approval inferred;
+request separate bounded authoring review. Existing B0/B1/B2 admission workloads
+remain, no supersession, no unchanged-game trial from this proposal.

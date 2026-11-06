@@ -8,8 +8,9 @@ runtime. NTSC four-port first; full software compatibility remains unfinished.
 B2 bounded separate authoring APPROVED Marseb7115b/msg_cb39: SECONDFF permits
 ANY FIRSTbyte, otherwise BOTH50..59. Opaque20title/fullCold/normalentry/assets/
 registers/stack/watchdog4096/conservativeRAMthrough021F/250reserve retained.
-No B0composition, no B1 amendment. Author separate exact source/profile/version/
-map/manifest/variant +fit/diff/timing/pinnedartifacts, preserving B0/B1/old13.
+No B0composition, no B1 amendment. Authored source89af2dcc1d889585d6c9dde2fa12a3db30ce3045; exact separate
+profile/version/map/manifest/variant,212offline+build/CTest1/1+pinnedCLI/CMake
+PASS, preserving B0/B1/old13. Deliver native packet; no repeated authoring gate.
 Native admission independently ALL65536yearpairs (356accept/65180refuse),5120title/
 all256first-underFF entries/fullinit/bus/RAM/timing/RDY/IRQ-NMI/allSP/process/
 R65/OFF/firmware/state+ordinarycontinuation. B0/B1still separately pending;
@@ -181,3 +182,9 @@ Exact raw/semantic hashes in timer-experiments-proof.md. Actual corpus also has
 nonnumericFIRSTyear, so B1still REFUSES it by approved invariant. No game edits
 or policy relaxation; separate B2conditional firstyear policy review would be
 needed, with explicit combined ownership if ever paired withB0. FullR62 open.
+
+Exact B2receipt/proposed future explicit combined ownership review in
+diagnostic-conditional-proof.md. Combined profile is ONLY proposed, not authored
+or admitted; B2 still conservativeRAMthrough021F. Actual authorized corpus
+passes declared B2metadata only, unchanged/unrun; native/mapping/ownership gates
+remain. No fullR62ACK/pin/default/release.
