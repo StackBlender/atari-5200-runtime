@@ -1,5 +1,25 @@
 # Cumulative opaque-title startup policy
 
+## Pinned opaque-title export receipt
+
+Exact source/export ed013540ac2996d76fab149f6fb8dea9fcead584 pushed.
+Image SHA2568d6ef38c1b487fa95742e62e9a5c0b1a928ddb446977264739a263fa0bc070c4.
+Map byteSHA06de1da946037a0a83c6002fedff3fb28b5e923f2bcd5522bee6a9e9e8811c0d;
+semantic49edad96efa4b27fcb30a4a884ca496ff1f98e773ad3d038f66467d7f131788e.
+Manifest byteSHA8d4924f5694f0016fc2c7ea39d3ddc6736d2e1efc8b5d62d9e3b9abd04b058f2;
+semantic2c3ce33dd1b75f646c1bbfa424463ed48e8fb7127d01a39d4eedc094c96ddca8.
+Semantic hashes use sorted-key compactJSON separators comma/colon, UTF8.
+
+182offline methods PASS, including real pinned new CLI/temporary parentCMake
+consumer dependency ordering/four absolute properties/triple byte equality.
+All eleven qualified older pinned CLI exports/CMake checks remain PASS, without
+adding unqualified opaque-title to the accepted catalog. Existing build/CTest1/1
+PASS. Temporary parents removed, artifacts ignored under existing build.
+No new native measurement/provider admission/pin/default/approval flag change;
+next full independent5120title/year/entry/inherited/cache/process/R65/converter
+qualification underreq_6f74. Parent e25 remains the latest native-qualified image.
+
+
 Mars1afec85 /msg_0ea1 approves bounded authoring on exact qualified bridge source
  e25a466d15c574f3ec364bfc2f44bc7ef2f51117 only. Read only owner prose
  a52-compatibility-next-review.md; no emulator implementation/tests, firmware,

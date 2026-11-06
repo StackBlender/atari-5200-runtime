@@ -93,3 +93,31 @@ class OpaqueTitleTests(unittest.TestCase):
                 subprocess.run([sys.executable,str(ROOT/'tools/opaque_title_image.py'),'--output-dir',str(root/name)],check=True,capture_output=True,timeout=10)
             for name in ('opaque-title.bin','opaque-title-map.json'):
                 self.assertEqual((root/'a'/name).read_bytes(),(root/'b'/name).read_bytes())
+
+    def test_real_pinned_cli_and_cmake_consumer_properties_order_and_bytes(self):
+        pin='ed013540ac2996d76fab149f6fb8dea9fcead584'
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);direct=root/'cli'
+            subprocess.run([sys.executable,str(ROOT/'tools/export_opaque_title_candidate.py'),
+                '--source-revision',pin,'--output-dir',str(direct)],check=True,capture_output=True,timeout=30)
+            fields=('SB5200_IMAGE_FILE','SB5200_MANIFEST_FILE','SB5200_MAP_FILE','SB5200_SOURCE_REVISION')
+            properties='\\n'.join('$<TARGET_PROPERTY:sb5200-opaque-title-image,'+field+'>' for field in fields)+'\\n'
+            (root/'check.py').write_text("from pathlib import Path\nimport sys\nv=Path(sys.argv[1]).read_text().splitlines()\nassert len(v)==4\nassert all(Path(p).is_absolute() and Path(p).is_file() for p in v[:3])\nPath(sys.argv[2]).write_text('verified')\n")
+            (root/'CMakeLists.txt').write_text('cmake_minimum_required(VERSION 3.20)\nproject(opaque_consumer LANGUAGES NONE)\n'
+                +f'add_subdirectory("{ROOT}" module)\ninclude("{ROOT}/cmake/opaque-title-candidate.cmake")\n'
+                +f'file(GENERATE OUTPUT "${{CMAKE_BINARY_DIR}}/properties" CONTENT "{properties}")\n'
+                +'add_custom_command(OUTPUT "${CMAKE_BINARY_DIR}/verified" COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/check.py" "${CMAKE_BINARY_DIR}/properties" "${CMAKE_BINARY_DIR}/verified" DEPENDS sb5200-opaque-title-image VERBATIM)\n'
+                +'add_custom_target(consume ALL DEPENDS "${CMAKE_BINARY_DIR}/verified")\n')
+            build=root/'build'
+            subprocess.run(['cmake','-S',str(root),'-B',str(build),'-G','Ninja',
+                '-DSB5200_OPAQUE_TITLE_SOURCE_REVISION='+pin],check=True,capture_output=True,timeout=30)
+            subprocess.run(['cmake','--build',str(build),'--target','consume'],check=True,capture_output=True,timeout=30)
+            properties=(build/'properties').read_text().splitlines()
+            self.assertEqual(len(properties),4);self.assertEqual(properties[3],pin)
+            for value,name in zip(properties[:3],('startup.bin','startup-manifest.json','startup-map.json')):
+                self.assertTrue(Path(value).is_absolute())
+                self.assertEqual(Path(value).read_bytes(),(direct/name).read_bytes())
+            self.assertTrue((build/'verified').is_file())
+            manifest=json.loads((direct/'startup-manifest.json').read_bytes())
+            self.assertEqual(manifest['source_revision'],pin)
+            self.assertEqual(manifest['image']['sha256'],'8d6ef38c1b487fa95742e62e9a5c0b1a928ddb446977264739a263fa0bc070c4')

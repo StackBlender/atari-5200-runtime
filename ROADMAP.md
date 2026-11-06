@@ -21,9 +21,9 @@ provider selection, old input or approval change. No disposable harness needed.
 
 1. Opaque-title generation authored under Mars1afec85/msg_0ea1: sole FEB1=14,
    SHA8d6ef38c1b487fa95742e62e9a5c0b1a928ddb446977264739a263fa0bc070c4;
-   unchanged1895written/ABI/90reserve.181offline methods PASS. Recomputed nominal
-   startup1091/1098; native full timing not measured. Pin/export/realCMake then
-   deliver exacttuple for full5120title+year/entry/inherited/state/R65 matrix.
+   unchanged1895written/ABI/90reserve.182offline methods +real pinned CLI/CMake PASS. Source/export
+   ed013540ac2996d76fab149f6fb8dea9fcead584 pushed. Recomputed nominal
+   startup1091/1098; native full timing not measured. Deliver exacttuple for full5120title+year/entry/inherited/state/R65 matrix.
    No native admission/release/default/false-flag change. See opaque-title-proof.
 2. Resolve an ordinary-software RAM profile: cc65 documents021C..3FFF; current
    cooperating input ABI reserves0600..061F. Do not relabel arbitrary homebrew

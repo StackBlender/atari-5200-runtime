@@ -291,3 +291,7 @@ identity/profile/false labels/provenance, every old/new pinned input and fresh
 CLI reproducibility. All eleven qualified export/CMake checks still run. See
 opaque-title-proof.md; native5120title/year/entry/inherited/state/R65qualification
 is separate and pending. No runtime CPU execution is performed by tool tests.
+
+Pinned opaque-title CLI/CMake consumer verification adds a seventh method:
+182total PASS, including exacted01354artifacts/fourproperties/dependency/equality
+and all eleven older pinned exports. Native qualification remains pending.
