@@ -1,5 +1,20 @@
 # Runtime handoff
 
+## Committed keypad IRQ export receipt
+
+Immutable source/exportb2e2b40d8c11326f1684635e35832fcc50f9f2d6. Real pinned CLI
+and ephemeral parent CMake consumer PASS: four absolute artifact/full-source
+properties, dependency-before-consumption, profile/RAM/false flags/hash binding
+and byte-identical CLI/CMake artifacts. All seven earlier pinned CLI exports
+reproduce unchanged hashes.121 offline unittest methods/build/CTest1/1 PASS,
+diff check clean. Temporary parent source/build removed; ignored artifacts in
+build/keypad-irq-candidate only. No native/CPU execution claimed. Next send exact
+source/profile/contract/proof to ongoingreq_6f74 for independent converter/cart
+preflight/IRQ-NMI-timer/fastanalog/state acceptance; complete VBI/contact/fire next.
+No new default/app pin/approval flag/fullR62 completion. Public runtime lease
+released only after push. RAM/profile contract is explicit cooperating-cart,
+not backward-compatible with legacycc65/retail software.
+
 ## Authored keypad IRQ latch foundation (execution pending)
 
 Separate tools/keypad_irq_image.py/export_keypad_irq_candidate.py and

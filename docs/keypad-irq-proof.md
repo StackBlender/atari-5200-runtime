@@ -151,3 +151,13 @@ refusal and all seven prior variants/R65/lifetime/defaultOFF/firmware hygiene.
 No top/bottom fire service or conditional150ms automatic event latency is yet
 implemented or qualified. Next cumulative window/rotation/key callbacks and both
 fires must fit with this kernel, then full runtime/reset/compatibility/product.
+
+
+## Committed export validation receipt
+
+Sourceb2e2b40d8c11326f1684635e35832fcc50f9f2d6:121 offline methods and existing
+build/CTest1/1 pass. Real strict CLI and temporary CMake parent validate four
+properties, absolute outputs, dependency ordering and identical image/map/manifest
+bytes. All seven older pinned exports reproduce their recorded image hashes.
+Temporary source/build removed. Artifacts remain ignored build/keypad-irq-candidate.
+No CPU, converter/cart preflight acceptance, native safe-state or product claim.
