@@ -143,3 +143,14 @@ clobber/RTS/six128cyclecallbacks/fullVBI timing, analog/TrakBall/sharedclock/aud
 write whitelist, safe repeated/fresh/process replay INCLUDINGcallbacks, full
 new/old declaration/profile/state preflight/converter negatives, earlier9variants/
 R65/defaultOFF/lifetime/firmware hygiene. Fullreq_6f74 remainsopen/noACK.
+
+
+## Committed export receipt
+
+Generation pin a2a7455627a9ea3905464c295562debee2efec7d, imagee937064b above.
+Manifest file SHA2565480b4472a78cb1092732d73e0e6cc242a8c280327e6c8452427dc0a8182ec06;
+map file SHA2561b942e04c5be03e742393b87075c694f86c26b5d6013b9ad688c068df01b3e04.
+155 unittest/build/CTest1/1 pass. Actual pinnedCLI +ephemeral parentCMake
+fourprops/dependency-before-consumption/artifactbyteequality PASS. All9older
+real pinnedCLI exports reproduce unchanged. Temporaryparent removed; no new
+persistentbuildroot. These are offline/static/export checks, not native execution.

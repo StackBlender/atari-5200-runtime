@@ -21,8 +21,16 @@ all9oldgenerationinputs unchanged. NewABI sb52-dev-input-fire-v3/frozen unlatche
 contract/32RAM unchanged. Standalone export_fire_candidate.py +optin CMake
 fire-candidate.cmake fourprops; allapproval/fullcycle flagsfalse. Eightnewmethods
 bring155offline tests. Full nativefit/behavior/provider integration notaccepted.
-Next commit/pin CLI+CMake+9oldexportrepro, send exactnativepacket to Mars. Further
-remainingservice fitreview stillrequired; no extra margin or arbitrarygame claim.
+Further remainingservice fitreview stillrequired; no extra margin or arbitrarygame claim.
+
+Pinned source/export a2a7455627a9ea3905464c295562debee2efec7d pushed.
+Validation155 unittest methods/build/CTest1/1 PASS. Real committedCLI and
+explicitpin temporaryparentCMake dependency-before-consumption/fourproperties/
+image-map-manifest byteequality PASS; all9older realpinnedexports unchanged.
+Temporaryparent removed, generatedartifacts ignored in existingbuild. Exact
+nativepacket sent Mars under req_6f74; fullrequest remainsopen/noACK. NoCPU/native
+fire/state/provideracceptance or apppin/default/release change. Next independent
+newtuple integration +full nativepacket, then remainingreset/service fitreview.
 
 
 ## Automatic keypad windows independently accepted
