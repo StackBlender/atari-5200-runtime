@@ -113,3 +113,8 @@ reserve only shadows0000..18/vector0200..21B, cede021C..21F to software and leav
 0600..061F consumer-owned. Shared CPU stack remains0100..1FF. This is proposed
 cession, not historical ABI reconciliation/admission or an emitted profile.
 Actual keyIRQ consumer requirements and all-native-path canaries remain required.
+
+Conditional audit clarification: initialized default software-vector routes are
+assumed. Early/hijacked/torn/uninitialized routes and the integration startup
+observer remain excluded, not proved by the220instruction static inventory.
+No profile admission follows; all dynamic boundary qualification still required.

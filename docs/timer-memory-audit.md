@@ -39,6 +39,9 @@ including its old-value write. No application RAM is borrowed for hidden state.
 The write range0100..021B joins hardware stack and adjacent public vector bytes;
 it does not authorize data outside either area or prove callback stack depth.
 
+The default-route graph assumes initialized default software vectors. It does
+not prove early/hijacked startup interrupt safety or torn/uninitialized vector
+routing; those depend on the integration startup observer and native tests.
 Consumer callbacks/cart code, their stack balance, direct jumps into routines,
 core cold-power/randomization and chip DMA/bus dummy cycles are explicit external
 boundaries. Only legitimate reviewed entries/returns and protected-loop invariants

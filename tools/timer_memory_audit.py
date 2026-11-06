@@ -143,7 +143,8 @@ def _analyze(data):
         application_operand_accesses=[],cc65_conio_operand_accesses=[],
         implicit_stack_page=[0x100,0x1ff],software_pointer_frontiers=sorted(frontiers),
         external_boundaries=['consumer callback/cart code','core cold power/randomization',
-                             'chip DMA/bus dummy cycles','callback stack balance/depth'],
+                             'chip DMA/bus dummy cycles','callback stack balance/depth',
+                             'early/torn/uninitialized software vectors and startup observer'],
         conditional_loop_bounds={'zero_page':[0,24],'vector_even_x':[0,26],
             'vector_odd_x':[1,27],'metadata_x':[0,21],'stack_x':[0,255]},
         edges=sorted(edges),instructions=[records[pc] for pc in sorted(records)])
