@@ -387,3 +387,13 @@ chip/cache/ordinaryframe/safeprocess/NMI/stack/converter results are attributed
 owneremulator evidence, not physical/firmware observations or a localrerun.
 No producerimplementation/test, firmware/reference trace, primaryscan or foreign
 source exposure. No generationinput/falseapprovalflag change.
+
+
+## Remaining-service inventory and bridge refactor
+
+No new external source exposure. Inventory uses existing own consumer-interface/
+startup evidence and permitted Mars4e6a3a5 prose; unresolved requirements remain
+unknown. Original callback-argument factoring uses previously reviewed NMOS
+LDY/TXA/LDX/JSR/indirect-JMP facts, not foreign routines. Static alternate fragment
+and nominal arithmetic are not measured execution or native equivalence. No
+firmware/trace, extracted assets, producer implementation/test or new primaryscan.

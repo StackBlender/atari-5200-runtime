@@ -1,5 +1,23 @@
 # Runtime handoff
 
+## Next reset/service contract and measured bridge refactor review
+
+Current accepted fire-v3 remainsunchanged. remaining-services-review.md now
+inventories reset/unusedBreak-serial/attract/metadata/fullfont/retailprofile/
+consumer gaps with explicit closure requirements, not completion by exclusion.
+Coldreset vsController Reset4/Pause8/Start12 input vs warm/CPU-only unknown
+contracts are separated; requestowner permitted evidence/behavior review before
+newresetcode. New NONRUNNABLE fire_callback_refactor.py measures common argument
+setup in existing bridge:146vs153bytes,7saved, noextraJSR/stack/RAM,21nominal
+callback setup-call-bridge sum unchanged. Projected1895/391extra/9ceilingheadroom/
+63ordinaryfree,90reserve untouched; NO cumulativeemission orpermission fornew
+services. Five exactbyte/projection/noapproval/preservation/freshprocess methods
+bring160offline tests. Validation160unittest/build/CTest1/1 PASS.
+Existingaccepted10generationinputs unchanged. Next owner
+review ofresetcontract evidence andboundedrefactor, then newpinnedcumulative
+image/proof/native identity/cache/frame/NMI/SP/process qualification ifapproved.
+
+
 ## Both-fire native qualification received; next reset/service review
 
 Mars4e6a3a55412b9aaf7a1f5452344489aac8f43292/msg_0343 independently

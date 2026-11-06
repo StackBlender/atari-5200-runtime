@@ -247,3 +247,12 @@ provenance/failure/freshprocess checks. fire_image.py --output-dir build/fire
 emits only ignored unexported image/map. Committed source required for
 export_fire_candidate.py and sb5200-fire-image. Native both-source behavior,
 actual cache/latency/stack/full-VBI/state/converter qualification remains pending.
+
+
+## Standalone callback-bridge fit proposal
+
+Five new methods bring160 total. Existing unittest/CTest; see
+remaining-services-review.md for the original146-byte alternate fragment,
+independently expected encodings/branches/cycle arithmetic, preserved accepted
+image/fragment, false approval flags and fresh-process checks. Not a cumulative
+image or native equivalence proof; no accepted generation/allocation changed.
