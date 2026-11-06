@@ -1,5 +1,40 @@
 # Runtime handoff
 
+## Independent keypad IRQ foundation acceptance
+
+Mars003e782458dfe82ca3baeb96e97a179844a1b917 /msg_4f5f independently accepts
+exact keypad-irq sourceb2e2b40d8c11326f1684635e35832fcc50f9f2d6 and image2fa0cbdb
+as a bounded development foundation only. Releaseunity/nonunity DebugASan both
+pass4465 native cases plus explicitly synthetic raw-code0 negative,93 source-
+qualified synthetic nested-NMI instruction frontiers,14keypad+14timer native safe-
+frontier same/repeated/fresh-process replay,1302 inherited IRQ/BRK/timer cases,
+53 fastanalog and priorVBI/display/DLI/R65 controller/wire/process/lifetime checks.
+24 converter negatives and mutual old/new state refusal pass; all8 tuples/font/
+vectors/250margin and defaultOFF/43-image firmware/tree/history/3build hygiene pass
+per owner. No local CPU rerun, physical timing, arbitrary midinstruction/nested
+reentrancy/game/device qualification or full input-service acceptance.
+
+Before cartridge connect set pak runtime-cart-contract=
+sb52-dev-input-v2-ram600-61f-v1. Declaration frozen at connect, bound in sb52rt-dev2
+provider identity, required before power/import. Mutable-pak edits cannot repair
+missing/wrong/oldcc65/size-only declaration; disconnect/reconnect required.
+Old variants reject newly declared carts too. No new native payload field.
+This asserts cooperation, not proof arbitrary cartridges reserve0600..061F.
+
+Actual cold1581normal/1588boundary machine cycles,520/523 instructions; static
+1471/1478 is NOT measured full timing. Phase-matrix input install to IRQ return
+max4004cycles excludes automatic-window waiting, no event deadline. Maximum
+tested timer callback+RTI183 excludes hardware entry. Fastanalog timeout229/
+prime/pending/CRITIC/TrakBall/sharedclock state replay passes, not hardware audio
+or host/battery proof. Native serialization uses existing safe boundaries only.
+
+Next automatic settled windows/rotation/contact callbacks and both-fire services
+under9654ecb corrected policy, exact reset/disable/CRITIC/stack/fit and native
+validation. FullR62 req_6f74 remains open; doNOTack full request. Integration is
+pooled/unreleased; old8exports/false flags/OFF defaults/app pins unchanged.
+Read only owner prose a52-keypad-irq-development.md, no producer implementation/
+tests/firmware or primary reference exposure.
+
 ## Committed keypad IRQ export receipt
 
 Immutable source/exportb2e2b40d8c11326f1684635e35832fcc50f9f2d6. Real pinned CLI

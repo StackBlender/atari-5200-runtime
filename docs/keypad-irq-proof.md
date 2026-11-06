@@ -161,3 +161,15 @@ properties, absolute outputs, dependency ordering and identical image/map/manife
 bytes. All seven older pinned exports reproduce their recorded image hashes.
 Temporary source/build removed. Artifacts remain ignored build/keypad-irq-candidate.
 No CPU, converter/cart preflight acceptance, native safe-state or product claim.
+
+
+## Independent execution acceptance supersedes pending notes
+
+Mars003e782458dfe82ca3baeb96e97a179844a1b917 /msg_4f5f accepts this exact
+source/image as a bounded development foundation. See independent-execution.md
+for source-qualified synthetic NMI/raw-code0 limits,4465 native cases, safe-state
+replay/fastanalog/converter/cart declaration coverage. Measured cold1581/1588
+cycles differs from static1471/1478. No automatic windows/events/fire or complete
+firmware/game/product qualification follows; candidate approval flags stay false.
+Pak runtime-cart-contract=sb52-dev-input-v2-ram600-61f-v1 must be set BEFORE
+connect; frozen declaration participates in provider identity and preflight.

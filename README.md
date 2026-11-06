@@ -171,3 +171,9 @@ original executable capture and interrupt-ownership plumbing for cooperating
 diagnostic cartridges, with an explicit new32-byte RAM/profile contract. It
 fits2048 bytes with the250-byte margin intact. Automatic port rotation, input
 events and both-fire services remain unfinished; native execution is pending.
+
+
+The keypad IRQ latch foundation now has independent Mars CPU/interrupt/fast-
+analog/state acceptance for its explicit cooperating-cart development profile;
+see the execution receipt. Automatic port rotation, contact callbacks and both
+fire services remain unfinished. No complete firmware or game support is implied.

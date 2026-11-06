@@ -311,3 +311,12 @@ reviewed for4A, one byte/two cycles and zero-fill right shift. Adjacent factual
 table rows visible; no example/firmware program or foreign emulator/test copied.
 New RAM/profile/interrupt composition is original. No Atari firmware/trace,
 extracted assets, primary board scan or new reference measurement exposure.
+
+
+## Independent keypad IRQ execution receipt
+
+Read only owner prose a52-keypad-irq-development.md at003e782/msg_4f5f.
+This supplies attributed independent CPU/chip/state/converter results, including
+explicitly synthetic raw-code0/NMI frontier qualifications; not original-board
+measurements. No producer implementation/test, firmware, reference trace or new
+external source was read. Original candidate/generation inputs remain unchanged.
