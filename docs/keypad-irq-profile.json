@@ -1,0 +1,65 @@
+{
+  "application_ram_min": 1568,
+  "automatic_port_rotation": false,
+  "contact_values": {
+    "maximum": 15,
+    "minimum": 1,
+    "raw_code_sentinel": false
+  },
+  "event_callbacks": false,
+  "fields": [
+    {
+      "address": 1536,
+      "cold": 0,
+      "name": "enabled"
+    },
+    {
+      "address": 1537,
+      "cold": 0,
+      "name": "irq_busy"
+    },
+    {
+      "address": 1538,
+      "cold": 0,
+      "name": "selected_port"
+    },
+    {
+      "address": 1539,
+      "cold": 0,
+      "name": "phase"
+    },
+    {
+      "address": 1540,
+      "cold": 0,
+      "name": "captured_contact"
+    },
+    {
+      "address": 1541,
+      "cold": 0,
+      "name": "capture_valid"
+    }
+  ],
+  "fire_service": false,
+  "legacy_cc65_profile_compatible": false,
+  "phase_values": {
+    "collecting": 2,
+    "inactive": 0,
+    "settling": 1
+  },
+  "profile": "ntsc-four-port-cooperating-input-development",
+  "ram": {
+    "cold_fill": 0,
+    "end_exclusive": 1568,
+    "start": 1536
+  },
+  "required_cart_declaration": "sb52-dev-input-v2-ram600-61f-v1",
+  "reserved": {
+    "cold_fill": 0,
+    "end_exclusive": 1568,
+    "start": 1542
+  },
+  "runtime_abi": "sb52-dev-input-v2",
+  "schema": 1,
+  "skctl": 6,
+  "successful_preflight_before_power": true
+}

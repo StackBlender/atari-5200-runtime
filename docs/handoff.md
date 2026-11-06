@@ -1,5 +1,33 @@
 # Runtime handoff
 
+## Authored keypad IRQ latch foundation (execution pending)
+
+Separate tools/keypad_irq_image.py/export_keypad_irq_candidate.py and
+cmake/keypad-irq-candidate.cmake implement the first executable subset of reviewed
+keypad/fire policy: one saved IRQ frame, busy across keyboard/timer transactions,
+normalized first-handler-read latch, canceled-entry return, cold32-byte RAM and
+new explicit sb52-dev-input-v2 cooperating-cart contract. docs/keypad-irq-profile.json
+and docs/keypad-irq-proof.md bind exact RAM/selector/phase/window ownership and
+before-power cart declaration. Automatic VBI rotation/events/fire remain NEXT,
+not implemented. Image1613/2048,435 unwritten incl250 margin; net109 above parent.
+Nine new static/export tests (121 total) pass. No CPU/native/profile/game proof.
+Next committed CLI/parent CMake receipt and independent kernel/frontier/fastanalog/
+state execution on ongoingreq_6f74, then remaining cumulative input services.
+Earlier seven exports/03/profile/flags/defaults/app pins unchanged.
+
+## Current RUNTIME-004 executable IRQ acquisition foundation
+
+Implement a separate keypad-irq-latch-v1 cumulative candidate first: cold32-byte
+cooperating-cart RAM/new ABI, continuous06 prime, one saved-AXY IRQ frame, busy
+through all timer/key mask transactions, source/phase validation, normalized
+first-handler-read latch and bounded canceled-entry return. Diagnostic cartridge
+explicitly arms/closes windows under reviewed ownership. This slice deliberately
+does not claim automatic VBI rotation/contact events/fire services; those follow
+within the cumulative budget. No callback IRQ path. Acceptance: exact bytes,
+range/old-profile refusal, startup/helper/stack/static paths, pinned export/CMake
+and independent CPU/window/timer/NMI frontier execution via ongoingreq_6f74.
+All seven earlier exports/policies remain immutable. No default/provider enablement.
+
 ## Keypad/fire revision2 authoring scope accepted with corrections
 
 Mars9654ecb239d87abfe3ddf518ab74150c50004b40 /msg_0c5f reviews proposal1.

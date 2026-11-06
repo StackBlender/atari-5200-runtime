@@ -300,3 +300,14 @@ implementation/tests/primary scan/firmware. Current-interface top-fire latency,
 GTIA write-only latch/cache, contact1..15 and shared-clock facts are owner prose;
 not original-board measurements. Mandatory transaction/stack/window/latency
 corrections incorporated in original proposal2/model. No new foreign code/source.
+
+
+## Keypad IRQ latch foundation exposure
+
+Reuses existing permitted Mars keypad/fire review prose9654ecb, declared CPU-02
+encodings and original image policies. CPU-02 Synertek1976 appendixB-18 LSR
+accumulator selected factual entry (https://syncopate.us/books/Synertek6502ProgrammingManual.html)
+reviewed for4A, one byte/two cycles and zero-fill right shift. Adjacent factual
+table rows visible; no example/firmware program or foreign emulator/test copied.
+New RAM/profile/interrupt composition is original. No Atari firmware/trace,
+extracted assets, primary board scan or new reference measurement exposure.

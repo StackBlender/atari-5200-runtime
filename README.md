@@ -164,3 +164,10 @@ An original [keypad/fire policy proposal](docs/keypad-fire-brief.md) and offline
 event model now define the next review slice. Acquisition, interrupt races and
 explicit RAM ownership still need review before a new executable candidate;
 the planning model does not establish working keypad/fire hardware services.
+
+
+A separate [keypad IRQ latch candidate](docs/keypad-irq-proof.md) now supplies
+original executable capture and interrupt-ownership plumbing for cooperating
+diagnostic cartridges, with an explicit new32-byte RAM/profile contract. It
+fits2048 bytes with the250-byte margin intact. Automatic port rotation, input
+events and both-fire services remain unfinished; native execution is pending.

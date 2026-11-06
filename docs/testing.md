@@ -186,3 +186,12 @@ Keypad/fire revision2 adds invalid/busy-window preservation (112 total methods)
 and restricts contacts1..15. The existing8-boundary scheduling assertion is a
 reducer property only; actual first-handler acquisition can approach9 intervals
 before deferrals. No native IRQ/NMI frontier or hardware latency proof follows.
+
+
+## Keypad IRQ latch candidate
+
+Nine additional methods bring121 total. Exact original IRQ/latch/source/timer/
+RAM-clear bytes and budgets, new opcode strictness, profile/provenance/refusal/
+fresh-process tests cover authored encoding only. See keypad-irq-proof.md for
+commands, four-property pinned exporter and native CPU/frontier/state acceptance
+packet. No automatic window/fire/input event service exists in this candidate.
