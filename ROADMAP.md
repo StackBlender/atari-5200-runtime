@@ -7,6 +7,20 @@ for cartridge startup.
 
 ## Next
 
+## Committed automatic keypad export receipt
+
+Immutable source/exportfce294b7448a7c5a1a35e6c5e5ed5611ee36473f. Real pinned CLI
+and ephemeral parent CMake consumer PASS: four absolute-artifact/full-source
+properties, generation-before-consumption, profile/falseflags/map+image hashes
+and byte-exact CLI/CMake outputs. All8 earlier pinned CLI exports reproduce
+unchanged hashes.130 offline unittest methods and existing build/CTest1/1 PASS;
+diffcheck clean. Temporary parent source/build removed; ignored outputs remain
+build/keypad-window-candidate. No nativeCPU/latency/state/profile/game acceptance.
+Next independent automatic-window/keycallback/IRQ-NMI/timer/analog-loop/state
+execution via fullopenreq_6f74, then bothfires with cumulative budget review:
+1746written,52nonmargin free,242above timer leaves24 before266extra ceiling.
+No margin use/old9profile aliasing/falseflag/default/app pin/fullR62 change.
+
 ## Authored automatic keypad windows (native execution pending)
 
 Separate keypad_window_image.py/export_keypad_window_candidate.py/profile/CMake

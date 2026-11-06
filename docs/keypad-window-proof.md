@@ -174,3 +174,13 @@ audio/register whitelist and VBI costs with/without display waits; native real
 safe-frontier repeated/fresh-process replay including callbacks. New/old tuple/
 profile refusal, converter negatives, all8 prior/R65/lifetime/defaultOFF/firmware
 regressions. No app pin/release/fullR62 ACK or game compatibility follows.
+
+
+## Committed export receipt
+
+Sourcefce294b7448a7c5a1a35e6c5e5ed5611ee36473f:130 offline methods/build/
+CTest1/1 PASS. Real source-pinned CLI and ephemeral parent CMake consumer prove
+four absolute artifact/full-source properties, dependency ordering and byte-exact
+image/map/manifest equality. All8 prior pins reproduce unchanged image hashes.
+Temporary source/build removed; ignored artifacts stay build/keypad-window-candidate.
+Native automatic window/callback/analog/state acceptance remains pending.
