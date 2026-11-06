@@ -1,9 +1,9 @@
 # Qualified development generations and regression checks
 
-These twelve original generations have separately attributed bounded independent
+These thirteen original generations have separately attributed bounded independent
 native receipts. This catalog does NOT select a provider, approve arbitrary
 software, declare a product release or promote candidate flags. Latest native
-receipt is the opaque-title variant (Mars d5c709f / msg_d972); older native qualifications are retained, not
+receipt is the character-bank variant (Mars938d829/msg_d02f); older native qualifications are retained, not
 rerun by the offline tool. See independent-execution.md for actual evidence.
 
 |Variant|Full source generation|Image SHA256|
@@ -20,6 +20,7 @@ rerun by the offline tool. See independent-execution.md for actual evidence.
 |fire|`a2a7455627a9ea3905464c295562debee2efec7d`|`e937064b0d1fe33d0f75cfe4dba89bcbec953adc215f83ed51ce4fee8705f815`|
 |fire-bridge|`e25a466d15c574f3ec364bfc2f44bc7ef2f51117`|`c5fd8df1564c28e5ed4c5aad9f8eabdc64a62e32de28e8dcce6bfae7ea533d24`|
 |opaque-title|`ed013540ac2996d76fab149f6fb8dea9fcead584`|`8d6ef38c1b487fa95742e62e9a5c0b1a928ddb446977264739a263fa0bc070c4`|
+|character-bank|`46b485ddff275af0f66b29b5a2388f8668cc9e11`|`c7caa810132d16ae55b75077e6d5138b5ad388a0094cedaee1eee091cb4a6598`|
 
 `tools/verify_accepted_exports.py` executes each real pinned exporter, whose own
 checkout preflight verifies every declared generation input against local Git.
@@ -35,14 +36,14 @@ python3 tools/verify_accepted_exports.py --cmake
 ```
 
 The second command also creates a temporary parent CMake project for the exact
-opaque-title target, verifies the dependency is built before a real downstream consumer,
+character-bank target, verifies the dependency is built before a real downstream consumer,
 checks all four absolute artifact/full-source properties and compares image/map/
 manifest bytes with the CLI export. Temporary sources/build/artifacts are removed.
 Requires CMake3.20+ and Ninja in addition to Python/Git; no compiler needed.
 
-The normal unittest/CTest suite now includes the real twelve-export/CMake check,
+The normal unittest/CTest suite now includes the real thirteen-export/CMake check,
 plus independently constructed invalid source/descriptor/map/symbol/capability/
-flag/image cases.189methods total. This replaces earlier disposable per-slice
+flag/image cases.197methods total. This replaces earlier disposable per-slice
 harnesses. Add future reviewed generations explicitly without rewriting old pins,
 hashes or approval labels. New native identities still require owner qualification;
 a passing export check cannot provide it.

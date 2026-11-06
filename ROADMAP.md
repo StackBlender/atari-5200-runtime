@@ -5,26 +5,20 @@ runtime. NTSC four-port first; full software compatibility remains unfinished.
 
 ## Next
 
-Mars560238d/msg_ac90 APPROVES bounded C authoring on exact qualified opaque
-ed01354/image8d6ef38c. Authored first64-cell original development mapping ONLY
-F800..F9FF: labels20..5F ->0..63,10retained seven-segment digits +54own drawings.
-Preserve high512/code/vectors/fit/reserve/ABI/32RAM and prior12exports. New exact
-source/image/map/manifest/version and separate exporter/CMake target; independent
-geometry packing/provenance/negative/pinned artifact checks before native packet.
-Need owner dual-native24576combination CPU/peek/DMA/pixel matrix +active-font
-process/state/all inherited/OFF/firmware before admission. Mode2 allF8..FB alias
-F800/PF2paper/PF2hue+PF1luma ink; blank THEN invert. Modes6/7 splitlow/high banks,
-PF0..3ink/COLBKpaper. No ordinary profile/release/pin promotion.
-
-
-C source/data packet ready: character-bank-proposal.md screens selected1982
-manufacturer ANTIC prose via OCR, with errors/visual limits explicit. Proposes
-64ASCII-labelled first-bank cells (54original ASCII drawings plus10retained
-seven-segment digits), preserves old high512bytes/legacy50digits/all code/reserve.
-Authoring now approved Mars560238d; separate candidate emitted, native qualification
-pending.95cannot fit64; no inferred ATASCII ABI.
-Standalone189method suite now exposes95declarative8x8 oracle cells,760glyphbytes
-unchanged and standalone bank/encoding/ABI null. New binding awaits native admission.
+Original64character bank independently qualified Mars938d829/msg_d02f on exact
+source46b485ddff275af0f66b29b5a2388f8668cc9e11/image
+c7caa810132d16ae55b75077e6d5138b5ad388a0094cedaee1eee091cb4a6598.
+Release/full-native ASan each24576name/control/base/mode/allrow CPU/peek/manual+
+physicalDMA/scanline/fixed-origin-pixel combinations plus3font frame/DMA/VBI
+frontiers repeated/same/fresh/process pass; all inherited/title/year/entry/R65/
+refusal+ordinarycontinuation/OFF/firmware pass. See independent-execution.md.
+New measured cold1167/1177cycles,360/363instructions. Same1895fit/high512/code/
+90reserve/fire-v3/32RAM/falseflags.13exact tuples/45converter negatives. Pooled
+UNRELEASED; MR43/pins/defaults unchanged. C bounded native qualification complete,
+NOT historical/cc65/fullcharset/ordinary profile. B consumer keyIRQ/ordinary RAM,
+remaining services/source delivery/product/release/fullR62 remain open/noACK.
+Verifier catalog now includes13qualified exports/latest character-bank CMake;
+197offline methods retained. No old generation input change.
 
 B audit advanced under Marsf20996c/msg_7827, no profile approval: standalone
 strict timer_memory_audit.py inventories220instructions/all474emitted code bytes,
@@ -43,7 +37,7 @@ R65/state/refusal/OFF/firmware. Full cold1167/1177cycles,360/363instructions;
 measured savings414/411 versus static380. Pooled/unreleased; MR43 and app pins
 unchanged. Persistent verifier now covers12qualified exports and latest opaque
 CMake consumer;197methods now include original64candidate checks. See independent-execution.md. B ordinary
-profile/keyIRQ contract and C native bank qualification remain pending, not A.
+profile/keyIRQ contract remains pending; C qualified Mars938d829 as recorded above.
 
 Completed export-regression automation: tools/verify_accepted_exports.py
 reproduces all eleven real pinned CLI exports and optionally the real parent
@@ -72,15 +66,12 @@ provider selection, old input or approval change. No disposable harness needed.
 
 ## Latest accepted development generation
 
-Opaque-title ed013540ac2996d76fab149f6fb8dea9fcead584, image
-8d6ef38c1b487fa95742e62e9a5c0b1a928ddb446977264739a263fa0bc070c4.
-Marsd5c709f/msg_d972 independent Release/full-native ASan qualification above;
-full attributed matrix/timing/limits in [execution receipt](docs/independent-execution.md).
-Same fire-v3/frozen declaration/32RAM,1895written/fire146/90reserve/nativefields/
-schema/false approval flags. Pooled UNRELEASED; MR43 remains latest and Retro
-pins stay unchanged. FullR62 req_6f74 remains open/noACK. Preserve real ordinary
-frame returns, post-return polls/stale caches and host-before-import ordering.
-B ordinary profile/keyIRQ and C numeric binding review remain open.
+Original64character bank46b485ddff275af0f66b29b5a2388f8668cc9e11, image
+c7caa810132d16ae55b75077e6d5138b5ad388a0094cedaee1eee091cb4a6598;
+Mars938d829/msg_d02f. Native matrix/limits above and in independent-execution.md.
+1895written/fire146/90reserve/highbank/code/ABI/32RAM/schema unchanged. Keep
+real ordinary frame returns/post-return polls/stale caches/HOST-before-import.
+POOLED UNRELEASED, MR43latest. No fullR62ACK or historical/game/profile claim.
 
 ## Standalone asset batch
 
@@ -120,3 +111,7 @@ only; parent/prior12inputs immutable. Exact source46b485ddff275af0f66b29b5a2388f
 consumption/triple equality PASS.197offline/CTest1/1 PASS. Next full native
 24576+inherited/state packet.
 No bank/provider/native tuple admitted yet. See character-bank-proof.md.
+
+Independent B next action: native-owner boundary audit on unchanged timer ancestor
+while consumer keyIRQ requirements remain unresolved; exact scope/limits in
+timer-memory-audit.md. No new profile/keyIRQ authoring, old reservations unchanged.

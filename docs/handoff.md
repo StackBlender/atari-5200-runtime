@@ -1,6 +1,43 @@
 # Runtime handoff
 
-## Current C approved authoring checkpoint
+## Current original64 native qualification — 2026-11-06
+
+Mars938d829/msg_d02f independently qualifies exact character-bank source
+`46b485ddff275af0f66b29b5a2388f8668cc9e11`, image SHA256
+`c7caa810132d16ae55b75077e6d5138b5ad388a0094cedaee1eee091cb4a6598`.
+Owner-reported Release unity and full-native nonunity Debug ASan (-g -O1) each
+pass24576 names/controls/bases/modes/allrows with independently repacked own
+normative geometry/recomposed digits/full1024font. Real CPU1024byte copy/bus
+order, debugger/manualDMA and ordered physical ANTIC address/byte/scanline
+streams plus full independent native pixels at fixed origin96,24 all agree.
+Static setup list2000/screen2100,DMA22,two blank rows,PF22/46/6A/8E,BKA2,
+PRIOR/GRACTL/scroll0,staged actual shadows+aliases,CHBASE/control before DMA,
+two ordinary settle runs. No per-glyph alignment or emitted-bank pixel oracle.
+
+Three ordinary-frame/active-font-DMA/VBI-FE50 frontiers pass three same-root
+repetitions/fresh-root/separate-process full native/pixel/orderedDMA+scanline
+continuations. No forced quiescence; ordinary polls/caches/stacks remain real.
+Both full inherited drivers pass892fire/37frontiers/allSP14/20,3840+694windows/
+18process,4465keypad/93nested/14process,1302IRQ-timer/14process,288VBI+120,
+404display,128DLI,53analog,5120titles/3patterns/19years. Mutual opaque/new
+refusal preserves state and next two ordinary frames;45converter negatives.
+13exact tuples/all12old pinned exports/CLI/both-CMake triples reproduce retained
+bytes; reciprocal variant refusal. New measured cold1167cycles/360instructions,
+boundary1177/363; not inferred parent timing or physical/mobile/battery evidence.
+
+Both R65 natives rebuilt: all2600regions exact/fast,5200standard/mixed/wire/
+process/lifecycle/live/loadedexit;17606mixed/1104wire unchanged. Rebuilt OFF passes.
+Firmware43/selftest43/tree3912/history5198precommit/buildroots219/265/154 clean
+per owner. Older native qualifications retained, not all12 rebuilt. No local
+CPU rerun, games, device, historical/ATASCII/cc65/fullcharset or retail acceptance.
+
+1895written/fire146/high512/code/vectors/padding/90reserve unchanged; same fire-v3/
+frozen32RAM/nativefields/schema/falseflags/emptyacceptedcaps. Separate development
+tuple only, POOLED UNRELEASED; MR43/pins/defaults unchanged. B ordinaryRAM/keyIRQ,
+remaining services/source-delivery/product/release/fullR62req_6f74 stay open/noACK.
+Supersedes older pending C native qualification notes below.
+
+## Historical C approved authoring checkpoint
 
 Mars560238d/msg_ac90 approves original64bank on exacted01354/image8d6ef38c.
 Authored imagec7caa810132d16ae55b75077e6d5138b5ad388a0094cedaee1eee091cb4a6598;
@@ -13,7 +50,7 @@ No native/profile admission; MR43/pins/defaults unchanged. Prior12exports retain
 Reviewconstraints/provenance/testcommands in character-bank-proof.md.
 
 
-## Current opaque-title qualification — 2026-11-06
+## Earlier opaque-title qualification — 2026-11-06
 
 Mars d5c709f / msg_d972 independently qualifies source
 `ed013540ac2996d76fab149f6fb8dea9fcead584`, image SHA256
@@ -201,3 +238,10 @@ No native admission; new original64 candidate intentionally NOT added to qualifi
 catalog until owner native24576matrix+inherited/state/refusal qualification.
 Artifacts ignored under existing build; temporary parent consumer auto-removed.
 No runtime pin/provider/release/default/ABI/approval change. FullR62 remains open.
+
+Current resume: C independently qualified Mars938d829; no repeated authoring/
+native qualification request.13qualified exports/latest character-bank CMake
+regression and197offline methods. Next B actual consumer keyIRQ contract/ordinary
+RAM and remaining-service requirements, not app pin/release promotion. Runtime
+lease released only after passing checks/commit/push. Older pending C notes are
+historical; current receipt at top owns status.

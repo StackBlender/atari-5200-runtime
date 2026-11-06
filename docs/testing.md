@@ -334,3 +334,12 @@ qualification remains native-owner work, not these tests. See character-bank-pro
 An eighth bank method verifies real source46b485ddff275af0f66b29b5a2388f8668cc9e11
 CLI and parent CMake dependency/order/fourabsoluteproperties/triple byte equality.
 197offline methods and existing build/CTest1/1 PASS. No new native acceptance.
+
+## Thirteen qualified export regressions
+
+Mars938d829/msg_d02f independently qualified original64character-bank source
+46b485d. Catalog/verifier now includes its exact immutable tuple and real latest
+CMake consumer; all12oldCLIexports and dedicated opaque/bank artifact tests remain.
+197methods total. Standard unittest/build/CTest required; no native rerun or
+approval flag/pin/profile change inferred. Full attributed native receipt lives
+in independent-execution.md, including24576matrix and active-font replay.

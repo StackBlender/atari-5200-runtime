@@ -490,3 +490,13 @@ manufacturer OCR confidence/adjacent exposure unchanged, no new external source.
 Mode2 alias/PF2paper/blank-then-invert and6/7 split/color rules are attributed
 Mars integration contract, not independent original-hardware measurements.
 Exact obligations and remaining native/product gates: character-bank-proof.md.
+
+## C independent native qualification, 2026-11-06
+
+Read Mars938d829/msg_d02f and docs/a52-character-bank-development.md owner prose
+only. No native implementation/tests/reference traces/firmware/font inspected.
+Reported dual-native24576matrix, independent originalgeometry/fullfont, CPU/
+physicalDMA/pixels/activefontprocess/state/inherited/R65/OFF/firmware evidence
+recorded in independent-execution.md; no local CPU rerun. Exactsource46b485d/
+imagec7caa810 development tuple only, original software mapping, not historical
+BIOS/ATASCII/cc65/hardware or ordinary profile. B/fullR62/product gates remain.

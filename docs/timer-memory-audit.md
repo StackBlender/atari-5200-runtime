@@ -105,3 +105,26 @@ return/clobber/nesting/RAM/state contract from screened prose or authorized
 consumer observations. Direct hardware input and optional BIOS callbacks are
 different requirements. Do not relabel unrelated cartridges as cooperating,
 claim ordinary-game compatibility or infer an approved profile from this report.
+
+## Next independent B boundary audit
+
+Request native-owner Release/full-nativeASan evidence on the exact unchanged timer
+ancestor ac9b47e50c213b08022e78bdef64662569cd3d29/image
+eae07d3610237c96d3cdf11959680eb25ed59dd6083c0de59d4c999188057550.
+Audit-only, no new ordinary profile or keyIRQ implementation: seed consumer RAM
+021C..3FFF including600..61F after cold power randomization and before startup;
+exercise valid startup/entry, metadata and entry refusals, initialized default
+VBI/DLI/analog/IRQ/BRK/timer and supported bounded callbacks/fault paths. Declare
+all cart-owned code/display/result writes separately; inspect unexpected physical
+CPU stores rather than inferring preservation from final bytes alone. Cover
+ordinary frame/mid-service safe and separate-process continuations with genuine
+poisoned target RAM before native import and pre-mutation refusal continuation.
+
+Report exact tested vector initialization/observer/stack/callback assumptions,
+unsupported early/torn/custom routing and uncovered boundaries; a failure or
+unprovable boundary is evidence, not permission to repair/emulate/invent services.
+No claim of RAM preservation through power randomization itself, arbitrary
+callbacks, BIOS equivalence or ordinary-game acceptance. Existing timer profile
+ownership and unsupported keyIRQ behavior stay unchanged. This independent B
+coverage can proceed while actual consumer keyIRQ requirements remain unresolved;
+all profile/provider authoring still requires the separate explicit contract.

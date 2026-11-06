@@ -29,7 +29,7 @@ accuracy, with dependable behavior and repeatable saves.
 
 A separate [original printable glyph asset](docs/printable-glyphs.md) contains
 95new drawings. It has no Atari encoding, runtime-bank binding or provider target.
-Accepted runtime fonts and all twelve pinned generation inputs remain unchanged.
+Accepted runtime fonts and all thirteen pinned generation inputs remain unchanged.
 
 ## Build and test
 
@@ -48,7 +48,7 @@ Or run all197offline methods directly:
 PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -v
 ```
 
-The ordinary suite includes real reproduction of all twelve pinned development
+The ordinary suite includes real reproduction of all thirteen pinned development
 exports and the CMake artifact consumer, plus rejection of altered bindings and
 approval flags. Run it separately with `python3 tools/verify_accepted_exports.py
 --cmake`; see the [catalog](docs/accepted-generations.md). Local source history is
@@ -94,6 +94,6 @@ supports ordinary-RAM planning, not an approved profile or game-compatibility cl
 
 The separately [authored original64 bank](docs/character-bank-proof.md) binds
 64original development labels, preserving legacy digits/high bank/code. It is
-awaiting independent native qualification; no historical charset or ordinary
+independently qualified by Mars938d829 in both native builds; no historical charset or ordinary
 software compatibility is claimed. Normative own geometry is available as source
 asset DATA in assets/printable-geometry.json for independent pixel oracles.
