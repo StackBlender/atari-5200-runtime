@@ -234,4 +234,3 @@ validation. FullR62 req_6f74 remains open; doNOTack full request. Integration is
 pooled/unreleased; old8exports/false flags/OFF defaults/app pins unchanged.
 Read only owner prose a52-keypad-irq-development.md, no producer implementation/
 tests/firmware or primary reference exposure.
-
