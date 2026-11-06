@@ -7,6 +7,20 @@ for cartridge startup.
 
 ## Next
 
+## Current RUNTIME-004 keypad/fire planning slice
+
+Original proposal1 in docs/keypad-fire-brief.md and tools/keypad_policy.py/tests
+specifies two-interval four-port windows, fresh-capture provenance and no-repeat
+contact events, independent bottom/top fire, explicit opt-in06 analog/audio
+change, tentative32-byte cart-cooperating RAM/profile and266-byte code ceiling.
+This is a review packet, NOT emitted/approved runtime. IRQ/NMI atomicity,
+masked-window validity, independent top-fire read and storage/fit must resolve
+before byte authoring. No silent03 switch, old ABI/RAM theft or chip correction.
+Validation:111 unittest methods PASS (seven new planning methods), existing
+build/CTest1/1 PASS and git diff --check clean. No image generation input changed.
+FullR62 req_6f74 stays open; next integration-owner review of the committed
+packet, then separate candidate only within accepted scope. Current seven exports/provider flags/app pins/defaults remain unchanged.
+
 ## Independent IRQ/BRK and timer execution acceptance
 
 Mars msg_30c1 /f32595cb7c67a20395006adf413b6ba310a45b30 independently accepts

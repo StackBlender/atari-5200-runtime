@@ -170,3 +170,13 @@ image/map; pinned export tools/export_timer_candidate.py and opt-in target
 sb5200-timer-dispatch-image documented in timer-dispatch-proof.md. Exact byte/
 branch/mask-write/fit/helper/static checks do not run CPU timers or prove IRQ
 source handling, callback RTI, priority or synchronized process replay.
+
+
+## Keypad/fire policy planning model
+
+Seven new methods bring total111. Run the existing unittest/CTest commands.
+tools/keypad_policy.py reduces already acquired window observations; tests cover
+all old/new contact values/ports, holds/releases, scheduling, fire ordering and
+policy replay/strict inputs. See keypad-fire-brief.md for unresolved hardware,
+IRQ/NMI race, RAM/profile and fit gates. No CPU/chip model, MMIO/image change,
+acquisition validation or native state acceptance is supplied by these tests.

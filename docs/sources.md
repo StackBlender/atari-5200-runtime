@@ -280,3 +280,14 @@ Read only a52-irq-brk-review.md and a52-timer-dispatch-review.md at f3b991a/
 d7be9b4; accepted bounded arithmetic/ABI/authoring qualifications, no execution.
 Primary POKEY sheet23 source semantics attributed to owner, not newly read here.
 No primary source scan, producer/test/firmware implementation exposure introduced.
+
+
+## Original keypad/fire planning model
+
+Read only existing Mars a52-keyboard-{source,contract}-review.md prose (R70/R62),
+not producer chip code/tests or primary scans. Original two-interval schedule,
+window event reducer, tentative storage/profile/budget/callbacks are proposed
+software policy; model observations are synthetic inputs, not measured captures.
+No new external source, reference/firmware trace, extracted asset or foreign
+emulator/kernel implementation exposure. Acquisition/atomicity/top-fire remain
+explicit review questions before authoring a separately identified image.

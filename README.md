@@ -158,3 +158,9 @@ The IRQ/BRK and timer candidates now have independent Mars CPU/stack/callback/
 state acceptance; see the receipt above. The complete firmware replacement still
 needs reliable keypad/fire and reset/remaining-service validation. Integration
 release/app adoption remains separate; all candidate export flags stay false.
+
+
+An original [keypad/fire policy proposal](docs/keypad-fire-brief.md) and offline
+event model now define the next review slice. Acquisition, interrupt races and
+explicit RAM ownership still need review before a new executable candidate;
+the planning model does not establish working keypad/fire hardware services.
