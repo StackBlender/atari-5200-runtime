@@ -513,3 +513,13 @@ font/reference trace read; no declaration code copied/vendored. Timer rates/CPU
 mailboxes/counter fixture are own diagnostic policy. Same maintaining actor as
 runtime author; no original-system reference role or new historical ABI inferred.
 Consumer results/limits recorded in timer-memory-audit.md, not profile admission.
+
+## Independent timer memory audit receipt, 2026-11-06
+
+Read only Mars350b508/msg_0ee8 and owner docs/a52-timer-memory-audit.md prose.
+No native fixture/observer/decoder implementation/tests or reference firmware
+read. Attributed Release/full-nativeASan physical-store/canary/process evidence
+in timer-memory-audit.md, no local rerun. Initialized/default or tested bounded
+ROM callbacks only; arbitrary routes/nesting/all arrivals and zero-page19..FF
+not covered by this native observer. Same image/old reservations; no ordinary
+profile/keyIRQ/historical ABI/reference-role approval follows.

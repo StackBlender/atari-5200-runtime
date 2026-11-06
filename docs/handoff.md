@@ -1,5 +1,42 @@
 # Runtime handoff
 
+## Bounded native timer physical-store audit received — 2026-11-06
+
+Mars350b50866444266b57d89837f6e74ba1703b9b24/msg_0ee8 completes the bounded
+msg_4005 audit on unchanged sourceac9b47e50c213b08022e78bdef64662569cd3d29/image
+eae07d3610237c96d3cdf11959680eb25ed59dd6083c0de59d4c999188057550.
+Owner prose docs/a52-timer-memory-audit.md only read; no implementation/tests/
+decoder/reference firmware or traces inspected and no local rerun for this receipt.
+
+Releaseunity +full-native nonunityASan each seed ALL15844bytes021C..3FFF after
+Cold randomization/Starting0 before execution, including021C..21F/600..61F.
+Physical CPU observer rejects ANY runtime-PC store to target RAM, including
+same-value/transient/restored writes and writes within208declared cart bytes.
+Only original cart-ROM code may write those explicit display/result/mailbox
+windows;15636remaining canaries checked after runs/captures/imports. Valid
+same/fresh/process imports first invert ALL15844targetbytes and immediately
+check protected bytes before frames. Zero unexpected runtime/undeclared stores.
+
+Native matrices pass startup/metadata/entry/early-pending/watchdog/failure;
+VBI288+120/display404/DLI128/analog59/IRQ-BRK-timer1303 including256SP. Twelve
+timer instruction/callback/RTI process frontiers plus ordinary-frame/inherited
+service replays pass. Ten additional malformed process refusals preserve complete
+state AND next two ordinary frames. Both unflagged base fixtures/20converter
+negatives pass; firmware43/selftest43/tree3914/history5209precommit/three roots
+clean perowner. BroaderR65 not rerun for this test-only audit.
+
+This closes the requested BOUNDED physical-store audit, not every path: initialized
+default vectors or tested bounded ROM callbacks only. Arbitrary early/torn/custom
+vectors, protected-RAM callback code/nesting/reentrancy/all interrupt arrival
+instructions remain uncovered. Native observer does NOT audit0019..00FF; Retro's
+separate16043final-canary consumer covers that range with different limits.
+No original-system/reference-role proof, power-on-content or game/device claim.
+No repair/profile/ownership cession/keyIRQABI/image/schema/default/pin/release
+change. Old conservative reservations unchanged; actual consumer keyIRQ and
+separately reviewed ordinary profile remain gates. MR43latest/fullR62open/noACK.
+Retro8e590a6 consumer receipt was recorded by Mars as reported, not independently
+rerun. Earlier pending-audit statements are historical; no repeated audit request.
+
 ## Retro-owned timer/BRK consumer receipt, 2026-11-06
 
 Retro source8e590a6 completes a consumer test extension on RELEASED MR43 timer

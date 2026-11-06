@@ -5,14 +5,24 @@ runtime. NTSC four-port first; full software compatibility remains unfinished.
 
 ## Next
 
+Bounded native timer physical-store audit completed Mars350b508/msg_0ee8:
+Release/full-nativeASan seed15844bytes021C..3FFF,15636protectedcanaries,zero
+unexpected runtime/undeclared CPU stores; startup/fault/service/256SP/process
+coverage in timer-memory-audit.md. Initialized default/tested bounded ROM
+callbacks only; arbitrary early/torn/custom/reentrant/all-arrival paths unproved.
+No repeat audit request. Next actual consumer keyIRQ requirements and explicitly
+reviewed ordinary-profile ownership contract; no implementation/admission/cession,
+image/pin/default/release change. FullR62open/noACK, MR43latest.
+
+
 B consumer extension reported Retro8e590a6: ten real timer/BRK/VBI mask/CRITIC
 cases,16043conio/application canaries,30same/10fresh+10separate-process poisoned
 imports,100native/reset refusal continuations,14archive+2CLI refusals. Timer and
 keypad Release/adapterASan13/13 each PASS, native MarsRelease uninstrumented.
 No runtime code/image/profile change. Same maintaining actor, not original-system
 observation or independent Mars all-boundary audit. See timer-memory-audit.md.
-Next native physical-store/all-boundary audit remains requestedmsg_4005 while
-actual consumer keyIRQ contract/ordinary profile/remaining services remain open.
+Native bounded physical-store auditmsg_4005 now passes as above; actual
+consumer keyIRQ contract/ordinary profile/remaining services remain open.
 
 
 Original64character bank independently qualified Mars938d829/msg_d02f on exact
