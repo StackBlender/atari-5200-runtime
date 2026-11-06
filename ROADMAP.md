@@ -5,6 +5,17 @@ runtime. NTSC four-port first; full software compatibility remains unfinished.
 
 ## Next
 
+Explicit combined profile authoring APPROVED Marsb0e34bf/msg_e17f: byte-identical
+B2image5936e46d +REBOUND B0public ownership/25shadow/14vector contract. Newsource/
+variant/profile/version/map/manifest/currentcontractSHA mandatory, oldcontract
+SHA provenance ONLY. Author composition pinned against both immutable parents,
+preserve13old+B0/B1/B2,250reserve/flags/OFF; then exact CLI/CMake/nativepacket.
+No combined native admission/game trial/release/pin/fullACK. Independent combined
+120fullycrossedkeyboard/physicalstore+65536yearpairs/5120titles/fullinit/inherited/
+allSP/R65/OFF/firmware/poisoned frame/in-handler/process +SAMEimageB2refusal with
+ordinarycontinuation required. Separate B0/B1/B2native workloads still pending.
+
+
 B2 bounded separate authoring APPROVED Marseb7115b/msg_cb39: SECONDFF permits
 ANY FIRSTbyte, otherwise BOTH50..59. Opaque20title/fullCold/normalentry/assets/
 registers/stack/watchdog4096/conservativeRAMthrough021F/250reserve retained.

@@ -367,3 +367,12 @@ requirements in diagnostic-conditional-proof.md; no admission from tooling.
 B2pinnedCLI/CMake consumer adds seventh method/212total: source89af2dc actual
 fourproperties/dependency/triple equality PASS. Full build/CTest1/1 PASS, all
 B0/B1/prior13artifact checks retained. No independent native65536matrix claim.
+
+## Explicit combined cart-owned diagnostic identity
+
+Six tests/test_cart_owned_diagnostic.py methods bring218offline before committed
+consumer. ALL2048B2bytes/fit/metadata/timing unchanged; rebound contract/rawSHA/
+individualcoldvalues/typeguards, same-image+same-synthetic-source distinct profile/
+version/map/manifest, both immutable parent/new pins, invalid parent reuse and
+freshprocess. B0/B1/B2+13oldexports remain. See cart-owned-diagnostic-proof.md
+for independent120keyboard/65536year/fullCold/state/R65 requirements.

@@ -108,3 +108,8 @@ B2's separate [conditional-year experiment](docs/diagnostic-conditional-proof.md
 permits any first year only with secondFF, retaining full cold initialization.
 It does not amend B1 or combine ordinary RAM, and requires independent admission.
 212offline checks including exact committed CLI/CMake consumer; no game trial.
+
+The explicitly [combined cart-owned diagnostic profile](docs/cart-owned-diagnostic-proof.md)
+now rebinds B0ownership onto byte-identical B2code under its own identity. It is
+a development candidate awaiting independent combined admission, not a game
+runner. All prior profiles and defaults remain unchanged.

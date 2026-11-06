@@ -568,3 +568,14 @@ CPU encodings; no new external code/firmware/game/reference reading. B1unqualifi
 parent is original composition, not independent native acceptance. Complete
 identity/provenance/nominal worksheets/native65536matrix requirements recorded
 in diagnostic-conditional-proof.md. No B0composition or historicalbypass claim.
+
+## Explicit combined authoring, 2026-11-06
+
+Read Marsb0e34bf/msg_e17f and appended owner review prose only. Exact B2executable
+plus rebound B0public ownership/initialization approved, old contract rawSHA
+250834f4 provenance not current identity. New profile/purpose-only document
+changes preserve all typed values. Only own emitted sources/assembler/approved
+declarative data reused; no foreign implementation/firmware/game/font reading.
+New current contract SHA f287bfc7, source/proof/native gates documented in
+cart-owned-diagnostic-proof.md. Byte equality/producer unit tests are not native
+execution or historical/reference-role/game acceptance. No default/pin promotion.

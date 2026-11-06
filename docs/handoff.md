@@ -1,5 +1,23 @@
 # Runtime handoff
 
+## Current explicit combined authored candidate
+
+Marsb0e34bf/msg_e17f approves exact B2bytes +rebound B0publiccontract. New
+cart_owned_diagnostic_image.py/exporter/CMake/reboundJSON/tests authored. ALL2048
+bytes sameB2SHA5936e46d/1556fit/250reserve; new explicit profile
+ntsc-four-port-cart-owned-diagnostic-conditional-development, variantcart-owned-
+diagnostic, public contract currentSHAf287bfc7 notold250834f4 (provenanceonly).
+All25shadow/14vector typedcoldvalues preserved; app19..FF/21C..3FFF/cession21C..1F
+/no600reservation/public0..18+200..21B/sharedstack100..1FF. No code/scanner/
+RAM/stack/assets/services/default changes, no mandatory v2/v3tag/keycallback ABI.
+Distinct newsource/profile/version/map/manifest/currentcontract binding; cannot
+reuse eitherparent source for newdelivery.218offline PASS before source pin.
+Need commit then exact pinned CLI/CMake4props/order/triple equality/fullCTest;
+deliver independent COMBINED120keyboard/physicalstores +65536years/5120titles/
+fullCold/in-handler/frame/process/poisoned imports/R65/OFF/firmware/state gates.
+SAMEimageB2/combined mutualrefusal +next2ordinaryframes mandatory. B0/B1/B2
+native separately pending; no game trial/release/pin/fullACK or catalog addition.
+
 ## Current B2 authored candidate
 
 Marseb7115b/msg_cb39 approves separate B2. New composer/exporter/CMake on exact
