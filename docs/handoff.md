@@ -12,8 +12,15 @@ New topFF4A/bridgeFF88..91, JSRFF37/FF7A returnPCFF39/FF7C ->reloadFF3A/FF7D.
 OnlyFC96/keytail/newfireblock change; old10inputs andsamefire-v3allocation/profile
 immutable. No addedstack/RAM/field/service, allflagsfalse/OFFdefault unchanged.
 Sevennew exactbytes/budget/profile/identity/refusal/freshprocess methods bring167.
-See fire-bridge-proof.md. Next committedpin CLI/CMake+10olderexports, exactnative
-handoff/requalification inclordinary midVBI/frame/cache/movedsetup snapshots.
+See fire-bridge-proof.md.
+
+Generation pin e25a466d15c574f3ec364bfc2f44bc7ef2f51117 pushed.167unittest/
+build/CTest1/1 PASS. RealcommittedCLI+ephemeralparentCMake fourproperties,
+dependency-before-consumption andbyteequality PASS; all10older realpinnedexports
+unchanged. Exact newtuple/nativepacket sent underreq_6f74, fullrequestopen/noACK.
+No nativeprovideradmission/execution/equivalence yet; no apppin/default change.
+Next ownerdualnativequalification incl movedbridge/setup andordinarymidVBIcache/
+stack/process boundaries; furtherresetservices still require evidence+fit review.
 
 
 ## Next reset/service contract and measured bridge refactor review

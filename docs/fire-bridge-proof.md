@@ -96,3 +96,13 @@ baseline/held/release/repress/per-port acrosscold/reopen/frame/snapshot without
 inventing game actions. Further resetcode still needs provenance, trigger/path,
 RAM/chip/stack/vector/cart preservation, IRQ/NMI/audio/scan/entry/return/error/state
 matrix and separate measured cumulative fit review. FullR62 remainsopen/noACK.
+
+
+## Pinned export receipt
+
+Source e25a466d15c574f3ec364bfc2f44bc7ef2f51117.167offline unittest/build/CTest1/1
+PASS; realpinnedCLI+temporaryCMake4props/order/byteequality and10olderpinnedexports
+unchanged PASS. Temporaryparentremoved; outputignored in existingbuild.
+Manifest byteSHA3a52d2ff1e7a9e902f4830755dfe23cec1de69b64644dd121fa9963e6bbf7dc6,
+map byteSHAb414eb0d563c549a2370080477b10a90cf1ca52717b83c523aa3c059de79eaf7.
+These are offline export/encoding checks, not native/physical observations.
