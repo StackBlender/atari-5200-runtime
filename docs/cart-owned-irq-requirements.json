@@ -1,4 +1,7 @@
 {
+  "B2_authoring_review": "eb7115b",
+  "B2_emitted": true,
+  "B2_source_revision": "89af2dcc1d889585d6c9dde2fa12a3db30ce3045",
   "authoring_review": "81025cfddd64502c276e0a8895cdc96f9b0249fc",
   "consumer": "original-retro-cart-owned-keyboard-irq",
   "consumer_native_coverage": {
@@ -105,8 +108,14 @@
   "schema": 1,
   "separate_boot_review": {
     "B0_B1_combined": false,
+    "B0_B2_combined": false,
+    "B2_authoring_approved": true,
+    "B2_declared_metadata_eligible_for_authorized_corpus": true,
+    "B2_native_admitted": false,
+    "B2_second_ff_makes_first_opaque": true,
     "approved_B1_metadata_eligible_for_authorized_corpus": false,
     "authorized_corpus_has_diagnostic_flag_request": true,
+    "combined_authoring_approved": false,
     "diagnostic_flag_policy_approved": true,
     "first_year_must_always_be_numeric": true,
     "game_executed_or_modified": false,
@@ -114,6 +123,6 @@
     "proposed_original_full_cold_initialization": "review-before-emission",
     "second_year_numeric_or_ff": true
   },
-  "status": "implemented-original-consumer-separate-B0-B1-authored-awaiting-native",
+  "status": "implemented-original-consumer-separate-B0-B1-B2-authored-awaiting-native",
   "stock_cc65_or_game_compatibility": false
 }
