@@ -152,3 +152,16 @@ Validation:136offline methods/existingbuild/CTest1/1 PASS. Revalidated explicit
 window-source-pinned CLI/CMake and all8older pinned exports:9unchanged images.
 Temporary parent removed; only ignored fragment outputs in existing build root.
 Diff check clean. No cumulative allocation/provider/emulator change or CPU run.
+
+
+## Independent static boundary audit
+
+`tools/fire_fragment_audit.py` now checks the raw fragment independently of the
+emitter's instruction table. Exact protected write/read allowlists, branch-to-
+instruction/routine confinement, two fixed bridge calls, two fixed continuation
+exits and the sole0208 indirect callback reject structural mutations. Static
+writes are0610..061B conditional on X0..3 at indexed accesses. The tool does not
+prove that precondition, branch reachability, stores-before-callback semantics,
+callback discipline, stack wrap or timing; existing exact encoding checks and
+future independent native execution cover their separate scopes. Six new tests
+bring142 offline methods; generation inputs/153-byte fragment unchanged.

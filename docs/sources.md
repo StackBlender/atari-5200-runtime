@@ -341,3 +341,11 @@ and CPU-02 selected opcode facts already visible in manufacturer tables: ORAabs0
 CMPabsCD,LDYabsAC. No new firmware/trace, producer implementation/tests, board
 scan or external source exposure. Fragment originF800 is synthetic; it supplies
 no authority to replace font or spend reserved ROM. Proposal remains unapproved.
+
+
+## Static fire-fragment audit
+
+No new source exposure. Independently authored allowlist uses already recorded
+NMOS encodings and permitted interface facts. It decodes bytes for static access
+and branch checks only; no instruction execution, chip model or foreign code.
+Conditional X0..3 footprint is an explicit precondition, not measured behavior.

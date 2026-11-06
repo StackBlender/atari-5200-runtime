@@ -213,3 +213,17 @@ only, no runtime image/provider. Exact independent encodings/order/baselines/
 branches, budget failure/projection, strict local opcodes/parent preservation and
 fresh-process output checks. See fire-allocation-review.md: allocation/profile
 review is required before cumulative emission; no CPU/fire/game acceptance.
+
+
+## Static fire-fragment boundary audit
+
+Six mutation and CLI methods bring142 total. Run the normal unittest/CTest suite.
+After fragment generation, `python3 tools/fire_fragment_audit.py
+build/fire-fragment/fire-service-fragment.bin` prints the deterministic audit.
+The audit independently decodes only the permitted small instruction subset and
+checks access operands, internal branch destinations and fixed callback/exits.
+Negative tests redirect real store operands to protected addresses, attempt
+write-only readback/indexed-base changes, branch escapes and callback/control
+changes; CLI failure exits2 with empty stdout. No CPU execution or dataflow proof:
+indexed footprints assume X0..3 at those operations and callbacks obey contract.
+The report is not an allocation/native acceptance or worst-case timing result.

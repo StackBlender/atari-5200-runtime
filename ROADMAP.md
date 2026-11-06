@@ -5,7 +5,26 @@ is NTSC four-port, followed by evidenced differences and broader compatibility.
 The first image fixture is a build-tool test, not an implementation milestone
 for cartridge startup.
 
+
+
 ## Next
+
+## Static fire-fragment boundary audit
+
+RUNTIME-004 next: retain allocation/profile stop pending Mars msg_d13f; window
+execution msg_d22f also pending. Added independent static fragment access/control
+allowlist (tools/fire_fragment_audit.py): rejects forbidden hardware/key/mask/
+selector writes, write-only readback, indexed base changes, branch escapes or
+operand targets, altered callback/exits and unsupported control opcodes. Six
+mutation/CLI tests bring142 offline methods. Conditional indexed footprint
+0610..061B requires reviewed X0..3 invariant; no register/flag/memory/chip/CPU
+simulation, timing bound, reachability or callback behavior proof. No generation
+input changed; fragment and all9 prior image identities unchanged. New audit
+does not approve allocation, native fire execution, provider or game support.
+Next accept/correct owner review, then cumulative candidate and native packet.
+
+Validation:142 unittest methods, existing build and CTest1/1 PASS.
+
 
 ## Both-fire code measured; cumulative allocation review required
 
