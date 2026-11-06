@@ -7,6 +7,24 @@ for cartridge startup.
 
 ## Next
 
+## Keypad/fire revision2 authoring scope accepted with corrections
+
+Mars9654ecb239d87abfe3ddf518ab74150c50004b40 /msg_0c5f reviews proposal1.
+Revision2 incorporates busy across TIMER mask transactions, pending-before-ack
+invalid-window deferral, first-handler-read (not first chip capture), one NMI-over-
+IRQ peak14+helper/callback bytes and single saved frame, top-fire independent
+KR2 latency7296+read, unlatched GTIA/post-run cache ownership, IDs1..15 only,
+and corrected conditional near9-interval/~150ms latency (8 was wrong). Both03/06
+already enable shared polynomial/prescaler; requalify fast pots/audio separately.
+32 cart-cooperating bytes/new profile allowed for bounded authoring, not oldABI.
+Planning reducer now refuses0 and supports invalid/busy windows without releases
+or selector advance. Next exact RAM/reset/preflight and separate cumulative byte
+candidate within266-byte ceiling, then independent real CPU/frontier/analog/fire/
+state tests. No new image, actual fit, execution/profile/product acceptance or
+fullR62 completion. Existing seven exports/flags/defaults/pins preserved.
+Validation:112 offline unittest methods PASS, CTest1/1 PASS, diff check clean.
+Review incorporated; next byte authoring needs no further human permission.
+
 ## Current RUNTIME-004 keypad/fire planning slice
 
 Original proposal1 in docs/keypad-fire-brief.md and tools/keypad_policy.py/tests

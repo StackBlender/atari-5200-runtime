@@ -10,7 +10,7 @@ from keypad_policy import State, Event, advance
 
 class KeypadPolicyTests(unittest.TestCase):
     def test_every_key_transition_and_port_isolation(self):
-        for port, old, new in itertools.product(range(4), (None, *range(16)), (None, *range(16))):
+        for port, old, new in itertools.product(range(4), (None, *range(1, 16)), (None, *range(1, 16))):
             keys = [None]*4
             keys[port] = old
             state = State(port=port, collecting=True, keys=tuple(keys))
@@ -41,7 +41,7 @@ class KeypadPolicyTests(unittest.TestCase):
                          + [Event("key", p, 5, None) for p in range(4)]
                          + [Event("key", p, None, 5) for p in range(4)])
 
-    def test_all_scan_schedule_positions_reach_each_port_in_eight_boundaries(self):
+    def test_reducer_schedule_not_acquisition_latency(self):
         for starting_port, collecting, target in itertools.product(range(4), (False, True), range(4)):
             state = State(port=starting_port, collecting=collecting)
             delivered = []
@@ -64,7 +64,7 @@ class KeypadPolicyTests(unittest.TestCase):
         self.assertEqual(events, (Event("fire", 0, 2, 3), Event("fire", 0, 3, 1)))
 
     def test_replay_from_every_policy_boundary(self):
-        sequence = [dict(key=(i//3)%16 if i%7 else None, top=bool(i%3),
+        sequence = [dict(key=1+(i//3)%15 if i%7 else None, top=bool(i%3),
                          bottoms=tuple(bool((i+p)%2) for p in range(4))) for i in range(48)]
         states, outputs, state = [], [], State()
         for sample in sequence:
@@ -78,9 +78,23 @@ class KeypadPolicyTests(unittest.TestCase):
                 replay.append((checkpoint, events))
             self.assertEqual(replay, outputs[start:])
 
+    def test_invalid_or_busy_window_cannot_release_or_advance_selector(self):
+        state = State(port=2, collecting=True, keys=(None, None, 4, None),
+                      fires=(0, 0, 2, 0), bottom_ready=True, top_ready=4)
+        for _ in range(9):
+            state, events = advance(state, key=None, top=False,
+                                    bottoms=(True, False, False, False), window_valid=False)
+            self.assertFalse(any(e.kind == "key" or e.port == 2 for e in events))
+            self.assertEqual((state.port, state.collecting, state.keys[2], state.fires[2]),
+                             (2, True, 4, 2))
+        state, events = advance(state, key=None, top=False,
+                                bottoms=(True, False, False, False))
+        self.assertEqual(events, (Event("key", 2, 4, None), Event("fire", 2, 2, 0)))
+        self.assertEqual((state.port, state.collecting), (3, False))
+
     def test_strict_inputs_refuse_before_state_changes(self):
         state = State()
-        for kwargs in ({"key":True}, {"key":-1}, {"key":16}, {"top":1},
+        for kwargs in ({"key":0}, {"window_valid":1}, {"key":True}, {"key":-1}, {"key":16}, {"top":1},
                        {"bottoms":[False]*4}, {"bottoms":(False,)*3}, {"bottoms":(0,)*4}):
             with self.assertRaises(ValueError): advance(state, **kwargs)
         for bad in (State(port=True), State(port=4), State(keys=(None,)*3),

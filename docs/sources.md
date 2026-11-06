@@ -291,3 +291,12 @@ software policy; model observations are synthetic inputs, not measured captures.
 No new external source, reference/firmware trace, extracted asset or foreign
 emulator/kernel implementation exposure. Acquisition/atomicity/top-fire remain
 explicit review questions before authoring a separately identified image.
+
+
+## Keypad/fire authoring review revision2
+
+Read only Mars docs/a52-keypad-fire-review.md at9654ecb (msg_0c5f), no chip
+implementation/tests/primary scan/firmware. Current-interface top-fire latency,
+GTIA write-only latch/cache, contact1..15 and shared-clock facts are owner prose;
+not original-board measurements. Mandatory transaction/stack/window/latency
+corrections incorporated in original proposal2/model. No new foreign code/source.

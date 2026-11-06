@@ -30,24 +30,25 @@ def _integer(value, low, high):
     return type(value) is int and low <= value <= high
 
 
-def advance(state, *, key=None, top=False, bottoms=(False,)*4):
+def advance(state, *, key=None, top=False, bottoms=(False,)*4, window_valid=True):
     """One eligible VBI boundary: four bottom samples and selected window close.
 
     key=None means NO NEW CAPTURE during an entire collection window, never a
-    stale KBCODE or instantaneous down flag. Caller performs hardware acquisition.
+    stale KBCODE or instantaneous down flag. Caller performs hardware acquisition. Invalid/busy windows defer protected work without release.
     During settling, key/top are ignored. Changed contacts emit one old->new
     transition; repeated captures of a held contact emit nothing. No autorepeat.
     """
     if (type(state) is not State or not _integer(state.port, 0, 3)
             or type(state.collecting) is not bool
             or type(state.keys) is not tuple or len(state.keys) != 4
-            or any(k is not None and not _integer(k, 0, 15) for k in state.keys)
+            or any(k is not None and not _integer(k, 1, 15) for k in state.keys)
             or type(state.fires) is not tuple or len(state.fires) != 4
             or any(not _integer(f, 0, 3) for f in state.fires)
             or type(state.bottom_ready) is not bool
             or not _integer(state.top_ready, 0, 15)):
         raise ValueError("invalid policy state")
-    if (key is not None and not _integer(key, 0, 15)
+    if (type(window_valid) is not bool
+            or key is not None and not _integer(key, 1, 15)
             or type(top) is not bool or type(bottoms) is not tuple
             or len(bottoms) != 4 or any(type(b) is not bool for b in bottoms)):
         raise ValueError("invalid acquired observation")
@@ -58,6 +59,9 @@ def advance(state, *, key=None, top=False, bottoms=(False,)*4):
         if state.bottom_ready and old != fires[port]:
             events.append(Event("fire", port, old, fires[port]))
     ready = state.top_ready
+    if not window_valid:
+        return State(state.port, state.collecting, tuple(keys), tuple(fires),
+                     True, ready), tuple(events)
     if state.collecting:
         port = state.port
         old = keys[port]

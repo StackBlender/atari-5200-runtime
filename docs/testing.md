@@ -180,3 +180,9 @@ all old/new contact values/ports, holds/releases, scheduling, fire ordering and
 policy replay/strict inputs. See keypad-fire-brief.md for unresolved hardware,
 IRQ/NMI race, RAM/profile and fit gates. No CPU/chip model, MMIO/image change,
 acquisition validation or native state acceptance is supplied by these tests.
+
+
+Keypad/fire revision2 adds invalid/busy-window preservation (112 total methods)
+and restricts contacts1..15. The existing8-boundary scheduling assertion is a
+reducer property only; actual first-handler acquisition can approach9 intervals
+before deferrals. No native IRQ/NMI frontier or hardware latency proof follows.
