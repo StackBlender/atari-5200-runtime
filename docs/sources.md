@@ -432,3 +432,15 @@ source/image identities and invokes existing first-party exporters. The temporar
 CMake consumer is own integration code, not an emulator or CPU model. Synthetic
 negative bytes/descriptors are tooling fixtures only. No foreign implementation,
 firmware/history, extracted font or new original-reference measurement is used.
+
+## Approved opaque-title authoring and remaining compatibility review
+
+Read only Mars prose a52-compatibility-next-review.md at1afec85/msg_0ea1. It
+approves sole FEB1=14 cumulative policy on e25a466, numeric years/entry retained;
+owner independently read the qualified own image and official cc65 prose. Local
+ISC ANTIC model constraints are attributed owner prose, not primary hardware or
+firmware observations. No native implementation/tests, firmware/trace, macro or
+extracted glyph data read. New original static composition uses the existing
+LDX/indexed-load/compare/branch semantics, no new opcode/source exposure.
+Ordinary-RAM profile and numeric character binding remain unapproved. New image
+requires exacttuple/nativequalification; no source flag/pin/default promotion.

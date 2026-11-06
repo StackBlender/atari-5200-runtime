@@ -282,3 +282,12 @@ byte equality, plus negative binding/descriptor/map/image/capability/approval
 fixtures. tools/verify_accepted_exports.py --cmake is the standalone command;
 see accepted-generations.md. Local own source history/CMake/Ninja required,
 no network/emulator/firmware. Older native qualifications are not rebuilt here.
+
+## Approved opaque-title policy
+
+Six new methods bring181total. Exact sole FEB1index byte, unchanged1895fit/90reserve/
+all prior symbols/bytes, independently recomputed1091/1098nominal startup,
+identity/profile/false labels/provenance, every old/new pinned input and fresh
+CLI reproducibility. All eleven qualified export/CMake checks still run. See
+opaque-title-proof.md; native5120title/year/entry/inherited/state/R65qualification
+is separate and pending. No runtime CPU execution is performed by tool tests.

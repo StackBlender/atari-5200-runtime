@@ -41,7 +41,7 @@ cmake --build build
 ctest --test-dir build --output-on-failure
 ```
 
-Or run all175offline methods directly:
+Or run all181offline methods directly:
 
 ```sh
 PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -v
@@ -80,3 +80,8 @@ Copyright (c)2026 StackBlender LLC.
 GNU General Public License, version3 or (at your option) any later version
 (`GPL-3.0-or-later`); see [LICENSE](LICENSE). For other terms, contact
 [StackBlender](https://stackblender.com).
+
+A separately [authored opaque-title generation](docs/opaque-title-proof.md) removes
+only the digit restriction on20title bytes. Numeric years and entry validation
+remain. It requires independent native qualification before provider admission;
+old generations/ABI/allocation/defaults remain unchanged.

@@ -56,3 +56,17 @@ CTest1/1 PASS; no native qualification or previous generation inputs changed.
 Use python3 tools/verify_accepted_exports.py --cmake instead of the old temporary
 harness. Requires local own source history; no autofetch. Outputs temporary.
 Title/ordinary-RAM/font contract requestmsg_8f4c/req_6f74 still awaits Mars review.
+
+## Active approved opaque-title generation
+
+Mars1afec85/msg_0ea1 reviewed A/B/C. A authoring approved ONLY on e25a466;
+new opaque_title_image.py/export_opaque_title_candidate.py/cmake include and
+six tests authored. Sole FEB1=14, image8d6ef38c1b487fa95742e62e9a5c0b1a928ddb446977264739a263fa0bc070c4.
+1895written/9ceilingheadroom/90reserve unchanged. Years50..59/entry retained,
+opaque20title bytes skipped, noFF bypass. Nominal helper419->39, startup1091/1098,
+380cycles/160instructions removed; no new native measurement.181methods PASS.
+Need full source commit/push, real pinned CLI/CMake fourproperties/equality, old
+all-eleven regression, then exact native packet req_6f74. No native admission,
+profile/schema/pin/default/flags change. B ordinaryRAM audit only; C geometry only,
+no numeric character binding. Full details/required5120+inherited matrix in
+opaque-title-proof.md. Runtime lease held for this slice until after push.

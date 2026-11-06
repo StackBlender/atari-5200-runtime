@@ -5,6 +5,13 @@ runtime. NTSC four-port first; full software compatibility remains unfinished.
 
 ## Next
 
+Active approved authoring: Mars1afec85/msg_0ea1 permits cumulative opaque-title
+policy on e25a466 only, sole FEB1=14 byte change. Retain years/entry, all eleven
+old generations/ABI/reserve/defaults/false labels; recompute timing and deliver
+new exact source/image/map/descriptor/version for independent full native matrix.
+B ordinary-RAM profile is audit-only, no emission; C glyph geometry only, no
+numeric Atari binding. See incoming review receipt in opaque-title-proof.md.
+
 Completed export-regression automation: tools/verify_accepted_exports.py
 reproduces all eleven real pinned CLI exports and optionally the real parent
 CMake dependency/fourproperties/triple equality. Two added methods put the real
@@ -12,9 +19,12 @@ CLI/CMake check and invalid artifact/binding/approval cases in the ordinary suit
 175unittest/CTest1/1 PASS. See docs/accepted-generations.md; no native rerun,
 provider selection, old input or approval change. No disposable harness needed.
 
-1. Review opaque20-byte cartridge-title acceptance while retaining numeric year,
-   entry checks and noFF diagnostic bypass. Proposed same-size validator index
-   change; no emission before the concrete contract/fit review (msg_8f4c/req_6f74).
+1. Opaque-title generation authored under Mars1afec85/msg_0ea1: sole FEB1=14,
+   SHA8d6ef38c1b487fa95742e62e9a5c0b1a928ddb446977264739a263fa0bc070c4;
+   unchanged1895written/ABI/90reserve.181offline methods PASS. Recomputed nominal
+   startup1091/1098; native full timing not measured. Pin/export/realCMake then
+   deliver exacttuple for full5120title+year/entry/inherited/state/R65 matrix.
+   No native admission/release/default/false-flag change. See opaque-title-proof.
 2. Resolve an ordinary-software RAM profile: cc65 documents021C..3FFF; current
    cooperating input ABI reserves0600..061F. Do not relabel arbitrary homebrew
    as cooperating. Reconcile021C..021F and actual consumer key IRQ requirements.
