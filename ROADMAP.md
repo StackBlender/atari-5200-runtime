@@ -5,6 +5,18 @@ runtime. NTSC four-port first; full software compatibility remains unfinished.
 
 ## Next
 
+Bounded exact COMBINED native admission is delivered by Mars138fad844c5c1877acd080bb7239b92d7e0bab9b
+(msg_f592/req_6f74), independently of fullR62. Exact tuple, dual-native matrices,
+new observed numeric808/815 andFF789/796cycles, scope and exposure are recorded in
+[the native receipt](docs/cart-owned-diagnostic-native-receipt.md). Same-image
+B2/combined pre-mutation refusal+next2frames passed; B0/B1/B2 remain separately
+unadmitted. No new producer implementation required. Maintainer submitted the
+private data-only mapping/ownership proposal; no game trial automatically allowed.
+Mars change is pooled/unreleased, MR43latest, no app pin/default/flag/schema/release
+change or fullR62ACK. Catalog remains13older entries; qualified combined receipt
+is separate. Preserve all pinned generation inputs. Next: mapping/consumer decision
+and, separately, maintain the exact qualified-export catalog without old-input edits.
+
 Explicit combined candidate approved Marsb0e34bf/msg_e17f under req_6f74,
 authored and export-verified at NEW source e8f296d5a8fa693f13b5dd46259eafcb5567e88f.
 Profile ntsc-four-port-cart-owned-diagnostic-conditional-development; explicit
@@ -28,19 +40,14 @@ Semantic hashes use sorted compact JSON without trailing newline.
 219 offline unittest methods PASS; build and CTest1/1 PASS. Includes real pinned
 CLI/CMake four absolute properties, downstream dependency order and exact output
 triple equality; verifies both immutable parents and every new generation input.
-All13older qualified and separate B0/B1/B2 exports preserved. No Retro native run
-or new CPU timing measurement: numeric nominal757/764, FF738/745, watchdog4096.
+All13older qualified and separate B0/B1/B2 exports preserved. At authoring, no
+Retro native run or new CPU timing measurement: numeric nominal757/764, FF738/745, watchdog4096.
 
-NEXT: independent COMBINED Release/full-native ASan qualification:120fully-crossed
-contacts/ports xCRITIC, physical stores/prestartupcanaries/poisoned valid imports,
-65536yearpairs356accept/65180refuse,5120titles/all256first-underFF entries/fullinit,
-inherited/allSP/R65/OFF/firmware/converter/frame/in-handler/process continuations.
-SAME-IMAGE B2/combined reciprocal state refusal BEFORE mutation plus next TWO
-ordinary frames is mandatory, also reciprocal B0/B1/timer negatives. Reobserve
-native timing; parent receipts are not new execution. B0/B1/B2 native workloads
-remain separately pending; fullR62 open/noACK. No catalog/pin/default/release or
-game trial until exact native admission, lawful source and explicit board/mapping/
-ownership decision. Metadata eligibility alone is not game compatibility.
+NEXT: combined native gate above is closed for the exact tuple only. The original
+qualification matrix is preserved in cart-owned-diagnostic-proof.md as the
+pre-receipt requirement; new receipt supplies results/limits. Explicit mapping/
+ownership and consumer integration decisions precede any trial. Separate B0/B1/B2
+admissions, remaining services/product/source/reference-role/release remain open.
 
 
 B2 bounded separate authoring APPROVED Marseb7115b/msg_cb39: SECONDFF permits

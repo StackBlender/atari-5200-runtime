@@ -111,5 +111,6 @@ It does not amend B1 or combine ordinary RAM, and requires independent admission
 
 The explicitly [combined cart-owned diagnostic profile](docs/cart-owned-diagnostic-proof.md)
 now rebinds B0ownership onto byte-identical B2code under its own identity. It is
-a development candidate awaiting independent combined admission, not a game
-runner. All prior profiles and defaults remain unchanged.
+independently qualified for its bounded development contract; see the
+[native receipt](docs/cart-owned-diagnostic-native-receipt.md). Game mapping and
+consumer trial decisions remain separate. All prior profiles/defaults stay unchanged.

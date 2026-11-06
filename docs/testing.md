@@ -1,5 +1,11 @@
 # Testing
 
+The exact combined development native receipt is now recorded separately in
+[cart-owned-diagnostic-native-receipt.md](cart-owned-diagnostic-native-receipt.md).
+It attributes integration-owner Release/full-native ASan execution; the producer
+checks below do not reproduce those CPU results. Original pinned inputs and
+false approval flags remain unchanged; no game trial is inferred.
+
 The current foundation requires Python 3.10+; CMake 3.20+ and Ninja provide the
 build entry point. There is no compiler, SDK, external assembler, emulator,
 network fetch, game or firmware dependency. Python 3.12.3 and CMake 3.28.3/Ninja

@@ -1,5 +1,28 @@
 # Runtime handoff
 
+## Combined native receipt and next gate
+
+Bounded exact COMBINED native admission is delivered by Mars138fad844c5c1877acd080bb7239b92d7e0bab9b
+(msg_f592/req_6f74), independently of fullR62. Exact tuple, dual-native matrices,
+new observed numeric808/815 andFF789/796cycles, scope and exposure are recorded in
+[the native receipt](cart-owned-diagnostic-native-receipt.md). Same-image
+B2/combined pre-mutation refusal+next2frames passed; B0/B1/B2 remain separately
+unadmitted. No new producer implementation required. Maintainer submitted the
+private data-only mapping/ownership proposal; no game trial automatically allowed.
+Mars change is pooled/unreleased, MR43latest, no app pin/default/flag/schema/release
+change or fullR62ACK. Catalog remains13older entries; qualified combined receipt
+is separate. Preserve all pinned generation inputs. Next: mapping/consumer decision
+and, separately, maintain the exact qualified-export catalog without old-input edits.
+
+Docs-only receipt: original retained image/map/manifest raw+semantic hashes and
+rebound public-contract/full intended tuple verified; no native/offline test rerun.
+Read integration-owner proof prose only. Old producer proof and all frozen inputs
+remain untouched. Delivery commit title: Record bounded combined native qualification.
+No lease should remain held after pushing this receipt. Resume mapping/consumer
+review in Retro; private game artifacts/proposals never enter this public repo.
+
+## Historical pre-admission authoring receipt
+
 ## Current explicit combined authored candidate
 
 Explicit combined candidate approved Marsb0e34bf/msg_e17f under req_6f74,
@@ -28,16 +51,9 @@ triple equality; verifies both immutable parents and every new generation input.
 All13older qualified and separate B0/B1/B2 exports preserved. No Retro native run
 or new CPU timing measurement: numeric nominal757/764, FF738/745, watchdog4096.
 
-NEXT: independent COMBINED Release/full-native ASan qualification:120fully-crossed
-contacts/ports xCRITIC, physical stores/prestartupcanaries/poisoned valid imports,
-65536yearpairs356accept/65180refuse,5120titles/all256first-underFF entries/fullinit,
-inherited/allSP/R65/OFF/firmware/converter/frame/in-handler/process continuations.
-SAME-IMAGE B2/combined reciprocal state refusal BEFORE mutation plus next TWO
-ordinary frames is mandatory, also reciprocal B0/B1/timer negatives. Reobserve
-native timing; parent receipts are not new execution. B0/B1/B2 native workloads
-remain separately pending; fullR62 open/noACK. No catalog/pin/default/release or
-game trial until exact native admission, lawful source and explicit board/mapping/
-ownership decision. Metadata eligibility alone is not game compatibility.
+NEXT at that earlier stage was independent combined qualification. It is now
+completed only for the exact tuple by the receipt above; do not repeat that request
+or infer separate B0/B1/B2, game, release, reference-role or fullR62 acceptance.
 
 ## Current B2 authored candidate
 

@@ -579,3 +579,15 @@ declarative data reused; no foreign implementation/firmware/game/font reading.
 New current contract SHA f287bfc7, source/proof/native gates documented in
 cart-owned-diagnostic-proof.md. Byte equality/producer unit tests are not native
 execution or historical/reference-role/game acceptance. No default/pin promotion.
+
+## Exact combined independent native receipt, 2026-11-06
+
+Read Mars138fad844c5c1877acd080bb7239b92d7e0bab9b/msg_f592 and its owner proof
+prose docs/a52-cart-owned-diagnostic-development.md only. Reverified original
+retained source/image/map/manifest/current declarative contract hashes/full tuple;
+no native implementation/test/decoder, game implementation/assets, firmware/font/
+disassembly or reference trace read. Attributed dual-native matrices and limits
+are recorded in cart-owned-diagnostic-native-receipt.md; no producer CPU rerun.
+Exact development admission only, not historical/reference-role/fullR62/product/
+game/release approval. Export inputs/flags unchanged; private mapping proposal
+submitted by the maintainer remains outside this public repository.
