@@ -349,3 +349,13 @@ No new source exposure. Independently authored allowlist uses already recorded
 NMOS encodings and permitted interface facts. It decodes bytes for static access
 and branch checks only; no instruction execution, chip model or foreign code.
 Conditional X0..3 footprint is an explicit precondition, not measured behavior.
+
+
+## Original cartridge input callback recorder
+
+No new external source exposure. Reuses previously permitted NMOS encodings
+(LDXabsAE) and proposed0208/020A Aport/Xold/Ynew RTS ABI. Cartridge RAM layout,
+bounded record format and host decoder are original diagnostic policy, not
+manufacturer firmware behavior. Cycle worksheet is static nominal arithmetic;
+synthetic format records are not observations or measured execution. No foreign
+implementation/tests, firmware/trace, assets or physical reference was read.

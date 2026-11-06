@@ -227,3 +227,13 @@ write-only readback/indexed-base changes, branch escapes and callback/control
 changes; CLI failure exits2 with empty stdout. No CPU execution or dataflow proof:
 indexed footprints assume X0..3 at those operations and callbacks obey contract.
 The report is not an allocation/native acceptance or worst-case timing result.
+
+
+## Cartridge-side input callback recorder
+
+Five new methods bring147 total. Use the existing unittest/CTest commands.
+`python3 tools/input_callback_probe.py --output-dir build/input-callback` emits
+only a nonrunnable80-byte fragment/descriptor. See input-callback-probe.md for
+independent encoding/cycle/bounds/freshprocess checks, synthetic snapshot decoder,
+required cart RAM/control invariants and remaining native cartridge execution.
+No runtime generation/allocation/provider changed; no real callback was executed.

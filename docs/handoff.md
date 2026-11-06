@@ -1,5 +1,22 @@
 # Runtime handoff
 
+## Original cartridge callback recorder prepared
+
+RUNTIME-004: tools/input_callback_probe.py supplies an80-byte NONRUNNABLE
+cartridge-side key/fire callback fragment, separate from pending runtime ROM
+allocation. Two RTS entries, ordered32-record log(kind/port/old/new), complete
+count publishedlast, fullflag withoutoverwrite; cartRAM0700..06/0800..7F defaults,
+strictrelocation/disjointbounds>=0620. Host snapshotdecoder validates coherent
+counts/cursor/overflow/ranges/changes, no acquisitionclaim. Five original byte/
+cycle/bounds/syntheticformat/freshCLI tests bring147offline methods.
+Validation:147 unittest methods/build/CTest1/1 PASS; diff check clean. Nominal97
+cycles inclRTS, full<=43 (notstall-inclusive/native proof), noextra push/helper,
+no MMIO/input/mask writes. See docs/input-callback-probe.md for owner/initialization/
+quiescentread conditions and exact native TODO. No completecart/CPU/image/provider
+or acceptedallocation/profile/physicalevent claim; all generationinputs unchanged.
+Next owner allocation/profile msg_d13f +automaticwindow msg_d22f, cumulativefire
+candidate/native validation, then complete diagnosticcart under exactcontract.
+
 ## Static fire-fragment boundary audit
 
 RUNTIME-004 next: retain allocation/profile stop pending Mars msg_d13f; window
