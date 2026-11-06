@@ -10,8 +10,8 @@ ac9b47e/imageeae07d36. B0byte-identical ROM/new ordinary-layout profile+explicit
 021C..21Fcession/no600reservation/individual public initialization contract.
 B1separate fullCold experiment: opaque20title, FIRSTyear50..59 ALWAYS, SECOND
 50..59orFF; FFadmission only, same initialization/normalentry/watchdog. No implicit
-B0+B1/font/fire combination. Author exact source/map/manifest/CMake identities,
-independent fit/timing/old13regressions/pinnedconsumer checks; then native packets.
+B0+B1/font/fire combination. Authored exact sourcebecb92e01e97e89568cac58ab051e23b803ae53a; both pinned
+CLI/CMake consumers and all205offline/build/CTest1/1 PASS. Deliver native packets.
 No admission/game trial/pin/default/flag/release/fullR62ACK. B0native120crossed
 keyboard cases+physicalstores/in-handler/process; B1title5120/year/entry/fullinit/
 R65/refusal/OFF/firmware required. Preserve timer250reserve, no4096budget increase.
@@ -163,3 +163,10 @@ No bank/provider/native tuple admitted yet. See character-bank-proof.md.
 Independent B next action: native-owner boundary audit on unchanged timer ancestor
 while consumer keyIRQ requirements remain unresolved; exact scope/limits in
 timer-memory-audit.md. No new profile/keyIRQ authoring, old reservations unchanged.
+
+Current B0identity and B1image are authored/export-verified, not admitted. B0ROM
+identical/1504fit; B1only52new input bytes+JSRoperand/1556fit;250reserve intact.
+Exact raw/semantic hashes in timer-experiments-proof.md. Actual corpus also has
+nonnumericFIRSTyear, so B1still REFUSES it by approved invariant. No game edits
+or policy relaxation; separate B2conditional firstyear policy review would be
+needed, with explicit combined ownership if ever paired withB0. FullR62 open.

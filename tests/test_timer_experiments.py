@@ -152,3 +152,33 @@ class TimerExperimentTests(unittest.TestCase):
                     subprocess.run([sys.executable,'-c',snippet,str(root/(name+suffix))],cwd=ROOT/'tools',capture_output=True,check=True,timeout=10)
                 for field in ('image','map','manifest'):
                     self.assertEqual((root/(name+'a')/field).read_bytes(),(root/(name+'b')/field).read_bytes())
+
+    def test_real_pinned_separate_cli_cmake_artifacts_and_downstream_dependencies(self):
+        pin='becb92e01e97e89568cac58ab051e23b803ae53a'
+        for name,expected in (('ordinary-ram',PARENT_SHA256),
+            ('diagnostic-cold','9da1ddefb339dc2ef3f93643d33b45021099d3fd3256ce1f9754f32787e6b69f')):
+            with tempfile.TemporaryDirectory() as tmp:
+                root=Path(tmp);direct=root/'cli';key=name.replace('-','_')
+                subprocess.run([sys.executable,str(ROOT/f'tools/export_{key}_candidate.py'),
+                    '--source-revision',pin,'--output-dir',str(direct)],check=True,capture_output=True,timeout=30)
+                fields=('SB5200_IMAGE_FILE','SB5200_MANIFEST_FILE','SB5200_MAP_FILE','SB5200_SOURCE_REVISION')
+                props='\\n'.join(f'$<TARGET_PROPERTY:sb5200-{name}-image,'+f+'>' for f in fields)+'\\n'
+                (root/'check.py').write_text("from pathlib import Path\nimport sys\nv=Path(sys.argv[1]).read_text().splitlines()\nassert len(v)==4\nassert all(Path(p).is_absolute() and Path(p).is_file() for p in v[:3])\nPath(sys.argv[2]).write_text('verified')\n")
+                (root/'CMakeLists.txt').write_text('cmake_minimum_required(VERSION 3.20)\nproject(separate_experiment LANGUAGES NONE)\n'
+                    +f'add_subdirectory("{ROOT}" module)\ninclude("{ROOT}/cmake/{name}-candidate.cmake")\n'
+                    +f'file(GENERATE OUTPUT "${{CMAKE_BINARY_DIR}}/props" CONTENT "{props}")\n'
+                    +'add_custom_command(OUTPUT "${CMAKE_BINARY_DIR}/verified" COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/check.py" "${CMAKE_BINARY_DIR}/props" "${CMAKE_BINARY_DIR}/verified" '
+                    +f'DEPENDS sb5200-{name}-image VERBATIM)\n'
+                    +'add_custom_target(consume ALL DEPENDS "${CMAKE_BINARY_DIR}/verified")\n')
+                build=root/'build'
+                subprocess.run(['cmake','-S',str(root),'-B',str(build),'-G','Ninja',
+                    f'-DSB5200_{key.upper()}_SOURCE_REVISION='+pin],check=True,capture_output=True,timeout=30)
+                subprocess.run(['cmake','--build',str(build),'--target','consume'],check=True,capture_output=True,timeout=30)
+                properties=(build/'props').read_text().splitlines()
+                self.assertEqual(len(properties),4);self.assertEqual(properties[3],pin)
+                for path,filename in zip(properties[:3],('startup.bin','startup-manifest.json','startup-map.json')):
+                    self.assertTrue(Path(path).is_absolute())
+                    self.assertEqual(Path(path).read_bytes(),(direct/filename).read_bytes())
+                self.assertTrue((build/'verified').is_file())
+                manifest=json.loads((direct/'startup-manifest.json').read_bytes())
+                self.assertEqual(manifest['source_revision'],pin);self.assertEqual(manifest['image']['sha256'],expected)

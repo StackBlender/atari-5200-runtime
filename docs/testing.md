@@ -346,6 +346,11 @@ in independent-execution.md, including24576matrix and active-font replay.
 
 Separate B0ordinary-RAM identity and B1original diagnostic full-cold experiments
 are authored under Mars81025cf, NOT admitted. See docs/timer-experiments-proof.md
-(or timer-experiments-proof.md from docs).204offline methods include seven new
+(or timer-experiments-proof.md from docs).205offline methods include eight new
 contract/encoding/timing/pin/failure checks. Old13exports/flags/defaults preserved;
 no combined profile or unchanged-game run.
+
+B0/B1 eighth method runs BOTH real exact-sourcebecb92e CLI/CMake consumers,
+absolute4properties/dependency-before-consumer/triple byte equality. Full suite
+205methods/build/CTest1/1 PASS. Thirteen qualified old exports still included;
+new candidates not yet catalogued/qualified. No native CPU execution by tools.

@@ -42,7 +42,7 @@ cmake --build build
 ctest --test-dir build --output-on-failure
 ```
 
-Or run all197offline methods directly:
+Or run all205offline methods directly:
 
 ```sh
 PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -v
@@ -100,6 +100,6 @@ asset DATA in assets/printable-geometry.json for independent pixel oracles.
 
 Separate B0ordinary-RAM identity and B1original diagnostic full-cold experiments
 are authored under Mars81025cf, NOT admitted. See docs/timer-experiments-proof.md
-(or timer-experiments-proof.md from docs).204offline methods include seven new
+(or timer-experiments-proof.md from docs).205offline methods include eight new
 contract/encoding/timing/pin/failure checks. Old13exports/flags/defaults preserved;
 no combined profile or unchanged-game run.

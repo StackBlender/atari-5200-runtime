@@ -10,8 +10,9 @@ onlynew52bytesFD80..FDB3 +JSRoperandFC61/62, no initialwrite/service/asset/vecto
 250reserve change. FIRSTyear50..59 always, SECOND50..59orFF, opaque20title,
 FFadmission only. SameFC6Bhandoff/normalentry/4096watchdog, B1oldconservativeRAM.
 No implicit combination. New separate exporters/CMake/common plumbing/tests;
-204offline PASS. Need exact source commit then new pinned CLI/CMake consumption,
-full existingbuild/CTest and independent native packets. No native tuple/profile
+205offline/build/CTest1/1 PASS including both exact pinned CLI/CMake consumers.
+Sourcebecb92e01e97e89568cac58ab051e23b803ae53a committed; independent native
+B0/B1 packets next, no repeated authoring permission. No native tuple/profile
 admission or game trial. Required native matrices and exactfit/timing/provenance
 in timer-experiments-proof.md. Source pins/hashes receipt to follow after commit.
 
@@ -359,3 +360,30 @@ regression and197offline methods. Next B actual consumer keyIRQ contract/ordinar
 RAM and remaining-service requirements, not app pin/release promotion. Runtime
 lease released only after passing checks/commit/push. Older pending C notes are
 historical; current receipt at top owns status.
+
+## Exact separate B0/B1 export receipt
+
+Both source/export pins: becb92e01e97e89568cac58ab051e23b803ae53a.
+
+|Artifact|B0 ordinary RAM|B1 diagnostic full cold|
+|---|---|---|
+|Image SHA256|eae07d3610237c96d3cdf11959680eb25ed59dd6083c0de59d4c999188057550|9da1ddefb339dc2ef3f93643d33b45021099d3fd3256ce1f9754f32787e6b69f|
+|Map raw SHA256|620f145e981826e9a31c059b605fd234c72cb75f44b6da56465aa4d810d85981|11c2cf69a819d46aa32d3cca0d7901d9cd3414ff82995c09d9e09e847aa99b07|
+|Map semantic SHA256|ef3a00eacea84816536e749fda0412097f3f654e89ccec86a7e6f164e4c4b4e6|97289c8e7000bada80b66b9b11d9b10f3801c7bf325b28957b3cbb44d0f8a51b|
+|Manifest raw SHA256|b80652692fcf601c8b5239f1fd40b3c4405efa590cd96250f9c9b7b90ab3f37d|3c993b60a7a57a1acddcb21a63e77a30f4e4e28a4e85785d708adfdcc5165929|
+|Manifest semantic SHA256|86c68580f163ea829f89cb163ad64ebafe3170b7ec80a6b25c48489021668b4b|ea3d40791f74f3eec669bf57a780e954d969fef1988de3c37ec51f9a5544078f|
+
+Semantic hashes: sorted-key compactJSON comma/colon UTF8/no trailing newline.
+Eight new methods bring205offline +build/CTest1/1 PASS, including both exact
+committed CLI/CMake consumers:4absolute properties/fullsource/dependency ordering/
+triple byte equality. Separate temporary parents removed; existing build only.
+All13previous qualified exports still checked. Neither candidate is added to the
+qualified catalog until independent native admission; same-image B0 identity
+MUST be checked independently of its byte equality. No game/pin/default/flag move.
+
+New exact-policy corpus eligibility check: the authorized image also has a
+NONNUMERIC FIRSTyear, so approved B1 does NOT admit it despite allowed secondFF.
+Image unchanged/unrun; identifying data and boolean classification stay ignored.
+No relaxation to B1 was made. Any separate B2 proposal allowing opaque firstyear
+ONLY when secondFF requires explicit review/new identity/qualification; do not
+silently change the approved firstnumeric invariant or infer historical bypass.
