@@ -1,5 +1,36 @@
 # Independent bounded execution receipt
 
+## Bridge refactor independently qualified
+
+Mars5b6c5be4adef2a0b6ced5288f307207b4ac7c2ac /msg_fd40 accepts exact source
+ e25a466d15c574f3ec364bfc2f44bc7ef2f51117, image
+ c5fd8df1564c28e5ed4c5aad9f8eabdc64a62e32de28e8dcce6bfae7ea533d24.
+Only owner prose a52-fire-bridge-development.md was read, not native source/tests.
+Release unity and full-native nonunity ASan pass892fire cases and37 safe/cache/
+ordinary-frame/moved-setup/nested process frontiers each. Includes all16controller
+topologies,256KR2phases, allSP14/20-byte bounded programs, six128-cycle callbacks,
+active/pending analog, readiness/CRITIC/busy/latch and real post-return polling.
+Observed full-entry1832=1824postvector+8entry, bottom28827..58853/top239036
+machine cycles; not global timing, physical/mobile/battery measurement.
+
+Both builds pass inherited4534window,4465keypad+raw0/93nested,1302IRQ/timer,
+288VBI+120repeats/404display/128DLI/53analog and safe/process replays. Parent/new
+states mutually refuse before mutation with unchanged native schema. R65 rebuilt
+Release/ASan passes2600allregions exact/fast,5200standard/mixed/wire/process/
+lifecycle/live/loadedexit; rebuilt default-OFF Release guards pass. All11exact
+converter tuples/CLI/both-CMake equality pass; ten older pinned export triples
+reproduce, not ten complete native rebuilds. ASan33converter negatives, Release32
+plus separate parent-selection refusal, reciprocal variant refusal pass.
+Owner firmware43/selftest43/tree3905/history5157precommit/three roots clean.
+
+1895written/391extra/9under1904/fire146of160/63ordinaryfree/90reserve untouched.
+Seven saved bytes do not authorize another service or reserve spending. Preserve
+ordinary mid-VBI frame return and stale native caches; stage host input BEFORE
+import and retain ordinary post-return polls. Pooled, no new release: MR43 latest;
+fullR62 open. All export execution/provider/retail/full-cycle flags and empty
+accepted capabilities remain unchanged. No physical/game/product acceptance.
+
+
 Integration-owner report received 2026-11-05 for source revision
 `711a2e986f7906f45aebd310e6330fd7ffc338bf`, image SHA-256
 `b2d8ebb8d0070f2aee1bd79d7adfee85b88797702cb96035ab3a18e9bd37f68d`.

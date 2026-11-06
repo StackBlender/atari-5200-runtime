@@ -405,3 +405,22 @@ Read only Mars docs/a52-fire-refactor-review.md at2ffaa687/msg_b2c1; approved
 bounded codefactoring and reset evidence requirements, not a native execution
 receipt. Original code reuses own existing encodings/policies. No new external
 source, firmware/trace/assets or producerimplementation/tests exposed.
+
+## Standalone printable glyphs and compatibility review
+
+New tools/printable_glyphs.py drawings are original95printable-ASCII coordinate
+compositions, no external font/image/manufacturer glyph consulted. ASCII order
+is a tooling convention; no Atari screen mapping/bank binding is inferred.
+Selected source geometry and independent expected bytes are own artwork.
+No manufacturer firmware, foreign kernel/emulator/test, font or reference trace.
+
+Official cc65 platform prose https://cc65.github.io/doc/atari5200.html sections3,
+6.1,7.2 reread2026-11-06: ordinary RAM021C..3FFF, mode6/optional7,20byte mixed-letter
+metadata are consumer requirements. Existing pinned consumer-interface receipt
+retained; live document hash/revision not assumed identical. Only prose and its
+small published snippets were seen. ca65 Users Guide section13.4 documents
+scrcode translation without numeric mapping; nearby generic macro examples were
+visible, not copied. No macro/startup/driver/linker/kernel implementation read.
+Proposed opaque title/year-only validation and ordinary-RAM compatibility need
+integration review. No new numeric reset service, font binding or runtime policy
+is authorized by source screening. Mars review requestmsg_8f4c/req_6f74 pending.

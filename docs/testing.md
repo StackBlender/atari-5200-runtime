@@ -265,3 +265,11 @@ records exact relocated146bytes/callreturnPCs/bridgeargsetup/reload,1895fit/
 90reserve,oldparentpreservation,budgetstop/profile/identity/falseflags/pinned
 failures andfreshprocess. Newsource/export/CMake require explicitnewpin and
 native tuple admission; oldten generations unchanged. No nativeequivalence yet.
+
+## Standalone printable glyph authoring
+
+The full offline suite now has173methods including six printable-glyph checks.
+Use the existing unittest/CTest commands. tools/printable_glyphs.py outputs only
+760unbound asset bytes and JSON; no runtime image/target/approval. See
+printable-glyphs.md. Full pinned eleven-generation export reproduction remains
+required when changing generation inputs; this slice adds none to old exports.
