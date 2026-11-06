@@ -500,3 +500,16 @@ physicalDMA/pixels/activefontprocess/state/inherited/R65/OFF/firmware evidence
 recorded in independent-execution.md; no local CPU rerun. Exactsource46b485d/
 imagec7caa810 development tuple only, original software mapping, not historical
 BIOS/ATASCII/cc65/hardware or ordinary profile. B/fullR62/product gates remain.
+
+## Retro timer service/process diagnostic exposure, 2026-11-06
+
+Retro8e590a6 original diagnostic uses public Mars a52.hpp/system/runtime.hpp/Node
+interfaces and existing original timer/IRQ/VBI prose contracts. Re-read pinned
+cc65 include/_pokey.h77b6484615427746e55fda2755c9cbc320a1fb51 full declarative
+header for access-specific offsets/timer bit fields via raw URL after web cache
+miss. Homecomputer/Wikipedia introductory text/serial comments exposed, not used
+for5200defaults/keyboard policy. No startup/driver/kernel/emulator/test or firmware/
+font/reference trace read; no declaration code copied/vendored. Timer rates/CPU
+mailboxes/counter fixture are own diagnostic policy. Same maintaining actor as
+runtime author; no original-system reference role or new historical ABI inferred.
+Consumer results/limits recorded in timer-memory-audit.md, not profile admission.

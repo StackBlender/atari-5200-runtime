@@ -416,3 +416,11 @@ R65fourcontroller/wire/process/lifetime includinglive/loadedexit, state17606,
 32converternegatives/mutualparentrefusal/all10tuples pass. FreshdefaultOFFRelease
 and43firmware/tree3903/history5138/3build hygiene pass perowner. No games, actual
 Retrofireconsumer, device/energy/performance/online or completefirmware claim.
+
+## Additional Retro-owned consumer receipt
+
+Retro8e590a6 extends released timer consumer tests with real IRQ/BRK/VBI and
+protected-RAM/process/refusal continuations. Full attributed counts/limits in
+timer-memory-audit.md. This is same-maintainer consumer evidence, not another
+independent Mars native qualification or original-system observer-role split.
+Runtime images/flags/providers/pins and197offline checks remain unchanged.

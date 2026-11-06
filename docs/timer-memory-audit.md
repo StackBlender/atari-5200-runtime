@@ -128,3 +128,48 @@ callbacks, BIOS equivalence or ordinary-game acceptance. Existing timer profile
 ownership and unsupported keyIRQ behavior stay unchanged. This independent B
 coverage can proceed while actual consumer keyIRQ requirements remain unresolved;
 all profile/provider authoring still requires the separate explicit contract.
+
+## Retro-owned timer/BRK consumer receipt, 2026-11-06
+
+Retro source8e590a6 completes a consumer test extension on RELEASED MR43 timer
+sourceac9b47e50c213b08022e78bdef64662569cd3d29/image
+eae07d3610237c96d3cdf11959680eb25ed59dd6083c0de59d4c999188057550.
+This is reported first-party consumer evidence by the same runtime maintainer,
+not a separate observer role, original-system measurement or the requested Mars
+all-native-boundary/physical-store audit. No runtime generation input changed.
+
+Ten original cases cross timer masks00/01/02/04/07 andCRITIC0/1; real CPU installs
+bounded callbacks, programs rates/STIMER/coherentPOKMSK+IRQEN, enables VBI and BRK.
+Cart-owned mailbox masks/acks then restarts timers; active sources count, masked
+sources stop after ordinary settling, while CPU/BRK/VBI continue. No host MMIO/
+PC/source injection, input declaration, new service/profile or timer rate claim.
+
+16043canaries cover0019..FF/021C..3FFF except cart results3000..301F, including
+conio0019..1C/600..61F. Seed after cold randomization Starting/instructions0,
+before startup. Thirty repeated same-root/ten fresh-root plus ten separate writer-
+exits/reader process continuations compare full synchronized native state; every
+successful import inverts target canaries first and checks immediate restoration
+BEFORE frames. Saved HOST contacts before import, new contacts after; real ordinary
+returns/polls/stacks/caches retained, no forced instruction/interrupt quiescence.
+
+Process reader100refusals: different unused-ROM byte, fourth-portTrak-Ball,
+signature/version/checksum/short/extended native state and unsupported reset3.
+Each preserves complete native state AND next two ordinary-frame continuation.
+Independent AR52TM01 framing checks ten cases/exact source+image and14badarchive/
+2CLI refusals, whole-file preflight before machine load. State17598bytes observed
+for four standard Controllers, not a universal layout. Temp archives removed.
+
+Timer Release13/13 +adapterASan/UBSan13/13 PASS; keypad regression Release13/13
++adapterASan/UBSan13/13 PASS. Native Mars stays Release UNINSTRUMENTED, so not
+full-nativeASan. Existing third consumer root restored Release/keypad-irq,
+sanitizer flags empty; no new build root/device/Fable/thirdpartycartridge/firmware.
+The older15837-byte startup/VBI baseline remains separate and included.
+
+Final-canary/replay checks cannot expose every transient CPU store. Early/torn/
+custom-vector/startup-observer/allSP/DLI/fault/physical-store coverage remains
+Mars-owned audit work; no power-on-content, arbitrarycallback, ordinary profile/
+keyIRQ/historicalABI/game/device/multiplayer claim. Explicit future021C..21F
+cession and actual consumer keyIRQ requirements still gates; old conservative
+profiles unchanged. FullR62req_6f74 OPEN/noACK, MR43latest/app pins/defaults/false
+flags unchanged. Runtime offline197/13export evidence unchanged (not rerun for
+this documentation-only receipt). Next B native audit already requestedmsg_4005.

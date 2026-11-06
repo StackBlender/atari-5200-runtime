@@ -5,6 +5,16 @@ runtime. NTSC four-port first; full software compatibility remains unfinished.
 
 ## Next
 
+B consumer extension reported Retro8e590a6: ten real timer/BRK/VBI mask/CRITIC
+cases,16043conio/application canaries,30same/10fresh+10separate-process poisoned
+imports,100native/reset refusal continuations,14archive+2CLI refusals. Timer and
+keypad Release/adapterASan13/13 each PASS, native MarsRelease uninstrumented.
+No runtime code/image/profile change. Same maintaining actor, not original-system
+observation or independent Mars all-boundary audit. See timer-memory-audit.md.
+Next native physical-store/all-boundary audit remains requestedmsg_4005 while
+actual consumer keyIRQ contract/ordinary profile/remaining services remain open.
+
+
 Original64character bank independently qualified Mars938d829/msg_d02f on exact
 source46b485ddff275af0f66b29b5a2388f8668cc9e11/image
 c7caa810132d16ae55b75077e6d5138b5ad388a0094cedaee1eee091cb4a6598.
