@@ -41,7 +41,7 @@ cmake --build build
 ctest --test-dir build --output-on-failure
 ```
 
-Or run all182offline methods directly:
+Or run all188offline methods directly:
 
 ```sh
 PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -v
@@ -85,3 +85,7 @@ A separately [authored opaque-title generation](docs/opaque-title-proof.md) remo
 only the digit restriction on20title bytes. Numeric years and entry validation
 remain. It requires independent native qualification before provider admission;
 old generations/ABI/allocation/defaults remain unchanged.
+
+A [conditional timer memory audit](docs/timer-memory-audit.md) inventories every
+original runtime code path/default-handler frontier without executing a CPU. It
+supports ordinary-RAM planning, not an approved profile or game-compatibility claim.

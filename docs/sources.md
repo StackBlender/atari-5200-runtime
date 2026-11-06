@@ -444,3 +444,13 @@ extracted glyph data read. New original static composition uses the existing
 LDX/indexed-load/compare/branch semantics, no new opcode/source exposure.
 Ordinary-RAM profile and numeric character binding remain unapproved. New image
 requires exacttuple/nativequalification; no source flag/pin/default promotion.
+
+## Timer ancestor static memory audit
+
+Read Mars f20996c review clarification prose only, no native implementation/tests.
+New timer_memory_audit.py decodes our own qualified generated program using
+already documented NMOS factual encodings, not emitter tables/CPU simulation.
+Finite startup index/default-vector patterns and independent expected footprints
+are original analysis of our program. Synthetic corruptions are tool-test data,
+not firmware traces. No new external source, manufacturer bytes, extracted asset
+or foreign kernel/emulator/test was read. B remains audit-only, no profile grant.

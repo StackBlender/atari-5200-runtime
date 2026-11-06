@@ -295,3 +295,12 @@ is separate and pending. No runtime CPU execution is performed by tool tests.
 Pinned opaque-title CLI/CMake consumer verification adds a seventh method:
 182total PASS, including exacted01354artifacts/fourproperties/dependency/equality
 and all eleven older pinned exports. Native qualification remains pending.
+
+## Conditional timer memory inventory
+
+Six static-audit methods bring188total.220instructions/474code bytes, exact
+loop/default-target guards, RAM/conio/MMIO/stack footprints and deliberate
+operand/control-flow/identity failures. CLI tools/timer_memory_audit.py admits
+only our exact qualified timer image. No CPU simulation/native execution.
+See timer-memory-audit.md for assumptions, external boundaries and consumer
+startup/VBI canaries. All earlier export/candidate artifact checks remain included.

@@ -5,12 +5,24 @@ runtime. NTSC four-port first; full software compatibility remains unfinished.
 
 ## Next
 
-Active approved authoring: Mars1afec85/msg_0ea1 permits cumulative opaque-title
-policy on e25a466 only, sole FEB1=14 byte change. Retain years/entry, all eleven
-old generations/ABI/reserve/defaults/false labels; recompute timing and deliver
-new exact source/image/map/descriptor/version for independent full native matrix.
-B ordinary-RAM profile is audit-only, no emission; C glyph geometry only, no
-numeric Atari binding. See incoming review receipt in opaque-title-proof.md.
+B audit advanced under Marsf20996c/msg_7827, no profile approval: standalone
+strict timer_memory_audit.py inventories220instructions/all474emitted code bytes,
+all default-handler/frontier control flow, guarded finite startup loops, explicit
+RAM/MMIO/stack operands. Conditional RAM writes0000..18/0100..21B; no app021C..3FFF
+or conio0019..1C operand access.188offline/CTest1/1 PASS, corruption boundaries
+fail. Retro now seeds15837canaries after cold randomization before first observed
+runtime instruction; startup+VBI/same-fresh-root replay pass timerRelease12/12
+and adapterASan12/12. Need actual keyIRQ consumer contract and explicit separate
+021C..21F cession/all-native-path qualification before ordinary profile emission.
+See timer-memory-audit.md; no profile/game/native-completion inference.
+
+Opaque-title authoring complete: sourceed013540ac2996d76fab149f6fb8dea9fcead584,
+image8d6ef38c1b487fa95742e62e9a5c0b1a928ddb446977264739a263fa0bc070c4;
+sole FEB1=14, static1091/1098, fit/ABI/90reserve unchanged. Exact qualification
+packetmsg_73ee/req_6f74 already delivered. Full dualnative5120title+inherited/
+state/process/R65 qualification pending; no admission/release/pin/default change.
+B ordinary profile and C numeric font binding remain unapproved. Do not repeat
+A authoring or ask for human permission; see opaque-title-proof.md.
 
 Completed export-regression automation: tools/verify_accepted_exports.py
 reproduces all eleven real pinned CLI exports and optionally the real parent
@@ -23,7 +35,7 @@ provider selection, old input or approval change. No disposable harness needed.
    SHA8d6ef38c1b487fa95742e62e9a5c0b1a928ddb446977264739a263fa0bc070c4;
    unchanged1895written/ABI/90reserve.182offline methods +real pinned CLI/CMake PASS. Source/export
    ed013540ac2996d76fab149f6fb8dea9fcead584 pushed. Recomputed nominal
-   startup1091/1098; native full timing not measured. Deliver exacttuple for full5120title+year/entry/inherited/state/R65 matrix.
+   startup1091/1098; native full timing not measured. Exacttuple msg_73ee delivered; full5120title+year/entry/inherited/state/R65 matrix pending.
    No native admission/release/default/false-flag change. See opaque-title-proof.
 2. Resolve an ordinary-software RAM profile: cc65 documents021C..3FFF; current
    cooperating input ABI reserves0600..061F. Do not relabel arbitrary homebrew

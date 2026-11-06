@@ -22,10 +22,12 @@ qualification underreq_6f74. Parent e25 remains the latest native-qualified imag
 
 ## Resume work
 
-Start from ROADMAP Next: concrete title/ordinary-RAM/character binding contracts.
-Marsmsg_8f4c/req_6f74 requests title same-size proposal, noncooperating RAM and
-ANTIC mapping facts. Do not invent reset entries or copy macro/kernel/font code.
-Standalone printable asset is original geometry only; no bank/provider emission.
+Opaque-title sourceed01354 is authored/export-verified and deliveredmsg_73ee;
+independent native qualification is pending, not another authoring permission.
+Continue B memory audit/actual consumer keyIRQ requirements and C screened
+primary numeric character binding. No ordinary profile or font bank is approved.
+Latest B static audit/startup-canary evidence is below and in timer-memory-audit.md.
+No reset invention or macro/kernel/font implementation access.
 
 ## Current exact runtime
 
@@ -90,3 +92,18 @@ all-eleven regression, then exact native packet req_6f74. No native admission,
 profile/schema/pin/default/flags change. B ordinaryRAM audit only; C geometry only,
 no numeric character binding. Full details/required5120+inherited matrix in
 opaque-title-proof.md. Runtime lease held for this slice until after push.
+
+## B audit continuation
+
+Marsf20996c/msg_7827 reiterated A already approved; B audit needs no further human
+permission but authoring a profile/keyIRQ remains unapproved. Added independent
+static timer_memory_audit.py and six tests:220instructions/474emitted code bytes,
+RAM writes0000..18/0100..21B, no app/conio operand access; exact guards/default
+vectors, unknown control-flow/operand/identity failures.188methods/CTest1/1 PASS.
+No instruction execution, native source/test or firmware read; no old input edit.
+Retro seeded15837canaries after Cold whileStarting/instructions0, before CPU
+startup, verified entry+VBI/same-fresh-root continuation; timerRelease12/12 and
+adapterASan12/12 PASS, native Mars remains Release. See timer-memory-audit.md.
+Need explicit021C..21F ownership proposal and actual consumer keyIRQ contract,
+plus all native boundary canaries before any separate profile. Opaque-title
+ed01354 still awaits native qualification; no new candidate/profiles/flags.
