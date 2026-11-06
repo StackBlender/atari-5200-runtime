@@ -42,7 +42,7 @@ Marsd5c709f/msg_d972 in Release/full-native ASan,5120title cases plus inherited/
 R65/state/refusal/OFF/firmware. Full cold1167/1177cycles,360/363instructions;
 measured savings414/411 versus static380. Pooled/unreleased; MR43 and app pins
 unchanged. Persistent verifier now covers12qualified exports and latest opaque
-CMake consumer;189methods retained. See independent-execution.md. B ordinary
+CMake consumer;197methods now include original64candidate checks. See independent-execution.md. B ordinary
 profile/keyIRQ contract and C native bank qualification remain pending, not A.
 
 Completed export-regression automation: tools/verify_accepted_exports.py
@@ -116,6 +116,7 @@ or approval fields changed. Repo lease to be released after push.
 
 C authored candidate imagec7caa810132d16ae55b75077e6d5138b5ad388a0094cedaee1eee091cb4a6598,
 196offline methods before source pin. New geometry source/exporter/CMake inputs
-only; parent/prior12inputs immutable. Need commit exact source, real pinned CLI/
-CMake consumption/triple equality, then full native24576+inherited/state packet.
+only; parent/prior12inputs immutable. Exact source46b485ddff275af0f66b29b5a2388f8668cc9e11; new pinned CLI/CMake
+consumption/triple equality PASS.197offline/CTest1/1 PASS. Next full native
+24576+inherited/state packet.
 No bank/provider/native tuple admitted yet. See character-bank-proof.md.

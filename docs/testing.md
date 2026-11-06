@@ -330,3 +330,7 @@ manifest identity/provenance/false flags, malformed source geometry/content and
 pin/fit/parent corruption, old-pin refusal before output and fresh process checks.
 Prior12CLI exports/latest opaque CMake regressions retained; new candidate
 qualification remains native-owner work, not these tests. See character-bank-proof.md.
+
+An eighth bank method verifies real source46b485ddff275af0f66b29b5a2388f8668cc9e11
+CLI and parent CMake dependency/order/fourabsoluteproperties/triple byte equality.
+197offline methods and existing build/CTest1/1 PASS. No new native acceptance.

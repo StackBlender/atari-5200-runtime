@@ -6,8 +6,9 @@ Mars560238d/msg_ac90 approves original64bank on exacted01354/image8d6ef38c.
 Authored imagec7caa810132d16ae55b75077e6d5138b5ad388a0094cedaee1eee091cb4a6598;
 onlyfirst512maydiffer, high/code/reserve/fit/ABI/32RAM unchanged. Added own
 assets/printable-geometry.json, composer/exporter/separateCMake,7tests/196total.
-Need source commit, exact pinned CLI/CMake4properties/dependency/triple equality,
-then deliver dual-native24576combo/active-font process/state/all inherited packet.
+Source pin46b485ddff275af0f66b29b5a2388f8668cc9e11 committed; exact pinned
+CLI/CMake4properties/dependency/triple equality PASS.197offline/CTest1/1 PASS.
+Deliver dual-native24576combo/active-font process/state/all inherited packet.
 No native/profile admission; MR43/pins/defaults unchanged. Prior12exports retained.
 Reviewconstraints/provenance/testcommands in character-bank-proof.md.
 
@@ -180,3 +181,24 @@ consumer. All generation inputs unchanged; old exports remain included. No nativ
 code/provider pin/approval changes. Temporary consumer trees removed automatically.
 Next independent implementation depends on B actual consumer keyIRQ requirements
 or C source/layout/register/oracle technical review; no human permission needed.
+
+## Pinned original64 export receipt
+
+Source/export46b485ddff275af0f66b29b5a2388f8668cc9e11;
+imagec7caa810132d16ae55b75077e6d5138b5ad388a0094cedaee1eee091cb4a6598.
+Map byteSHA9e47ac360fb797c22ec8ee7f251f4ba9eebf5a514388a950c282ffefbe79a0af;
+semanticd51d3da3d94f30733bdb0ce903418f83d7fcdef73783eb140f55776b927ec23c.
+Manifest byteSHA2ed4bca46d5b2087bbaa9f78a13998529e28158857a5a376feef68387011f59f;
+semantica4e54500524d3714ee177477ee01f961d1664dd1033bf08f029ca40cd06a8ec8.
+Semantic=sorted-key compactJSON comma/colon UTF8, no trailing newline.
+Own geometry source-data SHA6b1cd6d602a3a3de355cf9ab6c448cbeb83d9cb0b9d9dc7f6f62772d81fd0935;
+composed first512bytes SHAa29f0a989e7ea5b31cec1a53dab8d8848fe4a9d36cd9453c97ee6111dec0fbc2.
+Frozen original760bytes SHA674bd8776ac83d517654b3d6ca2720e5b6d69f5e084c2bd35052c19c074f547a.
+
+Eight methods/197offline +build/CTest1/1 PASS, including real exact-source newCLI/
+CMake parent dependency/fourproperties/triple byte equality and all12prior exports.
+No native admission; new original64 candidate intentionally NOT added to qualified
+catalog until owner native24576matrix+inherited/state/refusal qualification.
+Artifacts ignored under existing build; temporary parent consumer auto-removed.
+No runtime pin/provider/release/default/ABI/approval change. FullR62 remains open.
+
