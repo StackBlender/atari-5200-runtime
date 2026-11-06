@@ -320,3 +320,15 @@ This supplies attributed independent CPU/chip/state/converter results, including
 explicitly synthetic raw-code0/NMI frontier qualifications; not original-board
 measurements. No producer implementation/test, firmware, reference trace or new
 external source was read. Original candidate/generation inputs remain unchanged.
+
+
+## Automatic keypad window authoring
+
+No producer implementation/test, firmware/reference trace or board scan read.
+Original service composes reviewed acquisition policy9654ecb atop accepted IRQ
+foundation003e782. CPU-02 manufacturer transcription appendixB selected factual
+CMPabsX DD/LDXabs AE entries and already visible ORAimm09 row reviewed at
+https://syncopate.us/books/Synertek6502ProgrammingManual.html; no example copied.
+Local opcode table only; global/old emitters untouched. New callbacks, window
+state, activation and compact analog loop are original software choices requiring
+independent native execution, not measured historical firmware behavior.

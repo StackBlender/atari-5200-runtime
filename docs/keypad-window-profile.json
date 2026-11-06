@@ -1,0 +1,104 @@
+{
+  "activation": {
+    "capture_valid": 0,
+    "committed_keys_fill": 255,
+    "cpu_interrupts_masked": true,
+    "enabled_last": 1,
+    "initial_phase": 1,
+    "initial_port": 0,
+    "key_callback_installed": true,
+    "nmi_disabled": true,
+    "selector_settled_before_enable": true,
+    "software_and_hardware_keyboard_mask_off": true
+  },
+  "application_ram_min": 1568,
+  "automatic_port_rotation": true,
+  "contact_values": {
+    "maximum": 15,
+    "minimum": 1,
+    "raw_code_sentinel": false
+  },
+  "disable": {
+    "cpu_interrupts_masked": true,
+    "emit_release": false,
+    "mask_ack_keyboard_before_invalidation": true,
+    "nmi_disabled": true
+  },
+  "event_callbacks": true,
+  "fields": [
+    {
+      "address": 1536,
+      "cold": 0,
+      "name": "enabled"
+    },
+    {
+      "address": 1537,
+      "cold": 0,
+      "name": "irq_busy"
+    },
+    {
+      "address": 1538,
+      "cold": 0,
+      "name": "selected_port"
+    },
+    {
+      "address": 1539,
+      "cold": 0,
+      "name": "phase"
+    },
+    {
+      "address": 1540,
+      "cold": 0,
+      "name": "captured_contact"
+    },
+    {
+      "address": 1541,
+      "cold": 0,
+      "name": "capture_valid"
+    },
+    {
+      "activation_fill": 255,
+      "address": 1542,
+      "cold": 0,
+      "name": "committed_keys",
+      "size": 4
+    },
+    {
+      "address": 1546,
+      "cold": 0,
+      "name": "vbi_old_key_scratch"
+    }
+  ],
+  "fire_service": false,
+  "key_callback": {
+    "a": "port-0..3",
+    "maximum_nominal_cycles": 128,
+    "registers_flags_scratch": true,
+    "return": "RTS",
+    "vector": 522,
+    "x": "old-contact-1..15-or-255",
+    "y": "new-contact-1..15-or-255"
+  },
+  "legacy_cc65_profile_compatible": false,
+  "phase_values": {
+    "collecting": 2,
+    "inactive": 0,
+    "settling": 1
+  },
+  "profile": "ntsc-four-port-cooperating-input-development",
+  "ram": {
+    "cold_fill": 0,
+    "end_exclusive": 1568,
+    "start": 1536
+  },
+  "required_cart_declaration": "sb52-dev-input-v2-ram600-61f-v1",
+  "reserved": {
+    "cold_fill": 0,
+    "end_exclusive": 1568,
+    "start": 1547
+  },
+  "runtime_abi": "sb52-dev-input-v2",
+  "schema": 1,
+  "skctl": 6,
+  "successful_preflight_before_power": true
+}

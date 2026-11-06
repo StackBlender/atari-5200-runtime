@@ -177,3 +177,10 @@ The keypad IRQ latch foundation now has independent Mars CPU/interrupt/fast-
 analog/state acceptance for its explicit cooperating-cart development profile;
 see the execution receipt. Automatic port rotation, contact callbacks and both
 fire services remain unfinished. No complete firmware or game support is implied.
+
+
+A separate [automatic keypad window candidate](docs/keypad-window-proof.md) now
+authors four-port scanning and contact-change callbacks for explicitly initialized
+cooperating cartridges.130 offline checks pass; actual CPU/window/latency/state
+acceptance is pending. Both-fire services and full runtime/game support remain
+unfinished, with the reserved ROM margin intact.

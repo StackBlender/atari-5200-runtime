@@ -1,5 +1,32 @@
 # Runtime handoff
 
+## Authored automatic keypad windows (native execution pending)
+
+Separate keypad_window_image.py/export_keypad_window_candidate.py/profile/CMake
+implements eligibleVBI four-port settle/collect rotation, pending-before-ack and
+busy deferrals, per-port held keys/RTS callback020A, coherent arm/mask ownership.
+Explicit quiescent activation setskeysFF/settledport0/phase1/callback before enable;
+disable masks before invalidating, emits no release. Cold remains disabled.
+Analog ascending loop saves28ROM at65nominal completed-copy cycle cost; must
+requalify actual bus/analog/timing/state. Image1746/2048,52 ordinary free plus250
+reserved, net242 above timer:24 left before266extra ceiling. Fire remains NEXT
+and needs actual cumulative fit/refactor/allocation review. Nine new offline
+methods bring130 PASS; no CPU/native/event latency/profile/product acceptance.
+Exact proof docs/keypad-window-proof.md. Next committed CLI/CMake/8old exports,
+then native window/callback/frontier/analog/state acceptance via ongoingreq_6f74.
+
+## Current RUNTIME-004 automatic keypad windows
+
+Author separate keypad-windows-v1 atop accepted IRQb2e2b40: eligible VBI rotates
+four ports, one full settle+collect interval, busy/pending-before-ack invalid
+windows defer without release, per-port held contacts and RTS key callback020A.
+Cart activation explicitly initializes keysFF/selector/phase under NMI-off/SEI;
+disable coherently masks before invalidation; cold stays disabled. Fire remains
+next. Compact ascending analog loop trades28 ROM bytes for65 nominal complete
+cycles; actual timing/acquisition must be requalified. Preserve all8old inputs.
+Acceptance: independent bytes/fit/profile/old-export invariants, real source-pinned
+CLI/CMake, then actual CPU windows/NMI/timer/callback/state execution via R62.
+
 ## MR-43 released; runtime completion still open
 
 Mars msg_108d releases annotatedMR43 ed99d3fc4c8c453665fbfd144fed28e5626ded77,

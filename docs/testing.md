@@ -195,3 +195,12 @@ RAM-clear bytes and budgets, new opcode strictness, profile/provenance/refusal/
 fresh-process tests cover authored encoding only. See keypad-irq-proof.md for
 commands, four-property pinned exporter and native CPU/frontier/state acceptance
 packet. No automatic window/fire/input event service exists in this candidate.
+
+
+## Automatic keypad window candidate
+
+Nine new methods bring130 total: independently expected analog-loop/rotation/
+window/guard/pending-before-ack/callback/arm bytes, strict new local encodings,
+full unchanged-range/fit checks and profile/provenance/fresh-process/refusal. See
+keypad-window-proof.md for actual CPU/stack/window/latency/state acceptance still
+required. All earlier emitters/profiles remain byte-exact; fire remains unfinished.
