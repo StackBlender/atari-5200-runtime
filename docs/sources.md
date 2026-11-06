@@ -552,3 +552,9 @@ withB0/font/fire. Used OUR timer source/assembler/metadata routines and earlier
 public shadow/vector declarations; no new external code/firmware/game reading.
 Initialization contract/identity/52bytevalidator/timing/limits in timer-experiments-
 proof.md and ordinary-ram-profile.json. No new reference-role/native/game claim.
+
+After B1 authoring approval, rechecked ONLY authorized retained homebrew metadata
+classification against the stricter selected rule: FIRSTyear is nonnumeric too,
+so approved B1 does NOT admit it. No raw bytes/game identity/source hash copied
+to tracked records; no execution/patch or B1 relaxation. Separate conditional
+B2policy would require review/new identity before emission, never infer bypass.

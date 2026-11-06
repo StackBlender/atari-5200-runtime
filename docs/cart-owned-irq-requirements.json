@@ -1,4 +1,5 @@
 {
+  "authoring_review": "81025cfddd64502c276e0a8895cdc96f9b0249fc",
   "consumer": "original-retro-cart-owned-keyboard-irq",
   "consumer_native_coverage": {
     "archive_refusals": 16,
@@ -20,6 +21,7 @@
     "separate_process_poisoned_replays": 60
   },
   "copyright": "2026 StackBlender LLC",
+  "experiment_source_revision": "becb92e01e97e89568cac58ab051e23b803ae53a",
   "historical_abi": false,
   "irq": {
     "accepted_contacts": [
@@ -51,6 +53,7 @@
     "source_mask": 64
   },
   "license": "GPL-3.0-or-later",
+  "native_profile_admitted": false,
   "ordinary_profile_review": {
     "approval_required_before_authoring": true,
     "identity_must_change": true,
@@ -65,8 +68,8 @@
     "source_revision": "ac9b47e50c213b08022e78bdef64662569cd3d29",
     "written_bytes": 1504
   },
-  "profile_authoring_approved": false,
-  "profile_emitted": false,
+  "profile_authoring_approved": true,
+  "profile_emitted": true,
   "ram": {
     "consumer_zero_page": [
       25,
@@ -101,12 +104,16 @@
   },
   "schema": 1,
   "separate_boot_review": {
+    "B0_B1_combined": false,
+    "approved_B1_metadata_eligible_for_authorized_corpus": false,
     "authorized_corpus_has_diagnostic_flag_request": true,
-    "diagnostic_flag_policy_approved": false,
+    "diagnostic_flag_policy_approved": true,
+    "first_year_must_always_be_numeric": true,
     "game_executed_or_modified": false,
     "historical_bypass_state_contract_known": false,
-    "proposed_original_full_cold_initialization": "review-before-emission"
+    "proposed_original_full_cold_initialization": "review-before-emission",
+    "second_year_numeric_or_ff": true
   },
-  "status": "implemented-original-consumer-profile-review-only",
+  "status": "implemented-original-consumer-separate-B0-B1-authored-awaiting-native",
   "stock_cc65_or_game_compatibility": false
 }
