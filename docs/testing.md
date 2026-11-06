@@ -204,3 +204,12 @@ window/guard/pending-before-ack/callback/arm bytes, strict new local encodings,
 full unchanged-range/fit checks and profile/provenance/fresh-process/refusal. See
 keypad-window-proof.md for actual CPU/stack/window/latency/state acceptance still
 required. All earlier emitters/profiles remain byte-exact; fire remains unfinished.
+
+
+## Both-fire nonrunnable fit fragment
+
+Six methods bring136total; tools/fire_service_fragment.py emits153raw bytes
+only, no runtime image/provider. Exact independent encodings/order/baselines/
+branches, budget failure/projection, strict local opcodes/parent preservation and
+fresh-process output checks. See fire-allocation-review.md: allocation/profile
+review is required before cumulative emission; no CPU/fire/game acceptance.

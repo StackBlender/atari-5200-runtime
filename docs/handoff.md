@@ -1,5 +1,32 @@
 # Runtime handoff
 
+## Both-fire code measured; cumulative allocation review required
+
+Original NONRUNNABLE fire_service_fragment.py emits153-byte code,6new exact-byte/
+budget/provenance methods (136total). Both-fire routines plus3-byte routing bridge
+project1902total/398above timer: exceeds current266ceiling and52ordinaryfree.
+NO cumulative emission/reserved consumption: fullfont/9oldproviders unchanged.
+Concrete review docs/fire-allocation-review.md +fire-allocation-proposal.json
+propose160codeFF00..FF9F,90marginFFA0..FFF9, bounded400extra for this extension,
+0610..1B fire/baseline/VBI scratch within existing32RAM, new input-fire-v3 frozen
+unlatched-cart contract. Native tests/profile/actual fit remain unapproved.
+Validation:136 offline unittest methods/build/CTest1/1 PASS; currentwindow
+explicit-pin CLI/CMake and all8older exports reproduce unchanged (9total).
+No current generation input changed. Next obtain Mars allocation/profile/behavior
+review on ongoingR62, THEN separately
+emit/export cumulative bothfire image and independently test CPU/input/state.
+
+## Current RUNTIME-004 both-fire fit review
+
+Author a NONRUNNABLE original bottom/top fire fragment to establish exact size
+and state/callback ownership before changing cumulative allocation. Current
+windows1746 leaves52 regular bytes and only24 before266extra ceiling. No actual
+reserved margin/font/vector/old provider is changed. Bottoms4per eligibleVBI,
+selectedTop afterkeycommit/before rotation, independent first-source baselines,
+0208 RTS callback old/newbitmaps, unlatchedGTIA/postrun/selectedKR2 qualifications.
+If it exceeds budget, stop at concrete code/size/state review with Mars on R62;
+no cumulative fire candidate or margin consumption until allocation review.
+
 ## Committed automatic keypad export receipt
 
 Immutable source/exportfce294b7448a7c5a1a35e6c5e5ed5611ee36473f. Real pinned CLI

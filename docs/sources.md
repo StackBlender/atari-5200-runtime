@@ -332,3 +332,12 @@ https://syncopate.us/books/Synertek6502ProgrammingManual.html; no example copied
 Local opcode table only; global/old emitters untouched. New callbacks, window
 state, activation and compact analog loop are original software choices requiring
 independent native execution, not measured historical firmware behavior.
+
+
+## Both-fire fragment and allocation proposal
+
+Original routines reuse permitted review9654ecb SKSTAT/KR2/GTIA/cache/latch facts
+and CPU-02 selected opcode facts already visible in manufacturer tables: ORAabs0D,
+CMPabsCD,LDYabsAC. No new firmware/trace, producer implementation/tests, board
+scan or external source exposure. Fragment originF800 is synthetic; it supplies
+no authority to replace font or spend reserved ROM. Proposal remains unapproved.
