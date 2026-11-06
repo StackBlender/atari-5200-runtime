@@ -5,13 +5,26 @@ runtime. NTSC four-port first; full software compatibility remains unfinished.
 
 ## Next
 
+Mars560238d/msg_ac90 APPROVES bounded C authoring on exact qualified opaque
+ed01354/image8d6ef38c. Authored first64-cell original development mapping ONLY
+F800..F9FF: labels20..5F ->0..63,10retained seven-segment digits +54own drawings.
+Preserve high512/code/vectors/fit/reserve/ABI/32RAM and prior12exports. New exact
+source/image/map/manifest/version and separate exporter/CMake target; independent
+geometry packing/provenance/negative/pinned artifact checks before native packet.
+Need owner dual-native24576combination CPU/peek/DMA/pixel matrix +active-font
+process/state/all inherited/OFF/firmware before admission. Mode2 allF8..FB alias
+F800/PF2paper/PF2hue+PF1luma ink; blank THEN invert. Modes6/7 splitlow/high banks,
+PF0..3ink/COLBKpaper. No ordinary profile/release/pin promotion.
+
+
 C source/data packet ready: character-bank-proposal.md screens selected1982
 manufacturer ANTIC prose via OCR, with errors/visual limits explicit. Proposes
 64ASCII-labelled first-bank cells (54original ASCII drawings plus10retained
 seven-segment digits), preserves old high512bytes/legacy50digits/all code/reserve.
-No authoring approval or bank emission.95cannot fit64; no inferred ATASCII ABI.
+Authoring now approved Mars560238d; separate candidate emitted, native qualification
+pending.95cannot fit64; no inferred ATASCII ABI.
 Standalone189method suite now exposes95declarative8x8 oracle cells,760glyphbytes
-unchanged and all bank/encoding/ABI null. Need owner review before binding.
+unchanged and standalone bank/encoding/ABI null. New binding awaits native admission.
 
 B audit advanced under Marsf20996c/msg_7827, no profile approval: standalone
 strict timer_memory_audit.py inventories220instructions/all474emitted code bytes,
@@ -30,7 +43,7 @@ R65/state/refusal/OFF/firmware. Full cold1167/1177cycles,360/363instructions;
 measured savings414/411 versus static380. Pooled/unreleased; MR43 and app pins
 unchanged. Persistent verifier now covers12qualified exports and latest opaque
 CMake consumer;189methods retained. See independent-execution.md. B ordinary
-profile/keyIRQ contract and C bank authoring review remain pending, not A.
+profile/keyIRQ contract and C native bank qualification remain pending, not A.
 
 Completed export-regression automation: tools/verify_accepted_exports.py
 reproduces all eleven real pinned CLI exports and optionally the real parent
@@ -100,3 +113,9 @@ parent removed. Standalone asset SHA256
 Original-only raster preview visually inspected under ignored
 build/printable-glyphs/preview.png. git diff --check PASS. No runtime generation
 or approval fields changed. Repo lease to be released after push.
+
+C authored candidate imagec7caa810132d16ae55b75077e6d5138b5ad388a0094cedaee1eee091cb4a6598,
+196offline methods before source pin. New geometry source/exporter/CMake inputs
+only; parent/prior12inputs immutable. Need commit exact source, real pinned CLI/
+CMake consumption/triple equality, then full native24576+inherited/state packet.
+No bank/provider/native tuple admitted yet. See character-bank-proof.md.

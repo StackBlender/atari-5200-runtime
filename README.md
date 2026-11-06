@@ -42,7 +42,7 @@ cmake --build build
 ctest --test-dir build --output-on-failure
 ```
 
-Or run all189offline methods directly:
+Or run all196offline methods directly:
 
 ```sh
 PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -v
@@ -91,3 +91,9 @@ old generations/ABI/allocation/defaults remain unchanged.
 A [conditional timer memory audit](docs/timer-memory-audit.md) inventories every
 original runtime code path/default-handler frontier without executing a CPU. It
 supports ordinary-RAM planning, not an approved profile or game-compatibility claim.
+
+The separately [authored original64 bank](docs/character-bank-proof.md) binds
+64original development labels, preserving legacy digits/high bank/code. It is
+awaiting independent native qualification; no historical charset or ordinary
+software compatibility is claimed. Normative own geometry is available as source
+asset DATA in assets/printable-geometry.json for independent pixel oracles.

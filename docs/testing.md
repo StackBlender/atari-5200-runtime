@@ -320,3 +320,13 @@ for the latest parent dependency/fourproperty/triple equality check. All11older
 CLI exports remain checked; the dedicated opaque-title artifact method also stays.
 189methods total, no added CPU execution/provider approval or generation input edit.
 See independent-execution.md for native evidence and its product limitations.
+
+## Original first64-cell bank authoring
+
+Seven tests/test_character_bank_image.py methods bring196total; run standard
+unittest/build/CTest. Independent all95geometry repacking/hash/all64boundcells,
+retained fixed80digit bytes, parent-high/code/fit/reserve/symbol preservation,
+manifest identity/provenance/false flags, malformed source geometry/content and
+pin/fit/parent corruption, old-pin refusal before output and fresh process checks.
+Prior12CLI exports/latest opaque CMake regressions retained; new candidate
+qualification remains native-owner work, not these tests. See character-bank-proof.md.

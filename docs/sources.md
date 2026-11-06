@@ -477,3 +477,16 @@ source/image, dual-native matrix and measured versus nominal timing recorded in
 independent-execution.md. Owner-reported emulator evidence, not original hardware
 or retail acceptance. B conditional audit/cession adds no ordinary profile;
 actual keyIRQ requirements/all native boundaries remain unresolved. C pending.
+
+## C bounded original bank authoring, 2026-11-06
+
+Read only Mars560238d/msg_ac90 and docs/a52-character-bank-review.md owner prose.
+Approves exactopaqueed01354 parent/first512bytes with explicit original mapping,
+geometry asset data and native oracle corrections; not admission/historical ABI.
+No producer native implementation/tests/firmware/reference font/trace read. Own
+original geometry frozen as assets/printable-geometry.json from316a91f; original
+startup digits recomposed from own documented coordinates. Previously screened
+manufacturer OCR confidence/adjacent exposure unchanged, no new external source.
+Mode2 alias/PF2paper/blank-then-invert and6/7 split/color rules are attributed
+Mars integration contract, not independent original-hardware measurements.
+Exact obligations and remaining native/product gates: character-bank-proof.md.

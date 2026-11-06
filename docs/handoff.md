@@ -1,5 +1,17 @@
 # Runtime handoff
 
+## Current C approved authoring checkpoint
+
+Mars560238d/msg_ac90 approves original64bank on exacted01354/image8d6ef38c.
+Authored imagec7caa810132d16ae55b75077e6d5138b5ad388a0094cedaee1eee091cb4a6598;
+onlyfirst512maydiffer, high/code/reserve/fit/ABI/32RAM unchanged. Added own
+assets/printable-geometry.json, composer/exporter/separateCMake,7tests/196total.
+Need source commit, exact pinned CLI/CMake4properties/dependency/triple equality,
+then deliver dual-native24576combo/active-font process/state/all inherited packet.
+No native/profile admission; MR43/pins/defaults unchanged. Prior12exports retained.
+Reviewconstraints/provenance/testcommands in character-bank-proof.md.
+
+
 ## Current opaque-title qualification — 2026-11-06
 
 Mars d5c709f / msg_d972 independently qualifies source
