@@ -52,6 +52,7 @@ def validate(directory,pin,expected):
     require(manifest['capabilities']==[],'accepted capabilities must remain empty')
     for flag in ('execution_verified','provider_approved','retail_compatibility'):
         require(manifest[flag] is False,'candidate flag promoted: '+flag)
+    require(manifest['timing'].get('full_cycles_verified') is False,'explicit full-cycle status missing or promoted')
     for key,value in manifest['timing'].items():
         if key.endswith('verified'):
             require(value is False,'timing approval promoted: '+key)

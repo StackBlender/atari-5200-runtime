@@ -34,7 +34,7 @@ class AcceptedExportTests(unittest.TestCase):
                 ('source_revision','2'*40),('capabilities',['not-approved']),
                 ('execution_verified',True),('provider_approved',True),
                 ('retail_compatibility',True),('timing',{'full_cycles_verified':True}),
-                ('map_sha256','0'*64),('symbols',{'different':0xfc00}),
+                ('timing',{}),('map_sha256','0'*64),('symbols',{'different':0xfc00}),
                 ('image',dict(origin=0xf900,size=2048,sha256=digest)),
             ):
                 with self.subTest(key=key):
