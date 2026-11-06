@@ -541,3 +541,14 @@ diagnosticFFrequest. Primary consumer prose says bypass most init, supplies no
 full state contract. B1 fullColdinit+flag proposal is original policy, subject to
 review before emission, not historical bypass evidence. B0/B1 scopes and false
 approval/compatibility labels recorded in cart-owned-irq-consumer.md +JSON.
+
+## B0/B1 bounded authoring, 2026-11-06
+
+Read Mars81025cfddd64502c276e0a8895cdc96f9b0249fc/msg_993d and owner prose
+a52-cart-owned-profile-review.md only. B0 actual original consumer is sufficient
+for this narrow authoring; no additional existing-thirdparty gate. B1 FIRSTyear
+always50..59, SECOND50..59orFF admission-only/fullCold retained, no combination
+withB0/font/fire. Used OUR timer source/assembler/metadata routines and earlier
+public shadow/vector declarations; no new external code/firmware/game reading.
+Initialization contract/identity/52bytevalidator/timing/limits in timer-experiments-
+proof.md and ordinary-ram-profile.json. No new reference-role/native/game claim.

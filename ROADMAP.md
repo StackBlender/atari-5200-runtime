@@ -5,6 +5,18 @@ runtime. NTSC four-port first; full software compatibility remains unfinished.
 
 ## Next
 
+Mars81025cf/msg_993d approves SEPARATE B0/B1 bounded authoring on exact timer
+ac9b47e/imageeae07d36. B0byte-identical ROM/new ordinary-layout profile+explicit
+021C..21Fcession/no600reservation/individual public initialization contract.
+B1separate fullCold experiment: opaque20title, FIRSTyear50..59 ALWAYS, SECOND
+50..59orFF; FFadmission only, same initialization/normalentry/watchdog. No implicit
+B0+B1/font/fire combination. Author exact source/map/manifest/CMake identities,
+independent fit/timing/old13regressions/pinnedconsumer checks; then native packets.
+No admission/game trial/pin/default/flag/release/fullR62ACK. B0native120crossed
+keyboard cases+physicalstores/in-handler/process; B1title5120/year/entry/fullinit/
+R65/refusal/OFF/firmware required. Preserve timer250reserve, no4096budget increase.
+
+
 B0/B1 technical review packet ready, no ordinary profile/image emitted:
 cart-owned-irq-consumer.md +cart-owned-irq-requirements.json describe an ACTUAL
 original software consumer owning generic0200dispatch/raw keyboard40/ACK/rearm/

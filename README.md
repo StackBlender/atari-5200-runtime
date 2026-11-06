@@ -97,3 +97,9 @@ The separately [authored original64 bank](docs/character-bank-proof.md) binds
 independently qualified by Mars938d829 in both native builds; no historical charset or ordinary
 software compatibility is claimed. Normative own geometry is available as source
 asset DATA in assets/printable-geometry.json for independent pixel oracles.
+
+Separate B0ordinary-RAM identity and B1original diagnostic full-cold experiments
+are authored under Mars81025cf, NOT admitted. See docs/timer-experiments-proof.md
+(or timer-experiments-proof.md from docs).204offline methods include seven new
+contract/encoding/timing/pin/failure checks. Old13exports/flags/defaults preserved;
+no combined profile or unchanged-game run.

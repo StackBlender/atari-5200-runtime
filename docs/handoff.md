@@ -1,5 +1,20 @@
 # Runtime handoff
 
+## Current separate B0/B1 authored candidates
+
+Mars81025cf/msg_993d approves bounded authoring separately. New B0ordinary-RAM
+identity byte-identical timer imageeae07d36/1504fit/250reserve; full individual
+shadow/vector initialization contract +explicit021Ccession/no600reservation in
+ordinary-ram-profile.json. B1separate diagnostic fullCold image9da1ddef/1556fit:
+onlynew52bytesFD80..FDB3 +JSRoperandFC61/62, no initialwrite/service/asset/vector/
+250reserve change. FIRSTyear50..59 always, SECOND50..59orFF, opaque20title,
+FFadmission only. SameFC6Bhandoff/normalentry/4096watchdog, B1oldconservativeRAM.
+No implicit combination. New separate exporters/CMake/common plumbing/tests;
+204offline PASS. Need exact source commit then new pinned CLI/CMake consumption,
+full existingbuild/CTest and independent native packets. No native tuple/profile
+admission or game trial. Required native matrices and exactfit/timing/provenance
+in timer-experiments-proof.md. Source pins/hashes receipt to follow after commit.
+
 ## Current original consumer and B0/B1 review packet
 
 Read cart-owned-irq-consumer.md and declarativecart-owned-irq-requirements.json.

@@ -343,3 +343,9 @@ CMake consumer; all12oldCLIexports and dedicated opaque/bank artifact tests rema
 197methods total. Standard unittest/build/CTest required; no native rerun or
 approval flag/pin/profile change inferred. Full attributed native receipt lives
 in independent-execution.md, including24576matrix and active-font replay.
+
+Separate B0ordinary-RAM identity and B1original diagnostic full-cold experiments
+are authored under Mars81025cf, NOT admitted. See docs/timer-experiments-proof.md
+(or timer-experiments-proof.md from docs).204offline methods include seven new
+contract/encoding/timing/pin/failure checks. Old13exports/flags/defaults preserved;
+no combined profile or unchanged-game run.
