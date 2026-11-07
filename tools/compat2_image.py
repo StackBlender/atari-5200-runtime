@@ -18,7 +18,13 @@ local observation, not manufacturer bytes):
     stack and A holding the key value: digits 0..9, $0A '*', $0B '#', $0C Start, $0D Pause,
     $0E Reset. The value is derived from KBCODE bits 4..1 by a 16-byte table; the layout of
     KBCODE was observed, the numbering is consumer-inferred. Other sources still fault.
- No other behaviour changes; the new code sits in previously erased space."""
+ 4. Software restores the IRQ vector to $FC03 as a default value; $FC03 now is JMP $FE00.
+    Reset entry becomes JMP $FC74 (SEI CLD LDX #$FF TXS, JMP $FC06) so the first 15 bytes no
+    longer need to be executed in order; the callable-reset boundary at +$0F is unchanged.
+ 5. Software that installs its own keyboard handler at $0208 is called directly; the
+    default ($0208 high byte $FC) goes through the key-value path to $020A.
+ Known gap: a $FFFF key/break vector (software that disables them by sentinel) still jumps there.
+ No other behaviour changes; new code sits in previously erased space or the superseded clock body."""
 import argparse
 import hashlib
 from pathlib import Path
@@ -36,14 +42,22 @@ DEFERRED_HELPER = 0xFDE0
 IMMEDIATE_CODE = bytes.fromhex('48ad0302c9fff00468' '6c0202' '68' '4ca0fc')
 TIMER_CODE = bytes.fromhex('e602d002e601' 'a203' 'bd1c02' 'f003' 'de1c02' 'ca10f5' 'a503d003' '4c40fd' '4cb0fc')
 DEFERRED_CODE = bytes.fromhex('ad0502c9ffd003' '4cb2fc' '6c0402')
-KEY_TABLE_AT = 0xFC8D
+KEY_TABLE_AT = 0xFDF0   # reuses the superseded clock body
 KEY_TABLE = bytes.fromhex('0f0b000a0e090807' '0d0605040c030201')
-KEY_CODE_AT = 0xFD33
-KEY_CODE = bytes.fromhex('ad09e84a290faa' 'bd8dfc' '6c0a02')
+KEY_CODE_AT = 0xFC8D
+KEY_CODE = bytes.fromhex('ad09e84a290faa' 'bdf0fd' '6c0a02')
+KEY_ENTRY_AT = 0xFD33
+KEY_ENTRY = bytes.fromhex('ad0902c9fcf003' '6c0802' '4c8dfc')
+OLD_CLOCK = bytes.fromhex('e602d002e601a503d0034c40fd4cb0fc')
+RESET_AT = 0xFC00
+RESET_OLD = bytes.fromhex('78d8a2ff9aa9008d0ed48d00d4eaea')
+RESET_NEW = bytes.fromhex('4c74fc' '4c00fe' 'a9008d0ed48d00d4ea')
+RESET_STUB_AT = 0xFC74
+RESET_STUB = bytes.fromhex('78d8a2ff9a' '4c06fc')
 SOURCE_AT = 0xFE8F
 SOURCE_CODE = bytes.fromhex('8a29c0f0b9' '8a3005' 'a9bf18' '9003' 'a97f38' '25008d0ee8a5008d0ee8' '4cf0fc')
 SPLIT_AT = 0xFCF0
-SPLIT_CODE = bytes.fromhex('b0034c33fd' '68a868aa6c0c02')
+SPLIT_CODE = bytes.fromhex('b0034c33fd' '68a868aa6c0c02')   # key path enters the vector check at $FD33
 
 
 def _off(address):
@@ -73,15 +87,18 @@ def compat2_image():
     image[_off(0xFE1F)] = (SOURCE_AT - 0xFE20) & 0xFF
     _put(image, SOURCE_AT, b'\xff' * len(SOURCE_CODE), SOURCE_CODE)
     _put(image, SPLIT_AT, b'\xff' * len(SPLIT_CODE), SPLIT_CODE)
+    _put(image, KEY_ENTRY_AT, b'\xff' * len(KEY_ENTRY), KEY_ENTRY)
     _put(image, KEY_CODE_AT, b'\xff' * len(KEY_CODE), KEY_CODE)
-    _put(image, KEY_TABLE_AT, b'\xff' * len(KEY_TABLE), KEY_TABLE)
+    _put(image, KEY_TABLE_AT, OLD_CLOCK, KEY_TABLE)       # the old clock body is unreachable since system_vbi was redirected
+    _put(image, RESET_STUB_AT, b'\xff' * len(RESET_STUB), RESET_STUB)
+    _put(image, RESET_AT, RESET_OLD, RESET_NEW)
     data = bytes(image)
     added = (len(IMMEDIATE_CODE) + len(TIMER_CODE) + len(DEFERRED_CODE) + len(SOURCE_CODE)
-             + len(SPLIT_CODE) + len(KEY_CODE) + len(KEY_TABLE))
+             + len(SPLIT_CODE) + len(KEY_CODE) + len(KEY_ENTRY) + len(RESET_STUB))
     mapping = dict(mapping)
     symbols = dict(mapping['symbols'])
     symbols.update(vbi_immediate_default=IMMEDIATE_HELPER, vbi_timer_clock=TIMER_CLOCK, vbi_deferred_default=DEFERRED_HELPER,
-        irq_source_classifier=SOURCE_AT, irq_key_vector_call=KEY_CODE_AT, key_value_table=KEY_TABLE_AT)
+        irq_source_classifier=SOURCE_AT, irq_key_vector_call=KEY_CODE_AT, key_value_table=KEY_TABLE_AT, irq_default_entry=0xFC03)
     mapping.update(purpose='authored-compat2-awaiting-native-admission',
         sha256=hashlib.sha256(data).hexdigest(), symbols=symbols,
         used=mapping['used'] + added, remaining=mapping['remaining'] - added,
