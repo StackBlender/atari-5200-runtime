@@ -87,7 +87,7 @@ class Compat2Tests(unittest.TestCase):
         self.assertEqual(manifest['map_sha256'],hashlib.sha256(mapping.encode()).hexdigest())
         self.assertTrue(manifest['version'].endswith('.compat-v2.candidate1'))
         self.assertFalse(manifest['provider_approved']);self.assertFalse(manifest['execution_verified'])
-        for bad in ('e8f296d5a8fa693f13b5dd46259eafcb5567e88f','c1aaf9b2f3f3663f1263492dc4edabb8eb2c32df','4631c910bb07658827c04b9d5c244f35e4b4efc0'):
+        for bad in ('e8f296d5a8fa693f13b5dd46259eafcb5567e88f','c1aaf9b2f3f3663f1263492dc4edabb8eb2c32df','214e1e4a3caabc3c17693bd5271d2e9ce0761428'):
             with self.assertRaises(AssemblyError):candidate(bad)
         def pinned(cmd,**kw):return subprocess.CompletedProcess(cmd,0,stdout=b'different')
         with patch('subprocess.run',pinned):

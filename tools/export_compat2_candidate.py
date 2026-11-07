@@ -13,7 +13,7 @@ from compat2_image import compat2_image
 
 ROOT = Path(__file__).resolve().parents[1]
 EXTRA_INPUTS = ('tools/compat2_image.py', 'tools/export_compat2_candidate.py', 'cmake/compat2-candidate.cmake')
-PARENT_REVISION = '4631c910bb07658827c04b9d5c244f35e4b4efc0'
+PARENT_REVISION = '214e1e4a3caabc3c17693bd5271d2e9ce0761428'
 
 
 def revision(value):
