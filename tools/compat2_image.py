@@ -21,9 +21,12 @@ local observation, not manufacturer bytes):
  4. Software restores the IRQ vector to $FC03 as a default value; $FC03 now is JMP $FE00.
     Reset entry becomes JMP $FC74 (SEI CLD LDX #$FF TXS, JMP $FC06) so the first 15 bytes no
     longer need to be executed in order; the callable-reset boundary at +$0F is unchanged.
- 5. Software that installs its own keyboard handler at $0208 is called directly; the
+ 5. Software copies its default vectors from a table in BIOS space ($FE95, six vectors:
+    IRQ $FC03, immediate VBI $FCB8, deferred VBI $FCB2 exit, DLI $FCDD RTI, keyboard
+    $FC8D key-value routine, keyboard deferred $FCB2 exit); the table now exists.
+ 6. Software that installs its own keyboard handler at $0208 is called directly; the
     default ($0208 high byte $FC) goes through the key-value path to $020A.
- Known gap: a $FFFF key/break vector (software that disables them by sentinel) still jumps there.
+ Known gap: a $FFFF key/break vector set explicitly by software is still jumped to.
  No other behaviour changes; new code sits in previously erased space or the superseded clock body."""
 import argparse
 import hashlib
@@ -54,8 +57,11 @@ RESET_OLD = bytes.fromhex('78d8a2ff9aa9008d0ed48d00d4eaea')
 RESET_NEW = bytes.fromhex('4c74fc' '4c00fe' 'a9008d0ed48d00d4ea')
 RESET_STUB_AT = 0xFC74
 RESET_STUB = bytes.fromhex('78d8a2ff9a' '4c06fc')
-SOURCE_AT = 0xFE8F
-SOURCE_CODE = bytes.fromhex('8a29c0f0b9' '8a3005' 'a9bf18' '9003' 'a97f38' '25008d0ee8a5008d0ee8' '4cf0fc')
+SOURCE_AT = 0xFF00     # first bytes of the former reserve
+SOURCE_CODE = bytes.fromhex('8a29c0d0034c83fc' '8a3005' 'a9bf18' '9003' 'a97f38' '25008d0ee8a5008d0ee8' '4cf0fc')
+FAULT_JUMP_AT = 0xFE4D  # the unsupported-source fault jump; redirected to the classifier
+VECTOR_TABLE_AT = 0xFE95
+VECTOR_TABLE = bytes.fromhex('03fc' 'b8fc' 'b2fc' 'ddfc' '8dfc' 'b2fc')
 SPLIT_AT = 0xFCF0
 SPLIT_CODE = bytes.fromhex('b0034c33fd' '68a868aa6c0c02')   # key path enters the vector check at $FD33
 
@@ -80,11 +86,8 @@ def compat2_image():
     _put(image, IMMEDIATE_HELPER, b'\xff' * len(IMMEDIATE_CODE), IMMEDIATE_CODE)
     _put(image, TIMER_CLOCK, b'\xff' * len(TIMER_CODE), TIMER_CODE)
     _put(image, DEFERRED_HELPER, b'\xff' * len(DEFERRED_CODE), DEFERRED_CODE)
-    # the two branches that reached the unsupported-source fault now enter the source classifier
-    if (image[_off(0xFE0F)], image[_off(0xFE10)], image[_off(0xFE1E)], image[_off(0xFE1F)]) != (0xD0, 0x3C, 0xF0, 0x2D):
-        raise AssemblyError('IRQ classifier differs from the reviewed sequence')
-    image[_off(0xFE10)] = (SOURCE_AT - 0xFE11) & 0xFF
-    image[_off(0xFE1F)] = (SOURCE_AT - 0xFE20) & 0xFF
+    _put(image, FAULT_JUMP_AT, bytes.fromhex('4c83fc'), bytes.fromhex('4c00ff'))
+    _put(image, VECTOR_TABLE_AT, b'\xff' * len(VECTOR_TABLE), VECTOR_TABLE)
     _put(image, SOURCE_AT, b'\xff' * len(SOURCE_CODE), SOURCE_CODE)
     _put(image, SPLIT_AT, b'\xff' * len(SPLIT_CODE), SPLIT_CODE)
     _put(image, KEY_ENTRY_AT, b'\xff' * len(KEY_ENTRY), KEY_ENTRY)
@@ -94,11 +97,11 @@ def compat2_image():
     _put(image, RESET_AT, RESET_OLD, RESET_NEW)
     data = bytes(image)
     added = (len(IMMEDIATE_CODE) + len(TIMER_CODE) + len(DEFERRED_CODE) + len(SOURCE_CODE)
-             + len(SPLIT_CODE) + len(KEY_CODE) + len(KEY_ENTRY) + len(RESET_STUB))
+             + len(SPLIT_CODE) + len(KEY_CODE) + len(KEY_ENTRY) + len(RESET_STUB) + len(VECTOR_TABLE))
     mapping = dict(mapping)
     symbols = dict(mapping['symbols'])
     symbols.update(vbi_immediate_default=IMMEDIATE_HELPER, vbi_timer_clock=TIMER_CLOCK, vbi_deferred_default=DEFERRED_HELPER,
-        irq_source_classifier=SOURCE_AT, irq_key_vector_call=KEY_CODE_AT, key_value_table=KEY_TABLE_AT, irq_default_entry=0xFC03)
+        irq_source_classifier=SOURCE_AT, irq_key_vector_call=KEY_CODE_AT, key_value_table=KEY_TABLE_AT, irq_default_entry=0xFC03, default_vector_table=VECTOR_TABLE_AT)
     mapping.update(purpose='authored-compat2-awaiting-native-admission',
         sha256=hashlib.sha256(data).hexdigest(), symbols=symbols,
         used=mapping['used'] + added, remaining=mapping['remaining'] - added,
