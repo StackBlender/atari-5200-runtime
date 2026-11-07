@@ -21,7 +21,7 @@ Normative source: docs/startup-display-probe-contract.md, hashes/receipt in
 docs/startup-display-probe-proof.md. NEXT native owner original oracle/firstfetch/
 CPU counter/list+bitmapDMA/MMIO attribution/field pixels;8K guard first.
 
-NEW original startup/display diagnostic scope Mars60cb46a/msg_32af APPROVED:
+Original authoring approval60cb46a/msg_32af (implemented/export-qualified above):
 fullCold -> first actual application fetch -> application-owned progress counter
 and geometric bitmap through ordinary run calls alone. Two controls: direct MMIO
 versus public shadows/ordinary VBI, identical own pattern/colors; CPU initializes
@@ -31,8 +31,9 @@ and secondFF fullCold.8ordinary returns/external10sec; independent firstfetch/
 progress/list+bitmapDMA/shadow-MMIO order/pixel expectations.8K waits nativeguard
 qualification. Deliver new original source/export pin/layout/write windows/oracle;
 no runtime change until exact diagnostic failure reviewed. Both private permissions
-remain consumed; retail-source blocker independent. Next: author original source,
-strict diagnostic export and offline layout/geometry/reproducibility checks.
+remain consumed; retail-source blocker independent. Packet deliveredmsg_9eba/req_6f74 after source30968a0/receiptdb4359b pushes.
+NEXT independent native oracle/execution,8K guard first; no further producer
+service/image change without exact diagnostic failure and review.
 
 
 Separate licensed visual follow-up0ce9f62/msg_5887 COMPLETE:1800returns/0faults,

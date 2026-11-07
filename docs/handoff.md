@@ -24,8 +24,9 @@ grayscale register selectors are completely specified. Preserve all older frozen
 exports. Source pin30968a02ff474a21abcdb19faa8eac12c260c107 pushed; contract raw0f4bdbad,
 index rawe9b92f05, all12case hashes/sixinputs in startup-display-probe-proof.md.
 9focused PASS0.247s/full237 PASS10.604s/existing buildPASS/CTest1/1 PASS10.63s.
-NEXT deliver exact original packet underreq_6f74 after receipt commit/push and
-release lease. Native execution/independent expected viewport/RGBA remain pending;
+Exact original packet deliveredmsg_9eba/req_6f74 after source30968a0 and
+receiptdb4359b pushes. Retro consumer handoff/roadmap committed/pushedbbe63b6.
+NEXT independent native oracle/execution with Mars,8K guard first. Native execution/independent expected viewport/RGBA remain pending;
 8K waits guard qualification. No producer/native/app/release/fullR62 promotion.
 
 
