@@ -29,6 +29,7 @@ def candidate(value):
     encoded = report_json(mapping)
     _, _, old = parent_candidate(PARENT_REVISION); manifest = json.loads(old)
     manifest.update(
+        source_revision=value,
         version=manifest['version'].replace('.compat-v1.candidate1', '.compat-v2.candidate1'),
         authored_capabilities=mapping['authored_capabilities'],
         image=dict(origin=0xf800, size=2048, sha256=mapping['sha256']),

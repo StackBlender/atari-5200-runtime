@@ -68,6 +68,7 @@ class CompatTests(unittest.TestCase):
 
     def test_export_identity_and_pin_verification(self):
         data,mapping,text=candidate(PIN);manifest=json.loads(text);report=json.loads(mapping)
+        self.assertEqual(manifest['source_revision'],PIN);self.assertEqual(report['source_revision'],PIN)
         self.assertEqual(report['sha256'],hashlib.sha256(data).hexdigest())
         self.assertEqual(manifest['image']['sha256'],report['sha256'])
         self.assertEqual(manifest['map_sha256'],hashlib.sha256(mapping.encode()).hexdigest())
