@@ -10,24 +10,22 @@ local observation, not manufacturer bytes):
  2. Software leaves the immediate ($0202) or deferred ($0204) vector high byte at $FF
     to mean "use the default". The immediate path now falls back to system_vbi and the
     deferred path to the register-restoring exit at $FCB2 instead of jumping to $FFxx.
- 3. Keyboard and break interrupts. Software installs handlers at $020A (keyboard) and
-    $020C (break/top fire) and leaves $0208 alone. A pending break source (IRQST bit 7)
-    is acknowledged (IRQEN disable then POKMSK restore) and vectored through $020C with
-    only A on the stack (X, Y restored first). A pending keyboard source (bit 6) is
-    acknowledged and vectored through $020A with the full A/X/Y frame still on the
-    stack and A holding the key value: digits 0..9, $0A '*', $0B '#', $0C Start, $0D Pause,
-    $0E Reset. The value is derived from KBCODE bits 4..1 by a 16-byte table; the layout of
-    KBCODE was observed, the numbering is consumer-inferred. Other sources still fault.
+ 3. Keyboard and break interrupts. A pending break source (IRQST bit 7) or keyboard source
+    (bit 6) is acknowledged (IRQEN disable, POKMSK restore) and X/Y are restored so only A is
+    on the stack. Break goes to ($020C). Keyboard goes to ($0208) when software installed its
+    own handler; the default value is $FC.. or $FD.. (the table value or the observed
+    BIOS-internal default), which selects a default routine (FF20) that pushes X/Y, converts
+    KBCODE bits 4..1 to a key value in A (digits 0..9, $0A '*', $0B '#', $0C Start, $0D
+    Pause, $0E Reset; layout observed, numbering consumer-inferred) and calls ($020A) with the
+    full frame, or exits at $FCB2 when $020A is unset (high byte $00 or $FF). Other sources fault.
  4. Software restores the IRQ vector to $FC03 as a default value; $FC03 now is JMP $FE00.
     Reset entry becomes JMP $FC74 (SEI CLD LDX #$FF TXS, JMP $FC06) so the first 15 bytes no
     longer need to be executed in order; the callable-reset boundary at +$0F is unchanged.
  5. Software copies its default vectors from a table in BIOS space ($FE95, six vectors:
     IRQ $FC03, immediate VBI $FCB8, deferred VBI $FCB2 exit, DLI $FCDD RTI, keyboard
-    $FC8D key-value routine, keyboard deferred $FCB2 exit); the table now exists.
- 6. Software that installs its own keyboard handler at $0208 is called directly; the
-    default ($0208 high byte $FC) goes through the key-value path to $020A.
+    $FC8D default check, keyboard deferred $FCB2 exit); the table now exists.
  Known gap: a $FFFF key/break vector set explicitly by software is still jumped to.
- No other behaviour changes; new code sits in previously erased space or the superseded clock body."""
+ No other behaviour changes; new code sits in previously erased space and the head of the former reserve."""
 import argparse
 import hashlib
 from pathlib import Path
@@ -45,13 +43,14 @@ DEFERRED_HELPER = 0xFDE0
 IMMEDIATE_CODE = bytes.fromhex('48ad0302c9fff00468' '6c0202' '68' '4ca0fc')
 TIMER_CODE = bytes.fromhex('e602d002e601' 'a203' 'bd1c02' 'f003' 'de1c02' 'ca10f5' 'a503d003' '4c40fd' '4cb0fc')
 DEFERRED_CODE = bytes.fromhex('ad0502c9ffd003' '4cb2fc' '6c0402')
-KEY_TABLE_AT = 0xFDF0   # reuses the superseded clock body
+KEY_ENTRY_AT = 0xFC8D     # default-or-custom check for the keyboard immediate vector
+KEY_ENTRY = bytes.fromhex('ad090209' '01c9fdd0034c20ff' '6c0802')
+KEY_CODE_AT = 0xFF20      # default keyboard routine: key value in A, full frame, JMP ($020A) unless unset
+KEY_CODE = bytes.fromhex('8a489848' 'ad09e84a290faa' 'bd3cff' 'ae0b02f008e8f005' '6c0a02' '4cb2fc')
+KEY_TABLE_AT = 0xFF3C
 KEY_TABLE = bytes.fromhex('0f0b000a0e090807' '0d0605040c030201')
-KEY_CODE_AT = 0xFC8D
-KEY_CODE = bytes.fromhex('ad09e84a290faa' 'bdf0fd' '6c0a02')
-KEY_ENTRY_AT = 0xFD33
-KEY_ENTRY = bytes.fromhex('ad0902c9fcf003' '6c0802' '4c8dfc')
-OLD_CLOCK = bytes.fromhex('e602d002e601a503d0034c40fd4cb0fc')
+OLD_CLOCK_AT = 0xFDF0
+OLD_CLOCK = bytes.fromhex('e602d002e601a503d0034c40fd4cb0fc')   # unreachable since system_vbi was redirected; erased
 RESET_AT = 0xFC00
 RESET_OLD = bytes.fromhex('78d8a2ff9aa9008d0ed48d00d4eaea')
 RESET_NEW = bytes.fromhex('4c74fc' '4c00fe' 'a9008d0ed48d00d4ea')
@@ -63,7 +62,7 @@ FAULT_JUMP_AT = 0xFE4D  # the unsupported-source fault jump; redirected to the c
 VECTOR_TABLE_AT = 0xFE95
 VECTOR_TABLE = bytes.fromhex('03fc' 'b8fc' 'b2fc' 'ddfc' '8dfc' 'b2fc')
 SPLIT_AT = 0xFCF0
-SPLIT_CODE = bytes.fromhex('b0034c33fd' '68a868aa6c0c02')   # key path enters the vector check at $FD33
+SPLIT_CODE = bytes.fromhex('68a868aa' 'b003' '4c8dfc' '6c0c02')   # restore X/Y, break -> ($020C), key -> $FC8D
 
 
 def _off(address):
@@ -92,16 +91,18 @@ def compat2_image():
     _put(image, SPLIT_AT, b'\xff' * len(SPLIT_CODE), SPLIT_CODE)
     _put(image, KEY_ENTRY_AT, b'\xff' * len(KEY_ENTRY), KEY_ENTRY)
     _put(image, KEY_CODE_AT, b'\xff' * len(KEY_CODE), KEY_CODE)
-    _put(image, KEY_TABLE_AT, OLD_CLOCK, KEY_TABLE)       # the old clock body is unreachable since system_vbi was redirected
+    _put(image, KEY_TABLE_AT, b'\xff' * len(KEY_TABLE), KEY_TABLE)
+    _put(image, OLD_CLOCK_AT, OLD_CLOCK, b'\xff' * len(OLD_CLOCK))
     _put(image, RESET_STUB_AT, b'\xff' * len(RESET_STUB), RESET_STUB)
     _put(image, RESET_AT, RESET_OLD, RESET_NEW)
     data = bytes(image)
     added = (len(IMMEDIATE_CODE) + len(TIMER_CODE) + len(DEFERRED_CODE) + len(SOURCE_CODE)
-             + len(SPLIT_CODE) + len(KEY_CODE) + len(KEY_ENTRY) + len(RESET_STUB) + len(VECTOR_TABLE))
+             + len(SPLIT_CODE) + len(KEY_CODE) + len(KEY_ENTRY) + len(RESET_STUB) + len(VECTOR_TABLE)
+             + len(KEY_TABLE) - len(OLD_CLOCK))
     mapping = dict(mapping)
     symbols = dict(mapping['symbols'])
     symbols.update(vbi_immediate_default=IMMEDIATE_HELPER, vbi_timer_clock=TIMER_CLOCK, vbi_deferred_default=DEFERRED_HELPER,
-        irq_source_classifier=SOURCE_AT, irq_key_vector_call=KEY_CODE_AT, key_value_table=KEY_TABLE_AT, irq_default_entry=0xFC03, default_vector_table=VECTOR_TABLE_AT)
+        irq_source_classifier=SOURCE_AT, irq_key_default=KEY_CODE_AT, irq_key_check=KEY_ENTRY_AT, key_value_table=KEY_TABLE_AT, irq_default_entry=0xFC03, default_vector_table=VECTOR_TABLE_AT)
     mapping.update(purpose='authored-compat2-awaiting-native-admission',
         sha256=hashlib.sha256(data).hexdigest(), symbols=symbols,
         used=mapping['used'] + added, remaining=mapping['remaining'] - added,
