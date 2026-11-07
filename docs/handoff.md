@@ -1,5 +1,26 @@
 # Runtime handoff
 
+## Visual observation complete; native Linear8K guard pending
+
+Separate licensed visual follow-up0ce9f62/msg_5887 COMPLETE:1800returns/0faults,
+1800callbacks/nine privately retained native376x240 PNGs, actual bytepitch1824,
+canonical RGBA excludes padding;9/9 exact decoded roundtrips. Initial black band/
+dark purple; later samples same nearly solid dark purple, no visible text/menu/
+sprites/gameplay/input response. No listening or defect attribution. New permission
+consumed, old consumed records preserved, parent retry refused before native spawn.
+Same138fad8/e8 tuple/target/unverified mapping/route; no producer input changes.
+[Aggregate visual receipt](bounded-application-observation.md#separate-bounded-visual-observation).
+NEXT owner review and concrete original startup/service diagnostic scope; no
+unapproved replay/repair or image-derived font/service reconstruction.
+
+Native review8a69007/msg_0542 ACCEPTS Linear8K source2e8fd51/receipt755e458 as
+producer-only authoring. Actual handoff guard must trigger on previousPC==handoff,
+even outside old Ready range, with ZERO first application fetch for wrong allowed
+AND out-of-range overlay destinations. Immutable loaded identity independently
+of mutable pak labels. Actual native implementation/dual-build qualification
+pending; no validator/admission/release/fullR62 ACK. Exact packetmsg_c0aa delivered.
+
+
 ## Completed original guarded Linear8K producer authoring
 
 Technical approval9076b17/msg_f869, NEW frozen source/export
@@ -29,7 +50,7 @@ build PASS; finalCTest1/1 PASS10.53s. Ninth method real pinned CLI/CMake4props/
 dependency/order/triple equality; temporary consumers removed, existing build only.
 No native/private execution, device/Fable/new clone/permanent build or core edits.
 
-NEXT: send exact pinned packet and native guard/matrix to Mars underreq_6f74;
+Exact pinned packet msg_c0aa sent to Mars underreq_6f74;
 await ORIGINAL dual-native mapping/entry/immutable/pak/cheat/overlay/handoff/NMI/
 fullCold/FF/RAM/IRQ/input/allSP/process/state+next2frames/R65/OFF/firmware/converter
 qualification. Wrong16K wiring is unsupported negative; same-image32/8 state

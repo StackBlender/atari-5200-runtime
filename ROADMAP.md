@@ -5,6 +5,25 @@ runtime. NTSC four-port first; full software compatibility remains unfinished.
 
 ## Next
 
+Separate licensed visual follow-up0ce9f62/msg_5887 COMPLETE:1800returns/0faults,
+1800callbacks/nine privately retained native376x240 PNGs, actual bytepitch1824,
+canonical RGBA excludes padding;9/9 exact decoded roundtrips. Initial black band/
+dark purple; later samples same nearly solid dark purple, no visible text/menu/
+sprites/gameplay/input response. No listening or defect attribution. New permission
+consumed, old consumed records preserved, parent retry refused before native spawn.
+Same138fad8/e8 tuple/target/unverified mapping/route; no producer input changes.
+[Aggregate visual receipt](docs/bounded-application-observation.md#separate-bounded-visual-observation).
+NEXT owner review and concrete original startup/service diagnostic scope; no
+unapproved replay/repair or image-derived font/service reconstruction.
+
+Native review8a69007/msg_0542 ACCEPTS Linear8K source2e8fd51/receipt755e458 as
+producer-only authoring. Actual handoff guard must trigger on previousPC==handoff,
+even outside old Ready range, with ZERO first application fetch for wrong allowed
+AND out-of-range overlay destinations. Immutable loaded identity independently
+of mutable pak labels. Actual native implementation/dual-build qualification
+pending; no validator/admission/release/fullR62 ACK. Exact packetmsg_c0aa delivered.
+
+
 Mars9076b17/msg_f869 APPROVES original EXACT8192 diagnostics and separately named
 Linear8K guarded descriptor/export/CMake authoring on combinede8. ALL2048ROMbytes,
 1556used/492unused/250reserve and CPU authored capabilities stay unchanged. Required
