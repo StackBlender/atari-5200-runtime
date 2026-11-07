@@ -23,9 +23,10 @@ class Compat2Tests(unittest.TestCase):
         parent,before=compat_image();data,mapping=compat2_image()
         changed={i+O for i,(o,n) in enumerate(zip(parent,data)) if o!=n}
         allowed=({0xfcd9,0xfcda,0xfcdb,0xfca6,0xfca7,0xfe8c,0xfe8d,0xfe8e}|set(range(0xfce0,0xfcf0))
-                 |set(range(0xfdc0,0xfdc0+29))|set(range(0xfde0,0xfded)))
+                 |set(range(0xfdc0,0xfdc0+29))|set(range(0xfde0,0xfded))
+                 |{0xfe10,0xfe1f}|set(range(0xfe8f,0xfe8f+29))|set(range(0xfcf0,0xfcfc))|set(range(0xfd33,0xfd40))|set(range(0xfc8d,0xfc9d)))
         self.assertTrue(changed<=allowed,sorted(hex(a) for a in changed-allowed))
-        self.assertEqual((len(data),mapping['used']-before['used']),(2048,16+29+13))
+        self.assertEqual((len(data),mapping['used']-before['used']),(2048,16+29+13+29+12+13+16))
         self.assertEqual(data[-6:],parent[-6:])
         self.assertEqual(data[0x700:0x7fa],b'\xff'*250)
         self.assertIn('compat-v2',mapping['authored_capabilities'])
@@ -46,6 +47,22 @@ class Compat2Tests(unittest.TestCase):
         data,_=compat2_image()
         self.assertEqual(data[0x68c:0x68f],bytes.fromhex('4ce0fd'))
         self.assertEqual(data[0x5e0:0x5ed],bytes.fromhex('ad0502c9ffd0034cb2fc6c0402'))
+
+    def test_key_and_break_services(self):
+        data,mapping=compat2_image()
+        self.assertEqual(0xfe11+data[0x610],0xfe8f)                      # first classifier branch
+        self.assertEqual(0xfe20+data[0x61f],0xfe8f)                      # second classifier branch
+        self.assertEqual(data[0x68f:0x68f+5],bytes.fromhex('8a29c0f0b9'))  # bits 6/7 else fault at $FE4D
+        self.assertEqual(0xfe94+data[0x692+1]-0x100,0xfe4d)
+        self.assertEqual(data[0x64d:0x650],bytes.fromhex('4c83fc'))      # fault stub kept
+        self.assertEqual(data[0x4f0:0x4fc],bytes.fromhex('b0034c33fd68a868aa6c0c02'))
+        self.assertEqual(data[0x533:0x540],bytes.fromhex('ad09e84a290faabd8dfc6c0a02'))
+        self.assertEqual(sorted(data[0x48d:0x49d]),list(range(16)))     # table is a permutation
+        # observed KBCODE bits 4..1 -> value
+        table=data[0x48d:0x49d]
+        for raw,value in ((0x1f,1),(0x05,0),(0x07,10),(0x03,11),(0x19,12),(0x11,13),(0x09,14),(0x0b,9)):
+            self.assertEqual(table[(raw>>1)&15],value)
+        self.assertEqual(mapping['symbols']['key_value_table'],0xfc8d)
 
     def test_export_identity_and_pin_verification(self):
         data,mapping,text=candidate(PIN);manifest=json.loads(text);report=json.loads(mapping)

@@ -10,6 +10,14 @@ local observation, not manufacturer bytes):
  2. Software leaves the immediate ($0202) or deferred ($0204) vector high byte at $FF
     to mean "use the default". The immediate path now falls back to system_vbi and the
     deferred path to the register-restoring exit at $FCB2 instead of jumping to $FFxx.
+ 3. Keyboard and break interrupts. Software installs handlers at $020A (keyboard) and
+    $020C (break/top fire) and leaves $0208 alone. A pending break source (IRQST bit 7)
+    is acknowledged (IRQEN disable then POKMSK restore) and vectored through $020C with
+    only A on the stack (X, Y restored first). A pending keyboard source (bit 6) is
+    acknowledged and vectored through $020A with the full A/X/Y frame still on the
+    stack and A holding the key value: digits 0..9, $0A '*', $0B '#', $0C Start, $0D Pause,
+    $0E Reset. The value is derived from KBCODE bits 4..1 by a 16-byte table; the layout of
+    KBCODE was observed, the numbering is consumer-inferred. Other sources still fault.
  No other behaviour changes; the new code sits in previously erased space."""
 import argparse
 import hashlib
@@ -28,6 +36,14 @@ DEFERRED_HELPER = 0xFDE0
 IMMEDIATE_CODE = bytes.fromhex('48ad0302c9fff00468' '6c0202' '68' '4ca0fc')
 TIMER_CODE = bytes.fromhex('e602d002e601' 'a203' 'bd1c02' 'f003' 'de1c02' 'ca10f5' 'a503d003' '4c40fd' '4cb0fc')
 DEFERRED_CODE = bytes.fromhex('ad0502c9ffd003' '4cb2fc' '6c0402')
+KEY_TABLE_AT = 0xFC8D
+KEY_TABLE = bytes.fromhex('0f0b000a0e090807' '0d0605040c030201')
+KEY_CODE_AT = 0xFD33
+KEY_CODE = bytes.fromhex('ad09e84a290faa' 'bd8dfc' '6c0a02')
+SOURCE_AT = 0xFE8F
+SOURCE_CODE = bytes.fromhex('8a29c0f0b9' '8a3005' 'a9bf18' '9003' 'a97f38' '25008d0ee8a5008d0ee8' '4cf0fc')
+SPLIT_AT = 0xFCF0
+SPLIT_CODE = bytes.fromhex('b0034c33fd' '68a868aa6c0c02')
 
 
 def _off(address):
@@ -50,11 +66,22 @@ def compat2_image():
     _put(image, IMMEDIATE_HELPER, b'\xff' * len(IMMEDIATE_CODE), IMMEDIATE_CODE)
     _put(image, TIMER_CLOCK, b'\xff' * len(TIMER_CODE), TIMER_CODE)
     _put(image, DEFERRED_HELPER, b'\xff' * len(DEFERRED_CODE), DEFERRED_CODE)
+    # the two branches that reached the unsupported-source fault now enter the source classifier
+    if (image[_off(0xFE0F)], image[_off(0xFE10)], image[_off(0xFE1E)], image[_off(0xFE1F)]) != (0xD0, 0x3C, 0xF0, 0x2D):
+        raise AssemblyError('IRQ classifier differs from the reviewed sequence')
+    image[_off(0xFE10)] = (SOURCE_AT - 0xFE11) & 0xFF
+    image[_off(0xFE1F)] = (SOURCE_AT - 0xFE20) & 0xFF
+    _put(image, SOURCE_AT, b'\xff' * len(SOURCE_CODE), SOURCE_CODE)
+    _put(image, SPLIT_AT, b'\xff' * len(SPLIT_CODE), SPLIT_CODE)
+    _put(image, KEY_CODE_AT, b'\xff' * len(KEY_CODE), KEY_CODE)
+    _put(image, KEY_TABLE_AT, b'\xff' * len(KEY_TABLE), KEY_TABLE)
     data = bytes(image)
-    added = len(IMMEDIATE_CODE) + len(TIMER_CODE) + len(DEFERRED_CODE)
+    added = (len(IMMEDIATE_CODE) + len(TIMER_CODE) + len(DEFERRED_CODE) + len(SOURCE_CODE)
+             + len(SPLIT_CODE) + len(KEY_CODE) + len(KEY_TABLE))
     mapping = dict(mapping)
     symbols = dict(mapping['symbols'])
-    symbols.update(vbi_immediate_default=IMMEDIATE_HELPER, vbi_timer_clock=TIMER_CLOCK, vbi_deferred_default=DEFERRED_HELPER)
+    symbols.update(vbi_immediate_default=IMMEDIATE_HELPER, vbi_timer_clock=TIMER_CLOCK, vbi_deferred_default=DEFERRED_HELPER,
+        irq_source_classifier=SOURCE_AT, irq_key_vector_call=KEY_CODE_AT, key_value_table=KEY_TABLE_AT)
     mapping.update(purpose='authored-compat2-awaiting-native-admission',
         sha256=hashlib.sha256(data).hexdigest(), symbols=symbols,
         used=mapping['used'] + added, remaining=mapping['remaining'] - added,
@@ -62,6 +89,8 @@ def compat2_image():
         source_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
         compat2=dict(timer_bytes='$021C..$021F decremented per frame when non-zero',
             ff_vector_policy='high byte $FF at $0203 -> system_vbi; at $0205 -> exit at $FCB2',
+            key_irq='bit 6 -> ack, A=key value 0..9,$0A * ,$0B #,$0C Start,$0D Pause,$0E Reset, full frame, JMP ($020A)',
+            break_irq='bit 7 -> ack, A-only frame, JMP ($020C)',
             source='consumer-observed software behaviour, not manufacturer firmware'))
     mapping['authored_capabilities'] = [*mapping['authored_capabilities'], 'compat-v2']
     return data, mapping
