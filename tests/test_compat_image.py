@@ -23,9 +23,9 @@ class CompatTests(unittest.TestCase):
     def test_only_reviewed_bytes_change_and_fit(self):
         parent,before=callable_reset_image();data,mapping=compat_image()
         changed={i+O for i,(o,n) in enumerate(zip(parent,data)) if o!=n}
-        allowed=set(range(0xfc00+0x63,0xfc00+0x8d))|{0xfdf1,0xfdf5,0xfccd,0xfcdc,0xfcdd}
+        allowed=set(range(0xfc00+0x63,0xfc00+0x8d))|{0xfdf1,0xfdf5,0xfccd,0xfcdc,0xfcdd}|set(range(0xfcb0,0xfcbb))
         self.assertTrue(changed<=allowed,sorted(hex(a) for a in changed-allowed))
-        self.assertEqual((len(data),mapping['used'],mapping['remaining']),(2048,1567,481))
+        self.assertEqual((len(data),mapping['used'],mapping['remaining']),(2048,1572,476))
         self.assertEqual(data[0x700:0x7fa],b'\xff'*250)          # reserve untouched
         self.assertEqual(data[-6:],parent[-6:])                  # vectors unchanged
         self.assertEqual(data[0x480:0x489],parent[0x480:0x489])  # fault stubs
@@ -45,6 +45,13 @@ class CompatTests(unittest.TestCase):
         self.assertEqual(copied['stores'].index((0xd40e,0x40)),len(copied['stores'])-1)   # last hardware write
         real=run_reinit(data,rom_start=0xfc0f)
         self.assertEqual(real['pc'],0xfc8a)
+
+    def test_exit_entry_at_fcb2_and_default_vbi_alias(self):
+        data,mapping=compat_image()
+        self.assertEqual(data[0x4b0:0x4b8],bytes.fromhex('eaea68a868aa6840'))   # exit sequence starts at $FCB2
+        self.assertEqual(data[0x4b8:0x4bb],bytes.fromhex('4ca0fc'))             # JMP system_vbi
+        self.assertEqual(mapping['symbols']['vbi_exit_entry'],0xfcb2)
+        self.assertEqual(mapping['symbols']['system_vbi'],0xfca0)
 
     def test_frame_counter_low_byte_is_0002(self):
         data,_=compat_image();body=data[0x5f0:0x5fb]

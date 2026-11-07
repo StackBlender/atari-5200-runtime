@@ -9,7 +9,11 @@ observation, not manufacturer bytes) that the earlier generations did not provid
  2. Software polls the LOW frame counter byte at $0002 for a per-frame change; $0001
     is the high byte. The default clock body now increments $0002 and carries into $0001.
  3. An NMI can arrive with no source flagged in NMIST; the classifier returned to the
-    fault loop. It now treats that as spurious (PLA, RTI) instead of faulting."""
+    fault loop. It now treats that as spurious (PLA, RTI) instead of faulting.
+ 4. Software ends its own vertical-blank handler with JMP $FCB2 (expecting the full
+    register-restoring exit to START there) and restores the immediate-VBI vector to $FCB8.
+    The exit sequence now begins at $FCB2 (two NOPs keep $FCB0 valid) and $FCB8 is
+    JMP system_vbi."""
 import argparse
 import hashlib
 from pathlib import Path
@@ -22,6 +26,9 @@ ENABLE_VBI = bytes.fromhex('a9408d0ed4')   # LDA #$40, STA NMIEN
 CLOCK = 0xFDF0
 CLASSIFIER_BNE_OPERAND = 0xFCCD
 SPURIOUS = 0xFCDC
+EXIT = 0xFCB0
+VBI_ENTRY = 0xFCA0
+VBI_ALIAS = 0xFCB8
 
 
 def _off(address):
@@ -55,18 +62,23 @@ def compat_image():
         raise AssemblyError('NMI classifier differs from the reviewed sequence')
     image[bne] = SPURIOUS - (CLASSIFIER_BNE_OPERAND + 1)
     image[_off(SPURIOUS):_off(SPURIOUS) + 2] = bytes.fromhex('6840')   # PLA, RTI
+    ex = _off(EXIT)
+    if parent[ex:ex + 8] != bytes.fromhex('68a868aa6840ffff') or parent[_off(VBI_ALIAS):_off(VBI_ALIAS) + 3] != b'\xff' * 3:
+        raise AssemblyError('vbi exit region differs from the reviewed sequence')
+    image[ex:ex + 8] = bytes.fromhex('eaea68a868aa6840')          # NOP NOP, then the exit at $FCB2
+    image[_off(VBI_ALIAS):_off(VBI_ALIAS) + 3] = bytes.fromhex('4ca0fc')   # JMP system_vbi
     data = bytes(image)
     startup_used = len(new)
-    added = 5 + 2
+    added = 5 + 2 + 2 + 3
     mapping = dict(mapping)
-    symbols = dict(mapping['symbols']); symbols.update(nmi_spurious=SPURIOUS)
+    symbols = dict(mapping['symbols']); symbols.update(nmi_spurious=SPURIOUS, vbi_exit_entry=0xFCB2, vbi_alias=VBI_ALIAS)
     allocations = [dict(a) for a in mapping['allocations']]
     for a in allocations:
         if a['name'] == 'startup':
             grown = startup_used - (a['used'])
             a.update(used=startup_used, remaining=a['end'] - a['start'] - startup_used)
         if a['name'] == 'interrupts':
-            a.update(used=a['used'] + 2, remaining=a['remaining'] - 2)
+            a.update(used=a['used'] + 7, remaining=a['remaining'] - 7)
     base = mapping['nominal_startup']
     mapping.update(purpose='authored-compat-awaiting-native-admission',
         sha256=hashlib.sha256(data).hexdigest(), symbols=symbols, allocations=allocations,
@@ -74,7 +86,7 @@ def compat_image():
         parent_image_sha256=hashlib.sha256(parent).hexdigest(),
         source_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
         compat=dict(nmien_at_handoff=0x40, frame_counter_low=0x0002, frame_counter_high=0x0001,
-            spurious_nmi='PLA RTI', source='consumer-observed software behaviour, not manufacturer firmware'),
+            spurious_nmi='PLA RTI', vbi_exit_entry=0xFCB2, vbi_alias='JMP system_vbi at FCB8', source='consumer-observed software behaviour, not manufacturer firmware'),
         nominal_startup=dict(base,
             numeric_normal_cycles=base['numeric_normal_cycles'] + 6,
             numeric_boundary_cycles=base['numeric_boundary_cycles'] + 6,
