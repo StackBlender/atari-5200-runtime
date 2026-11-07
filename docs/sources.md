@@ -638,3 +638,15 @@ instruction semantics (local INCabsoluteEE with independent expected-byte test,
 no change to frozen emitter). Bitmap packing/progress/control stores are our own
 program; tests do NOT execute a CPU. Native viewport origin/converter RGBA values
 remain unknown for independently declared owner-oracle qualification.
+
+
+## Independent original32KiB startup/display qualification receipt
+
+Read ONLY Mars027b70330e714c78bf900aad930b374236b44eff proof prose in
+docs/a52-startup-display-proof.md, deliveredmsg_e942/req_6f74. Four original32KiB
+controls pass independently in Release/unity/full-native Debug-ASan/nonunity,
+fixed-before-run geometry/raw+converted pixels and CPU/DMA/VBI/bus provenance.
+No native test/implementation, producer oracle reuse, firmware/private source or
+new media read. Facts are attributed native emulator observations, not original
+system/reference-role evidence. Exact8KiB still unrun; frozen inputs unchanged,
+no original runtime/service/font change warranted by a failed baseline case.

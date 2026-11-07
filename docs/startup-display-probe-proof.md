@@ -70,3 +70,15 @@ here; native owner must independently predeclare them, not fit crop/translation
 from results. Report exact first unmet condition before any runtime change.
 Native execution, source/reference roles, fullR62/product/release remain open.
 Both prior private-target permissions stay consumed; no third attempt or repair.
+
+
+## Subsequent independent32KiB native result
+
+Mars027b703/msg_e942 independently qualifies all FOUR32KiB controls in Release/
+unity and full-native Debug/ASan/nonunity. Actual first fetch/progress/data/DMA,
+source/clock/MMIO attribution and predeclared raw+converted geometric pixels pass
+within exactly8ordinary returns/external10seconds. See [native receipt](startup-display-native-receipt.md).
+Original source/contract/report bytes remain frozen; baseline-only observed
+viewport/palette facts belong to that separate receipt. Eight exact8KiB cases
+remain unrun pending nativeguard/qualification. No failing baseline requirement
+or private gameplay proof supports runtime/font/service repair. No release/flags.

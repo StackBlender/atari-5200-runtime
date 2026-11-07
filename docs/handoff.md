@@ -1,5 +1,31 @@
 # Runtime handoff
 
+## Independent32KiB startup/display baseline complete
+
+Independent32KiB startup/display baseline PASS: Mars027b70330e714c78bf900aad930b374236b44eff/
+msg_e942/req_6f74. All FOUR direct/shadow x numeric/secondFF cases pass Release/
+unity and full-native Debug/ASan/nonunity, exactly8ordinary returns/external10s.
+First fetch/capture, CPU initialization/progress/carry/write windows, physical
+list/bitmap DMA, ordered direct-vs-VBI source/clock/PC/MMIO and all expected raw/
+converted field pixels pass. Predeclared canvas96,32/viewport28,24/320x192 and
+opaque gray0/90/162/236, no fit; finaltwo viewports equal. No runtime change or
+failed requirement supporting font/service repair; private static output remains
+unexplained. Eight exact8KiB cases UNRUN: NEXT Mars nativeguard/integration and
+qualification, then original8K diagnostic execution. Both private permissions
+consumed, retail-source blocker open; no release/fullR62 ACK. See
+[startup/display native receipt](startup-display-native-receipt.md).
+
+Read Mars027b703 proof prose ONLY; no native implementation/tests exposure.
+No code/CPU/provider rerun here. Keep all SIX diagnostic source inputs at30968a0
+and FOUR guarded8K inputs at2e8fd51 byte-identical. Frozen contracts/report null
+viewport/RGBA fields describe prequalification authorship; DO NOTedit them after
+native receipt. Separate receipt resolves baseline-only observation facts. NEXT
+Mars actual native8K guard/qualification then eight original8K cases; no additional
+producer baseline authoring needed. Full request remains UNACKED. Commit and push
+this docs-only receipt then release public repo lease; consumer roadmap is updated
+separately. No media created and no private replay/source inspection authorized.
+
+
 ## Original startup/display diagnostic authoring
 
 Original startup/display authoring60cb46a/msg_32af now supplied in
@@ -12,7 +38,7 @@ Nine original offline tests cover ALL240bitmapbytes,12layouts/metadata/zero hole
 firstcapture/countercarry/controlstore bytes, types, noexecution claims, freshprocess
 and source-pin refusal. Full237offline/build/CTest1/1 PASS; NEW source30968a02ff474a21abcdb19faa8eac12c260c107
 frozen/export-qualified, real12case/two-process byte equality/fullparent refusal.
-Native execution pending. Frozen six source inputs;
+Four32KiB native cases PASS027b703; eight8KiB remain unrun. Frozen six source inputs;
 no old runtime/profile/provider/catalog/CMake input modified. Native8K waits guard.
 Normative source: docs/startup-display-probe-contract.md, receipts separate.
 
@@ -26,7 +52,7 @@ index rawe9b92f05, all12case hashes/sixinputs in startup-display-probe-proof.md.
 9focused PASS0.247s/full237 PASS10.604s/existing buildPASS/CTest1/1 PASS10.63s.
 Exact original packet deliveredmsg_9eba/req_6f74 after source30968a0 and
 receiptdb4359b pushes. Retro consumer handoff/roadmap committed/pushedbbe63b6.
-NEXT independent native oracle/execution with Mars,8K guard first. Native execution/independent expected viewport/RGBA remain pending;
+Four32KiB cases independently PASS027b703; NEXT8K nativeguard/qualification. Baseline32K viewport/RGBA now independently qualified (receipt above);
 8K waits guard qualification. No producer/native/app/release/fullR62 promotion.
 
 

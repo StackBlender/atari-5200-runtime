@@ -5,6 +5,20 @@ runtime. NTSC four-port first; full software compatibility remains unfinished.
 
 ## Next
 
+Independent32KiB startup/display baseline PASS: Mars027b70330e714c78bf900aad930b374236b44eff/
+msg_e942/req_6f74. All FOUR direct/shadow x numeric/secondFF cases pass Release/
+unity and full-native Debug/ASan/nonunity, exactly8ordinary returns/external10s.
+First fetch/capture, CPU initialization/progress/carry/write windows, physical
+list/bitmap DMA, ordered direct-vs-VBI source/clock/PC/MMIO and all expected raw/
+converted field pixels pass. Predeclared canvas96,32/viewport28,24/320x192 and
+opaque gray0/90/162/236, no fit; finaltwo viewports equal. No runtime change or
+failed requirement supporting font/service repair; private static output remains
+unexplained. Eight exact8KiB cases UNRUN: NEXT Mars nativeguard/integration and
+qualification, then original8K diagnostic execution. Both private permissions
+consumed, retail-source blocker open; no release/fullR62 ACK. See
+[startup/display native receipt](docs/startup-display-native-receipt.md).
+
+
 Original startup/display authoring60cb46a/msg_32af now supplied in
 tools/startup_display_probe.py and strict tools/export_startup_display_probes.py.
 Twelve cases:32K/8000 and exact8K/8000,A000 crossed direct/shadow and numeric/FF.
@@ -15,11 +29,12 @@ Nine original offline tests cover ALL240bitmapbytes,12layouts/metadata/zero hole
 firstcapture/countercarry/controlstore bytes, types, noexecution claims, freshprocess
 and source-pin refusal. Full237offline/build/CTest1/1 PASS; source30968a02ff474a21abcdb19faa8eac12c260c107
 frozen/export-qualified, real12case/two-process export equality/negative pin PASS.
-Native execution pending. Frozen six source inputs;
+Four32KiB cases now independently pass027b703 (receipt above); eight8KiB cases
+remain unrun pending nativeguard. Frozen six source inputs;
 no old runtime/profile/provider/catalog/CMake input modified. Native8K waits guard.
 Normative source: docs/startup-display-probe-contract.md, hashes/receipt in
-docs/startup-display-probe-proof.md. NEXT native owner original oracle/firstfetch/
-CPU counter/list+bitmapDMA/MMIO attribution/field pixels;8K guard first.
+docs/startup-display-probe-proof.md. Native32K requirement complete; NEXT
+8K guard/integration qualification, then original8K oracle execution.
 
 Original authoring approval60cb46a/msg_32af (implemented/export-qualified above):
 fullCold -> first actual application fetch -> application-owned progress counter
@@ -32,7 +47,8 @@ progress/list+bitmapDMA/shadow-MMIO order/pixel expectations.8K waits nativeguar
 qualification. Deliver new original source/export pin/layout/write windows/oracle;
 no runtime change until exact diagnostic failure reviewed. Both private permissions
 remain consumed; retail-source blocker independent. Packet deliveredmsg_9eba/req_6f74 after source30968a0/receiptdb4359b pushes.
-NEXT independent native oracle/execution,8K guard first; no further producer
+Four32K original native cases completed027b703; NEXT8K guard/qualification;
+no further producer
 service/image change without exact diagnostic failure and review.
 
 

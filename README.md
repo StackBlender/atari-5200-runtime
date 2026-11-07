@@ -127,3 +127,10 @@ exports twelve self-initializing cartridge controls (32KiB baseline/exact8KiB,
 direct MMIO versus VBI shadows, numeric/secondFF Cold). Counter and geometric
 bitmap expectations are independently specified. Offline authoring is qualified;
 native execution,8KiB guard and all product/compatibility gates remain separate.
+
+
+The four32KiB startup/display controls now [independently pass native Release and
+full-native ASan](docs/startup-display-native-receipt.md), including first fetch,
+CPU progress, actual display DMA, VBI shadow provenance and every geometric pixel.
+The eight8KiB controls await native guard qualification. This baseline result
+does not establish general game compatibility or a complete BIOS replacement.
