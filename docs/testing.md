@@ -416,3 +416,10 @@ returns/external10seconds per case. All12exports are diagnostics, not runtime
 providers, no image/catalog/capability/default promotion. Exact8KiB execution
 must await native guard qualification; matching pixels alone cannot prove VBI
 shadow execution. Producer artifact/report byte equality is tooling evidence only.
+
+
+Pinned diagnostic exporter receipt30968a0:9focused/full237offline/build/CTest1/1
+PASS; real twelve-case export in two fresh processes yields all25files exactly,
+with all hash/size/source/runtime bindings and full previous-source refusal.
+See startup-display-probe-proof.md. Six frozen inputs unchanged after pin; tests
+and receipts are noninputs. No native CPU/display observation is claimed.

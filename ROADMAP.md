@@ -11,11 +11,15 @@ Twelve cases:32K/8000 and exact8K/8000,A000 crossed direct/shadow and numeric/FF
 Full Cold/firstopcode8D0030/original geometric40x24mode8/CPU-init list0800/bitmap1000/
 counter3006..7/ready3008; direct display MMIO vs ordinary VBI public shadows with
 independent source/clock/PC/MMIO-order trace requirement.8returns/external10s.
-Eight original offline tests cover ALL240bitmapbytes,12layouts/metadata/zero holes,
+Nine original offline tests cover ALL240bitmapbytes,12layouts/metadata/zero holes,
 firstcapture/countercarry/controlstore bytes, types, noexecution claims, freshprocess
-and source-pin refusal. Full/native execution pending. Frozen six source inputs;
+and source-pin refusal. Full237offline/build/CTest1/1 PASS; source30968a02ff474a21abcdb19faa8eac12c260c107
+frozen/export-qualified, real12case/two-process export equality/negative pin PASS.
+Native execution pending. Frozen six source inputs;
 no old runtime/profile/provider/catalog/CMake input modified. Native8K waits guard.
-Normative source: docs/startup-display-probe-contract.md, receipts separate.
+Normative source: docs/startup-display-probe-contract.md, hashes/receipt in
+docs/startup-display-probe-proof.md. NEXT native owner original oracle/firstfetch/
+CPU counter/list+bitmapDMA/MMIO attribution/field pixels;8K guard first.
 
 NEW original startup/display diagnostic scope Mars60cb46a/msg_32af APPROVED:
 fullCold -> first actual application fetch -> application-owned progress counter

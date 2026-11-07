@@ -42,7 +42,7 @@ cmake --build build
 ctest --test-dir build --output-on-failure
 ```
 
-Or run all228offline methods directly:
+Or run all237offline methods directly:
 
 ```sh
 PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -v
@@ -120,3 +120,10 @@ keeps all2048combined ROM bytes unchanged and declares REQUIRED native immutable
 board/length/entry/handoff guards. Its exact pinned exporter/CMake and ORIGINAL
 8192-byte diagnostic layout pass offline checks. Native integration/qualification
 is pending; this is not8KiB game admission or a new implemented6502validator.
+
+
+An [original startup/display diagnostic](docs/startup-display-probe-proof.md) now
+exports twelve self-initializing cartridge controls (32KiB baseline/exact8KiB,
+direct MMIO versus VBI shadows, numeric/secondFF Cold). Counter and geometric
+bitmap expectations are independently specified. Offline authoring is qualified;
+native execution,8KiB guard and all product/compatibility gates remain separate.

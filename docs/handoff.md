@@ -8,9 +8,11 @@ Twelve cases:32K/8000 and exact8K/8000,A000 crossed direct/shadow and numeric/FF
 Full Cold/firstopcode8D0030/original geometric40x24mode8/CPU-init list0800/bitmap1000/
 counter3006..7/ready3008; direct display MMIO vs ordinary VBI public shadows with
 independent source/clock/PC/MMIO-order trace requirement.8returns/external10s.
-Eight original offline tests cover ALL240bitmapbytes,12layouts/metadata/zero holes,
+Nine original offline tests cover ALL240bitmapbytes,12layouts/metadata/zero holes,
 firstcapture/countercarry/controlstore bytes, types, noexecution claims, freshprocess
-and source-pin refusal. Full/native execution pending. Frozen six source inputs;
+and source-pin refusal. Full237offline/build/CTest1/1 PASS; NEW source30968a02ff474a21abcdb19faa8eac12c260c107
+frozen/export-qualified, real12case/two-process byte equality/fullparent refusal.
+Native execution pending. Frozen six source inputs;
 no old runtime/profile/provider/catalog/CMake input modified. Native8K waits guard.
 Normative source: docs/startup-display-probe-contract.md, receipts separate.
 
@@ -19,9 +21,12 @@ Before any execution independently declare native viewport origin/canonical RGBA
 from public renderer contract; null values are UNKNOWN, not permission to fit a
 crop/translation after observing output. Expected field-local pattern and four
 grayscale register selectors are completely specified. Preserve all older frozen
-exports. NEXT commit source pin, real12case pinned export/reproducibility/negative
-consumer test, full offline/build/CTest and native packet underreq_6f74. Release
-this public repo lease only after passing commit/push. Initial source pin pending.
+exports. Source pin30968a02ff474a21abcdb19faa8eac12c260c107 pushed; contract raw0f4bdbad,
+index rawe9b92f05, all12case hashes/sixinputs in startup-display-probe-proof.md.
+9focused PASS0.247s/full237 PASS10.604s/existing buildPASS/CTest1/1 PASS10.63s.
+NEXT deliver exact original packet underreq_6f74 after receipt commit/push and
+release lease. Native execution/independent expected viewport/RGBA remain pending;
+8K waits guard qualification. No producer/native/app/release/fullR62 promotion.
 
 
 ## Visual observation complete; native Linear8K guard pending

@@ -114,5 +114,43 @@ class StartupDisplayTests(unittest.TestCase):
                 with self.assertRaisesRegex(ValueError,'frozen input differs'):export('1'*40,out)
             self.assertFalse(out.exists())
 
+    def test_real_frozen_twelve_case_export_in_fresh_processes(self):
+        revision='30968a02ff474a21abcdb19faa8eac12c260c107'
+        with tempfile.TemporaryDirectory() as name:
+            outputs=[Path(name)/part for part in ('first','second')]
+            for output in outputs:
+                subprocess.run([sys.executable,'-B',str(ROOT/'tools/export_startup_display_probes.py'),
+                    '--source-revision',revision,'--output-dir',str(output)],check=True,capture_output=True)
+            first,second=outputs
+            self.assertEqual(sorted(p.name for p in first.iterdir()),sorted(p.name for p in second.iterdir()))
+            self.assertEqual(len(list(first.iterdir())),25)
+            for item in first.iterdir():
+                self.assertEqual(item.read_bytes(),(second/item.name).read_bytes())
+            index=json.loads((first/'index.json').read_text())
+            self.assertEqual(index['source_revision'],revision)
+            self.assertEqual(len(index['source_inputs']),6)
+            self.assertEqual(len(index['cases']),12)
+            self.assertEqual(len({x['sha256'] for x in index['cases']}),12)
+            for item in index['cases']:
+                data=(first/(item['name']+'.bin')).read_bytes()
+                descriptor=first/(item['name']+'.json')
+                self.assertEqual(len(data),item['bytes'])
+                self.assertEqual(hashlib.sha256(data).hexdigest(),item['sha256'])
+                self.assertEqual(hashlib.sha256(descriptor.read_bytes()).hexdigest(),item['report_sha256'])
+                mapping=json.loads(descriptor.read_text())
+                self.assertEqual(mapping['source_revision'],revision)
+                self.assertEqual(mapping['source_inputs'],index['source_inputs'])
+                runtime=mapping['required_runtime']
+                self.assertEqual(runtime['new_native_guard_required'],mapping['board']=='Linear8K')
+                if mapping['board']=='Linear8K':
+                    self.assertIsNone(runtime['qualified_native_revision'])
+                    self.assertEqual(runtime['source_revision'],'2e8fd5152908e0c06d018d04bbfd9d07d1298703')
+                else:
+                    self.assertEqual(runtime['qualified_native_revision'],'138fad844c5c1877acd080bb7239b92d7e0bab9b')
+            rejected=Path(name)/'parent-rejected'
+            p=subprocess.run([sys.executable,'-B',str(ROOT/'tools/export_startup_display_probes.py'),
+                '--source-revision','728adf499f4f4f2400d9260a58b35c1f97d230a0','--output-dir',str(rejected)],capture_output=True)
+            self.assertEqual(p.returncode,2);self.assertFalse(rejected.exists())
+
 
 if __name__=='__main__':unittest.main()
