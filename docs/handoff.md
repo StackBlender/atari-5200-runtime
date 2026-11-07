@@ -1,5 +1,23 @@
 # Runtime handoff
 
+## Completed bounded application observation
+
+The first specifically approved bounded application observation is complete:
+1800ordinary returns/no runtime fault,376x240 video, sampled hashes unchanged after
+an initial transition and finite audio below16-bit quantization. See
+[aggregate observation](bounded-application-observation.md). This is NOT
+verified gameplay. One-target approval consumed; no rerun/repair/wider-corpus
+permission. Exact runtime/native tuple and all producer inputs remain unchanged.
+Next: observation review and separate board/service/compatibility scopes; no
+speculative producer image or fullR62/reference/product/release promotion.
+
+Consumer-only source/header/build plumbing, same maintaining actor. No code/image/
+contract/flag/catalog changes here; exact aggregate/private-data boundary checked,
+diff review only, no producer/native suite rerun. Delivery commit title:
+Record first bounded application observation. Release this repo lease after push.
+Earlier mapping-pending statements below are historical for the one approved32KiB
+target; other boards/targets remain unadmitted. Private results stay outside here.
+
 ## Combined native receipt and next gate
 
 Bounded exact COMBINED native admission is delivered by Mars138fad844c5c1877acd080bb7239b92d7e0bab9b

@@ -591,3 +591,15 @@ are recorded in cart-owned-diagnostic-native-receipt.md; no producer CPU rerun.
 Exact development admission only, not historical/reference-role/fullR62/product/
 game/release approval. Export inputs/flags unchanged; private mapping proposal
 submitted by the maintainer remains outside this public repository.
+
+## Bounded private application observation, 2026-11-07 UTC
+
+Consumer integration reviewed owner decision prose c84edf3/msg_7ece and native
+public cartridge const identity/peek, generic Board/Debugger/VFS declarations,
+CMake/provider/resource-helper boundary and converter profile-join lines only.
+Stock resource compiler inputs/source archives compiled without emulation edits;
+opaque Git/file/ROM hashes do not interpret implementations or target assets.
+No native chip/runtime/foreign fixture/decoder/game implementation, firmware/font/
+disassembly or reference trace read. Same maintainer as producer, no original-
+system reference-role claim. Aggregate and limits in bounded-application-observation.md;
+all identifying target data remains private, no new producer image/approval flag.

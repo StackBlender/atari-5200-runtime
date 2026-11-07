@@ -5,17 +5,27 @@ runtime. NTSC four-port first; full software compatibility remains unfinished.
 
 ## Next
 
+The first specifically approved bounded application observation is complete:
+1800ordinary returns/no runtime fault,376x240 video, sampled hashes unchanged after
+an initial transition and finite audio below16-bit quantization. See
+[aggregate observation](docs/bounded-application-observation.md). This is NOT
+verified gameplay. One-target approval consumed; no rerun/repair/wider-corpus
+permission. Exact runtime/native tuple and all producer inputs remain unchanged.
+Next: observation review and separate board/service/compatibility scopes; no
+speculative producer image or fullR62/reference/product/release promotion.
+
 Bounded exact COMBINED native admission is delivered by Mars138fad844c5c1877acd080bb7239b92d7e0bab9b
 (msg_f592/req_6f74), independently of fullR62. Exact tuple, dual-native matrices,
 new observed numeric808/815 andFF789/796cycles, scope and exposure are recorded in
 [the native receipt](docs/cart-owned-diagnostic-native-receipt.md). Same-image
 B2/combined pre-mutation refusal+next2frames passed; B0/B1/B2 remain separately
 unadmitted. No new producer implementation required. Maintainer submitted the
-private data-only mapping/ownership proposal; no game trial automatically allowed.
+private data-only mapping/ownership proposal; later one-target permission/result
+is recorded above and does not extend to other targets.
 Mars change is pooled/unreleased, MR43latest, no app pin/default/flag/schema/release
 change or fullR62ACK. Catalog remains13older entries; qualified combined receipt
-is separate. Preserve all pinned generation inputs. Next: mapping/consumer decision
-and, separately, maintain the exact qualified-export catalog without old-input edits.
+is separate. Preserve all pinned generation inputs. Remaining per-target/board
+reviews and qualified-export catalog maintenance stay separate.
 
 Explicit combined candidate approved Marsb0e34bf/msg_e17f under req_6f74,
 authored and export-verified at NEW source e8f296d5a8fa693f13b5dd46259eafcb5567e88f.
