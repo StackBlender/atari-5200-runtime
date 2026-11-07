@@ -80,6 +80,8 @@ handoff at +$8A, so software that copies the reset routine to RAM and calls it a
 works. Offline tests pass (242); a licensed target reaches its menu through the stock external-bios
 debug path. Not Mars-qualified or admitted.
 
+A [compat generation](docs/compat-proof.md) adds VBI enable at handoff, the `$0002` low frame counter byte and spurious-NMI return over callable-reset; not natively qualified.
+
 ## License
 
 Copyright (c)2026 StackBlender LLC.
