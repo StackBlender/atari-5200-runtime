@@ -614,3 +614,27 @@ requires host immutable board/length/entry/handoff checks, not a new6502capabili
 Original8192mapping fixture has owned markers and UNKNOWN open-bus read values;
 encoding/self-consistency are not native or original-system observations. Contract,
 identity and still-required native diagnostics in linear8k-guarded-proof.md.
+
+
+## Original Cold-to-progress/geometric-bitmap authoring
+
+Mars60cb46a/msg_32af owner prose ONLY read, authoring scope and prior visual
+outcome review, no native implementation/tests/private payload source. Existing
+own capture/metadata/emitter and display-shadow contract reused unchanged.
+New ORIGINAL border/quadrant/central-hole/asymmetric-marker geometry and grayscale
+values, ROM/RAM tables, counter/control/stop policy; no fonts/text/copied asset.
+
+Reopened Atari1982 manufacturer Hardware Manual transcription at
+https://manualzz.com/doc/9258442/atari-400-800-home-computer-system-hardware-manual,
+selected ANTIC II.7..12 prose/table: list blank/jump/LMS,1KiB list/4KiB scan bounds,
+mode8 four colors/40pixels/10bytes/8scanlines/4colorclocks and selectors00background,
+01PF0/10PF1/11PF2. Nearby II.5..15 PM/register diagrams and character prose appeared;
+search snippets also exposed appendix display examples, not used/transplanted.
+No sample IV program, firmware, font pixel image, disassembly or foreign emulator
+implementation read. OCR transcription only, not visually verified original scan
+or5200 measurements; home-computer OS constants remain outside authority.
+Existing CONSUMER-02 supplies5200register aliases; CPU-02 supplies NMOS common
+instruction semantics (local INCabsoluteEE with independent expected-byte test,
+no change to frozen emitter). Bitmap packing/progress/control stores are our own
+program; tests do NOT execute a CPU. Native viewport origin/converter RGBA values
+remain unknown for independently declared owner-oracle qualification.

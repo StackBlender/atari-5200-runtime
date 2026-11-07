@@ -1,5 +1,29 @@
 # Runtime handoff
 
+## Original startup/display diagnostic authoring
+
+Original startup/display authoring60cb46a/msg_32af now supplied in
+tools/startup_display_probe.py and strict tools/export_startup_display_probes.py.
+Twelve cases:32K/8000 and exact8K/8000,A000 crossed direct/shadow and numeric/FF.
+Full Cold/firstopcode8D0030/original geometric40x24mode8/CPU-init list0800/bitmap1000/
+counter3006..7/ready3008; direct display MMIO vs ordinary VBI public shadows with
+independent source/clock/PC/MMIO-order trace requirement.8returns/external10s.
+Eight original offline tests cover ALL240bitmapbytes,12layouts/metadata/zero holes,
+firstcapture/countercarry/controlstore bytes, types, noexecution claims, freshprocess
+and source-pin refusal. Full/native execution pending. Frozen six source inputs;
+no old runtime/profile/provider/catalog/CMake input modified. Native8K waits guard.
+Normative source: docs/startup-display-probe-contract.md, receipts separate.
+
+Scope authoring only. No private target rerun, no CPU/native/game/reference claim.
+Before any execution independently declare native viewport origin/canonical RGBA
+from public renderer contract; null values are UNKNOWN, not permission to fit a
+crop/translation after observing output. Expected field-local pattern and four
+grayscale register selectors are completely specified. Preserve all older frozen
+exports. NEXT commit source pin, real12case pinned export/reproducibility/negative
+consumer test, full offline/build/CTest and native packet underreq_6f74. Release
+this public repo lease only after passing commit/push. Initial source pin pending.
+
+
 ## Visual observation complete; native Linear8K guard pending
 
 Separate licensed visual follow-up0ce9f62/msg_5887 COMPLETE:1800returns/0faults,

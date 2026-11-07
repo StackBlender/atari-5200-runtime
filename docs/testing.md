@@ -402,3 +402,17 @@ source2e8fd5152908e0c06d018d04bbfd9d07d1298703. REAL four absolute properties,
 source equality, dependency ordering and image/map/manifest byte equality pass;
 full228/build/CTest1/1 PASS. Exact raw+semantic receipt in linear8k-guarded-proof.md.
 No native guard or private-input admission is supplied by these producer checks.
+
+
+## Original startup/display cartridge diagnostics
+
+`python3 -B -m unittest discover -s tests -p test_startup_display_probe.py -v`
+checks original twelve-case exact layout, independently literal240-byte geometry,
+capture/carry/control store order, zero holes/metadata, invalid selectors/types,
+fresh-process reproducibility and strict source-pin refusal. No CPU, game, native
+source or firmware is used. The normative independent native acceptance is
+[startup-display-probe-contract.md](startup-display-probe-contract.md),8ordinary
+returns/external10seconds per case. All12exports are diagnostics, not runtime
+providers, no image/catalog/capability/default promotion. Exact8KiB execution
+must await native guard qualification; matching pixels alone cannot prove VBI
+shadow execution. Producer artifact/report byte equality is tooling evidence only.

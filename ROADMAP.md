@@ -5,6 +5,32 @@ runtime. NTSC four-port first; full software compatibility remains unfinished.
 
 ## Next
 
+Original startup/display authoring60cb46a/msg_32af now supplied in
+tools/startup_display_probe.py and strict tools/export_startup_display_probes.py.
+Twelve cases:32K/8000 and exact8K/8000,A000 crossed direct/shadow and numeric/FF.
+Full Cold/firstopcode8D0030/original geometric40x24mode8/CPU-init list0800/bitmap1000/
+counter3006..7/ready3008; direct display MMIO vs ordinary VBI public shadows with
+independent source/clock/PC/MMIO-order trace requirement.8returns/external10s.
+Eight original offline tests cover ALL240bitmapbytes,12layouts/metadata/zero holes,
+firstcapture/countercarry/controlstore bytes, types, noexecution claims, freshprocess
+and source-pin refusal. Full/native execution pending. Frozen six source inputs;
+no old runtime/profile/provider/catalog/CMake input modified. Native8K waits guard.
+Normative source: docs/startup-display-probe-contract.md, receipts separate.
+
+NEW original startup/display diagnostic scope Mars60cb46a/msg_32af APPROVED:
+fullCold -> first actual application fetch -> application-owned progress counter
+and geometric bitmap through ordinary run calls alone. Two controls: direct MMIO
+versus public shadows/ordinary VBI, identical own pattern/colors; CPU initializes
+all declared own RAM/list/bitmap, no host writes/forced events/suspension/fonts/
+new runtime service.32KiB baseline plus EXACT8192 with8000/A000 aliases/numeric
+and secondFF fullCold.8ordinary returns/external10sec; independent firstfetch/
+progress/list+bitmapDMA/shadow-MMIO order/pixel expectations.8K waits nativeguard
+qualification. Deliver new original source/export pin/layout/write windows/oracle;
+no runtime change until exact diagnostic failure reviewed. Both private permissions
+remain consumed; retail-source blocker independent. Next: author original source,
+strict diagnostic export and offline layout/geometry/reproducibility checks.
+
+
 Separate licensed visual follow-up0ce9f62/msg_5887 COMPLETE:1800returns/0faults,
 1800callbacks/nine privately retained native376x240 PNGs, actual bytepitch1824,
 canonical RGBA excludes padding;9/9 exact decoded roundtrips. Initial black band/
