@@ -149,4 +149,42 @@ class Linear8KTests(unittest.TestCase):
                 self.assertEqual((root/'a'/name).read_bytes(),(root/'b'/name).read_bytes())
 
 
+    def test_real_pinned_cli_cmake_four_properties_dependency_order_and_bytes(self):
+        pin='2e8fd5152908e0c06d018d04bbfd9d07d1298703'
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);direct=root/'cli'
+            subprocess.run([sys.executable,'-B',str(ROOT/'tools/export_linear8k_guarded_candidate.py'),
+                '--source-revision',pin,'--output-dir',str(direct)],check=True,capture_output=True,timeout=30)
+            fields=('SB5200_IMAGE_FILE','SB5200_MANIFEST_FILE','SB5200_MAP_FILE','SB5200_SOURCE_REVISION')
+            properties='\n'.join('$<TARGET_PROPERTY:sb5200-linear8k-guarded-image,'+field+'>' for field in fields)+'\n'
+            check="""from pathlib import Path
+import hashlib,json,sys
+values=Path(sys.argv[1]).read_text().splitlines()
+assert len(values)==4
+assert all(Path(p).is_absolute() and Path(p).is_file() for p in values[:3])
+assert values[3]=='2e8fd5152908e0c06d018d04bbfd9d07d1298703'
+assert len(Path(values[0]).read_bytes())==2048
+m=json.loads(Path(values[1]).read_text())
+assert m['mapper']==dict(board='Linear8K',program_size=8192,successful_load_required=True)
+assert m['native_guard_requirement']['actual_handoff_equals_immutable_entry'] is True
+assert m['capabilities']==[] and m['provider_approved'] is False
+Path(sys.argv[2]).write_text('verified')
+"""
+            (root/'check.py').write_text(check)
+            content=(f'cmake_minimum_required(VERSION 3.20)\nproject(guarded_consumer LANGUAGES NONE)\n'
+                +f'add_subdirectory("{ROOT}" module)\ninclude("{ROOT}/cmake/linear8k-guarded-candidate.cmake")\n'
+                +f'file(GENERATE OUTPUT "${{CMAKE_BINARY_DIR}}/properties" CONTENT "{properties}")\n'
+                +'add_custom_command(OUTPUT "${CMAKE_BINARY_DIR}/verified" COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/check.py" "${CMAKE_BINARY_DIR}/properties" "${CMAKE_BINARY_DIR}/verified" DEPENDS sb5200-linear8k-guarded-image "${CMAKE_SOURCE_DIR}/check.py" VERBATIM)\n'
+                +'add_custom_target(consumer ALL DEPENDS "${CMAKE_BINARY_DIR}/verified")\n')
+            (root/'CMakeLists.txt').write_text(content)
+            build=root/'build'
+            subprocess.run(['cmake','-S',str(root),'-B',str(build),'-G','Ninja',
+                '-DSB5200_LINEAR8K_GUARDED_SOURCE_REVISION='+pin],check=True,capture_output=True,timeout=30)
+            subprocess.run(['cmake','--build',str(build),'--target','consumer','--parallel','2'],
+                check=True,capture_output=True,timeout=40)
+            self.assertEqual((build/'verified').read_text(),'verified')
+            for name in ('startup.bin','startup-map.json','startup-manifest.json'):
+                self.assertEqual((direct/name).read_bytes(),(build/'linear8k-guarded-candidate'/name).read_bytes())
+
+
 if __name__=='__main__':unittest.main()

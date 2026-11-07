@@ -396,3 +396,9 @@ CPU fixture encodings/markers/metadata copies/both aliases/year forms/CLI output
 These are NOT native guard/CPU execution tests or private-file admission. Full
 unittest/build/CTest and later committed exact-source CLI/CMake integration receipt
 are required; all prior producer exports and catalog entries remain untouched.
+
+Pinned CLI/CMake consumer is now the ninth Linear8K method/228offline total:
+source2e8fd5152908e0c06d018d04bbfd9d07d1298703. REAL four absolute properties,
+source equality, dependency ordering and image/map/manifest byte equality pass;
+full228/build/CTest1/1 PASS. Exact raw+semantic receipt in linear8k-guarded-proof.md.
+No native guard or private-input admission is supplied by these producer checks.

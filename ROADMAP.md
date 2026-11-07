@@ -13,9 +13,12 @@ import mutation, actual handoffPC equality/allowed intervals before Ready/fetch,
 pendingNMI and cheat/overlay negatives. New complete identity; old14native tuples/
 all old exports/flags/defaults retained. No native implementation/admission or
 private input authority. Scope independent of private-corpus rights clarification.
-Current acceptance: static exact-parent/typed-contract/identity/strict-pin/original
-8192fixture tests, full offline regression/build/CTest, new committed CLI/CMake
-consumer receipt; then send exact tuple and guard requirements for native execution.
+Authored source2e8fd5152908e0c06d018d04bbfd9d07d1298703, exact image5936e46d
+unchanged; current contract4749f1d3/native guardlinear8k-immutable-entry-guard-v1.
+228offline/build/CTest1/1 PASS including real pinned CLI/CMake4props/order/triple
+identity. Complete raw/semantic receipt in linear8k-guarded-proof.md. Native
+implementation/dual-native original-diagnostic qualification is NEXT; send exact
+tuple/guard matrix, no private-file or app admission.
 
 
 The first specifically approved bounded application observation is complete:

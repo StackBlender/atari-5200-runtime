@@ -109,3 +109,33 @@ build root. New current contract raw SHA256
 version223characters,10CPU authored capabilities unchanged. No native run. A real
 committed-source CLI/CMake four-property/order/triple-equality receipt follows
 once the NEW source pin exists; synthetic test source IDs are not delivery pins.
+
+## Pinned guarded Linear8K artifact/consumer receipt
+
+NEW exact source/export pin2e8fd5152908e0c06d018d04bbfd9d07d1298703.
+Explicit variant linear8k-guarded; profile
+ntsc-four-port-cart-owned-linear8k-guarded-development; ABI sb52-dev-cc65-v1.
+Version is parent's full version with .linear8k-guarded-v1 before .candidate1,
+223characters; all10CPU authored capabilities unchanged. Native guard requirement
+linear8k-immutable-entry-guard-v1 is additional declarative native eligibility,
+NOT an authored CPU capability. Contract raw SHA256
+4749f1d32c026abd5c9c2ad769ebc314d2b60af2b3b3c0375a39ca577d45d15e.
+
+Image SHA2565936e46d08c7991231a52dfb6c1a404a7a0d1ab505a51b2c5e09a569d7ad20e4,
+ALL2048parent bytes/1556used492remaining250reserve unchanged.
+Map rawdd203e17a9f96464c005cb4f10f5b89a6ae0e50cc3fbc3ba6c39248eb6e5c78c,
+semantic33e450ce5b12a776bdd887e2da4bbc432d61fe743780c0474f3f3517fafda2ef.
+Manifest rawffd7133cee2d7343c8ad237c4dcd4ed29eaddacb7d56d782dd0f3ae779d9e877,
+semantic00ce0d9de5bd567e71e910fc9da7476becf368f923bc892b8fc39f73c6cb5fb5.
+Semantic hashing is sorted compact JSON without trailing newline.
+
+Focused9/9 PASS1.958s; full228offline PASS10.295s; existing build PASS;
+CTest1/1 PASS10.53s. Ninth method executes REAL pinned CLI +temporary parent
+CMake consumer with4absoluteproperties/fullsource/dependency-before-consumer and
+triple byte equality, verifies declared mapper/guard/false labels. Temporary
+consumer trees removed automatically; output retained under existing ignored build.
+All old exporters/catalog and separate B0/B1/B2 remain unchanged. Frozen NEW four
+export inputs and all ancestors are now immutable; later receipts/tests are
+noninputs. No native run/integration/admission/private payload or app pin/default/
+release/fullR62 promotion follows. Native guard and independent matrix in this
+proof remain the next acceptance gate; no6502validator change is pre-approved.

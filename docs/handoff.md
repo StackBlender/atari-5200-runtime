@@ -1,32 +1,42 @@
 # Runtime handoff
 
-## Active original guarded Linear8K producer slice
+## Completed original guarded Linear8K producer authoring
 
-Technical approval9076b17/msg_f869 permits originalEXACT8192 diagnostics and
-separate profile/export/CMake with ALL2048combined CPU bytes unchanged. New
-files docs/linear8k-guarded-profile.json, docs/linear8k-guarded-proof.md,
-tools/linear8k_guarded_image.py, tools/export_linear8k_guarded_candidate.py,
-cmake/linear8k-guarded-candidate.cmake, tools/linear8k_probe.py,
-tests/test_linear8k_guarded.py; mutable ROADMAP/handoff/sources/testing updates.
-No old generation input modified. Parent e8f296d/image5936e46d; new source pin
-must be distinct. New native guard requirement is NOT a CPU capability or native
-implementation; falseflags/emptycaps/defaultOFF/25shadows14vectors/ownership/
-1556used492unused250reserve all retained. No new6502validator/helper/RAM/stack.
+Technical approval9076b17/msg_f869, NEW frozen source/export
+2e8fd5152908e0c06d018d04bbfd9d07d1298703, variantlinear8k-guarded/profile
+ntsc-four-port-cart-owned-linear8k-guarded-development. CPU image5936e46d stays
+ALL2048bytes identical to combinede8;1556used492unused250reserve, same10CPU
+capabilities/metadata/year/fullCold/symbols/assets/25shadows14vectors/ownership.
+New exact mapperLinear8K/8192 and linear8k-immutable-entry-guard-v1 REQUIRED,
+not implemented by producer. Current contract4749f1d3; complete raw+semantic
+image/map/manifest/source/current contract receipt in linear8k-guarded-proof.md.
 
-Focused8/8 tests PASS; full227offline PASS8.859s, existing build PASS and CTest1/1
-PASS10.94s. Original8192fixture CLI and static profile identity checked. Resume:
-review/commit/push first new source pin, FREEZE new four export input files, then
-add a NONINPUT committed CLI/CMake consumer test/receipt with raw+semantic image/
-map/manifest/current-contract hashes and new source pin. Re-run required checks
-for that meaningful addition; send exact tuple/guard/native matrix to Mars.
-Native owner still must implement immutable board/size/canonical entry pre-mutation
-and actual handoff equality/mapped-range preReady/fetch/NMI/overlay guards and
-qualify actual original8K cases. No private file required or read; no private
-execution/admission, native/core/source repair, app pin/default/catalog/release/
-fullR62ACK. Source exposure in sources/proof docs. Lease currently held by
-apollo_retro_owner for this piece; RELEASE after final push/delivery. Existing
-build root only; no new permanent builds/clones/device/Fable/native run.
+New source/export/CMake/contract inputs FROZEN; no parent or new input editing
+without a separate generation. New tests/receipts are noninputs. Native guard
+must validate immutable loaded board/size/canonicalLEentry before every supported
+cold/power/import mutation, entry[8000,9FE8)/[A000,BFE8), actual handoff equals
+immutable entry/in-range before Ready/firstopcode, pendingNMI/overlay negatives;
+publish pre-power-entry refusal separate from old CPU metadata-after-init behavior.
+No extra6502validator/helper/RAM/stack/native payload fields authored. Keep all14
+old native semantics/old producer exports/falseflags/emptycaps/defaultOFF.
 
+Tools/linear8k_probe.py supplies OWN original8192CPU mapping/metadata-alias layout
+with numeric/FF and8000/A000 entry aliases;69declared ownresult bytes, UNKNOWN
+openbus values, no private data. It masks IRQ/NMI for mapping only and proves NO
+native guard/services/input/state. Native owner still needs independent CPU probes.
+Focused8/8 then9/9 PASS1.958s; full227 PASS8.859s then228 PASS10.295s; existing
+build PASS; finalCTest1/1 PASS10.53s. Ninth method real pinned CLI/CMake4props/
+dependency/order/triple equality; temporary consumers removed, existing build only.
+No native/private execution, device/Fable/new clone/permanent build or core edits.
+
+NEXT: send exact pinned packet and native guard/matrix to Mars underreq_6f74;
+await ORIGINAL dual-native mapping/entry/immutable/pak/cheat/overlay/handoff/NMI/
+fullCold/FF/RAM/IRQ/input/allSP/process/state+next2frames/R65/OFF/firmware/converter
+qualification. Wrong16K wiring is unsupported negative; same-image32/8 state
+isolation required. If route fails, return it BEFORE validator authoring. No
+private source-rights/board/trial or product/reference/release/fullR62 acceptance.
+Delivery receipt commit title: Qualify pinned Linear8K export consumer artifacts.
+Release this repo lease AFTER push; app holds opaque private provenance separately.
 
 ## Completed bounded application observation
 

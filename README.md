@@ -42,7 +42,7 @@ cmake --build build
 ctest --test-dir build --output-on-failure
 ```
 
-Or run all212offline methods directly:
+Or run all228offline methods directly:
 
 ```sh
 PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -v
@@ -114,3 +114,9 @@ now rebinds B0ownership onto byte-identical B2code under its own identity. It is
 independently qualified for its bounded development contract; see the
 [native receipt](docs/cart-owned-diagnostic-native-receipt.md). Game mapping and
 consumer trial decisions remain separate. All prior profiles/defaults stay unchanged.
+
+A separately [guarded Linear8K development identity](docs/linear8k-guarded-proof.md)
+keeps all2048combined ROM bytes unchanged and declares REQUIRED native immutable
+board/length/entry/handoff guards. Its exact pinned exporter/CMake and ORIGINAL
+8192-byte diagnostic layout pass offline checks. Native integration/qualification
+is pending; this is not8KiB game admission or a new implemented6502validator.
