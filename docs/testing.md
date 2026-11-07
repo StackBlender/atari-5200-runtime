@@ -385,3 +385,14 @@ for independent120keyboard/65536year/fullCold/state/R65 requirements.
 
 Pinned combined CLI/CMake integration and all219offline checks, build/CTest1/1 PASS.
 Exact identity receipt: docs/cart-owned-diagnostic-proof.md. Native qualification pending.
+
+## Guarded Linear8K producer scope
+
+Eight tests/test_linear8k_guarded.py methods bring227offline methods. They verify
+all2048parent bytes/fit/symbols/assets/services/CPU capabilities unchanged; typed
+new guard/current contract/full identity/false flags; mapped/openbus/metadata alias
+DATA boundaries; parent/new source binding/failures/freshprocess; original8192
+CPU fixture encodings/markers/metadata copies/both aliases/year forms/CLI outputs.
+These are NOT native guard/CPU execution tests or private-file admission. Full
+unittest/build/CTest and later committed exact-source CLI/CMake integration receipt
+are required; all prior producer exports and catalog entries remain untouched.

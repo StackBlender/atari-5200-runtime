@@ -603,3 +603,14 @@ No native chip/runtime/foreign fixture/decoder/game implementation, firmware/fon
 disassembly or reference trace read. Same maintainer as producer, no original-
 system reference-role claim. Aggregate and limits in bounded-application-observation.md;
 all identifying target data remains private, no new producer image/approval flag.
+
+## Guarded Linear8K authoring, 2026-11-07 UTC
+
+Read Mars9076b17/msg_f869 and owner docs/a52-linear8k-profile-review.md prose only.
+Used OUR frozen combined source/emitter/capture/metadata encoders and original
+new policy/data. No native implementation/tests/decoder, private payload, game
+implementation/assets/font, firmware/disassembly/reference trace read. Scope
+requires host immutable board/length/entry/handoff checks, not a new6502capability.
+Original8192mapping fixture has owned markers and UNKNOWN open-bus read values;
+encoding/self-consistency are not native or original-system observations. Contract,
+identity and still-required native diagnostics in linear8k-guarded-proof.md.

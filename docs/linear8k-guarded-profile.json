@@ -1,0 +1,330 @@
+{
+  "historical_abi": false,
+  "initialization": {
+    "attract_service": false,
+    "paddl_zero_means": "unscanned-not-centered",
+    "shadows": [
+      {
+        "address": 0,
+        "cold": 0,
+        "name": "pokmsk"
+      },
+      {
+        "address": 1,
+        "cold": 0,
+        "name": "rtclok_low"
+      },
+      {
+        "address": 2,
+        "cold": 0,
+        "name": "rtclok_high"
+      },
+      {
+        "address": 3,
+        "cold": 0,
+        "name": "critic"
+      },
+      {
+        "address": 4,
+        "cold": 0,
+        "name": "atract"
+      },
+      {
+        "address": 5,
+        "cold": 0,
+        "name": "sdlst_low"
+      },
+      {
+        "address": 6,
+        "cold": 0,
+        "name": "sdlst_high"
+      },
+      {
+        "address": 7,
+        "cold": 0,
+        "name": "sdmctl"
+      },
+      {
+        "address": 8,
+        "cold": 0,
+        "name": "pcolr0"
+      },
+      {
+        "address": 9,
+        "cold": 0,
+        "name": "pcolr1"
+      },
+      {
+        "address": 10,
+        "cold": 0,
+        "name": "pcolr2"
+      },
+      {
+        "address": 11,
+        "cold": 0,
+        "name": "pcolr3"
+      },
+      {
+        "address": 12,
+        "cold": 0,
+        "name": "color0"
+      },
+      {
+        "address": 13,
+        "cold": 0,
+        "name": "color1"
+      },
+      {
+        "address": 14,
+        "cold": 0,
+        "name": "color2"
+      },
+      {
+        "address": 15,
+        "cold": 0,
+        "name": "color3"
+      },
+      {
+        "address": 16,
+        "cold": 0,
+        "name": "color4"
+      },
+      {
+        "address": 17,
+        "cold": 0,
+        "name": "paddl0"
+      },
+      {
+        "address": 18,
+        "cold": 0,
+        "name": "paddl1"
+      },
+      {
+        "address": 19,
+        "cold": 0,
+        "name": "paddl2"
+      },
+      {
+        "address": 20,
+        "cold": 0,
+        "name": "paddl3"
+      },
+      {
+        "address": 21,
+        "cold": 0,
+        "name": "paddl4"
+      },
+      {
+        "address": 22,
+        "cold": 0,
+        "name": "paddl5"
+      },
+      {
+        "address": 23,
+        "cold": 0,
+        "name": "paddl6"
+      },
+      {
+        "address": 24,
+        "cold": 0,
+        "name": "paddl7"
+      }
+    ],
+    "stage": "successful-cold-before-cartridge-entry",
+    "uninstalled_target": 64646,
+    "vector_endian": "little",
+    "vector_width": 2,
+    "vectors": [
+      {
+        "address": 512,
+        "cold": 65024,
+        "name": "vinter"
+      },
+      {
+        "address": 514,
+        "cold": 64672,
+        "name": "vvblki"
+      },
+      {
+        "address": 516,
+        "cold": 64688,
+        "name": "vvblkd"
+      },
+      {
+        "address": 518,
+        "cold": 64646,
+        "name": "vdslst"
+      },
+      {
+        "address": 520,
+        "cold": 64646,
+        "name": "vkeybd"
+      },
+      {
+        "address": 522,
+        "cold": 64646,
+        "name": "vkeypd"
+      },
+      {
+        "address": 524,
+        "cold": 64646,
+        "name": "vbrkky"
+      },
+      {
+        "address": 526,
+        "cold": 64646,
+        "name": "vbreak"
+      },
+      {
+        "address": 528,
+        "cold": 64646,
+        "name": "vserin"
+      },
+      {
+        "address": 530,
+        "cold": 64646,
+        "name": "vseror"
+      },
+      {
+        "address": 532,
+        "cold": 64646,
+        "name": "vseroc"
+      },
+      {
+        "address": 534,
+        "cold": 64646,
+        "name": "vtimr1"
+      },
+      {
+        "address": 536,
+        "cold": 64646,
+        "name": "vtimr2"
+      },
+      {
+        "address": 538,
+        "cold": 64646,
+        "name": "vtimr4"
+      }
+    ]
+  },
+  "irq": {
+    "cart_callback_return": "RTI-after-own-register-restores",
+    "cart_owns_generic_vector": true,
+    "default_timer_supported_mask": 7,
+    "default_unsupported_fault_before_ack": true,
+    "generic_entry": "hardware-frame-only-after-classifier-restores-AX",
+    "mandatory_extra_ram_cart_declaration": false,
+    "required_runtime_keyboard_callback": null
+  },
+  "mapper": {
+    "board": "Linear8K",
+    "program_size": 8192,
+    "successful_load_required": true
+  },
+  "native_guard_requirement": {
+    "actual_handoff_equals_immutable_entry": true,
+    "actual_handoff_in_allowed_entry": true,
+    "additional_emulated_ram_bytes": 0,
+    "additional_helper_calls": 0,
+    "additional_native_payload_fields": 0,
+    "additional_stack_bytes": 0,
+    "allowed_entry_cpu": [
+      [
+        32768,
+        40936
+      ],
+      [
+        40960,
+        49128
+      ]
+    ],
+    "canonical_entry_cpu": [
+      49150,
+      49152
+    ],
+    "canonical_entry_payload": [
+      8190,
+      8192
+    ],
+    "canonical_metadata_cpu": [
+      49128,
+      49152
+    ],
+    "canonical_metadata_payload": [
+      8168,
+      8192
+    ],
+    "cheats_overlays_live_configuration_supported": false,
+    "cpu_cheat_hook_overlay_negative_required": true,
+    "cpu_full_cold_and_year_validator_retained": true,
+    "entry_endian": "little",
+    "entry_read_source": "immutable-readonly-board-peeks",
+    "entry_rejection_classification": "pre-power-entry",
+    "entry_rejection_stage": "before-power-randomization-cache-or-import-mutation",
+    "exact_program_size": 8192,
+    "failure_action": "refuse-or-fault-never-patch-pc",
+    "handoff_guard_stage": "before-ready-and-first-application-opcode",
+    "id": "linear8k-immutable-entry-guard-v1",
+    "immutable_loaded_board": "Linear8K",
+    "intervals": "half-open",
+    "metadata_alias_cpu": [
+      [
+        40936,
+        40960
+      ],
+      [
+        49128,
+        49152
+      ]
+    ],
+    "open_bus_cpu": [
+      [
+        16384,
+        32768
+      ]
+    ],
+    "pending_nmi_refusal_retained": true,
+    "pre_mutation_routes": [
+      "cold",
+      "system-power",
+      "state-import"
+    ],
+    "schema": 1,
+    "validate_actual_loaded_board_and_length": true
+  },
+  "ownership": {
+    "additional_runtime_ram_bytes": 0,
+    "consumer_ram": [
+      540,
+      16384
+    ],
+    "consumer_zero_page": [
+      25,
+      256
+    ],
+    "explicitly_ceded": [
+      540,
+      544
+    ],
+    "intervals": "half-open",
+    "power_on_contents_preserved": false,
+    "runtime_input_reservation": null,
+    "runtime_shadows": [
+      0,
+      25
+    ],
+    "runtime_vectors": [
+      512,
+      540
+    ],
+    "shared_stack": [
+      256,
+      512
+    ]
+  },
+  "profile": "ntsc-four-port-cart-owned-linear8k-guarded-development",
+  "purpose": "original-cart-owned-linear8k-native-guard-required-development",
+  "retail_compatibility": false,
+  "runtime_abi": "sb52-dev-cc65-v1",
+  "schema": 1
+}

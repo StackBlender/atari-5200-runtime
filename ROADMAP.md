@@ -5,6 +5,19 @@ runtime. NTSC four-port first; full software compatibility remains unfinished.
 
 ## Next
 
+Mars9076b17/msg_f869 APPROVES original EXACT8192 diagnostics and separately named
+Linear8K guarded descriptor/export/CMake authoring on combinede8. ALL2048ROMbytes,
+1556used/492unused/250reserve and CPU authored capabilities stay unchanged. Required
+native guard validates immutable board/size/canonicalLEentry before cold/power/
+import mutation, actual handoffPC equality/allowed intervals before Ready/fetch,
+pendingNMI and cheat/overlay negatives. New complete identity; old14native tuples/
+all old exports/flags/defaults retained. No native implementation/admission or
+private input authority. Scope independent of private-corpus rights clarification.
+Current acceptance: static exact-parent/typed-contract/identity/strict-pin/original
+8192fixture tests, full offline regression/build/CTest, new committed CLI/CMake
+consumer receipt; then send exact tuple and guard requirements for native execution.
+
+
 The first specifically approved bounded application observation is complete:
 1800ordinary returns/no runtime fault,376x240 video, sampled hashes unchanged after
 an initial transition and finite audio below16-bit quantization. See

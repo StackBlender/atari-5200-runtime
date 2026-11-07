@@ -1,5 +1,33 @@
 # Runtime handoff
 
+## Active original guarded Linear8K producer slice
+
+Technical approval9076b17/msg_f869 permits originalEXACT8192 diagnostics and
+separate profile/export/CMake with ALL2048combined CPU bytes unchanged. New
+files docs/linear8k-guarded-profile.json, docs/linear8k-guarded-proof.md,
+tools/linear8k_guarded_image.py, tools/export_linear8k_guarded_candidate.py,
+cmake/linear8k-guarded-candidate.cmake, tools/linear8k_probe.py,
+tests/test_linear8k_guarded.py; mutable ROADMAP/handoff/sources/testing updates.
+No old generation input modified. Parent e8f296d/image5936e46d; new source pin
+must be distinct. New native guard requirement is NOT a CPU capability or native
+implementation; falseflags/emptycaps/defaultOFF/25shadows14vectors/ownership/
+1556used492unused250reserve all retained. No new6502validator/helper/RAM/stack.
+
+Focused8/8 tests PASS; full227offline PASS8.859s, existing build PASS and CTest1/1
+PASS10.94s. Original8192fixture CLI and static profile identity checked. Resume:
+review/commit/push first new source pin, FREEZE new four export input files, then
+add a NONINPUT committed CLI/CMake consumer test/receipt with raw+semantic image/
+map/manifest/current-contract hashes and new source pin. Re-run required checks
+for that meaningful addition; send exact tuple/guard/native matrix to Mars.
+Native owner still must implement immutable board/size/canonical entry pre-mutation
+and actual handoff equality/mapped-range preReady/fetch/NMI/overlay guards and
+qualify actual original8K cases. No private file required or read; no private
+execution/admission, native/core/source repair, app pin/default/catalog/release/
+fullR62ACK. Source exposure in sources/proof docs. Lease currently held by
+apollo_retro_owner for this piece; RELEASE after final push/delivery. Existing
+build root only; no new permanent builds/clones/device/Fable/native run.
+
+
 ## Completed bounded application observation
 
 The first specifically approved bounded application observation is complete:
