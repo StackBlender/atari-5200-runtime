@@ -74,6 +74,12 @@ measurement corpus is available. Licensing alone does not establish authorship.
 [contract](docs/contract.md) preserve scope, provenance and open compatibility gaps.
 NTSC four-port is the initial target; other boards require explicit evidence.
 
+A [callable-reset generation](docs/callable-reset-proof.md) rebuilds only the reset region of
+the cart-owned diagnostic parent: an instruction boundary at +$0F, fall-through to the cartridge
+handoff at +$8A, so software that copies the reset routine to RAM and calls it as a subroutine
+works. Offline tests pass (242); a licensed target reaches its menu through the stock external-bios
+debug path. Not Mars-qualified or admitted.
+
 ## License
 
 Copyright (c)2026 StackBlender LLC.

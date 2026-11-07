@@ -5,6 +5,12 @@ runtime. NTSC four-port first; full software compatibility remains unfinished.
 
 ## Next
 
+Callable-reset generation AUTHORED (callable-reset-v1, docs/callable-reset-proof.md): reset region only,
+entry +$0F, fall-through +$8A, parent cart-owned B-chain image otherwise byte-identical. 242 offline pass.
+Licensed 32K target now reaches its menu via the consumer's external-bios debug path (not Mars-qualified).
+NEXT: Mars variant/tuple integration and independent native qualification, then ordinary-software
+breadth (more titles, warm reset, text glyphs).
+
 Independent32KiB startup/display baseline PASS: Mars027b70330e714c78bf900aad930b374236b44eff/
 msg_e942/req_6f74. All FOUR direct/shadow x numeric/secondFF cases pass Release/
 unity and full-native Debug/ASan/nonunity, exactly8ordinary returns/external10s.
