@@ -81,6 +81,7 @@ works. Offline tests pass (242); a licensed target reaches its menu through the 
 debug path. Not Mars-qualified or admitted.
 
 A [compat generation](docs/compat-proof.md) adds VBI enable at handoff, the `$0002` low frame counter byte and spurious-NMI return over callable-reset; not natively qualified.
+A [compat-v2 generation](docs/compat2-proof.md) adds per-frame countdown service and default-vector fallback; not natively qualified.
 
 ## License
 
