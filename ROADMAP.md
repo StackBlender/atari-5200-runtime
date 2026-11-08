@@ -5,6 +5,13 @@ runtime. NTSC four-port first; full software compatibility remains unfinished.
 
 ## Next
 
+compat-v3 AUTHORED (tools/compat3_image.py over compat-v2, export/cmake/test added): a keyboard ($0209) or break ($020D)
+vector high byte $FF now means no handler (acknowledged, returned from); an interrupt source the runtime does not service
+is acknowledged and dropped (IRQEN 0, POKMSK restored, RTI) instead of the fault loop. +37 bytes (1774/2048 used, 274
+free). 261 offline tests pass. Local probe survey (not Mars-qualified): all ten user-supplied carts reach gameplay
+pictures and run 3000 returns with Start/fire/axis input and no fault. NEXT: Mars provider variant + native
+qualification of compat-v1/v2/v3, native 8K/16K mapping (Mars), per-title gameplay correctness not claimed.
+
 Callable-reset generation AUTHORED (callable-reset-v1, docs/callable-reset-proof.md): reset region only,
 entry +$0F, fall-through +$8A, parent cart-owned B-chain image otherwise byte-identical. 242 offline pass.
 Licensed 32K target now reaches its menu via the consumer's external-bios debug path (not Mars-qualified).
